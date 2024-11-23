@@ -5,7 +5,7 @@ import toast from "react-hot-toast";
 
 const sources = ["LinkedIn", "Twitter", "Meta"];
 
-const FormSection = ({ emailIdToSendMail, addSourceField }) => {
+const FormSection = ({ emailIdToSendMail, sourceName }) => {
   const { setSpinner } = useContext(SpinnerContext);
   const {
     register,
@@ -30,8 +30,8 @@ const FormSection = ({ emailIdToSendMail, addSourceField }) => {
       emailBody += "Email: " + values.email + "\n\n";
       emailBody += "Phone Number: " + values.phone + "\n\n";
 
-      if (addSourceField) {
-        emailBody += "Source: " + values.source + "\n\n";
+      if (sourceName) {
+        emailBody += "Source: " + sourceName + "\n\n";
       }
 
       // Construct the request payload
@@ -156,24 +156,6 @@ const FormSection = ({ emailIdToSendMail, addSourceField }) => {
               />
               <small className="text-red-600">{errors.phone?.message}</small>
             </div>
-            {addSourceField && (
-              <div className="flex flex-col">
-                <label htmlFor="" className="text-sm">
-                  Where did you hear about us?
-                </label>
-                <select
-                  {...register("source")}
-                  className="outline-none p-3 cursor-pointer bg-white border rounded-md"
-                >
-                  {sources.map((source) => (
-                    <option className="relative" value={source} key={source}>
-                      <div className="absolute inset-0 w-full h-full hover:bg-primary z-10"></div>
-                      {source}
-                    </option>
-                  ))}
-                </select>
-              </div>
-            )}
             <button type="submit" className="primary-btn1 mt-3">
               Submit
             </button>

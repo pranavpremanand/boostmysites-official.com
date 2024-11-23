@@ -93,24 +93,59 @@ function App() {
                 />
               ))}
 
-              <Route
-                path="/ai-expert1"
-                element={
-                  <>
-                    <LandingPageHeader path="/ai-expert1" />
-                    <LandingPage1
-                      path="/ai-expert1"
-                      emailIdToSendMail="ceo@boostmysites.com"
-                    />
-                    <LandingPageFooter />
-                  </>
-                }
-              />
+              {["/ai-expert1", "/ai-expert12", "/ai-expert13"].map((path) => (
+                <Route
+                  path={path}
+                  element={
+                    <>
+                      <LandingPageHeader path={path} />
+                      <LandingPage1
+                        path={path}
+                        emailIdToSendMail="ceo@boostmysites.com"
+                      />
+                      <LandingPageFooter />
+                    </>
+                  }
+                />
+              ))}
+
+              {/* Contact routes for ai-expert1 */}
+              {["/ai-expert1", "/ai-expert12", "/ai-expert13"].map((path) => (
+                <Route
+                  path={`${path}/contact/*`}
+                  element={
+                    <>
+                      <LandingPageHeader path={path} />
+                      <Routes>
+                        <Route
+                          index
+                          element={<Navigate to="step1" replace />}
+                        />
+                        <Route
+                          path="step1"
+                          element={<ContactFormStep1 pathToRedirect={path} />}
+                        />
+                        <Route
+                          path="step2"
+                          element={
+                            <ContactFormStep2
+                              emailIdToSendMail="ceo@boostmysites.com"
+                              pathToRedirect={path}
+                            />
+                          }
+                        />
+                      </Routes>
+                      <LandingPageFooter />
+                    </>
+                  }
+                />
+              ))}
+              {/* End of contact routes for ai-expert1 */}
 
               {/* Contact Routes */}
               {aiExpertPaths.map(({ emailIdToSendMail, path }) => (
                 <Route
-                  key={`contact-${path}`}
+                  key={path}
                   path={`${path}/contact/*`}
                   element={
                     <>
@@ -140,42 +175,6 @@ function App() {
                 />
               ))}
 
-              <Route
-                path="/ai-expert1/contact/*"
-                element={
-                  <>
-                    <LandingPageHeader path="/ai-expert1" />
-                    <Routes>
-                      <Route index element={<Navigate to="step1" replace />} />
-                      <Route
-                        path="step1"
-                        element={
-                          <ContactFormStep1 pathToRedirect="/ai-expert1" />
-                        }
-                      />
-                      <Route
-                        path="step2"
-                        element={
-                          <ContactFormStep2
-                            emailIdToSendMail="ceo@boostmysites.com"
-                            pathToRedirect="/ai-expert1"
-                          />
-                        }
-                      />
-                    </Routes>
-                    <LandingPageFooter />
-                  </>
-                }
-              />
-
-              {/* Thank You Routes */}
-              {/* {aiExpertPaths.map(({ path }) => (
-                <Route
-                  key={`thankyou-${path}`}
-                  path={`${path}/contact/thank-you`}
-                  element={<ThankYou pathToRedirect={path} />}
-                />
-              ))} */}
               <Route
                 path="/thank-you"
                 element={<ThankYou pathToRedirect="/" />}

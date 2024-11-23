@@ -26,13 +26,22 @@ const LandingPage1 = ({ path, emailIdToSendMail }) => {
       setShowPopup(true);
     }
   }, []);
+
+  let sourceName;
+  if (path === "/ai-expert1") {
+    sourceName = "LinkedIn";
+  } else if (path === "/ai-expert12") {
+    sourceName = "Twitter";
+  } else if (path === "/ai-expert13") {
+    sourceName = "Meta";
+  }
   return (
     <div className="landing-page relative" id="home">
       {showPopup && (
         <PopupForm
           setShowPopup={setShowPopup}
           emailIdToSendMail={emailIdToSendMail}
-          addSourceField
+          sourceName={sourceName}
         />
       )}
       <div className="min-h-screen flex items-center relative">
@@ -128,7 +137,10 @@ const LandingPage1 = ({ path, emailIdToSendMail }) => {
           </div>
         </section>
 
-        <FormSection emailIdToSendMail={emailIdToSendMail} addSourceField />
+        <FormSection
+          emailIdToSendMail={emailIdToSendMail}
+          sourceName={sourceName}
+        />
 
         <section
           id="courses"
@@ -202,7 +214,10 @@ const LandingPage1 = ({ path, emailIdToSendMail }) => {
           <JoinEntrepreneurs />
         </div>
         <div className="wrapper">
-          <FormSection addSourceField emailIdToSendMail={emailIdToSendMail} />
+          <FormSection
+            sourceName={sourceName}
+            emailIdToSendMail={emailIdToSendMail}
+          />
         </div>
       </section>
       <div className="wrapper">
