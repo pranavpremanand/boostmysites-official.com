@@ -27,7 +27,7 @@ const ThankYou = ({ pathToRedirect }) => {
     <>
       <div
         className={`fixed z-50 py-3 flex justify-center w-full top-0 left-0 ${
-          isScrolled ? "backdrop-blur-md bg-quaternary/30" : "bg-quaternary"
+          isScrolled ? "backdrop-blur-md bg-black/30" : "bg-black"
         }`}
       >
         <div className="w-full">
@@ -59,7 +59,7 @@ const ThankYou = ({ pathToRedirect }) => {
               to={pathToRedirect}
               className="mt-3 text-sm cursor-pointer flex justify-center bg-primary1 hover:-translate-y-1 shadow-large shadow-transparent hover:shadow-primary/[35%] text-white border border-primary1 py-3 px-4 rounded-full transition-all duration-300"
             >
-              Back to Home
+              Home Page
             </Link>
           </div>
         </div>

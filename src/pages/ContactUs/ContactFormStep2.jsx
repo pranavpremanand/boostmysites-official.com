@@ -23,18 +23,13 @@ const ContactFormStep2 = ({ emailIdToSendMail, pathToRedirect }) => {
   const {
     register,
     handleSubmit,
-    setValue,
     reset,
-    watch,
-    resetField,
-    setError,
     formState: { errors },
   } = useForm({
     mode: "onSubmit",
     defaultValues: {
       businessType: "", // Default selected business type
       expectedEarnings: "", // Default selected earnings
-      // primaryGoal: "", // Default selected goal
       investmentCapital: "", // Default selected capital
       timeline: "", // Default selected timeline
       primaryGoalText: "", // Track the custom input separately
@@ -42,36 +37,17 @@ const ContactFormStep2 = ({ emailIdToSendMail, pathToRedirect }) => {
   });
 
   const handleInputFocus = () => {
-    // setValue("primaryGoal", "");
-    // resetField("primaryGoal"); // Clear radio buttons when text input is focused
     handlePrimaryGoalChange("");
     setPrimaryGoal("");
   };
 
-  // Handle text input change
-  // const handleTextInputChange = (e) => {
-  //   const value = e.target.value;
-  //   // setValue("primaryGoal", value); // Set text input value as the primary goal
-  //   setPrimaryGoal(value);
-  //   if (value.trim() === "") {
-  //     setPrimaryGoalErr("Please select or specify your primary goal.");
-  //   }
-  // };
-
   // Handle radio button change and clear text input when a radio button is selected
   const handleRadioChange = (value) => {
-    // setError("primaryGoal", null);
-    // setValue("primaryGoal", value); // Set radio button value as the primary goal
-    // resetField("primaryGoalText"); // Clear text input when a radio button is selected
     setPrimaryGoal(value);
     setPrimaryGoalErr("");
     setPrimaryGoalText("");
   };
   const handlePrimaryGoalChange = (value) => {
-    // setError("primaryGoal", null);
-    // setValue("primaryGoal", value); // Set radio button value as the primary goal
-    // resetField("primaryGoalText"); // Clear text input when a radio button is selected
-    console.log(value);
     setPrimaryGoalText(value);
     if (value.trim() === "") {
       setPrimaryGoalErr("Please select or specify your primary goal");
@@ -82,14 +58,6 @@ const ContactFormStep2 = ({ emailIdToSendMail, pathToRedirect }) => {
 
   // Handle form submission
   const onSubmit = async (values) => {
-    // if (!values.primaryGoal && !values.primaryGoalText) {
-    //   // Trigger an error if both the radio and input are empty
-    //   setError("primaryGoal", {
-    //     type: "manual",
-    //     message: "Please select or specify your primary goal.",
-    //   });
-    //   return;
-    // }
     if (primaryGoal.trim() === "" && primaryGoalText.trim() === "") {
       setPrimaryGoalErr("Please select or specify your primary goal");
       return;
@@ -119,9 +87,18 @@ const ContactFormStep2 = ({ emailIdToSendMail, pathToRedirect }) => {
       emailBody += "Investment Capital: " + values.investmentCapital + "\n\n";
       emailBody += "Timeline: " + values.timeline + "\n\n";
 
+      if (pathToRedirect === "/ai-expert1") {
+        emailBody += "Source: " + "LinkedIn" + "\n\n";
+      } else if (pathToRedirect === "/ai-expert12") {
+        emailBody += "Source: " + "Twitter" + "\n\n";
+      } else if (pathToRedirect === "/ai-expert13") {
+        emailBody += "Source: " + "Meta" + "\n\n";
+      }
+
       // Construct the request payload
       var payload = {
-        to: emailIdToSendMail,
+        to: "mpranavprem@gmail.com",
+        // to: emailIdToSendMail,
         subject: "Lead Form Submission",
         body: emailBody,
       };
@@ -144,7 +121,7 @@ const ContactFormStep2 = ({ emailIdToSendMail, pathToRedirect }) => {
               reset();
               sessionStorage.removeItem("isoCode");
               sessionStorage.removeItem("contactForm");
-              navigate('/thank-you')
+              navigate("/thank-you");
               // if (pathToRedirect === "/") {
               //   navigate(`${pathToRedirect}contact/thank-you`);
               // } else {
