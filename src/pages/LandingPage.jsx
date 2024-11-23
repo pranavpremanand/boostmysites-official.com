@@ -335,7 +335,7 @@ const LandingPage = ({ path, emailIdToSendMail }) => {
           <JoinEntrepreneurs />
         </div>
         <div className="wrapper">
-          <FormSection />
+          <FormSection emailIdToSendMail={emailIdToSendMail} />
         </div>
       </section>
 

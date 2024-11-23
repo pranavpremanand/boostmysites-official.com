@@ -6,7 +6,9 @@ import { useForm } from "react-hook-form";
 import { SpinnerContext } from "../SpinnerContext";
 import { IoClose } from "react-icons/io5";
 
-const PopupForm = ({ setShowPopup, emailIdToSendMail }) => {
+const sources = ["LinkedIn", "Twitter", "Meta"];
+
+const PopupForm = ({ setShowPopup, emailIdToSendMail, addSourceField }) => {
   const overlay = useRef(null);
   const wrapper = useRef(null);
 
@@ -63,6 +65,7 @@ const PopupForm = ({ setShowPopup, emailIdToSendMail }) => {
       name: "",
       email: "",
       phone: "",
+      source: "LinkedIn",
     },
   });
 
@@ -74,6 +77,10 @@ const PopupForm = ({ setShowPopup, emailIdToSendMail }) => {
       emailBody += "Email: " + values.email + "\n\n";
       emailBody += "Phone Number: " + values.phone + "\n\n";
 
+      if (addSourceField) {
+        emailBody += "Source: " + values.source + "\n\n";
+      }
+
       // Construct the request payload
       var payload = {
         to: emailIdToSendMail,
@@ -81,7 +88,6 @@ const PopupForm = ({ setShowPopup, emailIdToSendMail }) => {
         body: emailBody,
       };
 
-      // setIsLoading(true);
       await fetch("https://smtp-api-tawny.vercel.app/send-email", {
         method: "POST",
         headers: {
@@ -200,6 +206,24 @@ const PopupForm = ({ setShowPopup, emailIdToSendMail }) => {
               />
               <small className="text-red-600">{errors.phone?.message}</small>
             </div>
+            {addSourceField && (
+              <div className="flex flex-col">
+                <label htmlFor="" className="text-sm">
+                  Where did you hear about us?
+                </label>
+                <select
+                  {...register("source")}
+                  className="outline-none p-3 cursor-pointer bg-white border rounded-md"
+                >
+                  {sources.map((source) => (
+                    <option className="relative" value={source} key={source}>
+                      <div className="absolute inset-0 w-full h-full hover:bg-primary z-10"></div>
+                      {source}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            )}
             <button type="submit" className="primary-btn1 mt-3">
               Submit
             </button>
