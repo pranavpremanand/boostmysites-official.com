@@ -18,7 +18,7 @@ const Footer = () => {
                 className="flex items-center gap-1 link"
               >
                 <BiPhone className="text-xl" />{" "}
-                <span className="text-">+2 456 (343) 24 45</span>
+                <span className="text-">+919790035747</span>
               </Link>
             </li>
             <li>

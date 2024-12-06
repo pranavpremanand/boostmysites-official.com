@@ -301,7 +301,7 @@ const PrivacyPolicy = () => {
               Nagar, Bengaluru, Karnataka, India
             </p>
             <p>Email: ceo@boostmysites.com</p>
-            <p>Phone: +2 456 (343) 24 45</p>
+            <p>Phone: +919790035747</p>
           </div>
           <h5 className="text-xl font-medium mt-2">Additional Considerations:</h5>
           <ul className="list-disc list-inside ml-4 flex flex-col gap-1">

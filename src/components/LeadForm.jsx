@@ -81,7 +81,7 @@ const LeadForm = () => {
         </h3>
         <div className="mt-[1rem] sm:mt-[2rem] flex flex-col gap-3">
           <Link className="flex items-center gap-1 text-primary1 w-fit">
-            <BiPhone className="text-2xl" /> <span>+2 456 (343) 24 45</span>
+            <BiPhone className="text-2xl" /> <span>+919790035747</span>
           </Link>
           <div className="mt-2 flex items-center gap-5">
             <Link
