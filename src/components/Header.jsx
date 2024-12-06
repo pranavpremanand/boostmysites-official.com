@@ -34,11 +34,11 @@ import { Link as RLink, useLocation } from "react-router-dom";
 //   },
 // ];
 const options = [
-  {
-    id: 1,
-    title: "AI & IT Development",
-    path: "https://dev.boostmysites.com",
-  },
+  // {
+  //   id: 1,
+  //   title: "AI & IT Development",
+  //   path: "https://dev.boostmysites.com",
+  // },
   {
     id: 2,
     title: "Start Your AI Company",
