@@ -14,7 +14,7 @@ const Footer = () => {
           <ul className="flex flex-col gap-1 text-sm text-white/80 font-light">
             <li>
               <Link
-                href="tel:+24563432445"
+                href="tel:+919790035747"
                 className="flex items-center gap-1 link"
               >
                 <BiPhone className="text-xl" />{" "}
