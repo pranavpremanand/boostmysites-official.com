@@ -36,11 +36,11 @@ const Footer = () => {
           <h5 className="font-light tracking-wide uppercase">useful links</h5>
           <ul className="flex flex-col gap-1 text-sm text-white/80 font-light">
             {[
-              {
-                id: 1,
-                title: "AI & IT Development",
-                path: "https://dev.boostmysites.com",
-              },
+              // {
+              //   id: 1,
+              //   title: "AI & IT Development",
+              //   path: "https://dev.boostmysites.com",
+              // },
               {
                 id: 2,
                 title: "Start Your AI Company",
@@ -51,6 +51,11 @@ const Footer = () => {
                 id: 3,
                 title: "Start Your Ecommerce Company",
                 path: "https://boostmysites.store",
+              },
+              {
+                id: 1,
+                title: "Services and Pricing",
+                path: "https://boostmysites-services.vercel.app/",
               },
               {
                 id: 4,

@@ -69,7 +69,7 @@ const Footer = () => {
                 </Link>
               </li>
             )}
-            <li>
+            {/* <li>
               <Link
                 className="link"
                 rel="noopener noreferrer"
@@ -78,7 +78,7 @@ const Footer = () => {
               >
                 Log In
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
                 className="link"

@@ -18,14 +18,14 @@ const OurOffices = lazy(() => import("../components/OurOffices"));
 
 const LandingPage1 = ({ path, emailIdToSendMail }) => {
   const [introVidIsPlaying, setIntroVidIsPlaying] = useState(false);
-  const [showPopup, setShowPopup] = useState(false);
+  // const [showPopup, setShowPopup] = useState(false);
 
-  useEffect(() => {
-    const popupShown = localStorage.getItem("popupFormShown");
-    if (!popupShown) {
-      setShowPopup(true);
-    }
-  }, []);
+  // useEffect(() => {
+  //   const popupShown = localStorage.getItem("popupFormShown");
+  //   if (!popupShown) {
+  //     setShowPopup(true);
+  //   }
+  // }, []);
 
   let sourceName;
   if (path === "/ai-expert1") {
@@ -37,13 +37,13 @@ const LandingPage1 = ({ path, emailIdToSendMail }) => {
   }
   return (
     <div className="landing-page relative" id="home">
-      {showPopup && (
+      {/* {showPopup && (
         <PopupForm
           setShowPopup={setShowPopup}
           emailIdToSendMail={emailIdToSendMail}
           sourceName={sourceName}
         />
-      )}
+      )} */}
       <div className="min-h-screen flex items-center relative">
         <div className="landing-page-bg h-full w-full absolute left-0 top-0">
           <div className="absolute inset-0 h-full w-full bg-black/60 z-[1]"></div>
@@ -137,10 +137,10 @@ const LandingPage1 = ({ path, emailIdToSendMail }) => {
           </div>
         </section>
 
-        <FormSection
+        {/* <FormSection
           emailIdToSendMail={emailIdToSendMail}
           sourceName={sourceName}
-        />
+        /> */}
 
         <section
           id="courses"
@@ -213,14 +213,14 @@ const LandingPage1 = ({ path, emailIdToSendMail }) => {
           </Link>
           <JoinEntrepreneurs />
         </div>
-        <div className="wrapper">
+        {/* <div className="wrapper">
           <FormSection
             sourceName={sourceName}
             emailIdToSendMail={emailIdToSendMail}
           />
-        </div>
+        </div> */}
       </section>
-      <div className="wrapper">
+      <div className="wrapper pt-[5rem]">
         <section data-aos="fade-up" className="">
           <FAQ />
         </section>

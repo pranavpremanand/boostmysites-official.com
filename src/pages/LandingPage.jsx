@@ -16,66 +16,24 @@ const Reviews = lazy(() => import("../components/Reviews"));
 const Videos = lazy(() => import("../components/Videos"));
 const OurOffices = lazy(() => import("../components/OurOffices"));
 
-// const accessesOthers = [
-//   { title: "AI-Driven Design", img: accessOthers1 },
-//   { title: "Personalized Content", img: accessOthers2 },
-//   { title: "Optimized for Conversions", img: accessOthers3 },
-//   { title: "Predictive Analytics", img: accessOthers4 },
-//   { title: "Automated Marketing", img: accessOthers5 },
-//   { title: "Continuous Optimization", img: accessOthers6 },
-// ];
-
-// const workFlow = [
-//   {
-//     id: 1,
-//     title: "Step 1: Ideation & Planning",
-//     img: flowImg1,
-//     howWeDo: [
-//       "Identify a Market Problem: Find a problem that can be solved effectively using AI and determine your target audience.",
-//       "Develop Your AI Concept: Define how your AI solution will provide value, and validate your idea by researching competitors and customer needs.",
-//       "Create a Business Plan: Develop a clear business model, outline your target audience, and establish goals for growth.",
-//     ],
-//   },
-//   {
-//     id: 2,
-//     title: "Step 2: Build & Launch Your AI Product",
-//     img: flowImg2,
-//     howWeDo: [
-//       "Assemble Your Team: Hire data scientists, developers, and business strategists.",
-//       "Develop an MVP (Minimum Viable Product): Build a working prototype of your AI solution, gather feedback, and iterate to improve it.",
-//       "Launch the Product: Test your AI product with a small audience, adjust based on feedback, and launch to the broader market with a strong marketing campaign.",
-//     ],
-//   },
-//   {
-//     id: 3,
-//     title: "Step 3: Growth & Scaling",
-//     img: flowImg3,
-//     howWeDo: [
-//       "Customer Acquisition: Develop and execute marketing strategies to attract customers.",
-//       "Optimize & Improve: Continuously enhance your AI model by retraining with new data and adding features to increase its effectiveness.",
-//       "Scale Operations: Expand to new markets, grow your team, and build partnerships to further develop and distribute your AI solution.",
-//     ],
-//   },
-// ];
-
 const LandingPage = ({ path, emailIdToSendMail }) => {
   const [introVidIsPlaying, setIntroVidIsPlaying] = useState(false);
-  const [showPopup, setShowPopup] = useState(false);
+  // const [showPopup, setShowPopup] = useState(false);
 
-  useEffect(() => {
-    const popupShown = localStorage.getItem("popupFormShown");
-    if (!popupShown) {
-      setShowPopup(true);
-    }
-  }, []);
+  // useEffect(() => {
+  //   const popupShown = localStorage.getItem("popupFormShown");
+  //   if (!popupShown) {
+  //     setShowPopup(true);
+  //   }
+  // }, []);
   return (
     <div className="landing-page relative" id="home">
-      {showPopup && (
+      {/* {showPopup && (
         <PopupForm
           setShowPopup={setShowPopup}
           emailIdToSendMail={emailIdToSendMail}
         />
-      )}
+      )} */}
       <div className="min-h-screen flex items-center relative">
         <div className="landing-page-bg h-full w-full absolute left-0 top-0">
           <div className="absolute inset-0 h-full w-full bg-black/60 z-[1]"></div>
@@ -188,7 +146,7 @@ const LandingPage = ({ path, emailIdToSendMail }) => {
           </div>
         </section>
 
-        <FormSection emailIdToSendMail={emailIdToSendMail} />
+        {/* <FormSection emailIdToSendMail={emailIdToSendMail} /> */}
 
         <section
           id="courses"
@@ -334,12 +292,12 @@ const LandingPage = ({ path, emailIdToSendMail }) => {
           </Link>
           <JoinEntrepreneurs />
         </div>
-        <div className="wrapper">
+        {/* <div className="wrapper">
           <FormSection emailIdToSendMail={emailIdToSendMail} />
-        </div>
+        </div> */}
       </section>
 
-      <div className="wrapper mt-10">
+      <div className="wrapper mt-[5rem]">
         <section data-aos="fade-up" className="">
           <FAQ />
         </section>

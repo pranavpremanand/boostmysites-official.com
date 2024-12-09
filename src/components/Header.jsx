@@ -51,6 +51,11 @@ const options = [
     path: "https://boostmysites.store",
   },
   {
+    id: 1,
+    title: "Services and Pricing",
+    path: "https://boostmysites-services.vercel.app/",
+  },
+  {
     id: 4,
     title: "Contact Us",
     // path: "/contact",
