@@ -31,6 +31,8 @@ import ConnectWithUsThankYou from "./pages/ConnectWithUsThankYou";
 import NormalizeSlash from "./components/NormalizeSlash";
 import LandingPage1 from "./pages/LandingPage1";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import ContactFormStep2Ecommerce from "./pages/ContactUs-EcommerceLink/ContactFormStep2";
+import ContactFormStep1Ecommerce from "./pages/ContactUs-EcommerceLink/ContactFormStep1";
 
 const LandingPage = lazy(() => import("./pages/LandingPage"));
 const Home = lazy(() => import("./pages/websites/Home/Home"));
@@ -109,7 +111,6 @@ function App() {
                 />
               ))}
 
-
               {/* Contact routes for ai-expert1 */}
               {["/ai-expert1", "/ai-expert12", "/ai-expert13"].map((path) => (
                 <Route
@@ -175,6 +176,33 @@ function App() {
                   }
                 />
               ))}
+
+              {/* Contact route for boostmysites ecommerce contact form */}
+              <Route
+                path='/ai-expert7/contact/*'
+                element={
+                  <>
+                    <LandingPageHeader path="/ai-expert7" />
+                    <Routes>
+                      <Route index element={<Navigate to="step1" replace />} />
+                      <Route
+                        path="step1"
+                        element={<ContactFormStep1Ecommerce pathToRedirect="/ai-expert7" />}
+                      />
+                      <Route
+                        path="step2"
+                        element={
+                          <ContactFormStep2Ecommerce
+                            emailIdToSendMail="ceo@boostmysites.com"
+                            pathToRedirect="/ai-expert7"
+                          />
+                        }
+                      />
+                    </Routes>
+                    <LandingPageFooter />
+                  </>
+                }
+              />
 
               <Route
                 path="/thank-you"
