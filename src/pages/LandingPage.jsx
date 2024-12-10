@@ -44,6 +44,15 @@ const LandingPage = ({ path, emailIdToSendMail }) => {
             playsinline
             loop
             pip={false}
+            config={{
+              file: {
+                attributes: {
+                  style: {
+                    objectFit: "cover",
+                  },
+                },
+              },
+            }}
           />
         </div>
         <div className="wrapper h-fit">

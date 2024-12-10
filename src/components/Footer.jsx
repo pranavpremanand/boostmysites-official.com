@@ -55,7 +55,7 @@ const Footer = () => {
               {
                 id: 1,
                 title: "Services and Pricing",
-                path: "https://boostmysites-services.vercel.app/",
+                path: "/services",
               },
               {
                 id: 4,
