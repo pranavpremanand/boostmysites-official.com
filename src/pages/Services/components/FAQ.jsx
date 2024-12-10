@@ -90,7 +90,7 @@ const FAQ = () => {
       <div className="wrapper ">
         <h1
           data-aos="fade-up"
-          className="text-4xl font-bold text-center mb-12 text-orange-500"
+          className="text-4xl font-bold text-center mb-12 text-primary"
         >
           FAQ
         </h1>
