@@ -36,7 +36,7 @@ import ContactFormStep1Ecommerce from "./pages/ContactUs-EcommerceLink/ContactFo
 import Services from "./pages/Services/Services";
 
 const LandingPage = lazy(() => import("./pages/LandingPage"));
-const Home = lazy(() => import("./pages/websites/Home/Home"));
+const Home = lazy(() => import("./pages/Home/Home"));
 
 AOS.init({
   once: true,
