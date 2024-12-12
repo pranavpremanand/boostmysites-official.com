@@ -35,6 +35,11 @@
   }
 }
 
+.hyphen-auto {
+  /* text-align: justify; */
+  hyphens: auto;
+}
+
 .video-cover video {
   object-fit: cover;
   width: 100%;
@@ -85,11 +90,11 @@
   }
 }
 
-.intro-vid video{
+.intro-vid video {
   border-radius: 1rem;
 }
 
-.videos video{
+.videos video {
   object-fit: cover;
   border-radius: 1rem;
 }
@@ -343,7 +348,6 @@ body {
   font-size: 1.25rem /* 20px */;
   line-height: 1.75rem /* 28px */;
 }
-
 
 .accordion-item {
   overflow: hidden;

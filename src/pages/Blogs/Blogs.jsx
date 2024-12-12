@@ -61,12 +61,12 @@ export const BlogItem = (item) => {
       <div className="flex flex-col gap-2 mt-[1rem]">
         <Link
           to={`/blogs/${item.id}`}
-          className="text-xl font-medium leading-tight line-clamp-2 text-ellipsis hover:text-primary1 transition-all duration-200"
+          className="text-xl hyphen-auto font-medium leading-tight line-clamp-2 text-ellipsis hover:text-primary1 transition-all duration-200"
         >
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, autem
           harum placeat nobis dicta modi corporis veritatis?
         </Link>
-        <p className="leading-tight text-ellipsis text-gray-200">
+        <p className="leading-tight text-gray-200 line-clamp-3 text-ellipsis hyphen-auto">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
           temporibus eligendi a rem placeat natus quis accusantium! Vero, dolor.
           Sunt saepe repellat sint assumenda laborum repudiandae autem libero

@@ -45,7 +45,7 @@ const BlogDetails = () => {
             </h4>
             <p
               data-aos="fade-up"
-              className="leading-relaxed text-ellipsis text-gray-200 border-t border-primary/30 pt-[2rem]"
+              className="hyphen-auto leading-relaxed text-ellipsis text-gray-200 border-t border-primary/30 pt-[2rem] text-justify"
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
               temporibus eligendi a rem placeat natus quis accusantium! Vero,
@@ -55,7 +55,8 @@ const BlogDetails = () => {
               quis accusantium! Vero, dolor. Sunt saepe repellat sint assumenda
               laborum repudiandae autem libero labore sit! Lorem ipsum dolor sit
               amet consectetur adipisicing elit. Expedita temporibus eligendi a
-              rem placeat natus quis accusantium! Vero, dolor. <br />
+              rem placeat natus quis accusantium! Vero, dolor.
+              <br />
               <br />
               Sunt saepe repellat sint assumenda laborum repudiandae autem
               libero labore sit! Lorem ipsum dolor sit amet consectetur
