@@ -5,29 +5,28 @@ import { Link } from "react-router-dom";
 const Banner = () => {
   return (
     <div className="relative w-screen min-h-[90vh] overflow-hidden flex items-center justify-center text-white">
-      <div className="absolute inset-0 w-full h-full bg-black/60 z-10"></div>
-      <div className="video-cover absolute w-screen h-full inset-0 overflow-hidden z-0">
-        <ReactPlayer
-          url={bannerbgvid}
-          playing
-          muted
-          playsInline
-          loop
-          pip={false}
-          width="100%"
-          height="100%"
-          config={{
-            file: {
-              attributes: {
-                style: {
-                  objectFit: "cover",
+      <div className="landing-page-bg h-full w-full absolute left-0 top-0">
+          <div className="absolute inset-0 h-full w-full bg-black/60 z-[1]"></div>
+          <ReactPlayer
+            url={bannerbgvid}
+            playing
+            muted
+            playsinline
+            loop
+            pip={false}
+            width="100%"
+            height="100%"
+            config={{
+              file: {
+                attributes: {
+                  style: {
+                    objectFit: "cover",
+                  },
                 },
               },
-            },
-          }}
-          className="object-cover"
-        />
-      </div>
+            }}
+          />
+        </div>
 
       <div className="relative z-10 wrapper px-4 sm:px-6 lg:px-8 py-32">
         <div className="text-start">

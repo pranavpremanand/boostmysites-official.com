@@ -44,6 +44,8 @@ const LandingPage = ({ path, emailIdToSendMail }) => {
             playsinline
             loop
             pip={false}
+            width="100%"
+            height="100%"
             config={{
               file: {
                 attributes: {

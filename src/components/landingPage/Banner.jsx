@@ -1,15 +1,13 @@
 import { useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import ReactPlayer from "react-player";
 import introVid from "../../assets/videos/intro.mp4";
 import vidThumb from "../../assets/videos/intro.png";
-import JoinEntrepreneurs from "../JoinEntrepreneurs";
 import { BiPlay } from "react-icons/bi";
 
 const Banner = ({ introVidIsPlaying, setIntroVidIsPlaying, path }) => {
   const navigate = useNavigate();
   const [isVideoLoading, setIsVideoLoading] = useState(true);
-  const { pathname } = useLocation();
 
   const handlePlayVideo = () => {
     setIntroVidIsPlaying(!introVidIsPlaying);

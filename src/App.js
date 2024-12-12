@@ -33,10 +33,10 @@ import LandingPage1 from "./pages/LandingPage1";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import ContactFormStep2Ecommerce from "./pages/ContactUs-EcommerceLink/ContactFormStep2";
 import ContactFormStep1Ecommerce from "./pages/ContactUs-EcommerceLink/ContactFormStep1";
-import Services from "./pages/Services/Services";
 
 const LandingPage = lazy(() => import("./pages/LandingPage"));
 const Home = lazy(() => import("./pages/Home/Home"));
+const Services = lazy(() => import("./pages/Services/Services"));
 
 AOS.init({
   once: true,
