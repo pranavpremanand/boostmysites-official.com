@@ -38,6 +38,20 @@
 .hyphen-auto {
   /* text-align: justify; */
   hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  word-break: break-word;
+  -webkit-word-break: break-word;
+  -moz-word-break: break-word;
+  -ms-word-break: break-word;
+  -o-word-break: break-word;
+  word-wrap: break-word;
+  -webkit-word-wrap: break-word;
+  -moz-word-wrap: break-word;
+  -ms-word-wrap: break-word;
+  -o-word-wrap: break-word;
 }
 
 .video-cover video {

@@ -1,4 +1,4 @@
-import { roadmap } from "../../constant";
+import { roadmap } from "../../data/constant";
 
 const RoadmapWithAccordion = () => {
   return (

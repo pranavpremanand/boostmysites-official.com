@@ -6,7 +6,7 @@ import Roadmap from "../components/landingPage/Roadmap";
 import bannerBgVid from "../assets/videos/banner-landing.mp4";
 import ReactPlayer from "react-player";
 import FormSection from "../components/landingPage/FormSection";
-import { aiExpertAccesses, subscriptionBenefits } from "../constant";
+import { aiExpertAccesses, subscriptionBenefits } from "../data/constant";
 import PopupForm from "../components/landingPage/PopupForm";
 const Banner = lazy(() => import("../components/landingPage/Banner"));
 const FeaturedIn = lazy(() => import("../components/FeaturedIn"));

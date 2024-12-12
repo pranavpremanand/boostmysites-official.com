@@ -3,7 +3,7 @@ import {
   oneYearPlanDetails,
   sixMonthPlanDetails,
   twoYearPlanDetails,
-} from "../../../constant";
+} from "../../../data/constant";
 import { Link } from "react-router-dom";
 import Accordion from "./Accordion";
 

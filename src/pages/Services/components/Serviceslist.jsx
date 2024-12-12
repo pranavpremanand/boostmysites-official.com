@@ -1,6 +1,6 @@
 import React from "react";
 import ServiceCard from "./ServiceCard";
-import { services } from "../../../constant";
+import { services } from "../../../data/constant";
 
 const Serviceslist = () => {
   return (

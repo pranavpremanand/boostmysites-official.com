@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { blogs } from "../../data/blogs";
 
 export const imgs = [
   "https://rejolut.com/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-20-16.55.07-Create-a-wide-banner-image-for-the-topic-_Top-18-Artificial-Intelligence-AI-Applications-in-2024._-This-image-should-visually-represent-a-diverse-ra-1024x585.webp",
@@ -26,8 +27,8 @@ const Blogs = () => {
           Explore the Future with AI: Insights, Innovations, and Trends.
         </h4>
         <div className="mt-[2rem] grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-7">
-          {imgs.map((img, i) => (
-            <BlogItem key={img} img={img} id={i} />
+          {blogs.map((blog) => (
+            <BlogItem key={blog.id} blog={blog} />
           ))}
         </div>
       </div>
@@ -38,15 +39,15 @@ const Blogs = () => {
 export default Blogs;
 
 // blog item
-export const BlogItem = (item) => {
+export const BlogItem = ({ blog }) => {
   return (
     <div
       data-aos="fade-up"
       className="bg-black rounded-xl p-5 text-white relative z-10 group"
     >
-      <Link to={`/blogs/${item.id}`}>
+      <Link to={`/blogs/${blog.id}`}>
         <img
-          src={item.img}
+          src={blog.image}
           alt=""
           width="600"
           height="400"
@@ -54,28 +55,33 @@ export const BlogItem = (item) => {
         />
       </Link>
       <div className="flex justify-start font-light mt-[0.8rem]">
-        <div className="rounded-2xl bg-primary1 font-medium px-3 py-1 text-sm w-fit">
+        {/* <div className="rounded-2xl bg-primary1 font-medium px-3 py-1 text-sm w-fit">
           Business
-        </div>
+        </div> */}
       </div>
       <div className="flex flex-col gap-2 mt-[1rem]">
         <Link
-          to={`/blogs/${item.id}`}
+          to={`/blogs/${blog.id}`}
           className="text-xl hyphen-auto font-medium leading-tight line-clamp-2 text-ellipsis hover:text-primary1 transition-all duration-200"
         >
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, autem
-          harum placeat nobis dicta modi corporis veritatis?
+          {blog.title}
         </Link>
-        <p className="leading-tight text-gray-200 line-clamp-3 text-ellipsis hyphen-auto">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-          temporibus eligendi a rem placeat natus quis accusantium! Vero, dolor.
-          Sunt saepe repellat sint assumenda laborum repudiandae autem libero
-          labore sit!
-        </p>
+        <div
+          dangerouslySetInnerHTML={{ __html: blog.content }}
+          className="leading-tight text-gray-200 line-clamp-3 text-ellipsis hyphen-auto"
+        ></div>
       </div>
 
-      <div className="flex justify-end font-light mt-[1.5rem]">
+      {/* <div className="flex justify-end font-light mt-[1.5rem]">
         <p className="text-gray-400 text-[.8rem]">12th May 2023</p>
+      </div> */}
+      <div className="mt-5 w-full flex justify-center">
+        <Link
+          to={`/blogs/${blog.id}`}
+          className="text-sm text-center font-medium cursor-pointer bg-gradient-to-r from-primary to-[#D5AA12] hover:-translate-y-1 shadow-large shadow-transparent hover:shadow-primary/[35%] text-black border border-primary py-3 px-4 rounded-md transition-all duration-300 w-full"
+        >
+          Read More
+        </Link>
       </div>
     </div>
   );

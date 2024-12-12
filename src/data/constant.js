@@ -1,14 +1,14 @@
-import { ReactComponent as Icon1 } from "./assets/svgs/Direct Mentorship.svg";
-import { ReactComponent as Icon2 } from "./assets/svgs/Comprehensive Resource Access.svg";
-import { ReactComponent as Icon3 } from "./assets/svgs/Branding.svg";
-import { ReactComponent as Icon4 } from "./assets/svgs/Robust Infrastructure Support.svg";
+import { ReactComponent as Icon1 } from "../assets/svgs/Direct Mentorship.svg";
+import { ReactComponent as Icon2 } from "../assets/svgs/Comprehensive Resource Access.svg";
+import { ReactComponent as Icon3 } from "../assets/svgs/Branding.svg";
+import { ReactComponent as Icon4 } from "../assets/svgs/Robust Infrastructure Support.svg";
 
-import access1 from "./assets/images/1.webp";
-import access2 from "./assets/images/2.webp";
-import access3 from "./assets/images/3.webp";
-import access4 from "./assets/images/4.webp";
-import access5 from "./assets/images/5.webp";
-import access6 from "./assets/images/6.webp";
+import access1 from "../assets/images/1.webp";
+import access2 from "../assets/images/2.webp";
+import access3 from "../assets/images/3.webp";
+import access4 from "../assets/images/4.webp";
+import access5 from "../assets/images/5.webp";
+import access6 from "../assets/images/6.webp";
 
 export const roadmap = [
   {
@@ -119,84 +119,84 @@ export const services = [
     id: 0,
     title: "UX/UI",
     desc: "Put your customers first with our intuitive and user-friendly interfaces. Our UX design services enhance customer satisfaction and create delightful interactions.",
-    img: require("./assets/images/serviceimg/uiux.jpg"),
+    img: require("../assets/images/serviceimg/uiux.jpg"),
     link: "",
   },
   {
     id: 1,
     title: "Mobile App Development",
     desc: "Designing and developing applications for mobile devices, enabling businesses to reach and engage with their customers on the go.",
-    img: require("./assets/images/serviceimg/mob.jpg"),
+    img: require("../assets/images/serviceimg/mob.jpg"),
     link: "",
   },
   {
     id: 2,
     title: "Web Development (Full stack)",
     desc: "Building websites and web applications using programming languages, facilitating online presence and seamless user experiences.",
-    img: require("./assets/images/serviceimg/web.jpg"),
+    img: require("../assets/images/serviceimg/web.jpg"),
     link: "",
   },
   {
     id: 3,
     title: "Cloud Computing Services",
     desc: "Providing scalable and flexible cloud-based infrastructure and services, allowing businesses to store, process, and analyze data efficiently.",
-    img: require("./assets/images/serviceimg/cloud.jpg"),
+    img: require("../assets/images/serviceimg/cloud.jpg"),
     link: "",
   },
   {
     id: 4,
     title: "Artificial Intelligence Development",
     desc: "Developing AI systems that possess human-like intelligence, enabling automation, personalization, and advanced decision-making.",
-    img: require("./assets/images/serviceimg/ai.jpg"),
+    img: require("../assets/images/serviceimg/ai.jpg"),
     link: "",
   },
   {
     id: 5,
     title: "Data Analytics and Business Intelligence",
     desc: "Collecting and analyzing data to gain actionable insights, helping businesses to make data-driven decisions and optimize processes.",
-    img: require("./assets/images/serviceimg/data.jpg"),
+    img: require("../assets/images/serviceimg/data.jpg"),
     link: "",
   },
   {
     id: 6,
     title: "Internet of Things (IoT) Development",
     desc: "Building applications and systems that connect physical devices, allowing data exchange and enabling smart and interconnected environments.",
-    img: require("./assets/images/serviceimg/iot.jpg"),
+    img: require("../assets/images/serviceimg/iot.jpg"),
     link: "",
   },
   {
     id: 7,
     title: "Virtual Reality (VR) and Augmented Reality (AR) Development",
     desc: "Creating immersive experiences that merge virtual and real-world elements, revolutionizing industries like gaming, education, and training.",
-    img: require("./assets/images/serviceimg/vr.jpg"),
+    img: require("../assets/images/serviceimg/vr.jpg"),
     link: "",
   },
   {
     id: 8,
     title: "Blockchain Development",
     desc: "Implementing decentralized and secure distributed ledger technology, enabling transparent transactions, digital identity management, and trustless systems.",
-    img: require("./assets/images/serviceimg/block.jpg"),
+    img: require("../assets/images/serviceimg/block.jpg"),
     link: "",
   },
   {
     id: 9,
     title: "Game Development",
     desc: "Designing and developing interactive and engaging games for various platforms, providing entertainment and immersive experiences to players.",
-    img: require("./assets/images/serviceimg/game.jpg"),
+    img: require("../assets/images/serviceimg/game.jpg"),
     link: "",
   },
   {
     id: 10,
     title: "Chatbot Development",
     desc: "Building AI-powered conversational agents to automate customer interactions, improve customer service, and provide personalized assistance.",
-    img: require("./assets/images/serviceimg/chat.jpg"),
+    img: require("../assets/images/serviceimg/chat.jpg"),
     link: "",
   },
   {
     id: 11,
     title: "AI Calling Agency",
     desc: "Revolutionizing communication through AI-powered call solutions for businesses worldwide",
-    img: require("./assets/images/serviceimg/aicall.jpg"),
+    img: require("../assets/images/serviceimg/aicall.jpg"),
     link: "https://boostmysites.vercel.app/",
   },
 ];
