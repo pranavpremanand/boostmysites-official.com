@@ -118,8 +118,8 @@ const Home = () => {
         />
       </div>
       <section className="relative pt-[2rem] lg:pt-[7rem]">
-        <div className="blurred-red-circle left-[-10rem] top-[-5rem] hidden md:block"></div>
-        <div className="blurred-red-circle right-[-10rem] top-[35%] block"></div>
+        <div className="blurred-red-circle animate-pulse left-[-10rem] top-[-5rem] hidden md:block"></div>
+        <div className="blurred-red-circle animate-pulse right-[-10rem] top-[35%] block"></div>
         <div className="flex flex-col">
           <div className="my-[5rem] wrapper grid grid-cols lg:grid-cols-3 gap-5 lg:gap-10 mx-auto">
             <div
@@ -463,7 +463,7 @@ const Home = () => {
               </div>
             </div>
             <div className="h-full relative z-10">
-              <div className="sm-blurred-red-circle absolute top-[-1rem] left-[3rem] -z-10 opacity-50"></div>
+              <div className="sm-blurred-red-circle animate-pulse absolute top-[-1rem] left-[3rem] -z-10 opacity-50"></div>
               <div className="px-5 md:px-[3rem] flex flex-col justify-between h-full gap-5 items-start">
                 <div className="flex flex-col gap-8">
                   <img src={quotesIcon} className="w-[7rem]" alt="" />

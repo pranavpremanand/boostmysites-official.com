@@ -3,70 +3,35 @@ import { useEffect, useState } from "react";
 import Drawer from "react-modern-drawer";
 import { Divide as Hamburger } from "hamburger-react";
 import { IoMdClose } from "react-icons/io";
-import { Link } from "react-scroll";
 import { Link as RLink, useLocation } from "react-router-dom";
 
-// const options = [
-//   {
-//     id: 1,
-//     title: "Demos",
-//     path: "#",
-//   },
-//   {
-//     id: 2,
-//     title: "Pages",
-//     path: "#",
-//   },
-//   {
-//     id: 3,
-//     title: "Portfolio",
-//     path: "#",
-//   },
-//   {
-//     id: 4,
-//     title: "Blogs",
-//     path: "#",
-//   },
-//   {
-//     id: 5,
-//     title: "Contact Us",
-//     path: "#",
-//   },
-// ];
 const options = [
-  // {
-  //   id: 1,
-  //   title: "AI & IT Development",
-  //   path: "https://dev.boostmysites.com",
-  // },
   {
-    id: 2,
+    id: 1,
     title: "Start Your AI Company",
     // path: "/",
     path: "/ai-expert",
   },
   {
-    id: 3,
+    id: 2,
     title: "Start Your Ecommerce Company",
     path: "https://boostmysites.store",
   },
   {
-    id: 1,
+    id: 3,
     title: "Services and Pricing",
     path: "/services",
   },
   {
     id: 4,
+    title: "Blogs",
+    path: "/blogs",
+  },
+  {
+    id: 5,
     title: "Contact Us",
-    // path: "/contact",
     path: "/ai-expert/contact",
   },
-  // {
-  //   id: 5,
-  //   title: "Connect With Us",
-  //   // path: "/contact",
-  //   path: "/connect-with-us",
-  // },
 ];
 
 const Header = () => {
