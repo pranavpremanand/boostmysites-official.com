@@ -31,13 +31,12 @@ import ConnectWithUsThankYou from "./pages/ConnectWithUsThankYou";
 import NormalizeSlash from "./components/NormalizeSlash";
 import LandingPage1 from "./pages/LandingPage1";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
-import ContactFormStep2Ecommerce from "./pages/ContactUs-EcommerceLink/ContactFormStep2";
-import ContactFormStep1Ecommerce from "./pages/ContactUs-EcommerceLink/ContactFormStep1";
 
 const LandingPage = lazy(() => import("./pages/LandingPage"));
 const Home = lazy(() => import("./pages/Home/Home"));
 const Services = lazy(() => import("./pages/Services/Services"));
 const Blogs = lazy(() => import("./pages/Blogs/Blogs"));
+const BlogDetails = lazy(() => import("./pages/BlogDetails/BlogDetails"));
 
 AOS.init({
   once: true,
@@ -180,8 +179,8 @@ function App() {
               ))}
 
               {/* Contact route for boostmysites ecommerce contact form */}
-              <Route
-                path="/ai-expert7/contact/*"
+              {/* <Route
+                path='/ai-expert7/contact/*'
                 element={
                   <>
                     <LandingPageHeader path="/ai-expert7" />
@@ -189,9 +188,7 @@ function App() {
                       <Route index element={<Navigate to="step1" replace />} />
                       <Route
                         path="step1"
-                        element={
-                          <ContactFormStep1Ecommerce pathToRedirect="/ai-expert7" />
-                        }
+                        element={<ContactFormStep1Ecommerce pathToRedirect="/ai-expert7" />}
                       />
                       <Route
                         path="step2"
@@ -206,7 +203,7 @@ function App() {
                     <LandingPageFooter />
                   </>
                 }
-              />
+              /> */}
 
               <Route
                 path="/thank-you"
@@ -256,6 +253,16 @@ function App() {
                 }
               />
               <Route
+                path="/blogs/:id"
+                element={
+                  <>
+                    <Header />
+                    <BlogDetails />
+                    <Footer />
+                  </>
+                }
+              />
+              <Route
                 path="/connect-with-us/*"
                 element={
                   <>
@@ -297,7 +304,7 @@ const LoadingSpinnerContext = () => {
 const ScrollToTopOnPageChange = () => {
   const { pathname } = useLocation();
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: "instant" });
   }, [pathname]);
   return null;
 };
