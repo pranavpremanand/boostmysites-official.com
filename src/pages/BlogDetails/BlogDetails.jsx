@@ -55,19 +55,20 @@ const BlogDetails = () => {
               quis accusantium! Vero, dolor. Sunt saepe repellat sint assumenda
               laborum repudiandae autem libero labore sit! Lorem ipsum dolor sit
               amet consectetur adipisicing elit. Expedita temporibus eligendi a
-              rem placeat natus quis accusantium! Vero, dolor. Sunt saepe <br />
+              rem placeat natus quis accusantium! Vero, dolor. <br />
+              <br />
+              Sunt saepe repellat sint assumenda laborum repudiandae autem
+              libero labore sit! Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Expedita temporibus eligendi a rem placeat natus
+              quis accusantium! Vero, dolor. Sunt saepe repellat sint assumenda
+              laborum repudiandae autem libero labore sit! Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Expedita temporibus eligendi a
+              rem placeat natus quis accusantium! Vero, dolor. Sunt saepe
               repellat sint assumenda laborum repudiandae autem libero labore
               sit! Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Expedita temporibus eligendi a rem placeat natus quis accusantium!
               Vero, dolor. Sunt saepe repellat sint assumenda laborum
-              repudiandae autem libero labore sit! Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Expedita temporibus eligendi a rem
-              placeat natus quis accusantium! Vero, dolor. Sunt saepe repellat
-              sint assumenda laborum repudiandae autem libero labore sit! Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Expedita
-              temporibus eligendi a rem placeat natus quis accusantium! Vero,
-              dolor. Sunt saepe repellat sint assumenda laborum repudiandae
-              autem libero labore sit!
+              repudiandae autem libero labore sit!
             </p>
           </div>
         </div>
@@ -76,9 +77,12 @@ const BlogDetails = () => {
             Latest Blogs
           </h3>
           <div className="mt-[1.5rem] grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-7">
-            {imgs.filter((img) => img !== data).slice(0, 3).map((img, i) => (
-              <BlogItem key={img} img={img} id={i} />
-            ))}
+            {imgs
+              .filter((img) => img !== data)
+              .slice(0, 3)
+              .map((img, i) => (
+                <BlogItem key={img} img={img} id={i} />
+              ))}
           </div>
         </div>
       </div>
