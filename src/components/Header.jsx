@@ -112,7 +112,7 @@ const Header = () => {
                 className="h-[4rem] md:h-[5rem] object-contain -mb-3"
               />
             </RLink>
-            <div className="text-sm hidden uppercase xl:flex items-center gap-7">
+            <div className="text-sm hidden xl:flex items-center gap-7">
               {options.map((option) => (
                 <RLink
                   to={option.path}

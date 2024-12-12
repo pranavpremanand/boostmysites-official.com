@@ -59,7 +59,7 @@ const Home = () => {
               data-aos="fade-down"
               src={arrowIcon}
               alt="arrow"
-              className="hidden lg:block h-[6rem] object-contain mt-10 ml-5"
+              className="hidden lg:block h-[6rem] object-contain mt-10 ml-5 animate-bounce"
             />
           </div>
           <div data-aos="zoom-in" className="flex flex-col max-w-[22rem]">
@@ -103,7 +103,7 @@ const Home = () => {
               data-aos="fade-down"
               src={arrowIcon}
               alt="arrow"
-              className="h-[6rem] object-contain mt-10 ml-5"
+              className="h-[6rem] object-contain mt-10 ml-5 animate-bounce"
             />
           </div>
         </div>

@@ -37,6 +37,7 @@ import ContactFormStep1Ecommerce from "./pages/ContactUs-EcommerceLink/ContactFo
 const LandingPage = lazy(() => import("./pages/LandingPage"));
 const Home = lazy(() => import("./pages/Home/Home"));
 const Services = lazy(() => import("./pages/Services/Services"));
+const Blogs = lazy(() => import("./pages/Blogs/Blogs"));
 
 AOS.init({
   once: true,
@@ -180,7 +181,7 @@ function App() {
 
               {/* Contact route for boostmysites ecommerce contact form */}
               <Route
-                path='/ai-expert7/contact/*'
+                path="/ai-expert7/contact/*"
                 element={
                   <>
                     <LandingPageHeader path="/ai-expert7" />
@@ -188,7 +189,9 @@ function App() {
                       <Route index element={<Navigate to="step1" replace />} />
                       <Route
                         path="step1"
-                        element={<ContactFormStep1Ecommerce pathToRedirect="/ai-expert7" />}
+                        element={
+                          <ContactFormStep1Ecommerce pathToRedirect="/ai-expert7" />
+                        }
                       />
                       <Route
                         path="step2"
@@ -238,6 +241,16 @@ function App() {
                   <>
                     <Header />
                     <Services />
+                    <Footer />
+                  </>
+                }
+              />
+              <Route
+                path="/blogs"
+                element={
+                  <>
+                    <Header />
+                    <Blogs />
                     <Footer />
                   </>
                 }
