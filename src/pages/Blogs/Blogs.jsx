@@ -3,10 +3,19 @@ import React from "react";
 const Blogs = () => {
   return (
     <div className="bg-secondary relative text-white">
-      <div className="blurred-red-circle left-[-10rem] top-[18rem] md:top-[10rem] animate-pulse"></div>
-      <div className="blurred-red-circle right-[-10rem] bottom-[25%] animate-pulse"></div>
+      <div
+        data-aos="fade-right"
+        className="blurred-red-circle left-[-10rem] top-[18rem] md:top-[10rem] animate-pulse"
+      ></div>
+      <div
+        data-aos="fade-left"
+        className="blurred-red-circle right-[-10rem] bottom-[25%] animate-pulse"
+      ></div>
       <div className="pt-[8rem] md:pt-[10rem] pb-[5rem] wrapper">
-        <h4 className="text-3xl md:text-4xl max-w-5xl mx-auto font-semibold leading-tight text-primary1 text-center">
+        <h4
+          data-aos="fade-up"
+          className="text-3xl md:text-4xl max-w-5xl mx-auto font-semibold leading-tight text-primary1 text-center"
+        >
           Explore the Future with AI: Insights, Innovations, and Trends.
         </h4>
         <div className="mt-[2rem] grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-7">
@@ -27,7 +36,10 @@ export default Blogs;
 // blog item
 const BlogItem = (item) => {
   return (
-    <div className="bg-black rounded-xl p-5 text-white relative z-10">
+    <div
+      data-aos="fade-up"
+      className="bg-black rounded-xl p-5 text-white relative z-10"
+    >
       <img
         src={item.img}
         alt=""
