@@ -103,8 +103,7 @@ const ContactFormStep2 = ({ emailIdToSendMail, pathToRedirect }) => {
 
       // Construct the request payload
       var payload = {
-        // to: emailIdToSendMail,
-        to:'mpranavprem@gmail.com',
+        to: emailIdToSendMail,
         subject: "Lead Form Submission",
         body: emailBody,
       };
