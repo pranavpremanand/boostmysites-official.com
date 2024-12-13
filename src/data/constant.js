@@ -10,6 +10,7 @@ import access4 from "../assets/images/4.webp";
 import access5 from "../assets/images/5.webp";
 import access6 from "../assets/images/6.webp";
 
+
 export const roadmap = [
   {
     id: 1,
