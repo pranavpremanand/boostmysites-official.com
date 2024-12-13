@@ -31,6 +31,7 @@ import ConnectWithUsThankYou from "./pages/ConnectWithUsThankYou";
 import NormalizeSlash from "./components/NormalizeSlash";
 import LandingPage1 from "./pages/LandingPage1";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsAndConditions from "./pages/TermsAndConditions";
 
 const LandingPage = lazy(() => import("./pages/LandingPage"));
 const Home = lazy(() => import("./pages/Home/Home"));
@@ -228,6 +229,16 @@ function App() {
                   <>
                     <Header />
                     <PrivacyPolicy />
+                    <Footer />
+                  </>
+                }
+              />
+              <Route
+                path="/terms-and-conditions"
+                element={
+                  <>
+                    <Header />
+                    <TermsAndConditions />
                     <Footer />
                   </>
                 }

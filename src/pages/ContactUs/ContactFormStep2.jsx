@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 import { PiSpinnerGapLight } from "react-icons/pi";
 import "react-country-phone-input/lib/style.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { BiCaretLeft } from "react-icons/bi";
 import { SpinnerContext } from "../../components/SpinnerContext";
 
@@ -13,6 +13,7 @@ const ContactFormStep2 = ({ emailIdToSendMail, pathToRedirect }) => {
   const [primaryGoal, setPrimaryGoal] = useState("");
   const [primaryGoalText, setPrimaryGoalText] = useState("");
   const [primaryGoalErr, setPrimaryGoalErr] = useState("");
+  const [isAgreedConditions, setIsAgreedConditions] = useState(false);
 
   useEffect(() => {
     if (!sessionStorage.getItem("contactForm")) {
@@ -72,6 +73,11 @@ const ContactFormStep2 = ({ emailIdToSendMail, pathToRedirect }) => {
       toast.error("Please fill the contact form first");
       return;
     } else {
+      if(!isAgreedConditions) {
+        toast.error("Please agree to the terms and conditions");
+        return
+      }
+
       values.fullName = contactForm.fullName;
       values.email = contactForm.email;
       values.phone = contactForm.phone;
@@ -97,7 +103,8 @@ const ContactFormStep2 = ({ emailIdToSendMail, pathToRedirect }) => {
 
       // Construct the request payload
       var payload = {
-        to: emailIdToSendMail,
+        // to: emailIdToSendMail,
+        to:'mpranavprem@gmail.com',
         subject: "Lead Form Submission",
         body: emailBody,
       };
@@ -315,69 +322,6 @@ const ContactFormStep2 = ({ emailIdToSendMail, pathToRedirect }) => {
             )}
           </div>
 
-          {/* <div className="grid grid-cols-1 relative">
-            <label className="text-sm">
-              What are your primary goals for starting this business?
-            </label>
-            <div className="bg-white/70 p-3 rounded-md text-black mt-2">
-              <div className="flex items-center gap-2">
-                <input
-                  type="radio"
-                  value="Financial independence"
-                  {...register("primaryGoal", {
-                    // required: "Please select or specify your goal",
-                  })}
-                  onChange={() => handleRadioChange("Financial independence")}
-                  className="w-[1.2rem] h-[1.2rem] accent-primary cursor-pointer"
-                />
-                <label>Financial independence</label>
-              </div>
-              <div className="flex items-center gap-2 mt-3">
-                <input
-                  type="radio"
-                  value="Passion for the industry"
-                  {...register("primaryGoal", {
-                    // required: "Please select or specify your goal",
-                  })}
-                  onChange={() => handleRadioChange("Passion for the industry")}
-                  className="w-[1.2rem] h-[1.2rem] accent-primary cursor-pointer"
-                />
-                <label>Passion for the industry</label>
-              </div>
-              <div className="flex items-center gap-2 mt-3">
-                <input
-                  type="radio"
-                  value="Solving a problem"
-                  {...register("primaryGoal", {
-                    // required: "Please select or specify your goal",
-                  })}
-                  onChange={() => handleRadioChange("Solving a problem")}
-                  className="w-[1.2rem] h-[1.2rem] accent-primary cursor-pointer"
-                />
-                <label>Solving a problem</label>
-              </div>
-
-              <div className="flex flex-col ml-0 mt-5">
-                <label className="text-sm">
-                  None of the above? Please specify
-                </label>
-                <input
-                  type="text"
-                  name="primaryGoalText"
-                  onFocus={handleInputFocus}
-                  onChange={handleTextInputChange}
-                  className="mt-2 placeholder:text-sm text-sm placeholder:text-black/50 outline-none rounded-[0.2rem] py-2 px-2 text-black bg-white/40"
-                />
-              </div>
-
-              {errors.primaryGoal && (
-                <small className="text-red-700">
-                  {errors.primaryGoal.message}
-                </small>
-              )}
-            </div>
-          </div> */}
-
           {/* Timeline Field */}
           <div className="relative">
             <label htmlFor="" className="text-sm text-white">
@@ -461,6 +405,23 @@ const ContactFormStep2 = ({ emailIdToSendMail, pathToRedirect }) => {
                 {errors.investmentCapital.message}
               </small>
             )}
+          </div>
+
+          {/* check box */}
+          <div className="mt-4 flex items-start">
+            <input
+              type="checkbox"
+              name="checkbox"
+              className="w-[2.7rem] h-[1.7rem] accent-primary cursor-pointer mr-2"
+              checked={isAgreedConditions}
+              id=""
+              onChange={(e) => setIsAgreedConditions(e.target.checked)}
+            />
+            <label className="ml-2 text-sm">
+              By submitting the form, you consent to our team contacting you via
+              phone or email for assistance and updates and{" "}
+              <Link target="_blank" className="text-primary underline font-semibold" to="/terms-and-conditions">terms and conditions</Link>
+            </label>
           </div>
 
           {/* Submit Button */}
