@@ -35,7 +35,7 @@ const SalesTeamServices = () => {
         <div className="absolute h-full w-full bg-primary1/40 -z-10"></div>
         <div className="absolute h-full w-full bg-black/75 -z-10"></div>
         <div data-aos="zoom-in" className="wrapper py-16 text-center z-10">
-          <h1 className="mb-4 text-4xl md:text-6xl max-w-5xl mx-auto font-semibold leading-tight text-primary1 text-center">
+          <h1 className="mb-4 text-[2.5rem] md:text-6xl max-w-5xl mx-auto font-semibold leading-tight text-primary1 text-center">
             Streamline Your Sales with BoostMySites
           </h1>
           <p className="text-wrap max-w-5xl tracking-wide text-xl mx-auto mb-8">
@@ -53,18 +53,18 @@ const SalesTeamServices = () => {
       <div className="relative">
         <div
           data-aos="fade-right"
-          className="blurred-red-circle left-[-10rem] top-[18rem] md:top-[10rem] animate-pulse"
+          className="hidden md:inline-block blurred-red-circle left-[-10rem] top-[18rem] md:top-[10rem] animate-pulse"
         ></div>
         <div
           data-aos="fade-left"
-          className="blurred-red-circle right-[-10rem] bottom-[25%] animate-pulse"
+          className="hidden md:inline-block blurred-red-circle right-[-10rem] bottom-[25%] animate-pulse"
         ></div>
         <div className="wrapper text-white">
           {/* Terms & Conditions Section */}
           <section className="mb-[5rem]">
             <h2
               data-aos="fade-up"
-              className="text-4xl font-bold text-white capitalize text-center mb-8"
+              className="text-[1.75rem] md:text-4xl font-bold text-white capitalize text-center mb-8"
             >
               Terms & Conditions
             </h2>
@@ -109,7 +109,7 @@ const SalesTeamServices = () => {
           <section className="mb-[5rem]">
             <h2
               data-aos="fade-up"
-              className="text-4xl font-bold text-white capitalize text-center mb-8"
+              className="text-[1.75rem] md:text-4xl font-bold text-white capitalize text-center mb-8"
             >
               Frequently Asked Questions
             </h2>
