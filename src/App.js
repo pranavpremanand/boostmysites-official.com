@@ -31,6 +31,7 @@ import ConnectWithUsThankYou from "./pages/ConnectWithUsThankYou";
 import NormalizeSlash from "./components/NormalizeSlash";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
+import ProjectRequirementForm from "./pages/ProjectRequirementForm";
 
 const LandingPage = lazy(() => import("./pages/LandingPage"));
 const LandingPage1 = lazy(() => import("./pages/LandingPage1"));
@@ -289,6 +290,16 @@ function App() {
                   <>
                     <Header />
                     <BlogDetails />
+                    <Footer />
+                  </>
+                }
+              />
+              <Route
+                path="/project-requirement-form"
+                element={
+                  <>
+                    <Header />
+                    <ProjectRequirementForm />
                     <Footer />
                   </>
                 }
