@@ -224,8 +224,10 @@ const termsAndConditions = [
   {
     title: "Payment and Settlements",
     details: [
-      "Commission payments must be settled within 7 business days after the deal closure.",
-      "Failure to pay commission on time may result in penalties or suspension of the service.",
+      "The client payment for the project will be made directly to BoostMySites’ designated account.",
+      "Payouts to concerned subscriber will be processed by BoostMySites within 10 business working days of receiving the payment, subject to reconciliation of the transaction.",
+      "Any delays or discrepancies in payments may result in penalties, delayed processing, or temporary suspension of services.",
+      "BoostMySites reserves the right to withhold payouts in cases of disputes, incomplete documentation, or breaches of agreed terms.",
     ],
   },
   {
