@@ -7,6 +7,11 @@ import { Link as RLink, useLocation } from "react-router-dom";
 
 const options = [
   {
+    id: 0,
+    title: "Home",
+    path: "/",
+  },
+  {
     id: 1,
     title: "Start Your AI Company",
     path: "/ai-expert",
@@ -76,7 +81,7 @@ const Header = () => {
                 className="h-[4rem] md:h-[5rem] object-contain -mb-3"
               />
             </RLink>
-            <div className="text-sm hidden xl:flex items-center gap-7">
+            <div className="text-sm hidden xl:flex items-center gap-10">
               {options.map((option) => (
                 <RLink
                   to={option.path}

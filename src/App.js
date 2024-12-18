@@ -39,6 +39,7 @@ const Services = lazy(() => import("./pages/Services/Services"));
 const Services1 = lazy(() => import("./pages/Services/Services1"));
 const Blogs = lazy(() => import("./pages/Blogs/Blogs"));
 const BlogDetails = lazy(() => import("./pages/BlogDetails/BlogDetails"));
+const SalesTeamServices = lazy(() => import("./pages/SalesTeamServices"));
 
 AOS.init({
   once: true,
@@ -260,6 +261,17 @@ function App() {
                 }
               />
               {/* End of Services page */}
+
+              <Route
+                path="/sales-team-services"
+                element={
+                  <>
+                    <Header />
+                    <SalesTeamServices />
+                    <Footer />
+                  </>
+                }
+              />
 
               <Route
                 path="/blogs"
