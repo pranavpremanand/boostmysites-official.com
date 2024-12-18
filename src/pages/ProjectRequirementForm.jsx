@@ -58,7 +58,7 @@ const ProjectRequirementForm = () => {
 
     // Create payload for email
     const payload = {
-      to: "remeesreme4u@gmail.com",
+      to: "ceo@boostmysites.com",
       subject: "Project Requirement Form Submission",
       body: emailBody,
     };
@@ -80,9 +80,7 @@ const ProjectRequirementForm = () => {
           } else {
             toast.success("Email sent successfully");
             reset();
-            // sessionStorage.removeItem("isoCode");
-            // sessionStorage.removeItem("contactForm");
-            // navigate("/thank-you");
+            navigate("/thank-you");
           }
         })
         .catch((error) => {
