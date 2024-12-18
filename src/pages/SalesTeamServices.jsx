@@ -41,11 +41,7 @@ const SalesTeamServices = () => {
           <p className="text-wrap max-w-5xl tracking-wide text-xl mx-auto mb-8">
             Effortless Sales Management for Your AI Company
           </p>
-          <Link
-            target="_blank"
-            to="/ai-expert/contact/step1"
-            className="primary-btn1"
-          >
+          <Link to="/sales-requirement-form" className="primary-btn1">
             Sign Up Now
           </Link>
         </div>
@@ -176,7 +172,7 @@ const SalesTeamServices = () => {
                 Leave the sales to the experts and focus on growing your AI
                 company!
               </p>
-              <Link to="/ai-expert/contact/step1" className="primary-btn1">
+              <Link to="/sales-requirement-form" className="primary-btn1">
                 Sign Up Now
               </Link>
             </div>
