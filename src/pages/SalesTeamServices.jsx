@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from "react";
 import banner from "../assets/images/sales-team-services-banner.webp";
-import ctaCover from "../assets/images/sales-team-page-cta.webp";
+// import ctaCover from "../assets/images/sales-team-page-cta.webp";
 import { Link } from "react-router-dom";
 import { FaMinus, FaPlus } from "react-icons/fa";
 
@@ -53,12 +53,15 @@ const SalesTeamServices = () => {
       <div className="wrapper text-white">
         {/* Terms & Conditions Section */}
         <section className="mb-[5rem]">
-          <h2 className="text-4xl font-bold text-white capitalize text-center mb-8">
+          <h2
+            data-aos="fade-up"
+            className="text-4xl font-bold text-white capitalize text-center mb-8"
+          >
             Terms & Conditions
           </h2>
           <div className="flex flex-col gap-4">
             {termsAndConditions.map((term, index) => (
-              <div key={index} className="rounded-md">
+              <div data-aos="fade-up" key={index} className="rounded-md">
                 <div
                   onClick={() =>
                     setActiveTermsSection(
@@ -78,7 +81,10 @@ const SalesTeamServices = () => {
                 </div>
                 {activeTermsSection === index && (
                   <div className="p-4 rounded-lg text-white/80 font-light bg-[#111111]">
-                    <ul className="list-disc list-outside ml-3">
+                    <ul
+                      data-aos="fade-left"
+                      className="list-disc list-outside ml-3"
+                    >
                       {term.details.map((detail, index) => (
                         <li key={index}>{detail}</li>
                       ))}
@@ -92,11 +98,15 @@ const SalesTeamServices = () => {
 
         {/* FAQ Section */}
         <section className="mb-[5rem]">
-          <h2 className="text-4xl font-bold text-white capitalize text-center mb-8">
+          <h2
+            data-aos="fade-up"
+            className="text-4xl font-bold text-white capitalize text-center mb-8"
+          >
             Frequently Asked Questions
           </h2>
           <div className="max-w-4xl mx-auto">
             <input
+              data-aos="fade-up"
               type="text"
               placeholder="Search FAQs"
               value={searchTerm}
@@ -106,6 +116,7 @@ const SalesTeamServices = () => {
             <div className="space-y-4">
               {filteredFAQs.map((faq, index) => (
                 <div
+                  data-aos="fade-up"
                   key={index}
                   className="border border-primary1/50 text-white rounded-lg overflow-hidden"
                 >
@@ -128,7 +139,7 @@ const SalesTeamServices = () => {
                   </div>
                   {activeFAQ === index && (
                     <div className="p-4 rounded-lg bg-[#080808] text-white/80 font-light">
-                      <p>{faq.answer}</p>
+                      <p data-aos="fade-left">{faq.answer}</p>
                     </div>
                   )}
                 </div>
@@ -144,6 +155,7 @@ const SalesTeamServices = () => {
 
         {/* Call to Action Section */}
         <section
+          data-aos="fade-up"
           className="rounded-lg bg-[#1a1919] px-[1rem] overflow-hidden min-h-[40vh] flex flex-col justify-center bg-center bg-cover text-center relative"
           //   style={{ backgroundImage: `url(${ctaCover})` }}
         >

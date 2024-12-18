@@ -28,11 +28,16 @@ const options = [
   },
   {
     id: 4,
+    title: "Sales Team",
+    path: "/sales-team-services",
+  },
+  {
+    id: 5,
     title: "Blogs",
     path: "/blogs",
   },
   {
-    id: 5,
+    id: 6,
     title: "Contact Us",
     path: "/ai-expert/contact",
   },
