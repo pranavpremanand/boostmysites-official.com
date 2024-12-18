@@ -299,7 +299,17 @@ function App() {
                 element={
                   <>
                     <Header />
-                    <ProjectRequirementForm />
+                    <ProjectRequirementForm subject="Project Requirement Form Submission" />
+                    <Footer />
+                  </>
+                }
+              />
+              <Route
+                path="/sales-requirement-form"
+                element={
+                  <>
+                    <Header />
+                    <ProjectRequirementForm subject="Sales Requirement Form Submission" />
                     <Footer />
                   </>
                 }

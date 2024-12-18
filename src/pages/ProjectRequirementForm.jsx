@@ -5,7 +5,7 @@ import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import { PiSpinnerGapLight } from "react-icons/pi";
 
-const ProjectRequirementForm = () => {
+const ProjectRequirementForm = ({ subject }) => {
   const { spinner, setSpinner } = useContext(SpinnerContext);
   const navigate = useNavigate();
 
@@ -59,7 +59,7 @@ const ProjectRequirementForm = () => {
     // Create payload for email
     const payload = {
       to: "ceo@boostmysites.com",
-      subject: "Project Requirement Form Submission",
+      subject: subject,
       body: emailBody,
     };
 
@@ -114,7 +114,9 @@ const ProjectRequirementForm = () => {
         <div className="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
             <h2 className="text-2xl font-bold text-center text-gray-900 mb-8">
-              Basic Project Requirement Form
+              {subject === "Project Requirement Form Submission"
+                ? "Basic Project Requirement Form"
+                : "Basic Sales Requirement Form"}
             </h2>
 
             <div className="space-y-4">
