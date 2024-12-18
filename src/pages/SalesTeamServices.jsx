@@ -22,7 +22,7 @@ const SalesTeamServices = () => {
   }, [searchTerm, faqs]);
 
   return (
-    <div className="pt-[4rem] pb-[2rem]">
+    <div className="pt-[4rem] pb-[2rem] relative">
       {/* Hero Section */}
       <section className="relative text-white overflow-hidden min-h-[80vh] flex items-center rounded-lg shadow-lg mb-12">
         <img
@@ -50,128 +50,138 @@ const SalesTeamServices = () => {
           </Link>
         </div>
       </section>
-      <div className="wrapper text-white">
-        {/* Terms & Conditions Section */}
-        <section className="mb-[5rem]">
-          <h2
-            data-aos="fade-up"
-            className="text-4xl font-bold text-white capitalize text-center mb-8"
-          >
-            Terms & Conditions
-          </h2>
-          <div className="flex flex-col gap-4">
-            {termsAndConditions.map((term, index) => (
-              <div data-aos="fade-up" key={index} className="rounded-md">
-                <div
-                  onClick={() =>
-                    setActiveTermsSection(
-                      activeTermsSection === index ? null : index
-                    )
-                  }
-                  className="bg-[#111111] rounded-lg p-4 flex justify-between gap-5 w-full font-medium text-start cursor-pointer hover:bg-[#171717] transition"
-                >
-                  <h3 className="font-medium tracking-wide">{term.title}</h3>
-                  <span>
-                    {activeTermsSection === index ? (
-                      <FaMinus className="text-xl" />
-                    ) : (
-                      <FaPlus className="text-xl" />
-                    )}
-                  </span>
-                </div>
-                {activeTermsSection === index && (
-                  <div className="p-4 rounded-lg text-white/80 font-light bg-[#111111]">
-                    <ul
-                      data-aos="fade-left"
-                      className="list-disc list-outside ml-3"
-                    >
-                      {term.details.map((detail, index) => (
-                        <li key={index}>{detail}</li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* FAQ Section */}
-        <section className="mb-[5rem]">
-          <h2
-            data-aos="fade-up"
-            className="text-4xl font-bold text-white capitalize text-center mb-8"
-          >
-            Frequently Asked Questions
-          </h2>
-          <div className="max-w-4xl mx-auto">
-            <input
+      <div className="relative">
+        <div
+          data-aos="fade-right"
+          className="blurred-red-circle left-[-10rem] top-[18rem] md:top-[10rem] animate-pulse"
+        ></div>
+        <div
+          data-aos="fade-left"
+          className="blurred-red-circle right-[-10rem] bottom-[25%] animate-pulse"
+        ></div>
+        <div className="wrapper text-white">
+          {/* Terms & Conditions Section */}
+          <section className="mb-[5rem]">
+            <h2
               data-aos="fade-up"
-              type="text"
-              placeholder="Search FAQs"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full p-3 mb-6 border rounded-lg bg-gray-200 focus:ring-2 focus:ring-primary1 text-black outline-none"
-            />
-            <div className="space-y-4">
-              {filteredFAQs.map((faq, index) => (
-                <div
-                  data-aos="fade-up"
-                  key={index}
-                  className="border border-primary1/50 text-white rounded-lg overflow-hidden"
-                >
+              className="text-4xl font-bold text-white capitalize text-center mb-8"
+            >
+              Terms & Conditions
+            </h2>
+            <div className="flex flex-col gap-4">
+              {termsAndConditions.map((term, index) => (
+                <div data-aos="fade-up" key={index} className="rounded-md">
                   <div
                     onClick={() =>
-                      setActiveFAQ(activeFAQ === index ? null : index)
+                      setActiveTermsSection(
+                        activeTermsSection === index ? null : index
+                      )
                     }
-                    className="bg-[#080808] rounded-lg p-4 flex justify-between gap-5 w-full font-medium text-start cursor-pointer hover:bg-[#111111] transition"
+                    className="bg-[#111111] rounded-lg p-4 flex justify-between gap-5 w-full font-medium text-start cursor-pointer hover:bg-[#171717] transition"
                   >
-                    <h3 className="font-medium tracking-wide">
-                      {faq.question}
-                    </h3>
+                    <h3 className="font-medium tracking-wide">{term.title}</h3>
                     <span>
-                      {activeFAQ === index ? (
+                      {activeTermsSection === index ? (
                         <FaMinus className="text-xl" />
                       ) : (
                         <FaPlus className="text-xl" />
                       )}
                     </span>
                   </div>
-                  {activeFAQ === index && (
-                    <div className="p-4 rounded-lg bg-[#080808] text-white/80 font-light">
-                      <p data-aos="fade-left">{faq.answer}</p>
+                  {activeTermsSection === index && (
+                    <div className="p-4 rounded-lg text-white/80 font-light bg-[#111111]">
+                      <ul
+                        data-aos="fade-left"
+                        className="list-disc list-outside ml-3"
+                      >
+                        {term.details.map((detail, index) => (
+                          <li key={index}>{detail}</li>
+                        ))}
+                      </ul>
                     </div>
                   )}
                 </div>
               ))}
-              {filteredFAQs.length === 0 && (
-                <div className="text-center text-white p-4">
-                  No FAQs found matching your search.
-                </div>
-              )}
             </div>
-          </div>
-        </section>
+          </section>
 
-        {/* Call to Action Section */}
-        <section
-          data-aos="fade-up"
-          className="rounded-lg bg-[#1a1919] px-[1rem] overflow-hidden min-h-[40vh] flex flex-col justify-center bg-center bg-cover text-center relative"
-          //   style={{ backgroundImage: `url(${ctaCover})` }}
-        >
-          <div className="relative z-20 py-[3rem]">
-            <h2 className="text-3xl font-semibold tracking-wider mb-3">
-              Ready to Supercharge Your Sales?
+          {/* FAQ Section */}
+          <section className="mb-[5rem]">
+            <h2
+              data-aos="fade-up"
+              className="text-4xl font-bold text-white capitalize text-center mb-8"
+            >
+              Frequently Asked Questions
             </h2>
-            <p className="text-xl mb-6 font-light">
-              Leave the sales to the experts and focus on growing your AI
-              company!
-            </p>
-            <Link to="/ai-expert/contact/step1" className="primary-btn1">
-              Sign Up Now
-            </Link>
-          </div>
-        </section>
+            <div className="max-w-4xl mx-auto">
+              <input
+                data-aos="fade-up"
+                type="text"
+                placeholder="Search FAQs"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="w-full p-3 mb-6 border rounded-lg bg-gray-200 focus:ring-2 focus:ring-primary1 text-black outline-none"
+              />
+              <div className="space-y-4">
+                {filteredFAQs.map((faq, index) => (
+                  <div
+                    data-aos="fade-up"
+                    key={index}
+                    className="border border-primary1/50 text-white rounded-lg overflow-hidden"
+                  >
+                    <div
+                      onClick={() =>
+                        setActiveFAQ(activeFAQ === index ? null : index)
+                      }
+                      className="bg-[#080808] rounded-lg p-4 flex justify-between gap-5 w-full font-medium text-start cursor-pointer hover:bg-[#111111] transition"
+                    >
+                      <h3 className="font-medium tracking-wide">
+                        {faq.question}
+                      </h3>
+                      <span>
+                        {activeFAQ === index ? (
+                          <FaMinus className="text-xl" />
+                        ) : (
+                          <FaPlus className="text-xl" />
+                        )}
+                      </span>
+                    </div>
+                    {activeFAQ === index && (
+                      <div className="p-4 rounded-lg bg-[#080808] text-white/80 font-light">
+                        <p data-aos="fade-left">{faq.answer}</p>
+                      </div>
+                    )}
+                  </div>
+                ))}
+                {filteredFAQs.length === 0 && (
+                  <div className="text-center text-white p-4">
+                    No FAQs found matching your search.
+                  </div>
+                )}
+              </div>
+            </div>
+          </section>
+
+          {/* Call to Action Section */}
+          <section
+            data-aos="fade-up"
+            className="rounded-lg bg-[#1a1919] px-[1rem] overflow-hidden min-h-[40vh] flex flex-col justify-center bg-center bg-cover text-center relative"
+            //   style={{ backgroundImage: `url(${ctaCover})` }}
+          >
+            <div className="relative z-20 py-[3rem]">
+              <h2 className="text-3xl font-semibold tracking-wider mb-3">
+                Ready to Supercharge Your Sales?
+              </h2>
+              <p className="text-xl mb-6 font-light">
+                Leave the sales to the experts and focus on growing your AI
+                company!
+              </p>
+              <Link to="/ai-expert/contact/step1" className="primary-btn1">
+                Sign Up Now
+              </Link>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
   );
