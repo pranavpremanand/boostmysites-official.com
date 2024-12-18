@@ -128,7 +128,7 @@ const Home = () => {
             >
               <img
                 src={imgArrow}
-                className="w-[20rem] aspect-square object-contain"
+                className="w-[20rem] lg:w-full aspect-square object-contain"
                 alt=""
               />
               <div className="px-[1rem] pt-[1rem] border-t border-white/20 hidden lg:grid grid-cols-[auto_3rem] items-end">
@@ -255,7 +255,7 @@ const Home = () => {
               data-aos="fade-left"
               src={imgArrow2}
               alt="arrow"
-              className="w-[20rem] aspect-square h-full object-contain z-10"
+              className="w-[20rem] lg:w-full aspect-square h-full object-contain z-10"
             />
           </div>
         </div>
@@ -266,7 +266,7 @@ const Home = () => {
                 data-aos="fade-right"
                 src={imgArrow3}
                 alt="arrow"
-                className="block h-full object-contain"
+                className="w-[20rem] lg:w-full aspect-square h-full object-contain z-10"
               />
               <div
                 data-aos="fade-up"
