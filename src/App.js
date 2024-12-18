@@ -29,13 +29,14 @@ import Section1 from "./pages/ConnectWithUs/Section1";
 import Section2 from "./pages/ConnectWithUs/Section2";
 import ConnectWithUsThankYou from "./pages/ConnectWithUsThankYou";
 import NormalizeSlash from "./components/NormalizeSlash";
-import LandingPage1 from "./pages/LandingPage1";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
 
 const LandingPage = lazy(() => import("./pages/LandingPage"));
+const LandingPage1 = lazy(() => import("./pages/LandingPage1"));
 const Home = lazy(() => import("./pages/Home/Home"));
 const Services = lazy(() => import("./pages/Services/Services"));
+const Services1 = lazy(() => import("./pages/Services/Services1"));
 const Blogs = lazy(() => import("./pages/Blogs/Blogs"));
 const BlogDetails = lazy(() => import("./pages/BlogDetails/BlogDetails"));
 
@@ -47,16 +48,7 @@ AOS.init({
 
 function App() {
   const aiExpertPaths = [
-    // { path: "/", emailIdToSendMail: "ceo@boostmysites.com" },
-    // { path: "/1", emailIdToSendMail: "singh006ad@gmail.com" },
-    // { path: "/2", emailIdToSendMail: "merlinjoy1808@gmail.com" },
-    // { path: "/3", emailIdToSendMail: "kavyakallega@gmail.com" },
-    // { path: "/4", emailIdToSendMail: "darshan@boostmysites.com" },
-    // { path: "/5", emailIdToSendMail: "saividhu94@gmail.com" },
-    // { path: "/6", emailIdToSendMail: "supreeth.girish@gmail.com" },
     { path: "/ai-expert", emailIdToSendMail: "ceo@boostmysites.com" },
-    // { path: "/ai-expert1", emailIdToSendMail: "ceo@boostmysites.com" },
-    // { path: "/ai-expert1", emailIdToSendMail: "singh006ad@gmail.com" },
     { path: "/ai-expert2", emailIdToSendMail: "merlinjoy1808@gmail.com" },
     { path: "/ai-expert3", emailIdToSendMail: "kavyakallega@gmail.com" },
     { path: "/ai-expert4", emailIdToSendMail: "darshan@boostmysites.com" },
@@ -243,6 +235,9 @@ function App() {
                   </>
                 }
               />
+
+              {/* Services page */}
+              {/* Services page with subscription plans in Indian Rupees */}
               <Route
                 path="/services"
                 element={
@@ -253,6 +248,19 @@ function App() {
                   </>
                 }
               />
+              {/* Services page with subscription plans in Dollars $ */}
+              <Route
+                path="/services-list"
+                element={
+                  <>
+                    <Header />
+                    <Services1 />
+                    <Footer />
+                  </>
+                }
+              />
+              {/* End of Services page */}
+
               <Route
                 path="/blogs"
                 element={

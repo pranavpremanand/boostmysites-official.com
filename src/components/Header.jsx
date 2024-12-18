@@ -9,7 +9,6 @@ const options = [
   {
     id: 1,
     title: "Start Your AI Company",
-    // path: "/",
     path: "/ai-expert",
   },
   {

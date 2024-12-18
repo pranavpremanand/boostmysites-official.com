@@ -10,7 +10,6 @@ import access4 from "../assets/images/4.webp";
 import access5 from "../assets/images/5.webp";
 import access6 from "../assets/images/6.webp";
 
-
 export const roadmap = [
   {
     id: 1,
@@ -428,3 +427,229 @@ export const twoYearPlanDetails = {
   ],
   price: "₹4,80,000 + GST",
 };
+
+// subscription plans in dollars
+export const subscriptionPlansInDollars = [
+  {
+    title: "1 Month",
+    accordionDetails: [
+      {
+        heading: "Branding and Marketing Team",
+        description: "Custom branding and marketing services.",
+        services: [
+          "Custom branding strategy, logo, business card design",
+          "Social media management (Facebook, LinkedIn, Instagram)",
+          "Paid ads, content marketing, SEO, and outreach",
+          "Brand positioning to stand out in the market",
+        ],
+      },
+      {
+        heading: "Company Registration & CA Services",
+        description:
+          "Comprehensive company registration and compliance services.",
+        services: [
+          "Complete company registration (Pvt Ltd, LLP, etc.)",
+          "GST registration and tax filing support",
+          "Social media management (Facebook, LinkedIn, Instagram)",
+          "Ongoing compliance and accounting services",
+        ],
+      },
+      {
+        heading: "Full-Stack Website Design",
+        description: "Professional website design and development.",
+        services: [
+          "Custom-designed, mobile-responsive website",
+          "SEO optimization for better visibility",
+          "User-friendly interface and functionality (contact forms, e-commerce, etc.)",
+        ],
+      },
+      {
+        heading: "Full Support System",
+        description: "Comprehensive support for business operations.",
+        services: [
+          "24/7 support for troubleshooting and guidance",
+          "Network access to entrepreneurs, mentors, and experts",
+          "Weekly check-ins with your mentor",
+        ],
+      },
+      {
+        heading: "Expert Mentoring",
+        description: "Guidance from experienced mentors.",
+        services: [
+          "One-on-one business strategy sessions",
+          "Insights into AI industry trends and opportunities",
+          "Problem-solving and decision-making support",
+          "Daily Scrutinizing & Task Management",
+          "Daily actionable tasks and milestones",
+          "Progress monitoring and weekly reviews",
+          "Monthly goal setting and performance tracking",
+        ],
+      },
+      {
+        heading: "AI Training & Skill Development",
+        description: "Hands-on training in AI technologies.",
+        services: [
+          "Fundamentals of AI, machine learning, and deep learning",
+          "Hands-on workshops and coding training",
+          "Tools and software for building AI products",
+        ],
+      },
+      {
+        heading: "Why Choose This Program?",
+        description: "Reasons to select this program for business growth.",
+        services: [
+          "Affordable investment of ₹2.44 Lakhs for all-inclusive services",
+          "Comprehensive support from company registration to daily business tasks",
+          "Proven experience in helping entrepreneurs start and scale AI companies",
+        ],
+      },
+    ],
+    price: "$ 399",
+  },
+  {
+    title: "6 Months",
+    accordionDetails: [
+      {
+        heading: "Exclusive Direct personal mentorship",
+        description: "Get unparalleled guidance from industry leaders",
+        mentors: [
+          "Mahin BS, (Founder & Chairman)",
+          "Reshab, (CEO)",
+          "Darshan, (COO)",
+        ],
+        additionalInfo:
+          "Achieve your goals with personalized insights and strategies from the top minds in the field",
+      },
+      {
+        heading: "Branding and Marketing Team",
+        description: "Custom branding strategy, logo, business card design",
+        services: [
+          "Custom branding strategy, logo, business card design",
+          "Social media management (Facebook, LinkedIn, Instagram)",
+          "Paid ads, content marketing, SEO, and outreach",
+          "Brand positioning to stand out in the market",
+        ],
+      },
+      {
+        heading: "Company Registration & CA Services",
+        description: "Complete company registration (Pvt Ltd, LLP, etc.)",
+        services: [
+          "GST registration and tax filing support",
+          "Social media management (Facebook, LinkedIn, Instagram)",
+          "Ongoing compliance and accounting services",
+        ],
+      },
+      {
+        heading: "Full-Stack Website Design",
+        description: "Custom-designed, mobile-responsive website",
+        services: [
+          "Custom-designed, mobile-responsive website",
+          "SEO optimization for better visibility",
+          "User-friendly interface and functionality (contact forms, e-commerce, etc.)",
+        ],
+      },
+      {
+        heading: "Full Support System",
+        description: "24/7 support for troubleshooting and guidance",
+        services: [
+          "24/7 support for troubleshooting and guidance",
+          "Network access to entrepreneurs, mentors, and experts",
+          "Weekly check-ins with your mentor",
+        ],
+      },
+      {
+        heading: "Expert Mentoring",
+        description: "One-on-one business strategy sessions",
+        services: [
+          "One-on-one business strategy sessions",
+          "Insights into AI industry trends and opportunities",
+          "Problem-solving and decision-making support",
+          "Daily Scrutinizing & Task Management",
+          "Daily actionable tasks and milestones",
+          "Progress monitoring and weekly reviews",
+          "Monthly goal setting and performance tracking",
+        ],
+      },
+      {
+        heading: "AI Training & Skill Development",
+        description: "Fundamentals of AI, machine learning, and deep learning",
+        services: [
+          "Fundamentals of AI, machine learning, and deep learning",
+          "Hands-on workshops and coding training",
+          "Tools and software for building AI products",
+        ],
+      },
+    ],
+    price: "$ 2384 (10% off)",
+  },
+  {
+    title: "1 Year",
+    accordionDetails: [
+      {
+        heading: "Exclusive Direct personal mentorship",
+        desc: "Get unparalleled guidance from industry leaders:",
+        mentors: [
+          "Mahin BS (Founder & Chairman)",
+          "Reshab (CEO)",
+          "Darshan (COO)",
+        ],
+        additionalDesc:
+          "Achieve your goals with personalized insights and strategies from the top minds in the field",
+      },
+      {
+        heading: "Branding and Marketing Team",
+        services: [
+          "Custom branding strategy, logo, business card design",
+          "Social media management (Facebook, LinkedIn, Instagram)",
+          "Paid ads, content marketing, SEO, and outreach",
+          "Brand positioning to stand out in the market",
+        ],
+      },
+      {
+        heading: "Company Registration & CA Services",
+        desc: "Complete company registration (Pvt Ltd, LLP, etc.)",
+        services: [
+          "GST registration and tax filing support",
+          "Ongoing compliance and accounting services",
+        ],
+      },
+      {
+        heading: "Full-Stack Website Design",
+        services: [
+          "Custom-designed, mobile-responsive website",
+          "SEO optimization for better visibility",
+          "User-friendly interface and functionality (contact forms, e-commerce, etc.)",
+        ],
+      },
+      {
+        heading: "Full Support System",
+        services: [
+          "24/7 support for troubleshooting and guidance",
+          "Network access to entrepreneurs, mentors, and experts",
+          "Weekly check-ins with your mentor",
+        ],
+      },
+      {
+        heading: "Expert Mentoring",
+        services: [
+          "One-on-one business strategy sessions",
+          "Insights into AI industry trends and opportunities",
+          "Problem-solving and decision-making support",
+          "Daily Scrutinizing & Task Management",
+          "Daily actionable tasks and milestones",
+          "Progress monitoring and weekly reviews",
+          "Monthly goal setting and performance tracking",
+        ],
+      },
+      {
+        heading: "AI Training & Skill Development",
+        services: [
+          "Fundamentals of AI, machine learning, and deep learning",
+          "Hands-on workshops and coding training",
+          "Tools and software for building AI products",
+        ],
+      },
+    ],
+    price: "$ 3192 (20% off)",
+  },
+];

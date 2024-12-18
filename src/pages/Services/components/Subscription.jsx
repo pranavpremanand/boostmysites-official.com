@@ -29,7 +29,7 @@ const Subscription = () => {
             data-aos="fade-up"
             className="text-4xl font-bold text-center text-primary mb-4"
           >
-            Subscription Plan
+            Subscription Plans
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
             <div className="flex flex-col p-6 bg-black border border-primary rounded-lg">
