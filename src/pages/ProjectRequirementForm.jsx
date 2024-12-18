@@ -65,7 +65,6 @@ const ProjectRequirementForm = ({ subject }) => {
 
     try {
       setSpinner(true);
-
       await fetch("https://smtp-api-tawny.vercel.app/send-email", {
         method: "POST",
         headers: {
