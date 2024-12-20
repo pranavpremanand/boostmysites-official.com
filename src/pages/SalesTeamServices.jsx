@@ -222,15 +222,6 @@ const termsAndConditions = [
     ],
   },
   {
-    title: "Payment and Settlements",
-    details: [
-      "The client payment for the project will be made directly to BoostMySites’ designated account.",
-      "Payouts to concerned subscriber will be processed by BoostMySites within 10 business working days of receiving the payment, subject to reconciliation of the transaction.",
-      "Any delays or discrepancies in payments may result in penalties, delayed processing, or temporary suspension of services.",
-      "BoostMySites reserves the right to withhold payouts in cases of disputes, incomplete documentation, or breaches of agreed terms.",
-    ],
-  },
-  {
     title: "Service Termination",
     details: [
       "BoostMySites reserves the right to terminate the sales team service if the subscriber fails to comply with these terms and conditions.",
@@ -265,11 +256,6 @@ const faqs = [
     question: "How do I submit leads to the BoostMySites sales team?",
     answer:
       "Leads can be submitted via the BoostMySites lead submission system. Detailed instructions will be provided during the onboarding process.",
-  },
-  {
-    question: "What happens if I don’t pay the commission on time?",
-    answer:
-      "Delayed payments may result in penalties or suspension of the sales team service until the issue is resolved.",
   },
   {
     question: "Can I negotiate the terms of the agreement?",

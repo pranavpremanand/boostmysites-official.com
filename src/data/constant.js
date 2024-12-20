@@ -444,17 +444,6 @@ export const subscriptionPlansInDollars = [
         ],
       },
       {
-        heading: "Company Registration & CA Services",
-        description:
-          "Comprehensive company registration and compliance services.",
-        services: [
-          "Complete company registration (Pvt Ltd, LLP, etc.)",
-          "GST registration and tax filing support",
-          "Social media management (Facebook, LinkedIn, Instagram)",
-          "Ongoing compliance and accounting services",
-        ],
-      },
-      {
         heading: "Full-Stack Website Design",
         description: "Professional website design and development.",
         services: [
@@ -531,15 +520,6 @@ export const subscriptionPlansInDollars = [
         ],
       },
       {
-        heading: "Company Registration & CA Services",
-        description: "Complete company registration (Pvt Ltd, LLP, etc.)",
-        services: [
-          "GST registration and tax filing support",
-          "Social media management (Facebook, LinkedIn, Instagram)",
-          "Ongoing compliance and accounting services",
-        ],
-      },
-      {
         heading: "Full-Stack Website Design",
         description: "Custom-designed, mobile-responsive website",
         services: [
@@ -603,14 +583,6 @@ export const subscriptionPlansInDollars = [
           "Social media management (Facebook, LinkedIn, Instagram)",
           "Paid ads, content marketing, SEO, and outreach",
           "Brand positioning to stand out in the market",
-        ],
-      },
-      {
-        heading: "Company Registration & CA Services",
-        desc: "Complete company registration (Pvt Ltd, LLP, etc.)",
-        services: [
-          "GST registration and tax filing support",
-          "Ongoing compliance and accounting services",
         ],
       },
       {
