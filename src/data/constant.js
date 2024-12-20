@@ -354,7 +354,7 @@ export const oneYearPlanDetails = {
       ],
     },
   ],
-  price: "₹3,40,000 + GST",
+  price: "₹4,00,000 + GST",
 };
 
 export const twoYearPlanDetails = {
