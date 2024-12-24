@@ -57,7 +57,7 @@ const ProjectRequirementForm = ({ subject }) => {
        Date: ${new Date().toLocaleDateString()}\n
       `;
     const formData = new FormData();
-    const subjectFormail = "Project Requirement Form Submission";
+    const subjectFormail = subject;
     formData.append("body", emailBody);
     formData.append("subject", subjectFormail);
     if (file) {
