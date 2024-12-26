@@ -1,5 +1,5 @@
 import { useForm, useFieldArray } from "react-hook-form";
-import { useContext, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import { SpinnerContext } from "../components/SpinnerContext";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
@@ -7,8 +7,10 @@ import { PiSpinnerGapLight } from "react-icons/pi";
 
 const ProjectRequirementForm = ({ subject }) => {
   const { spinner, setSpinner } = useContext(SpinnerContext);
+  const [file, setFile] = useState(null);
+  const [error, setError] = useState(null);
   const navigate = useNavigate();
-
+  const inputRef = useRef(null);
   const {
     register,
     control,
@@ -36,7 +38,6 @@ const ProjectRequirementForm = ({ subject }) => {
   });
 
   const onSubmit = async (data) => {
-    // Construct email body
     let emailBody = `
         Name: ${data.name}\n
         Email: ${data.email}\n
@@ -55,23 +56,25 @@ const ProjectRequirementForm = ({ subject }) => {
         Additional Notes: ${data.additionalNotes}\n
        Date: ${new Date().toLocaleDateString()}\n
       `;
-
-    // Create payload for email
-    const payload = {
-      to: "ceo@boostmysites.com",
-      subject: subject,
-      body: emailBody,
-    };
+    const formData = new FormData();
+    const subjectFormail = subject;
+    formData.append("body", emailBody);
+    formData.append("subject", subjectFormail);
+    if (file) {
+      formData.append("file", file);
+    }
 
     try {
       setSpinner(true);
-      await fetch("https://smtp-api-tawny.vercel.app/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(payload),
-      })
+      // await fetch("https://smtp-api-tawny.vercel.app/send-email", {
+      // await fetch("http://localhost:8080/api/send-email", {
+      await fetch(
+        "https://boostmysite-attachment-email.vercel.app/api/send-email",
+        {
+          method: "POST",
+          body: formData,
+        }
+      )
         .then((response) => response.json())
         .then((res) => {
           if (res.error) {
@@ -106,6 +109,46 @@ const ProjectRequirementForm = ({ subject }) => {
     }
   };
 
+  const handleFileChange = (e) => {
+    const selectedFile = e.target.files[0];
+    if (selectedFile) {
+      if (selectedFile.size > 5000000) {
+        setError("File size must be less than 5MB");
+      } else {
+        setFile(selectedFile);
+        setError(null);
+      }
+    }
+  };
+
+  const handleDrop = (e) => {
+    e.preventDefault();
+    const droppedFile = e.dataTransfer.files[0];
+    if (droppedFile) {
+      if (droppedFile.size > 5000000) {
+        setError("File size must be less than 5MB");
+      } else {
+        setFile(droppedFile);
+        setError(null);
+      }
+    }
+  };
+
+  const handleDragOver = (e) => {
+    e.preventDefault();
+  };
+
+  const handleDivClick = () => {
+    if (inputRef.current) {
+      inputRef.current.click();
+    }
+  };
+
+  const handleRemoveFile = () => {
+    setFile(null);
+  };
+
+  console.log(file, "adsjfaksdlfasd");
   return (
     <div className="min-h-screen bg-black/60 py-6 flex flex-col justify-center sm:py-12">
       <div className="relative py-3 sm:max-w-xl sm:mx-auto mt-28">
@@ -472,6 +515,66 @@ const ProjectRequirementForm = ({ subject }) => {
                 </p>
               )}
             </div>
+            <div>
+              <label className="block mb-2">Upload File:</label>
+
+              {/* Drag and Drop Area */}
+              <div
+                className="w-full p-4 border-dashed rounded-md cursor-pointer relative"
+                onDrop={handleDrop}
+                onDragOver={handleDragOver}
+                onClick={handleDivClick}
+                style={{
+                  borderColor: file ? "#4CAF50" : error ? "#f44336" : "#ccc",
+                  backgroundColor: file || error ? "transparent" : "#f9f9f9",
+                }}
+              >
+                <input
+                  ref={inputRef}
+                  type="file"
+                  accept="image/*, .pdf, .doc, .docx, .txt"
+                  onChange={handleFileChange}
+                  className="hidden"
+                />
+                {file ? (
+                  file.type.startsWith("image/") ? (
+                    <div className="relative">
+                      <img
+                        src={URL.createObjectURL(file)}
+                        alt="Uploaded"
+                        className="w-full h-48 object-cover rounded-md"
+                      />
+                      <button
+                        onClick={handleRemoveFile}
+                        className="absolute w-5 h-5 flex justify-center items-center top-2 right-2 bg-red-500 text-white p-1 rounded-full text-sm"
+                        aria-label="Remove Image"
+                      >
+                        ✕
+                      </button>
+                    </div>
+                  ) : (
+                    <div className="relative bg-gray-100 p-4 rounded-md">
+                      <p className="text-gray-700">{file.name}</p>
+                      <button
+                        onClick={handleRemoveFile}
+                        className="absolute w-5 h-5 flex justify-center items-center top-2 right-2 bg-red-500 text-white p-1 rounded-full text-sm"
+                        aria-label="Remove File"
+                      >
+                        ✕
+                      </button>
+                    </div>
+                  )
+                ) : (
+                  <p className="text-center text-gray-500">
+                    Drag & drop a file here, or click to select a file
+                  </p>
+                )}
+              </div>
+
+              {/* Error Message */}
+              {error && <p className="text-red-500 text-sm mt-1">{error}</p>}
+            </div>
+
             <div className="mt-4 text-sm text-gray-600">
               <p>
                 I confirm that the information provided is accurate to the best
