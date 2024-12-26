@@ -4,12 +4,13 @@ import { BlogItem } from "../Blogs/Blogs";
 import { blogs } from "../../data/blogs";
 
 const BlogDetails = () => {
-  const { id } = useParams();
-  const blog = blogs.find((item) => item.id === Number(id));
+  const { title } = useParams();
+  const blog = blogs.find((item) => item.title === title);
+  console.log(blog);
   if (!blog) {
     return <Navigate to="/blogs" />;
   }
-  const latestBlogs = blogs.filter((item) => item.id !== Number(id)) || [];
+  const latestBlogs = blogs.filter((item) => item.id !== title) || [];
   return (
     <div className="bg-secondary relative text-white">
       <div
@@ -29,15 +30,7 @@ const BlogDetails = () => {
             className="w-full rounded-xl object-cover aspect-[4/3] max-h-[70vh]"
           />
           <div className="flex flex-col gap-2">
-            {/* <div
-              data-aos="fade-up"
-              className="flex justify-between items-center font-light mt-[0.8rem]"
-            >
-              <div className="rounded-2xl bg-primary1 font-medium px-3 py-1 text-sm w-fit">
-                Business
-              </div>
-              <p className="text-gray-300 text-[.8rem]">12th May 2023</p>
-            </div> */}
+            
             <h4
               data-aos="fade-up"
               className="text-2xl sm:text-5xl font-medium leading-tight mt-[1rem] pb-[1.5rem]"

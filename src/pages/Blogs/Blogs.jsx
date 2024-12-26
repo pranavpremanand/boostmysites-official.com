@@ -45,7 +45,7 @@ export const BlogItem = ({ blog }) => {
       data-aos="fade-up"
       className="bg-black rounded-xl p-5 text-white relative z-10 group"
     >
-      <Link to={`/blogs/${blog.id}`}>
+      <Link to={`/blogs/${blog.title}/boostmysites-review`}>
         <img
           src={blog.image}
           alt=""
@@ -54,14 +54,9 @@ export const BlogItem = ({ blog }) => {
           className="bg-cover aspect-video w-full rounded-xl group-hover:opacity-85 transition-all duration-200"
         />
       </Link>
-      <div className="flex justify-start font-light mt-[0.8rem]">
-        {/* <div className="rounded-2xl bg-primary1 font-medium px-3 py-1 text-sm w-fit">
-          Business
-        </div> */}
-      </div>
       <div className="flex flex-col gap-2 mt-[1rem]">
         <Link
-          to={`/blogs/${blog.id}`}
+          to={`/blogs/${blog.title}/boostmysites-review`}
           className="text-xl hyphen-auto font-medium leading-tight line-clamp-2 text-ellipsis hover:text-primary1 transition-all duration-200"
         >
           {blog.title}
@@ -72,12 +67,9 @@ export const BlogItem = ({ blog }) => {
         ></div>
       </div>
 
-      {/* <div className="flex justify-end font-light mt-[1.5rem]">
-        <p className="text-gray-400 text-[.8rem]">12th May 2023</p>
-      </div> */}
       <div className="mt-5 w-full flex justify-center">
         <Link
-          to={`/blogs/${blog.id}`}
+          to={`/blogs/${blog.title}/boostmysites-review`}
           className="text-sm text-center font-medium cursor-pointer bg-gradient-to-r from-primary to-[#D5AA12] hover:-translate-y-1 shadow-large shadow-transparent hover:shadow-primary/[35%] text-black border border-primary py-3 px-4 rounded-md transition-all duration-300 w-full"
         >
           Read More
