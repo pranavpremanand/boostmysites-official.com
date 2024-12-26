@@ -10,7 +10,7 @@ const BlogDetails = () => {
   if (!blog) {
     return <Navigate to="/blogs" />;
   }
-  const latestBlogs = blogs.filter((item) => item.id !== title) || [];
+  const latestBlogs = blogs.filter((item) => item.id !== blog.id) || [];
   return (
     <div className="bg-secondary relative text-white">
       <div
@@ -30,7 +30,6 @@ const BlogDetails = () => {
             className="w-full rounded-xl object-cover aspect-[4/3] max-h-[70vh]"
           />
           <div className="flex flex-col gap-2">
-            
             <h4
               data-aos="fade-up"
               className="text-2xl sm:text-5xl font-medium leading-tight mt-[1rem] pb-[1.5rem]"
@@ -53,12 +52,9 @@ const BlogDetails = () => {
               Latest Blogs
             </h3>
             <div className="mt-[1.5rem] grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-7">
-              {blogs
-                .filter((item) => item.id !== blog.id)
-                .slice(0, 3)
-                .map((item, i) => (
-                  <BlogItem key={item.id} blog={item} />
-                ))}
+              {latestBlogs.slice(0, 3).map((item, i) => (
+                <BlogItem key={item.id} blog={item} />
+              ))}
             </div>
           </div>
         )}
