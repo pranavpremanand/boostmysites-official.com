@@ -60,6 +60,7 @@ const ProjectRequirementForm = ({ subject }) => {
         Join Year: ${data.joinYear}\n
         Sale Option: ${data.salesOption}\n
         Subscriber Name: ${data.subscribername}\n
+        referenceWebsite: ${data.referenceWebsite}\n
        Date: ${new Date().toLocaleDateString()}\n
       `;
 
@@ -93,6 +94,7 @@ const ProjectRequirementForm = ({ subject }) => {
     googleFormData.append("joinYear", data.joinYear || "N/A");
     googleFormData.append("salesOption", data.salesOption || "N/A");
     googleFormData.append("subscribername", data.subscribername || "N/A");
+    googleFormData.append("referenceWebsite", data.referenceWebsite || "N/A");
     googleFormData.append("date", new Date().toLocaleDateString());
     try {
       await fetch(googleFormURL, {
