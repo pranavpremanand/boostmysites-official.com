@@ -6,7 +6,6 @@ import { blogs } from "../../data/blogs";
 const BlogDetails = () => {
   const { title } = useParams();
   const blog = blogs.find((item) => item.title === title);
-  console.log(blog);
   if (!blog) {
     return <Navigate to="/blogs" />;
   }
