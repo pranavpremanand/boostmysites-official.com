@@ -38,6 +38,8 @@ const ProjectRequirementForm = ({ subject }) => {
   });
 
   const onSubmit = async (data) => {
+    setSpinner(true);
+    console.log(data, "thisisdata");
     let emailBody = `
         Name: ${data.name}\n
         Email: ${data.email}\n
@@ -54,8 +56,13 @@ const ProjectRequirementForm = ({ subject }) => {
         Timeline: ${data.timeline}\n
         Budget: ${data.budget}\n
         Additional Notes: ${data.additionalNotes}\n
+        Join Month: ${data.joinMonth}\n
+        Join Year: ${data.joinYear}\n
+        Sale Option: ${data.salesOption}\n
+        Subscriber Name: ${data.subscribername}\n
        Date: ${new Date().toLocaleDateString()}\n
       `;
+
     const formData = new FormData();
     const subjectFormail = subject;
     formData.append("body", emailBody);
@@ -64,12 +71,44 @@ const ProjectRequirementForm = ({ subject }) => {
       formData.append("file", file);
     }
 
+    const googleFormURL =
+      "https://script.google.com/macros/s/AKfycbwIJOyXVKHbG0PjXPkoEyet8tTbInvk--G01ibCM9Rsgnmldax-K5pHPbaD1KdeJcF1GA/exec";
+    const googleFormData = new URLSearchParams();
+    googleFormData.append("name", data.name);
+    googleFormData.append("email", data.email);
+    googleFormData.append("phone", data.phone);
+    googleFormData.append("projectName", data.projectName || "N/A");
+    googleFormData.append("description", data.description || "N/A");
+    googleFormData.append("features", data.features?.join(", ") || "N/A");
+    googleFormData.append("userRoles", data.userRoles?.join(", ") || "N/A");
+    googleFormData.append("platform", data.platform || "N/A");
+    googleFormData.append("otherPlatform", data.otherPlatform || "N/A");
+    googleFormData.append("designStyle", data.designStyle || "N/A");
+    googleFormData.append("techStack", data.techStack || "N/A");
+    googleFormData.append("integrations", data.integrations || "N/A");
+    googleFormData.append("timeline", data.timeline || "N/A");
+    googleFormData.append("budget", data.budget || "N/A");
+    googleFormData.append("additionalNotes", data.additionalNotes || "N/A");
+    googleFormData.append("joinMonth", data.joinMonth || "N/A");
+    googleFormData.append("joinYear", data.joinYear || "N/A");
+    googleFormData.append("salesOption", data.salesOption || "N/A");
+    googleFormData.append("subscribername", data.subscribername || "N/A");
+    googleFormData.append("date", new Date().toLocaleDateString());
     try {
-      setSpinner(true);
+      await fetch(googleFormURL, {
+        method: "POST",
+        body: googleFormData,
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded", // Ensure content type is correct
+        },
+        redirect: "follow",
+      });
+
       // await fetch("https://smtp-api-tawny.vercel.app/send-email", {
       // await fetch("http://localhost:8080/api/send-email", {
       await fetch(
-        "https://boostmysite-attachment-email.vercel.app/api/send-email",
+        "https://boostmysite-attachment-email-zeta.vercel.app/api/send-email",
+        // "https://boostmysite-attachment-email.vercel.app/api/send-email",
         {
           method: "POST",
           body: formData,
@@ -148,6 +187,23 @@ const ProjectRequirementForm = ({ subject }) => {
     setFile(null);
   };
 
+  const currentYear = new Date().getFullYear();
+  const years = Array.from({ length: currentYear - 1999 }, (_, i) => 2000 + i);
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+
   console.log(file, "adsjfaksdlfasd");
   return (
     <div className="min-h-screen bg-black/60 py-6 flex flex-col justify-center sm:py-12">
@@ -160,6 +216,142 @@ const ProjectRequirementForm = ({ subject }) => {
                 ? "Basic Project Requirement Form"
                 : "Basic Sales Requirement Form"}
             </h2>
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-gray-900">
+                How would you like to handle this sale?
+              </h3>
+
+              <div className=" grid grid-cols-1 gap-5">
+                <div className="flex items-center border rounded-xl p-5 h-full">
+                  <input
+                    {...register("salesOption", {
+                      required: "Please select a sale option",
+                    })}
+                    type="radio"
+                    id="doItYourself"
+                    value="doItYourself"
+                    className="h-4 w-4 text-[#f0801c] focus:ring-[#f0801c] border-gray-300"
+                  />
+                  <label
+                    htmlFor="doItYourself"
+                    className="ml-3 block text-sm font-medium text-gray-700"
+                  >
+                    <span className="font-semibold">Do it Yourself sale:</span>{" "}
+                    You are pitching the client, and retain 70% of the profit
+                    upon successful closing, with 30% allocated for development
+                    costs.
+                  </label>
+                </div>
+                <div className="flex items-center border rounded-xl p-5 h-full">
+                  <input
+                    {...register("salesOption", {
+                      required: "Please select a sale option",
+                    })}
+                    type="radio"
+                    id="salesTeam"
+                    value="salesTeam"
+                    className="h-4 w-4 text-[#f0801c] focus:ring-[#f0801c] border-gray-300"
+                  />
+                  <label
+                    htmlFor="salesTeam"
+                    className="ml-3 block text-sm font-medium text-gray-700"
+                  >
+                    <span className="font-semibold">Sales Team Service:</span>{" "}
+                    Our Sales Team takes over to help close the deal. You keep
+                    50% of the profit upon successful closing, with 20%
+                    commission for the Sales Team and 30% for development costs.
+                  </label>
+                </div>
+              </div>
+
+              {errors.salesOption && (
+                <p className="text-red-500 text-sm mt-1">
+                  {errors.salesOption.message}
+                </p>
+              )}
+            </div>
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-gray-900">
+                Subscriber Information
+              </h3>
+
+              <div>
+                <input
+                  {...register("subscribername", {
+                    required: "Subscriber Name is required",
+                  })}
+                  type="text"
+                  placeholder="Subscriber Name*"
+                  className={`w-full px-3 py-2 border ${
+                    errors.name ? "border-red-500" : "border-gray-300"
+                  } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
+                />
+                {errors.subscribername && (
+                  <p className="text-red-500 text-sm mt-1">
+                    {errors.subscribername.message}
+                  </p>
+                )}
+              </div>
+
+              <div className="flex space-x-4">
+                <div className="w-1/2">
+                  <select
+                    {...register("joinMonth")}
+                    className={`w-full px-3 py-2 border ${
+                      errors.joinMonth ? "border-red-500" : "border-gray-300"
+                    } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
+                  >
+                    <option value="">Select Month</option>
+                    {months.map((month, index) => (
+                      <option key={index} value={month}>
+                        {month}
+                      </option>
+                    ))}
+                  </select>
+                  {errors.joinMonth && (
+                    <p className="text-red-500 text-sm mt-1">
+                      {errors.joinMonth.message}
+                    </p>
+                  )}
+                </div>
+                <div className="w-1/2">
+                  <select
+                    {...register("joinYear")}
+                    className={`w-full px-3 py-2 border ${
+                      errors.joinYear ? "border-red-500" : "border-gray-300"
+                    } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
+                  >
+                    <option value="">Select Year</option>
+                    {years.map((year) => (
+                      <option key={year} value={year}>
+                        {year}
+                      </option>
+                    ))}
+                  </select>
+                  {errors.joinYear && (
+                    <p className="text-red-500 text-sm mt-1">
+                      {errors.joinYear.message}
+                    </p>
+                  )}
+                </div>
+              </div>
+
+              <div>
+                <input
+                  {...register("phoneNumber")}
+                  type="tel"
+                  placeholder="Phone Number"
+                  className={`w-full px-3 py-2 border ${
+                    errors.phoneNumber ? "border-red-500" : "border-gray-300"
+                  } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
+                />
+                {errors.phoneNumber && (
+                  <p className="text-red-500 text-sm mt-1">
+                    {errors.phoneNumber.message}
+                  </p>
+                )}
+              </div>
+            </div>
 
             <div className="space-y-4">
               <h3 className="text-xl font-semibold text-gray-900">
@@ -169,7 +361,7 @@ const ProjectRequirementForm = ({ subject }) => {
                 <input
                   {...register("name", { required: "Name is required" })}
                   type="text"
-                  placeholder="Name"
+                  placeholder="Name*"
                   className={`w-full px-3 py-2 border ${
                     errors.name ? "border-red-500" : "border-gray-300"
                   } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
@@ -182,13 +374,7 @@ const ProjectRequirementForm = ({ subject }) => {
               </div>
               <div>
                 <input
-                  {...register("email", {
-                    required: "Email is required",
-                    pattern: {
-                      value: /\S+@\S+\.\S+/,
-                      message: "Invalid email address",
-                    },
-                  })}
+                  {...register("email")}
                   type="email"
                   placeholder="Email"
                   className={`w-full px-3 py-2 border ${
@@ -203,18 +389,7 @@ const ProjectRequirementForm = ({ subject }) => {
               </div>
               <div>
                 <input
-                  {...register("phone", {
-                    required: "Phone is required",
-                    minLength: {
-                      value: 10,
-                      message: "Phone number must be at least 10 characters",
-                    },
-                    pattern: {
-                      value: /^[+\-]?\d{10,}$/,
-                      message:
-                        "Invalid phone number. Only numbers, +, and - are allowed",
-                    },
-                  })}
+                  {...register("phone")}
                   type="tel"
                   placeholder="Phone"
                   className={`w-full px-3 py-2 border ${
@@ -235,9 +410,7 @@ const ProjectRequirementForm = ({ subject }) => {
               </h3>
               <div>
                 <input
-                  {...register("projectName", {
-                    required: "Project name is required",
-                  })}
+                  {...register("projectName")}
                   type="text"
                   placeholder="Project Name"
                   className={`w-full px-3 py-2 border ${
@@ -255,7 +428,7 @@ const ProjectRequirementForm = ({ subject }) => {
                   {...register("description", {
                     required: "Description is required",
                   })}
-                  placeholder="Brief Description"
+                  placeholder="Brief Description*"
                   className={`w-full px-3 py-2 border ${
                     errors.description ? "border-red-500" : "border-gray-300"
                   } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
@@ -264,6 +437,25 @@ const ProjectRequirementForm = ({ subject }) => {
                 {errors.description && (
                   <p className="text-red-500 text-sm mt-1">
                     {errors.description.message}
+                  </p>
+                )}
+              </div>
+              <div>
+                <input
+                  {...register("referenceWebsite", {
+                    required: "Reference Website is required",
+                  })}
+                  type="url"
+                  placeholder="Reference Website*"
+                  className={`w-full px-3 py-2 border ${
+                    errors.referenceWebsite
+                      ? "border-red-500"
+                      : "border-gray-300"
+                  } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
+                />
+                {errors.referenceWebsite && (
+                  <p className="text-red-500 text-sm mt-1">
+                    {errors.referenceWebsite.message}
                   </p>
                 )}
               </div>
@@ -278,9 +470,7 @@ const ProjectRequirementForm = ({ subject }) => {
                 {featureFields.map((field, index) => (
                   <input
                     key={field.id}
-                    {...register(`features.${index}`, {
-                      required: "Feature is required",
-                    })}
+                    {...register(`features.${index}`)}
                     type="text"
                     placeholder={`Feature ${index + 1}`}
                     className={`w-full px-3 py-2 border ${
@@ -310,9 +500,7 @@ const ProjectRequirementForm = ({ subject }) => {
                 {userRoleFields.map((field, index) => (
                   <input
                     key={field.id}
-                    {...register(`userRoles.${index}`, {
-                      required: "User role is required",
-                    })}
+                    {...register(`userRoles.${index}`)}
                     type="text"
                     placeholder={`Role ${index + 1}`}
                     className={`w-full px-3 py-2 border ${
@@ -340,9 +528,7 @@ const ProjectRequirementForm = ({ subject }) => {
                 <div className="space-x-4">
                   <label className="inline-flex items-center">
                     <input
-                      {...register("platform", {
-                        required: "Platform is required",
-                      })}
+                      {...register("platform")}
                       type="radio"
                       value="Web"
                       className="form-radio text-[#f0801c]"
@@ -351,9 +537,7 @@ const ProjectRequirementForm = ({ subject }) => {
                   </label>
                   <label className="inline-flex items-center mb-2">
                     <input
-                      {...register("platform", {
-                        required: "Platform is required",
-                      })}
+                      {...register("platform")}
                       type="radio"
                       value="Mobile"
                       className="form-radio text-[#f0801c]"
@@ -362,9 +546,7 @@ const ProjectRequirementForm = ({ subject }) => {
                   </label>
                   <label className="inline-flex items-center">
                     <input
-                      {...register("platform", {
-                        required: "Platform is required",
-                      })}
+                      {...register("platform")}
                       type="radio"
                       value="Other"
                       className="form-radio text-[#f0801c]"
@@ -381,9 +563,7 @@ const ProjectRequirementForm = ({ subject }) => {
               {watch("platform") === "Other" && (
                 <div className="mt-2">
                   <input
-                    {...register("otherPlatform", {
-                      required: "Please specify the other platform",
-                    })}
+                    {...register("otherPlatform")}
                     type="text"
                     placeholder="Please specify the platform"
                     className={`w-full px-3 py-2 border ${
@@ -407,9 +587,7 @@ const ProjectRequirementForm = ({ subject }) => {
               </h3>
               <div>
                 <input
-                  {...register("designStyle", {
-                    required: "Design style is required",
-                  })}
+                  {...register("designStyle")}
                   type="text"
                   placeholder="Preferred Design Style (if any)"
                   className={`w-full px-3 py-2 border ${
@@ -424,9 +602,7 @@ const ProjectRequirementForm = ({ subject }) => {
               </div>
               <div>
                 <input
-                  {...register("techStack", {
-                    required: "Tech stack is required",
-                  })}
+                  {...register("techStack")}
                   type="text"
                   placeholder="Technology Stack (if known)"
                   className={`w-full px-3 py-2 border ${
@@ -441,9 +617,7 @@ const ProjectRequirementForm = ({ subject }) => {
               </div>
               <div>
                 <input
-                  {...register("integrations", {
-                    required: "Integrations are required",
-                  })}
+                  {...register("integrations")}
                   type="text"
                   placeholder="Third-Party Integrations"
                   className={`w-full px-3 py-2 border ${
@@ -464,9 +638,7 @@ const ProjectRequirementForm = ({ subject }) => {
               </h3>
               <div>
                 <input
-                  {...register("timeline", {
-                    required: "Timeline is required",
-                  })}
+                  {...register("timeline")}
                   type="text"
                   placeholder="Estimated Timeline"
                   className={`w-full px-3 py-2 border ${
@@ -483,7 +655,7 @@ const ProjectRequirementForm = ({ subject }) => {
                 <input
                   {...register("budget", { required: "Budget is required" })}
                   type="text"
-                  placeholder="Budget Range"
+                  placeholder="Budget Range*"
                   className={`w-full px-3 py-2 border ${
                     errors.budget ? "border-red-500" : "border-gray-300"
                   } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
@@ -501,9 +673,7 @@ const ProjectRequirementForm = ({ subject }) => {
                 Additional Notes or Comments:
               </label>
               <textarea
-                {...register("additionalNotes", {
-                  required: "Additional notes are required",
-                })}
+                {...register("additionalNotes")}
                 className={`w-full px-3 py-2 border ${
                   errors.additionalNotes ? "border-red-500" : "border-gray-300"
                 } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
