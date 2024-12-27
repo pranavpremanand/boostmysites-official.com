@@ -29,9 +29,6 @@ import Section1 from "./pages/ConnectWithUs/Section1";
 import Section2 from "./pages/ConnectWithUs/Section2";
 import ConnectWithUsThankYou from "./pages/ConnectWithUsThankYou";
 import NormalizeSlash from "./components/NormalizeSlash";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
-import TermsAndConditions from "./pages/TermsAndConditions";
-import ProjectRequirementForm from "./pages/ProjectRequirementForm";
 
 const LandingPage = lazy(() => import("./pages/LandingPage"));
 const LandingPage1 = lazy(() => import("./pages/LandingPage1"));
@@ -41,6 +38,10 @@ const Services1 = lazy(() => import("./pages/Services/Services1"));
 const Blogs = lazy(() => import("./pages/Blogs/Blogs"));
 const BlogDetails = lazy(() => import("./pages/BlogDetails/BlogDetails"));
 const SalesTeamServices = lazy(() => import("./pages/SalesTeamServices"));
+const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
+const TermsAndConditions = lazy(() => import("./pages/TermsAndConditions"));
+const ProjectRequirementForm = lazy(() => import("./pages/ProjectRequirementForm"));
+const Reviews = lazy(() => import("./pages/Reviews"));
 
 AOS.init({
   once: true,
@@ -274,6 +275,16 @@ function App() {
                 }
               />
 
+              <Route
+                path="/reviews"
+                element={
+                  <>
+                    <Header />
+                    <Reviews />
+                    <Footer />
+                  </>
+                }
+              />
               <Route
                 path="/blogs"
                 element={

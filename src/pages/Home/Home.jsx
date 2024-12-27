@@ -161,7 +161,7 @@ const Home = () => {
                   landscape
                 </p>
                 <Link
-                  to="https://dev.boostmysites.com"
+                  to="/ai-expert"
                   target="_blank"
                   rel="noreferrer"
                   className="text-md flex items-center gap-2 text-primary1 underline w-fit"
