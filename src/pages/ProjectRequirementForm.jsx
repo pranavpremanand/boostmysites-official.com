@@ -303,7 +303,9 @@ const ProjectRequirementForm = ({ subject }) => {
                       errors.joinMonth ? "border-red-500" : "border-gray-300"
                     } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
                   >
-                    <option value="">Select Month</option>
+                    <option value="" className="text-black">
+                      Select Month
+                    </option>
                     {months.map((month, index) => (
                       <option key={index} value={month}>
                         {month}
@@ -323,7 +325,9 @@ const ProjectRequirementForm = ({ subject }) => {
                       errors.joinYear ? "border-red-500" : "border-gray-300"
                     } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
                   >
-                    <option value="">Select Year</option>
+                    <option value="" className="text-black">
+                      Select Year
+                    </option>
                     {years.map((year) => (
                       <option key={year} value={year}>
                         {year}
@@ -468,7 +472,9 @@ const ProjectRequirementForm = ({ subject }) => {
                 Core Requirements
               </h3>
               <div>
-                <label className="block mb-2">Main Features Needed:</label>
+                <label className="block mb-2 text-black">
+                  Main Features Needed:
+                </label>
                 {featureFields.map((field, index) => (
                   <input
                     key={field.id}
@@ -496,7 +502,7 @@ const ProjectRequirementForm = ({ subject }) => {
                 </button>
               </div>
               <div>
-                <label className="block mb-2">
+                <label className="block mb-2 text-black">
                   User Roles (if applicable):
                 </label>
                 {userRoleFields.map((field, index) => (
@@ -526,7 +532,7 @@ const ProjectRequirementForm = ({ subject }) => {
                 </button>
               </div>
               <div>
-                <label className="block mb-2">Platform:</label>
+                <label className="block mb-2 text-black">Platform:</label>
                 <div className="space-x-4">
                   <label className="inline-flex items-center">
                     <input
@@ -535,7 +541,7 @@ const ProjectRequirementForm = ({ subject }) => {
                       value="Web"
                       className="form-radio text-[#f0801c]"
                     />
-                    <span className="ml-2">Web</span>
+                    <span className="ml-2 text-black">Web</span>
                   </label>
                   <label className="inline-flex items-center mb-2">
                     <input
@@ -544,7 +550,9 @@ const ProjectRequirementForm = ({ subject }) => {
                       value="Mobile"
                       className="form-radio text-[#f0801c]"
                     />
-                    <span className="ml-2">Mobile (Android/iOS)</span>
+                    <span className="ml-2 text-black">
+                      Mobile (Android/iOS)
+                    </span>
                   </label>
                   <label className="inline-flex items-center">
                     <input
@@ -553,7 +561,7 @@ const ProjectRequirementForm = ({ subject }) => {
                       value="Other"
                       className="form-radio text-[#f0801c]"
                     />
-                    <span className="ml-2">Other</span>
+                    <span className="ml-2 text-black">Other</span>
                   </label>
                 </div>
                 {errors.platform && (
@@ -671,7 +679,7 @@ const ProjectRequirementForm = ({ subject }) => {
             </div>
 
             <div>
-              <label className="block mb-2">
+              <label className="block mb-2 text-black">
                 Additional Notes or Comments:
               </label>
               <textarea
@@ -688,7 +696,7 @@ const ProjectRequirementForm = ({ subject }) => {
               )}
             </div>
             <div>
-              <label className="block mb-2">Upload File:</label>
+              <label className="block mb-2 text-black">Upload File:</label>
 
               {/* Drag and Drop Area */}
               <div
