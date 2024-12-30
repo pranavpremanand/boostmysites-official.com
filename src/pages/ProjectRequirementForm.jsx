@@ -299,7 +299,7 @@ const ProjectRequirementForm = ({ subject }) => {
                 <div className="w-1/2">
                   <select
                     {...register("joinMonth")}
-                    className={`w-full px-3 py-2 border ${
+                    className={`w-full px-3 py-2 border text-black ${
                       errors.joinMonth ? "border-red-500" : "border-gray-300"
                     } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
                   >
@@ -321,7 +321,7 @@ const ProjectRequirementForm = ({ subject }) => {
                 <div className="w-1/2">
                   <select
                     {...register("joinYear")}
-                    className={`w-full px-3 py-2 border ${
+                    className={`w-full px-3 py-2 border text-black ${
                       errors.joinYear ? "border-red-500" : "border-gray-300"
                     } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
                   >
