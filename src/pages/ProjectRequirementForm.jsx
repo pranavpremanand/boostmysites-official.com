@@ -71,7 +71,7 @@ const ProjectRequirementForm = ({ subject }) => {
     if (file) {
       formData.append("file", file);
     }
-
+    // "https://script.google.com/macros/s/AKfycbwIJOyXVKHbG0PjXPkoEyet8tTbInvk--G01ibCM9Rsgnmldax-K5pHPbaD1KdeJcF1GA/exec"
     const googleFormURL =
       "https://script.google.com/macros/s/AKfycbwIJOyXVKHbG0PjXPkoEyet8tTbInvk--G01ibCM9Rsgnmldax-K5pHPbaD1KdeJcF1GA/exec";
     const googleFormData = new URLSearchParams();
@@ -96,6 +96,11 @@ const ProjectRequirementForm = ({ subject }) => {
     googleFormData.append("subscribername", data.subscribername || "N/A");
     googleFormData.append("referenceWebsite", data.referenceWebsite || "N/A");
     googleFormData.append("date", new Date().toLocaleDateString());
+    googleFormData.append(
+      "time",
+      new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })
+    );
+
     try {
       await fetch(googleFormURL, {
         method: "POST",
@@ -284,7 +289,7 @@ const ProjectRequirementForm = ({ subject }) => {
                   })}
                   type="text"
                   placeholder="Subscriber Name*"
-                  className={`w-full px-3 py-2 border ${
+                  className={`w-full px-3 py-2 border text-black ${
                     errors.name ? "border-red-500" : "border-gray-300"
                   } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
                 />
@@ -347,7 +352,7 @@ const ProjectRequirementForm = ({ subject }) => {
                   {...register("phoneNumber")}
                   type="tel"
                   placeholder="Phone Number"
-                  className={`w-full px-3 py-2 border ${
+                  className={`w-full px-3 py-2 border text-black ${
                     errors.phoneNumber ? "border-red-500" : "border-gray-300"
                   } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
                 />
@@ -368,7 +373,7 @@ const ProjectRequirementForm = ({ subject }) => {
                   {...register("name", { required: "Name is required" })}
                   type="text"
                   placeholder="Name*"
-                  className={`w-full px-3 py-2 border ${
+                  className={`w-full px-3 py-2 border text-black ${
                     errors.name ? "border-red-500" : "border-gray-300"
                   } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
                 />
@@ -383,7 +388,7 @@ const ProjectRequirementForm = ({ subject }) => {
                   {...register("email")}
                   type="email"
                   placeholder="Email"
-                  className={`w-full px-3 py-2 border ${
+                  className={`w-full px-3 py-2 border text-black ${
                     errors.email ? "border-red-500" : "border-gray-300"
                   } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
                 />
@@ -398,7 +403,7 @@ const ProjectRequirementForm = ({ subject }) => {
                   {...register("phone")}
                   type="tel"
                   placeholder="Phone"
-                  className={`w-full px-3 py-2 border ${
+                  className={`w-full px-3 py-2 border text-black ${
                     errors.phone ? "border-red-500" : "border-gray-300"
                   } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
                 />
@@ -419,7 +424,7 @@ const ProjectRequirementForm = ({ subject }) => {
                   {...register("projectName")}
                   type="text"
                   placeholder="Project Name"
-                  className={`w-full px-3 py-2 border ${
+                  className={`w-full px-3 py-2 border text-black ${
                     errors.projectName ? "border-red-500" : "border-gray-300"
                   } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
                 />
@@ -435,7 +440,7 @@ const ProjectRequirementForm = ({ subject }) => {
                     required: "Description is required",
                   })}
                   placeholder="Brief Description*"
-                  className={`w-full px-3 py-2 border ${
+                  className={`w-full px-3 py-2 border text-black ${
                     errors.description ? "border-red-500" : "border-gray-300"
                   } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
                   rows={3}
@@ -453,7 +458,7 @@ const ProjectRequirementForm = ({ subject }) => {
                   })}
                   type="url"
                   placeholder="Reference Website*"
-                  className={`w-full px-3 py-2 border ${
+                  className={`w-full px-3 py-2 border text-black ${
                     errors.referenceWebsite
                       ? "border-red-500"
                       : "border-gray-300"
@@ -481,7 +486,7 @@ const ProjectRequirementForm = ({ subject }) => {
                     {...register(`features.${index}`)}
                     type="text"
                     placeholder={`Feature ${index + 1}`}
-                    className={`w-full px-3 py-2 border ${
+                    className={`w-full px-3 py-2 border text-black ${
                       errors.features?.[index]
                         ? "border-red-500"
                         : "border-gray-300"
@@ -511,7 +516,7 @@ const ProjectRequirementForm = ({ subject }) => {
                     {...register(`userRoles.${index}`)}
                     type="text"
                     placeholder={`Role ${index + 1}`}
-                    className={`w-full px-3 py-2 border ${
+                    className={`w-full px-3 py-2 border text-black ${
                       errors.userRoles?.[index]
                         ? "border-red-500"
                         : "border-gray-300"
@@ -576,7 +581,7 @@ const ProjectRequirementForm = ({ subject }) => {
                     {...register("otherPlatform")}
                     type="text"
                     placeholder="Please specify the platform"
-                    className={`w-full px-3 py-2 border ${
+                    className={`w-full px-3 py-2 border text-black ${
                       errors.otherPlatform
                         ? "border-red-500"
                         : "border-gray-300"
@@ -600,7 +605,7 @@ const ProjectRequirementForm = ({ subject }) => {
                   {...register("designStyle")}
                   type="text"
                   placeholder="Preferred Design Style (if any)"
-                  className={`w-full px-3 py-2 border ${
+                  className={`w-full px-3 py-2 border text-black ${
                     errors.designStyle ? "border-red-500" : "border-gray-300"
                   } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
                 />
@@ -615,7 +620,7 @@ const ProjectRequirementForm = ({ subject }) => {
                   {...register("techStack")}
                   type="text"
                   placeholder="Technology Stack (if known)"
-                  className={`w-full px-3 py-2 border ${
+                  className={`w-full px-3 py-2 border text-black ${
                     errors.techStack ? "border-red-500" : "border-gray-300"
                   } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
                 />
@@ -630,7 +635,7 @@ const ProjectRequirementForm = ({ subject }) => {
                   {...register("integrations")}
                   type="text"
                   placeholder="Third-Party Integrations"
-                  className={`w-full px-3 py-2 border ${
+                  className={`w-full px-3 py-2 border text-black ${
                     errors.integrations ? "border-red-500" : "border-gray-300"
                   } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
                 />
@@ -651,7 +656,7 @@ const ProjectRequirementForm = ({ subject }) => {
                   {...register("timeline")}
                   type="text"
                   placeholder="Estimated Timeline"
-                  className={`w-full px-3 py-2 border ${
+                  className={`w-full px-3 py-2 border text-black ${
                     errors.timeline ? "border-red-500" : "border-gray-300"
                   } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
                 />
@@ -666,7 +671,7 @@ const ProjectRequirementForm = ({ subject }) => {
                   {...register("budget", { required: "Budget is required" })}
                   type="text"
                   placeholder="Budget Range*"
-                  className={`w-full px-3 py-2 border ${
+                  className={`w-full px-3 py-2 border text-black ${
                     errors.budget ? "border-red-500" : "border-gray-300"
                   } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
                 />
@@ -684,7 +689,7 @@ const ProjectRequirementForm = ({ subject }) => {
               </label>
               <textarea
                 {...register("additionalNotes")}
-                className={`w-full px-3 py-2 border ${
+                className={`w-full px-3 py-2 border text-black ${
                   errors.additionalNotes ? "border-red-500" : "border-gray-300"
                 } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
                 rows={3}
