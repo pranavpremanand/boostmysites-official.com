@@ -71,7 +71,7 @@ const ProjectRequirementForm = ({ subject }) => {
     if (file) {
       formData.append("file", file);
     }
-
+    // "https://script.google.com/macros/s/AKfycbwIJOyXVKHbG0PjXPkoEyet8tTbInvk--G01ibCM9Rsgnmldax-K5pHPbaD1KdeJcF1GA/exec"
     const googleFormURL =
       "https://script.google.com/macros/s/AKfycbwIJOyXVKHbG0PjXPkoEyet8tTbInvk--G01ibCM9Rsgnmldax-K5pHPbaD1KdeJcF1GA/exec";
     const googleFormData = new URLSearchParams();
@@ -96,6 +96,11 @@ const ProjectRequirementForm = ({ subject }) => {
     googleFormData.append("subscribername", data.subscribername || "N/A");
     googleFormData.append("referenceWebsite", data.referenceWebsite || "N/A");
     googleFormData.append("date", new Date().toLocaleDateString());
+    googleFormData.append(
+      "time",
+      new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })
+    );
+
     try {
       await fetch(googleFormURL, {
         method: "POST",
@@ -284,7 +289,7 @@ const ProjectRequirementForm = ({ subject }) => {
                   })}
                   type="text"
                   placeholder="Subscriber Name*"
-                  className={`w-full px-3 py-2 border ${
+                  className={`w-full px-3 py-2 border text-black ${
                     errors.name ? "border-red-500" : "border-gray-300"
                   } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
                 />
@@ -299,11 +304,13 @@ const ProjectRequirementForm = ({ subject }) => {
                 <div className="w-1/2">
                   <select
                     {...register("joinMonth")}
-                    className={`w-full px-3 py-2 border ${
+                    className={`w-full px-3 py-2 border text-black ${
                       errors.joinMonth ? "border-red-500" : "border-gray-300"
                     } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
                   >
-                    <option value="">Select Month</option>
+                    <option value="" className="text-black">
+                      Select Month
+                    </option>
                     {months.map((month, index) => (
                       <option key={index} value={month}>
                         {month}
@@ -319,11 +326,13 @@ const ProjectRequirementForm = ({ subject }) => {
                 <div className="w-1/2">
                   <select
                     {...register("joinYear")}
-                    className={`w-full px-3 py-2 border ${
+                    className={`w-full px-3 py-2 border text-black ${
                       errors.joinYear ? "border-red-500" : "border-gray-300"
                     } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
                   >
-                    <option value="">Select Year</option>
+                    <option value="" className="text-black">
+                      Select Year
+                    </option>
                     {years.map((year) => (
                       <option key={year} value={year}>
                         {year}
@@ -343,7 +352,7 @@ const ProjectRequirementForm = ({ subject }) => {
                   {...register("phoneNumber")}
                   type="tel"
                   placeholder="Phone Number"
-                  className={`w-full px-3 py-2 border ${
+                  className={`w-full px-3 py-2 border text-black ${
                     errors.phoneNumber ? "border-red-500" : "border-gray-300"
                   } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
                 />
@@ -364,7 +373,7 @@ const ProjectRequirementForm = ({ subject }) => {
                   {...register("name", { required: "Name is required" })}
                   type="text"
                   placeholder="Name*"
-                  className={`w-full px-3 py-2 border ${
+                  className={`w-full px-3 py-2 border text-black ${
                     errors.name ? "border-red-500" : "border-gray-300"
                   } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
                 />
@@ -379,7 +388,7 @@ const ProjectRequirementForm = ({ subject }) => {
                   {...register("email")}
                   type="email"
                   placeholder="Email"
-                  className={`w-full px-3 py-2 border ${
+                  className={`w-full px-3 py-2 border text-black ${
                     errors.email ? "border-red-500" : "border-gray-300"
                   } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
                 />
@@ -394,7 +403,7 @@ const ProjectRequirementForm = ({ subject }) => {
                   {...register("phone")}
                   type="tel"
                   placeholder="Phone"
-                  className={`w-full px-3 py-2 border ${
+                  className={`w-full px-3 py-2 border text-black ${
                     errors.phone ? "border-red-500" : "border-gray-300"
                   } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
                 />
@@ -415,7 +424,7 @@ const ProjectRequirementForm = ({ subject }) => {
                   {...register("projectName")}
                   type="text"
                   placeholder="Project Name"
-                  className={`w-full px-3 py-2 border ${
+                  className={`w-full px-3 py-2 border text-black ${
                     errors.projectName ? "border-red-500" : "border-gray-300"
                   } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
                 />
@@ -431,7 +440,7 @@ const ProjectRequirementForm = ({ subject }) => {
                     required: "Description is required",
                   })}
                   placeholder="Brief Description*"
-                  className={`w-full px-3 py-2 border ${
+                  className={`w-full px-3 py-2 border text-black ${
                     errors.description ? "border-red-500" : "border-gray-300"
                   } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
                   rows={3}
@@ -449,7 +458,7 @@ const ProjectRequirementForm = ({ subject }) => {
                   })}
                   type="url"
                   placeholder="Reference Website*"
-                  className={`w-full px-3 py-2 border ${
+                  className={`w-full px-3 py-2 border text-black ${
                     errors.referenceWebsite
                       ? "border-red-500"
                       : "border-gray-300"
@@ -468,14 +477,16 @@ const ProjectRequirementForm = ({ subject }) => {
                 Core Requirements
               </h3>
               <div>
-                <label className="block mb-2">Main Features Needed:</label>
+                <label className="block mb-2 text-black">
+                  Main Features Needed:
+                </label>
                 {featureFields.map((field, index) => (
                   <input
                     key={field.id}
                     {...register(`features.${index}`)}
                     type="text"
                     placeholder={`Feature ${index + 1}`}
-                    className={`w-full px-3 py-2 border ${
+                    className={`w-full px-3 py-2 border text-black ${
                       errors.features?.[index]
                         ? "border-red-500"
                         : "border-gray-300"
@@ -496,7 +507,7 @@ const ProjectRequirementForm = ({ subject }) => {
                 </button>
               </div>
               <div>
-                <label className="block mb-2">
+                <label className="block mb-2 text-black">
                   User Roles (if applicable):
                 </label>
                 {userRoleFields.map((field, index) => (
@@ -505,7 +516,7 @@ const ProjectRequirementForm = ({ subject }) => {
                     {...register(`userRoles.${index}`)}
                     type="text"
                     placeholder={`Role ${index + 1}`}
-                    className={`w-full px-3 py-2 border ${
+                    className={`w-full px-3 py-2 border text-black ${
                       errors.userRoles?.[index]
                         ? "border-red-500"
                         : "border-gray-300"
@@ -526,7 +537,7 @@ const ProjectRequirementForm = ({ subject }) => {
                 </button>
               </div>
               <div>
-                <label className="block mb-2">Platform:</label>
+                <label className="block mb-2 text-black">Platform:</label>
                 <div className="space-x-4">
                   <label className="inline-flex items-center">
                     <input
@@ -535,7 +546,7 @@ const ProjectRequirementForm = ({ subject }) => {
                       value="Web"
                       className="form-radio text-[#f0801c]"
                     />
-                    <span className="ml-2">Web</span>
+                    <span className="ml-2 text-black">Web</span>
                   </label>
                   <label className="inline-flex items-center mb-2">
                     <input
@@ -544,7 +555,9 @@ const ProjectRequirementForm = ({ subject }) => {
                       value="Mobile"
                       className="form-radio text-[#f0801c]"
                     />
-                    <span className="ml-2">Mobile (Android/iOS)</span>
+                    <span className="ml-2 text-black">
+                      Mobile (Android/iOS)
+                    </span>
                   </label>
                   <label className="inline-flex items-center">
                     <input
@@ -553,7 +566,7 @@ const ProjectRequirementForm = ({ subject }) => {
                       value="Other"
                       className="form-radio text-[#f0801c]"
                     />
-                    <span className="ml-2">Other</span>
+                    <span className="ml-2 text-black">Other</span>
                   </label>
                 </div>
                 {errors.platform && (
@@ -568,7 +581,7 @@ const ProjectRequirementForm = ({ subject }) => {
                     {...register("otherPlatform")}
                     type="text"
                     placeholder="Please specify the platform"
-                    className={`w-full px-3 py-2 border ${
+                    className={`w-full px-3 py-2 border text-black ${
                       errors.otherPlatform
                         ? "border-red-500"
                         : "border-gray-300"
@@ -592,7 +605,7 @@ const ProjectRequirementForm = ({ subject }) => {
                   {...register("designStyle")}
                   type="text"
                   placeholder="Preferred Design Style (if any)"
-                  className={`w-full px-3 py-2 border ${
+                  className={`w-full px-3 py-2 border text-black ${
                     errors.designStyle ? "border-red-500" : "border-gray-300"
                   } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
                 />
@@ -607,7 +620,7 @@ const ProjectRequirementForm = ({ subject }) => {
                   {...register("techStack")}
                   type="text"
                   placeholder="Technology Stack (if known)"
-                  className={`w-full px-3 py-2 border ${
+                  className={`w-full px-3 py-2 border text-black ${
                     errors.techStack ? "border-red-500" : "border-gray-300"
                   } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
                 />
@@ -622,7 +635,7 @@ const ProjectRequirementForm = ({ subject }) => {
                   {...register("integrations")}
                   type="text"
                   placeholder="Third-Party Integrations"
-                  className={`w-full px-3 py-2 border ${
+                  className={`w-full px-3 py-2 border text-black ${
                     errors.integrations ? "border-red-500" : "border-gray-300"
                   } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
                 />
@@ -643,7 +656,7 @@ const ProjectRequirementForm = ({ subject }) => {
                   {...register("timeline")}
                   type="text"
                   placeholder="Estimated Timeline"
-                  className={`w-full px-3 py-2 border ${
+                  className={`w-full px-3 py-2 border text-black ${
                     errors.timeline ? "border-red-500" : "border-gray-300"
                   } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
                 />
@@ -658,7 +671,7 @@ const ProjectRequirementForm = ({ subject }) => {
                   {...register("budget", { required: "Budget is required" })}
                   type="text"
                   placeholder="Budget Range*"
-                  className={`w-full px-3 py-2 border ${
+                  className={`w-full px-3 py-2 border text-black ${
                     errors.budget ? "border-red-500" : "border-gray-300"
                   } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
                 />
@@ -671,12 +684,12 @@ const ProjectRequirementForm = ({ subject }) => {
             </div>
 
             <div>
-              <label className="block mb-2">
+              <label className="block mb-2 text-black">
                 Additional Notes or Comments:
               </label>
               <textarea
                 {...register("additionalNotes")}
-                className={`w-full px-3 py-2 border ${
+                className={`w-full px-3 py-2 border text-black ${
                   errors.additionalNotes ? "border-red-500" : "border-gray-300"
                 } rounded-md focus:outline-none focus:ring-2 focus:ring-[#f0801c]`}
                 rows={3}
@@ -688,7 +701,7 @@ const ProjectRequirementForm = ({ subject }) => {
               )}
             </div>
             <div>
-              <label className="block mb-2">Upload File:</label>
+              <label className="block mb-2 text-black">Upload File:</label>
 
               {/* Drag and Drop Area */}
               <div
