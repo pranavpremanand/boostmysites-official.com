@@ -217,17 +217,6 @@ export const sixMonthPlanDetails = {
       ],
     },
     {
-      heading: "Company Registration & CA Services",
-      description:
-        "Comprehensive company registration and compliance services.",
-      services: [
-        "Complete company registration (Pvt Ltd, LLP, etc.)",
-        "GST registration and tax filing support",
-        "Social media management (Facebook, LinkedIn, Instagram)",
-        "Ongoing compliance and accounting services",
-      ],
-    },
-    {
       heading: "Full-Stack Website Design",
       description: "Professional website design and development.",
       services: [
