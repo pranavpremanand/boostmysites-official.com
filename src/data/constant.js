@@ -414,7 +414,7 @@ export const twoYearPlanDetails = {
       ],
     },
   ],
-  price: "₹4,80,000 + GST",
+  price: "₹5,00,000 + GST",
 };
 
 // subscription plans in dollars
