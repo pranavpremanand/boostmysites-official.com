@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import bannerImg from "../../assets/home/home-page-banner.webp";
 import arrowIcon from "../../assets/home/arrow-down-big.png.png";
 import TypeIt from "typeit-react";
@@ -19,18 +18,18 @@ import teamImg4 from "../../assets/home/team4.jpg.webp";
 import teamImg5 from "../../assets/home/team5.jpg.webp";
 import teamImg6 from "../../assets/home/team6.jpg.webp";
 import teamImg7 from "../../assets/home/team7.webp";
-import teamVid from "../../assets/videos/our-team-vid.mp4";
-import teamVidThumb from "../../assets/videos/our-team-vid-thumbnail.png";
-import ReactPlayer from "react-player";
-import quotesIcon from "../../assets/home/quotes.png";
-import { BiPlay } from "react-icons/bi";
+// import teamVid from "../../assets/videos/our-team-vid.mp4";
+// import teamVidThumb from "../../assets/videos/our-team-vid-thumbnail.png";
+// import ReactPlayer from "react-player";
+// import quotesIcon from "../../assets/home/quotes.png";
+// import { BiPlay } from "react-icons/bi";
 import LeadForm from "../../components/LeadForm";
 import FeaturedIn from "../../components/FeaturedIn";
 import OurOffices from "../../components/OurOffices";
 
 const Home = () => {
-  const [isVideoLoading, setIsVideoLoading] = useState(true);
-  const [isPlaying, setIsPlaying] = useState(false);
+  // const [isVideoLoading, setIsVideoLoading] = useState(true);
+  // const [isPlaying, setIsPlaying] = useState(false);
   return (
     <div className="bg-secondary text-white">
       <div
@@ -241,8 +240,8 @@ const Home = () => {
                   business
                 </p>
                 <Link
-                  to="https://aiexpert.boostmysites.com/aiexpert/"
-                  // to="/ai-expert"
+                  // to="https://aiexpert.boostmysites.com/aiexpert/"
+                  to="/ai-expert"
                   target="_blank"
                   rel="noreferrer"
                   className="text-md flex items-center gap-2 text-primary1 underline w-fit"
@@ -289,7 +288,8 @@ const Home = () => {
                     concentrate on running and growing your e-commerce business
                   </p>
                   <Link
-                    to="https://boostmysites.store"
+                    // to="https://boostmysites.store"
+                    to="https://ecommerce.boostmysites.com"
                     target="_blank"
                     rel="noreferrer"
                     className="text-md flex items-center gap-2 text-primary1 underline w-fit"
@@ -416,7 +416,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div
+          {/* <div
             data-aos="fade-up"
             className="bg-[#FFFFFF03] backdrop-blur-[500rem] grid gap-[1rem] sm:gap-0 pt-[1rem] sm:pt-0 sm:grid-cols-[35%_65%] md:grid-cols-[40%_60%] lg:grid-cols-[30%_70%] mt-[3rem]"
           >
@@ -489,7 +489,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
       <LeadForm />

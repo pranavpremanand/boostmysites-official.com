@@ -1,13 +1,11 @@
-import { lazy, useEffect } from "react";
+import { lazy } from "react";
 import { BsHeartFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import ReactPlayer from "react-player";
 import bannerBgVid from "../assets/videos/banner-landing.mp4";
-import FormSection from "../components/landingPage/FormSection";
 import RoadmapWithAccordion from "../components/landingPage/RoadmapWithAccordion";
 import { aiExpertAccesses, subscriptionBenefits } from "../data/constant";
-import PopupForm from "../components/landingPage/PopupForm";
 const Banner = lazy(() => import("../components/landingPage/Banner"));
 const FeaturedIn = lazy(() => import("../components/FeaturedIn"));
 const FAQ = lazy(() => import("../components/FAQ"));
@@ -84,24 +82,6 @@ const LandingPage = ({ path, emailIdToSendMail }) => {
               Access These Exclusive Subscription Benefits
             </h2>
           </div>
-          {/* {pathname === "/ai-expert1" ? ( */}
-          {/* <div
-              data-aos="fade-up"
-              className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 mt-5 text-white"
-            >
-              {itemsList.map(({ id, title, description, icon }) => (
-                <div
-                  className="overflow-hidden p-8 bg-black/80 hover:border-t-4 border-primary transition-all duration-150 text-center group"
-                  key={id}
-                >
-                  <div className="flex flex-col gap-5">
-                    <h4 className="text-2xl font-bold">{title}</h4>
-                    <p className="text-white/80 font-light">{description}</p>
-                  </div>
-                </div>
-              ))}
-            </div> */}
-          {/* ) : ( */}
           <div
             data-aos="fade-up"
             className="max-w-5xl mx-auto grid sm:grid-cols-2 lg:grid-cols-2 gap-7 mt-5 text-white"
@@ -124,26 +104,27 @@ const LandingPage = ({ path, emailIdToSendMail }) => {
               );
             })}
           </div>
-          {/* )} */}
         </section>
 
         <section className="section-pt flex flex-col items-center justify-center text-center gap-10">
-          <h1
+          <h2
             data-aos="zoom-in"
             className=" text-[2.7rem] leading-[3rem] md:text-5xl font-semibold text-primary text-center"
           >
             Launch the company <br />
             {"you've always envisioned."}
-          </h1>
+          </h2>
           <div
             data-aos="fade-up"
             className="flex flex-col gap-3 w-full justify-center items-center"
           >
             <Link
               className="primary-btn font-medium w-[20rem] flex justify-center py-3"
-              to={path === "/" ? `${path}contact` : `${path}/contact`}
+              to="https://ebook-landing-page-gray.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Start your own AI company
+              Download Free E-Book
             </Link>
             <JoinEntrepreneurs />
           </div>
@@ -180,59 +161,11 @@ const LandingPage = ({ path, emailIdToSendMail }) => {
             ))}
           </div>
         </section>
-        {/* <section
-          id="courses"
-          data-aos="fade-up"
-          className="section-pt text-white"
-        >
-          <h2 className=" text-[2.7rem] leading-[3rem] md:text-5xl text-center uppercase md:flex justify-center gap-5">
-            <FaUnlockAlt className="text-4xl inline" /> You Will Get{" "}
-            <span className="font-semibold">Access To</span>
-          </h2>
-          <div className="mt-14 grid grid-cols-2 sm:grid-cols-3 gap-5 sm:gap-10 max-w-3xl mx-auto">
-            {accesses.map((access) => (
-              <div
-                key={access.title}
-                style={{ backgroundImage: `url(${encodeURI(access.img)})` }}
-                className="shadow-large shadow-white/10 relative bg-center group overflow-hidden hover:scale-105 bg-cover cursor-pointer transition-all duration-200 rounded-md p-5 text-xl sm:text-2xl flex justify-center items-center text-center w-full aspect-square"
-              >
-                <div className="absolute inset-0 bg-black/50 group-hover:bg-black/70 h-full w-full"></div>
-                <p className="z-10 font-semibold">{access.title}</p>
-              </div>
-            ))}
-          </div>
-          <div data-aos="fade-up" className="section-pt">
-            <h1 className=" text-[2.7rem] leading-[3rem] md:text-5xl font-semibold text-primary text-center">
-              Build the company <br />
-              {"you've always dreamed of."}
-            </h1>
-            <div className="flex flex-col gap-3 w-full justify-center items-center mt-14">
-              {path === "/" ? (
-                <Link
-                  className="primary-btn font-medium w-[20rem] flex justify-center py-3"
-                  to={`${path}contact`}
-                  // to={`${path}/contact`}
-                >
-                  Start your own AI company
-                </Link>
-              ) : (
-                <Link
-                  className="primary-btn font-medium w-[20rem] flex justify-center py-3"
-                  to={`${path}/contact`}
-                  // to={`${path}/contact`}
-                >
-                  Start your own AI company
-                </Link>
-              )}
-              <JoinEntrepreneurs />
-            </div>
-          </div>
-        </section> */}
 
         <section className="text-center section-pt">
-          <h1 className=" text-[2.7rem] mb-14 leading-[3rem] md:text-5xl font-semibold text-primary max-w-[40rem] mx-auto">
+          <h2 className=" text-[2.7rem] mb-14 leading-[3rem] md:text-5xl font-semibold text-primary max-w-[40rem] mx-auto">
             Turn your vision into the company of your dreams.
-          </h1>
+          </h2>
           <Videos
             introVidIsPlaying={introVidIsPlaying}
             setIntroVidIsPlaying={setIntroVidIsPlaying}
@@ -240,51 +173,59 @@ const LandingPage = ({ path, emailIdToSendMail }) => {
         </section>
 
         <section data-aos="fade-up" className="section-pt">
-          {/* {pathname === "/ai-expert1" ? ( */}
           <RoadmapWithAccordion />
-          {/* ) : (
-            <div className="grid grid-cols-1 gap-10 md:gap-24 text-white max-w-6xl mx-auto">
-              {workFlow.map((step) => (
-                <div
-                  key={step.id}
-                  className={`flex flex-col md:flex-row ${
-                    step.id % 2 === 0 && "md:flex-row-reverse"
-                  } gap-5 md:gap-10`}
-                >
-                  <div className="w-full md:w-[50%] flex flex-col gap-4">
-                    <h5 className="text-lg font-medium">{step.title}</h5>
-                    <ul className="border flex flex-col gap-5 h-fit border-dashed border-[#9747FF] rounded-md p-4">
-                      {step.howWeDo.map((step) => (
-                        <li className="bg-[#131B23] p-4 rounded-md" key={step}>
-                          &#x2022; {step}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              ))}
-            </div>
-          )} */}
-          <h1 className="text-[2.7rem] leading-[3rem] md:text-5xl font-semibold text-primary text-center mt-20">
+        </section>
+
+        <section data-aos="fade-up" className="">
+          <h2
+            data-aos="zoom-in"
+            className="text-[2.7rem] leading-[3rem] md:text-5xl font-semibold text-primary text-center mt-20"
+          >
+            Worried about sales?
+          </h2>
+          <p className="text-white/80 max-w-[40rem] mx-auto text-center mt-5 font-light">
+            Streamline your sales with boostmysites sales assistance
+          </p>
+          <Link
+            className="mx-auto mt-5 primary-btn font-medium w-[20rem] flex justify-center py-3"
+            to="/services"
+          >
+            Know More
+          </Link>
+        </section>
+
+        <section data-aos="fade-up">
+          <h2 className="text-[2.7rem] leading-[3rem] md:text-5xl font-semibold text-primary text-center mt-20">
             Bring your dream company to life.
-          </h1>
+          </h2>
+          <p className="text-white/80 max-w-[40rem] mx-auto text-center mt-5 font-light">
+            Position yourself as a global leader in AI and IT solutions with
+            Boostmysites, empowering you to offer 11 innovative technology
+            services and a market-ready SaaS product!
+          </p>
+          <Link
+            className="mx-auto mt-5 primary-btn font-medium w-[20rem] flex justify-center py-3"
+            to="/services"
+          >
+            Services
+          </Link>
         </section>
 
         <section id="reviews" className="pt-[4rem] text-center text-white">
           <div className="max-w-[40rem] mx-auto">
-            <h1
+            <h2
               data-aos="zoom-in"
               className="text-4xl font-bold text-white mt-2 text-center"
             >
               Wall Of Love <BsHeartFill className="text-red-500 inline ml-1" />
-            </h1>
-            <h1
+            </h2>
+            <h2
               data-aos="fade-up"
               className="text-xl font-medium mt-[1rem] text-primary"
             >
               <span className="font-bold">Latest Reviews</span> from our
               Customers
-            </h1>
+            </h2>
           </div>
         </section>
       </div>
@@ -299,7 +240,7 @@ const LandingPage = ({ path, emailIdToSendMail }) => {
             className="primary-btn font-medium w-[20rem] flex justify-center py-3"
             to={path === "/" ? `${path}contact` : `${path}/contact`}
           >
-            Start your own AI company
+            Get Started Today!
           </Link>
           <JoinEntrepreneurs />
         </div>
@@ -318,7 +259,7 @@ const LandingPage = ({ path, emailIdToSendMail }) => {
               className="primary-btn font-medium w-[20rem] flex justify-center py-3"
               to={path === "/" ? `${path}contact` : `${path}/contact`}
             >
-              Start your own AI company
+              Get Started Today!
             </Link>
             <JoinEntrepreneurs />
           </div>

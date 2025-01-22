@@ -33,9 +33,9 @@ const Banner = ({ introVidIsPlaying, setIntroVidIsPlaying, path }) => {
                 path === "/" ? `${path}contact/step1` : `${path}/contact/step1`
               )
             }
-            className="primary-btn font-medium w-fit hidden lg:flex justify-center py-3 mt-5"
+            className="primary-btn capitalize font-medium w-fit hidden lg:flex justify-center py-3 mt-5"
           >
-            Request A Quote
+            Get your free consultation
           </button>
         </div>
 

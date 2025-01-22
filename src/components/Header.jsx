@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Drawer from "react-modern-drawer";
 import { Divide as Hamburger } from "hamburger-react";
 import { IoMdClose } from "react-icons/io";
-import { Link, Link as RLink, useLocation } from "react-router-dom";
+import { Link, Link as RLink } from "react-router-dom";
 
 const options = [
   {
@@ -19,7 +19,7 @@ const options = [
   {
     id: 2,
     title: "Start Your Ecommerce Company",
-    path: "https://boostmysites.store",
+    path: "https://ecommerce.boostmysites.com",
   },
   {
     id: 3,
