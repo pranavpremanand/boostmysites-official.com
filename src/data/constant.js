@@ -277,7 +277,7 @@ export const sixMonthPlanDetails = {
       ],
     },
   ],
-  price: "₹2,44,000 + GST",
+  price: "₹2,64,000 + GST",
 };
 
 export const oneYearPlanDetails = {
@@ -354,7 +354,7 @@ export const oneYearPlanDetails = {
       ],
     },
   ],
-  price: "₹4,00,000 + GST",
+  price: "₹3,67,000 + GST",
 };
 
 export const twoYearPlanDetails = {
@@ -425,7 +425,7 @@ export const twoYearPlanDetails = {
       ],
     },
   ],
-  price: "₹4,80,000 + GST",
+  price: "₹4,67,000 + GST",
 };
 
 // subscription plans in dollars

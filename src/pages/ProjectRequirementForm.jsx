@@ -100,7 +100,9 @@ const ProjectRequirementForm = ({ subject }) => {
       "time",
       new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })
     );
-
+    // if (file) {
+    //   googleFormData.append("file", file);
+    // }
     try {
       await fetch(googleFormURL, {
         method: "POST",
