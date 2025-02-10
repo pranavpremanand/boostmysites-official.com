@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Drawer from "react-modern-drawer";
 import { Divide as Hamburger } from "hamburger-react";
 import { IoMdClose } from "react-icons/io";
-import { Link as RLink, useLocation } from "react-router-dom";
+import { Link, Link as RLink } from "react-router-dom";
 
 const options = [
   {
@@ -19,34 +19,41 @@ const options = [
   {
     id: 2,
     title: "Start Your Ecommerce Company",
-    path: "https://boostmysites.store",
+    path: "https://ecommerce.boostmysites.com",
   },
   {
     id: 3,
+    title: "Contact Us",
+    path: "/ai-expert/contact/step1",
+  },
+];
+
+const companyLinks = [
+  {
+    id: 1,
     title: "Services and Pricing",
     path: "/services",
   },
   {
-    id: 4,
+    id: 2,
     title: "Sales Team",
     path: "/sales-team-services",
   },
   {
-    id: 5,
+    id: 3,
     title: "Blogs",
     path: "/blogs",
   },
   {
-    id: 6,
-    title: "Contact Us",
-    path: "/ai-expert/contact",
+    id: 4,
+    title: "Reviews",
+    path: "/reviews",
   },
 ];
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const { pathname } = useLocation();
 
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
@@ -86,7 +93,7 @@ const Header = () => {
                 className="h-[4rem] md:h-[5rem] object-contain -mb-3"
               />
             </RLink>
-            <div className="text-sm hidden xl:flex items-center gap-10">
+            <div className="text-sm hidden xl:flex items-center gap-14">
               {options.map((option) => (
                 <RLink
                   to={option.path}
@@ -96,18 +103,27 @@ const Header = () => {
                   {option.title}
                 </RLink>
               ))}
-              <RLink
-                to="/connect-with-us/1"
-                className="primary-btn1"
-              >
+              <div className="relative group">
+                <button className="text-sm cursor-pointer peer">Company</button>
+                <div
+                  className="invisible overflow-hidden absolute w-[17rem] bg-[#111111c9] backdrop-blur-sm flex flex-col top-[160%] -left-full rounded-lg 
+                      peer-hover:visible hover:visible transition-all duration-300"
+                >
+                  {companyLinks.map((link) => (
+                    <Link
+                      key={link.id}
+                      to={link.path}
+                      className="px-5 py-3 hover:bg-white/10 transition-colors"
+                    >
+                      {link.title}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+              <RLink to="/connect-with-us/1" className="primary-btn1">
                 Let's Connect
               </RLink>
             </div>
-            {/* <RLink
-              className="hidden xl:flex primary-btn1"
-            >
-              Let's Connect
-            </RLink> */}
 
             <div
               className="block xl:hidden justify-self-end"
@@ -140,10 +156,10 @@ const Header = () => {
           </button>
         </div>
         <div className="flex flex-col gap-4">
-          {options.map(({ title, path, id }) => (
+          {options.concat(companyLinks).map(({ title, path }) => (
             <RLink
               onClick={() => setIsOpen(false)}
-              key={id}
+              key={path}
               className="text-2xl font-medium cursor-pointer transition-colors duration-300 link"
               to={path}
             >

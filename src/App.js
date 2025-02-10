@@ -6,7 +6,6 @@ import {
   useLocation,
 } from "react-router-dom";
 import "./App.css";
-import LandingPageHeader from "./components/landingPage/Header";
 import "react-modern-drawer/dist/index.css";
 import "keen-slider/keen-slider.min.css";
 import { Toaster } from "react-hot-toast";
@@ -81,7 +80,8 @@ function App() {
                   path={path}
                   element={
                     <>
-                      <LandingPageHeader path={path} />
+                      {/* <LandingPageHeader path={path} /> */}
+                      <Header/>
                       <LandingPage
                         path={path}
                         emailIdToSendMail={emailIdToSendMail}
@@ -97,7 +97,8 @@ function App() {
                   path={path}
                   element={
                     <>
-                      <LandingPageHeader path={path} />
+                      {/* <LandingPageHeader path={path} /> */}
+                      <Header/>
                       <LandingPage1
                         path={path}
                         emailIdToSendMail="ceo@boostmysites.com"
@@ -114,7 +115,8 @@ function App() {
                   path={`${path}/contact/*`}
                   element={
                     <>
-                      <LandingPageHeader path={path} />
+                      {/* <LandingPageHeader path={path} /> */}
+                      <Header/>
                       <Routes>
                         <Route
                           index
@@ -148,7 +150,7 @@ function App() {
                   path={`${path}/contact/*`}
                   element={
                     <>
-                      <LandingPageHeader path={path} />
+                      {/* <LandingPageHeader path={path} /> */}
                       <Routes>
                         <Route
                           index

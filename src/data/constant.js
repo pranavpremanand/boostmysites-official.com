@@ -217,17 +217,6 @@ export const sixMonthPlanDetails = {
       ],
     },
     {
-      heading: "Company Registration & CA Services",
-      description:
-        "Comprehensive company registration and compliance services.",
-      services: [
-        "Complete company registration (Pvt Ltd, LLP, etc.)",
-        "GST registration and tax filing support",
-        "Social media management (Facebook, LinkedIn, Instagram)",
-        "Ongoing compliance and accounting services",
-      ],
-    },
-    {
       heading: "Full-Stack Website Design",
       description: "Professional website design and development.",
       services: [
@@ -623,5 +612,59 @@ export const subscriptionPlansInDollars = [
       },
     ],
     price: "$ 3192 (20% off)",
+  },
+];
+
+// testimonials
+export const testimonials = [
+  {
+    name: "Alex J.",
+    desc:
+      "Boostmysites was instrumental in launching my AI project. Their expertise in creating a sleek, tech-savvy website and implementing data-driven SEO strategies helped me attract clients globally.",
+  },
+  {
+    name: "Maria T.",
+    desc:
+      "I wanted to start an AI-driven business but needed help with branding and outreach. Boostmysites handled everything, from a professional website to effective ad campaigns. Now, I'm thriving!",
+  },
+  {
+    name: "Kevin S.",
+    desc:
+      "Boostmysites gave my platform the perfect online presence. Their user-friendly website design and marketing campaigns turned my idea into a recognized business in the tech industry.",
+  },
+  {
+    name: "Emily R.",
+    desc:
+      "Starting an AI business seemed daunting, but Boostmysites provided the tools and guidance I needed. Their support was a game-changer for building credibility and reaching early adopters.",
+  },
+  {
+    name: "James K.",
+    desc:
+      "We launched with Boostmysites’ help, and it was the best decision ever. Their digital marketing expertise drove traffic to my platform, enabling me to secure my first big clients.",
+  },
+  {
+    name: "Sophia M.",
+    desc:
+      "Boostmysites handled every aspect of my online launch, from hosting to social media strategies. My startup is now a leading name in the space. Their team truly understood my vision.",
+  },
+  {
+    name: "Raj P.",
+    desc:
+      "Boostmysites provided an AI-specific focus in their design and marketing services. Their understanding of tech audiences gave my business a professional edge that resonated with my target market.",
+  },
+  {
+    name: "Laura B.",
+    desc:
+      "As a creative entrepreneur in AI, I needed a unique website. Boostmysites delivered an intuitive, visually appealing platform that perfectly showcases my projects.",
+  },
+  {
+    name: "Michael L.",
+    desc:
+      "Starting an AI-focused venture required cutting-edge digital support, and Boostmysites nailed it. Their team delivered a high-performance site with excellent tools for lead generation.",
+  },
+  {
+    name: "Anna W.",
+    desc:
+      "I trusted Boostmysites to launch my startup, and they didn’t disappoint. Their tailored solutions helped my brand stand out in a crowded market. A phenomenal experience!",
   },
 ];
