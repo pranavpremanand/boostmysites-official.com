@@ -203,71 +203,71 @@ export const services = [
 
 // subscription plans
 
-export const sixMonthPlanDetails = {
-  title: "6 Month",
-  accordionDetails: [
-    {
-      heading: "Branding and Marketing Team",
-      description: "Custom branding and marketing services.",
-      services: [
-        "Custom branding strategy, logo, business card design",
-        "Social media management (Facebook, LinkedIn, Instagram)",
-        "Paid ads, content marketing, SEO, and outreach",
-        "Brand positioning to stand out in the market",
-      ],
-    },
-    {
-      heading: "Full-Stack Website Design",
-      description: "Professional website design and development.",
-      services: [
-        "Custom-designed, mobile-responsive website",
-        "SEO optimization for better visibility",
-        "User-friendly interface and functionality (contact forms, e-commerce, etc.)",
-      ],
-    },
-    {
-      heading: "Full Support System",
-      description: "Comprehensive support for business operations.",
-      services: [
-        "24/7 support for troubleshooting and guidance",
-        "Network access to entrepreneurs, mentors, and experts",
-        "Weekly check-ins with your mentor",
-      ],
-    },
-    {
-      heading: "Expert Mentoring",
-      description: "Guidance from experienced mentors.",
-      services: [
-        "One-on-one business strategy sessions",
-        "Insights into AI industry trends and opportunities",
-        "Problem-solving and decision-making support",
-        "Daily Scrutinizing & Task Management",
-        "Daily actionable tasks and milestones",
-        "Progress monitoring and weekly reviews",
-        "Monthly goal setting and performance tracking",
-      ],
-    },
-    {
-      heading: "AI Training & Skill Development",
-      description: "Hands-on training in AI technologies.",
-      services: [
-        "Fundamentals of AI, machine learning, and deep learning",
-        "Hands-on workshops and coding training",
-        "Tools and software for building AI products",
-      ],
-    },
-    {
-      heading: "Why Choose This Program?",
-      description: "Reasons to select this program for business growth.",
-      services: [
-        "Affordable investment of ₹2.44 Lakhs for all-inclusive services",
-        "Comprehensive support from company registration to daily business tasks",
-        "Proven experience in helping entrepreneurs start and scale AI companies",
-      ],
-    },
-  ],
-  price: "₹2,64,000 + GST",
-};
+// export const sixMonthPlanDetails = {
+//   title: "6 Month",
+//   accordionDetails: [
+//     {
+//       heading: "Branding and Marketing Team",
+//       description: "Custom branding and marketing services.",
+//       services: [
+//         "Custom branding strategy, logo, business card design",
+//         "Social media management (Facebook, LinkedIn, Instagram)",
+//         "Paid ads, content marketing, SEO, and outreach",
+//         "Brand positioning to stand out in the market",
+//       ],
+//     },
+//     {
+//       heading: "Full-Stack Website Design",
+//       description: "Professional website design and development.",
+//       services: [
+//         "Custom-designed, mobile-responsive website",
+//         "SEO optimization for better visibility",
+//         "User-friendly interface and functionality (contact forms, e-commerce, etc.)",
+//       ],
+//     },
+//     {
+//       heading: "Full Support System",
+//       description: "Comprehensive support for business operations.",
+//       services: [
+//         "24/7 support for troubleshooting and guidance",
+//         "Network access to entrepreneurs, mentors, and experts",
+//         "Weekly check-ins with your mentor",
+//       ],
+//     },
+//     {
+//       heading: "Expert Mentoring",
+//       description: "Guidance from experienced mentors.",
+//       services: [
+//         "One-on-one business strategy sessions",
+//         "Insights into AI industry trends and opportunities",
+//         "Problem-solving and decision-making support",
+//         "Daily Scrutinizing & Task Management",
+//         "Daily actionable tasks and milestones",
+//         "Progress monitoring and weekly reviews",
+//         "Monthly goal setting and performance tracking",
+//       ],
+//     },
+//     {
+//       heading: "AI Training & Skill Development",
+//       description: "Hands-on training in AI technologies.",
+//       services: [
+//         "Fundamentals of AI, machine learning, and deep learning",
+//         "Hands-on workshops and coding training",
+//         "Tools and software for building AI products",
+//       ],
+//     },
+//     {
+//       heading: "Why Choose This Program?",
+//       description: "Reasons to select this program for business growth.",
+//       services: [
+//         "Affordable investment of ₹2.44 Lakhs for all-inclusive services",
+//         "Comprehensive support from company registration to daily business tasks",
+//         "Proven experience in helping entrepreneurs start and scale AI companies",
+//       ],
+//     },
+//   ],
+//   price: "₹2,64,000 + GST",
+// };
 
 export const oneYearPlanDetails = {
   title: "1 Year",
@@ -343,7 +343,7 @@ export const oneYearPlanDetails = {
       ],
     },
   ],
-  price: "₹3,67,000 + GST",
+  price: "₹3,99,000 + GST",
 };
 
 export const twoYearPlanDetails = {

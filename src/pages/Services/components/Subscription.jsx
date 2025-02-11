@@ -31,8 +31,8 @@ const Subscription = () => {
           >
             Subscription Plans
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-            <div className="flex flex-col p-6 bg-black border border-primary rounded-lg">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-12">
+            {/* <div className="flex flex-col p-6 bg-black border border-primary rounded-lg">
               <div className="flex items-center justify-center mb-6">
                 <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
                   <span className="text-primary">📅</span>
@@ -66,7 +66,7 @@ const Subscription = () => {
                   Subscribe
                 </Link>
               </div>
-            </div>
+            </div> */}
             <div className="flex flex-col p-6 bg-black border border-primary rounded-lg">
               <div className="flex items-center justify-center mb-6">
                 <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
