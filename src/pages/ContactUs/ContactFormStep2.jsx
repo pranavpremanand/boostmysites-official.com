@@ -29,7 +29,7 @@ const ContactFormStep2 = ({ emailIdToSendMail, pathToRedirect }) => {
   } = useForm({
     mode: "onSubmit",
     defaultValues: {
-      businessType: "", // Default selected business type
+      // businessType: "", // Default selected business type
       expectedEarnings: "", // Default selected earnings
       investmentCapital: "", // Default selected capital
       timeline: "", // Default selected timeline
@@ -87,7 +87,7 @@ const ContactFormStep2 = ({ emailIdToSendMail, pathToRedirect }) => {
       emailBody += "Email: " + values.email + "\n\n";
       emailBody += "Phone Number: " + values.phone + "\n\n";
       emailBody += "Location: " + values.state + ", " + values.country + "\n\n";
-      emailBody += "Business Type: " + values.businessType + "\n\n";
+      // emailBody += "Business Type: " + values.businessType + "\n\n";
       emailBody += "Expected Earnings: " + values.expectedEarnings + "\n\n";
       emailBody += "Primary Goal: " + values.primaryGoal + "\n\n";
       emailBody += "Investment Capital: " + values.investmentCapital + "\n\n";
@@ -175,7 +175,7 @@ const ContactFormStep2 = ({ emailIdToSendMail, pathToRedirect }) => {
         </h2> */}
         <div className="grid grid-cols-1 gap-4 mt-6">
           {/* Business Type Field */}
-          <div className="grid grid-cols-1 relative">
+          {/* <div className="grid grid-cols-1 relative">
             <label className="text-sm">
               What type of business are you planning to start?
             </label>
@@ -210,7 +210,7 @@ const ContactFormStep2 = ({ emailIdToSendMail, pathToRedirect }) => {
                 {errors.businessType.message}
               </small>
             )}
-          </div>
+          </div> */}
 
           {/* Expected Earnings Field */}
           <div className="grid grid-cols-1 relative">

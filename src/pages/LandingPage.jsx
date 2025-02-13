@@ -120,11 +120,13 @@ const LandingPage = ({ path, emailIdToSendMail }) => {
           >
             <Link
               className="primary-btn font-medium w-[20rem] flex justify-center py-3"
-              to="https://ebook-landing-page-gray.vercel.app"
+              to={
+                path === "/" ? `${path}contact/step1` : `${path}/contact/step1`
+              }
               target="_blank"
               rel="noopener noreferrer"
             >
-              Download Free E-Book
+              Get Started Now
             </Link>
             <JoinEntrepreneurs />
           </div>

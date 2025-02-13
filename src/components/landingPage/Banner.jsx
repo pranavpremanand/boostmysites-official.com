@@ -92,7 +92,7 @@ const Banner = ({ introVidIsPlaying, setIntroVidIsPlaying, path }) => {
           }
           className="primary-btn font-medium w-[17rem] flex mx-auto lg:hidden justify-center py-3 mt-2"
         >
-          Request A Quote
+          Get your free consultation
         </button>
       </div>
     </div>
