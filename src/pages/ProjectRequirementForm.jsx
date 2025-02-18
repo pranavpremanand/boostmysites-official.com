@@ -9,6 +9,9 @@ const ProjectRequirementForm = ({ subject }) => {
   const { spinner, setSpinner } = useContext(SpinnerContext);
   const [file, setFile] = useState(null);
   const [error, setError] = useState(null);
+  const [showMessage, setShowMessage] = useState(false);
+  const [isDisabled, setIsDisabled] = useState(false);
+
   const navigate = useNavigate();
   const inputRef = useRef(null);
   const {
@@ -214,6 +217,11 @@ const ProjectRequirementForm = ({ subject }) => {
   ];
 
   console.log(file, "adsjfaksdlfasd");
+  const handleClick = () => {
+    setIsDisabled(true); // Disable the radio button after click
+    setShowMessage(true); // Show the message
+  };
+
   return (
     <div className="min-h-screen bg-black/60 py-6 flex flex-col justify-center sm:py-12">
       <div className="relative py-3 sm:max-w-xl sm:mx-auto mt-28">
@@ -251,15 +259,19 @@ const ProjectRequirementForm = ({ subject }) => {
                     costs.
                   </label>
                 </div>
-                <div className="flex items-center border rounded-xl p-5 h-full">
+                <div
+                  className={`flex items-center border rounded-xl p-5 h-full ${
+                    isDisabled ? "opacity-50 cursor-not-allowed" : ""
+                  }`}
+                >
                   <input
-                    {...register("salesOption", {
-                      required: "Please select a sale option",
-                    })}
+                    {...register("salesOption")}
                     type="radio"
                     id="salesTeam"
                     value="salesTeam"
                     className="h-4 w-4 text-[#f0801c] focus:ring-[#f0801c] border-gray-300"
+                    onClick={handleClick} // Disable after first click
+                    disabled={isDisabled} // Disable dynamically
                   />
                   <label
                     htmlFor="salesTeam"
@@ -269,6 +281,13 @@ const ProjectRequirementForm = ({ subject }) => {
                     Our Sales Team takes over to help close the deal. You keep
                     50% of the profit upon successful closing, with 20%
                     commission for the Sales Team and 30% for development costs.
+                    {showMessage && (
+                      <p className="mt-2 text-sm text-red-500">
+                        Due to the sales team being occupied with other
+                        projects, the Sales Team Service is not currently
+                        available
+                      </p>
+                    )}
                   </label>
                 </div>
               </div>
