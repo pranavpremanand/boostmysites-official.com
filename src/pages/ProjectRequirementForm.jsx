@@ -218,8 +218,8 @@ const ProjectRequirementForm = ({ subject }) => {
 
   console.log(file, "adsjfaksdlfasd");
   const handleClick = () => {
-    setIsDisabled(true); // Disable the radio button after click
-    setShowMessage(true); // Show the message
+    setIsDisabled(true);
+    setShowMessage(true);
   };
 
   return (
