@@ -28,6 +28,7 @@ import Section1 from "./pages/ConnectWithUs/Section1";
 import Section2 from "./pages/ConnectWithUs/Section2";
 import ConnectWithUsThankYou from "./pages/ConnectWithUsThankYou";
 import NormalizeSlash from "./components/NormalizeSlash";
+import SignUpForm from "./pages/SignUpPage";
 
 const LandingPage = lazy(() => import("./pages/LandingPage"));
 const LandingPage1 = lazy(() => import("./pages/LandingPage1"));
@@ -39,7 +40,9 @@ const BlogDetails = lazy(() => import("./pages/BlogDetails/BlogDetails"));
 const SalesTeamServices = lazy(() => import("./pages/SalesTeamServices"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const TermsAndConditions = lazy(() => import("./pages/TermsAndConditions"));
-const ProjectRequirementForm = lazy(() => import("./pages/ProjectRequirementForm"));
+const ProjectRequirementForm = lazy(() =>
+  import("./pages/ProjectRequirementForm")
+);
 const Reviews = lazy(() => import("./pages/Reviews"));
 
 AOS.init({
@@ -81,7 +84,7 @@ function App() {
                   element={
                     <>
                       {/* <LandingPageHeader path={path} /> */}
-                      <Header/>
+                      <Header />
                       <LandingPage
                         path={path}
                         emailIdToSendMail={emailIdToSendMail}
@@ -98,7 +101,7 @@ function App() {
                   element={
                     <>
                       {/* <LandingPageHeader path={path} /> */}
-                      <Header/>
+                      <Header />
                       <LandingPage1
                         path={path}
                         emailIdToSendMail="ceo@boostmysites.com"
@@ -116,7 +119,7 @@ function App() {
                   element={
                     <>
                       {/* <LandingPageHeader path={path} /> */}
-                      <Header/>
+                      <Header />
                       <Routes>
                         <Route
                           index
@@ -323,6 +326,16 @@ function App() {
                   <>
                     <Header />
                     <ProjectRequirementForm subject="Sales Requirement Form Submission" />
+                    <Footer />
+                  </>
+                }
+              />
+              <Route
+                path="/signup"
+                element={
+                  <>
+                    <Header />
+                    <SignUpForm />
                     <Footer />
                   </>
                 }
