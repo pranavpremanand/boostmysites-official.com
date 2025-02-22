@@ -132,7 +132,7 @@ const SignUpForm = () => {
                 </label>
                 <input
                   type="text"
-                  className="w-full p-3 rounded-lg"
+                  className="w-full p-3 rounded-lg text-black"
                   {...register("name", { required: true })}
                 />
                 {errors.name && (
@@ -148,7 +148,7 @@ const SignUpForm = () => {
                 </label>
                 <input
                   type="email"
-                  className="w-full p-3 rounded-lg"
+                  className="w-full p-3 rounded-lg text-black"
                   {...register("email", {
                     required: true,
                     pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
@@ -166,7 +166,7 @@ const SignUpForm = () => {
                 </label>
                 <input
                   type="tel"
-                  className="w-full p-3 rounded-lg"
+                  className="w-full p-3 rounded-lg text-black"
                   {...register("whatsapp", {
                     required: true,
                     pattern: /^\+?[1-9]\d{1,14}$/,
@@ -197,7 +197,7 @@ const SignUpForm = () => {
                 </label>
                 <input
                   type="text"
-                  className="w-full p-3 rounded-lg"
+                  className="w-full p-3 rounded-lg text-black"
                   {...register("paymentId", { required: true })}
                 />
               </div>
@@ -213,7 +213,7 @@ const SignUpForm = () => {
                 </label>
                 <input
                   type="date"
-                  className="w-full p-3 rounded-lg"
+                  className="w-full p-3 rounded-lg text-black"
                   {...register("paymentDate", { required: true })}
                 />
               </div>
@@ -233,7 +233,7 @@ const SignUpForm = () => {
               <div className="flex items-start space-x-2">
                 <input
                   type="checkbox"
-                  className="mt-1"
+                  className="mt-1 text-black"
                   {...register("declaration", { required: true })}
                 />
                 <label className="text-white text-sm">
