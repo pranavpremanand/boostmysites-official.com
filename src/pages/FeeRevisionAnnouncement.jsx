@@ -48,7 +48,7 @@ const FeeRevisionAnnouncement = () => {
             <p className="text-gray-800">
               If you're ready to start your journey before the price hike, you
               can still lock in the current pricing by signing up before
-              February 29th.
+              February 28th.
             </p>
           </div>
 
