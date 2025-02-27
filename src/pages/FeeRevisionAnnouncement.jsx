@@ -8,13 +8,13 @@ const FeeRevisionAnnouncement = () => {
         <div className="bg-primary1 p-5 text-white">
           <h1 className="text-2xl font-bold flex items-center">
             <FiCalendar className="mr-2" />
-            Upcoming Fee Revision – Secure Your Spot Before March 1st!
+            Upcoming price Revision – Secure Your Spot Before March 1st!
           </h1>
         </div>
 
         <div className="p-6">
           <p className="text-gray-700 mb-6">
-            We're updating our subscription fees starting March 1st, 2025 to
+            We're updating our subscription price starting March 1st, 2025 to
             enhance the value and services we provide. Here's the revised
             pricing:
           </p>

@@ -344,7 +344,7 @@ function App() {
                 }
               />
               <Route
-                path="/fee-revision-announcement"
+                path="/price-revision-announcement"
                 element={
                   <>
                     <Header />
