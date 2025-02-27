@@ -30,6 +30,9 @@ import ConnectWithUsThankYou from "./pages/ConnectWithUsThankYou";
 import NormalizeSlash from "./components/NormalizeSlash";
 import SignUpForm from "./pages/SignUpPage";
 
+const FeeRevisionAnnouncement = lazy(() =>
+  import("./pages/FeeRevisionAnnouncement")
+);
 const LandingPage = lazy(() => import("./pages/LandingPage"));
 const LandingPage1 = lazy(() => import("./pages/LandingPage1"));
 const Home = lazy(() => import("./pages/Home/Home"));
@@ -336,6 +339,16 @@ function App() {
                   <>
                     <Header />
                     <SignUpForm />
+                    <Footer />
+                  </>
+                }
+              />
+              <Route
+                path="/fee-revision-announcement"
+                element={
+                  <>
+                    <Header />
+                    <FeeRevisionAnnouncement />
                     <Footer />
                   </>
                 }
