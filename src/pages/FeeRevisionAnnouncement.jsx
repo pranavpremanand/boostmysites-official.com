@@ -5,7 +5,6 @@ const FeeRevisionAnnouncement = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r from-orange-50 to-orange-100 flex items-center justify-center p-4">
       <div className="max-w-2xl w-full bg-white rounded-lg shadow-lg overflow-hidden">
-        {/* Header */}
         <div className="bg-primary1 p-5 text-white">
           <h1 className="text-2xl font-bold flex items-center">
             <FiCalendar className="mr-2" />
@@ -13,7 +12,6 @@ const FeeRevisionAnnouncement = () => {
           </h1>
         </div>
 
-        {/* Content */}
         <div className="p-6">
           <p className="text-gray-700 mb-6">
             We're updating our subscription fees starting March 1st, 2025 to
