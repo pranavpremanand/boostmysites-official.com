@@ -8,7 +8,7 @@ const FeeRevisionAnnouncement = () => {
         <div className="bg-primary1 p-5 text-white">
           <h1 className="text-2xl font-bold flex items-center">
             <FiCalendar className="mr-2" />
-            Upcoming price Revision – Secure Your Spot Before March 1st!
+            Upcoming Price Revision – Secure Your Spot Before March 1st!
           </h1>
         </div>
 
@@ -48,7 +48,7 @@ const FeeRevisionAnnouncement = () => {
             <p className="text-gray-800">
               If you're ready to start your journey before the price hike, you
               can still lock in the current pricing by signing up before
-              February 29th.
+              February 28th.
             </p>
           </div>
 
