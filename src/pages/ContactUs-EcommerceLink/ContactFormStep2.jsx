@@ -477,11 +477,11 @@ const ContactFormStep2Ecommerce = ({ emailIdToSendMail, pathToRedirect }) => {
         </div>
       </form>
       {/* <div className="md:block hidden w-full h-full">
-        <img
+        <img loading="lazy" 
           src={img}
           className="h-full w-full object-cover rounded-lg"
           alt=""
-          loading="lazy"
+           
         />
       </div> */}
     </div>

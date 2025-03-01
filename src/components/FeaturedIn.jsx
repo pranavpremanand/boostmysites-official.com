@@ -42,7 +42,7 @@ const FeaturedIn = () => {
         <div ref={sliderRef} className="keen-slider">
           {[img1, img2, img3, img4, img5, img6].map((img, index) => (
             <div key={index} className="keen-slider__slide flex justify-center">
-              <img
+              <img loading="lazy" 
                 src={img}
                 alt="featured in"
                 className="h-[7rem] w-[12rem] object-contain"

@@ -726,7 +726,7 @@ const ProjectRequirementForm = ({ subject }) => {
                 {file ? (
                   file.type.startsWith("image/") ? (
                     <div className="relative">
-                      <img
+                      <img loading="lazy" 
                         src={URL.createObjectURL(file)}
                         alt="Uploaded"
                         className="w-full h-48 object-cover rounded-md"

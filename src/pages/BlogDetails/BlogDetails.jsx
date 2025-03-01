@@ -22,7 +22,7 @@ const BlogDetails = () => {
       ></div>
       <div className="wrapper pt-[6rem] md:pt-[10rem] pb-[5rem] relative z-10">
         <div className="flex flex-col gap-2 pb-[3rem] p-3 sm:p-5 bg-black rounded-xl mb-[3rem]">
-          <img
+          <img loading="lazy" 
             data-aos="fade-up"
             src={blog.image}
             alt=""

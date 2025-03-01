@@ -47,7 +47,7 @@ const OurOffices = () => {
             className="flex flex-col items-center justify-center gap-3 sm:gap-6"
           >
             <div className="w-full flex justify-center">
-              <img src={office.img} alt="office" className="object-cover rounded-3xl max-h-[20rem]" />
+              <img loading="lazy"  src={office.img} alt="office" className="object-cover rounded-3xl max-h-[20rem]" />
             </div>
             <p className="leading-loose">&#x2022; {office.location}</p>
           </div>

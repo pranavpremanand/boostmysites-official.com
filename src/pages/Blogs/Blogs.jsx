@@ -46,7 +46,7 @@ export const BlogItem = ({ blog }) => {
       className="bg-black rounded-xl p-5 text-white relative z-10 group"
     >
       <Link to={`/blogs/${blog.title}/boostmysites-review`}>
-        <img
+        <img loading="lazy" 
           src={blog.image}
           alt=""
           width="600"

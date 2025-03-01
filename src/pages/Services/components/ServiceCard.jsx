@@ -10,7 +10,7 @@ const ServiceCard = ({ service }) => {
         } group h-full w-full border border-slate-200 hover:border-primary relative overflow-hidden rounded-xl p-6 transition-all duration-300`}
       >
         <div className="absolute inset-0">
-          <img
+          <img loading="lazy" 
             src={service?.img}
             alt={service?.title}
             className="h-full w-full object-cover transition-all duration-300 group-hover:scale-105"

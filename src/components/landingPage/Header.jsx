@@ -67,7 +67,7 @@ const Header = ({ path }) => {
         <div className="wrapper flex justify-between items-center w-full">
           {pathname.includes("contact") ? (
             <RLink to={path} className="cursor-pointer">
-              <img
+              <img loading="lazy" 
                 src={logo}
                 alt=""
                 className="h-[4rem] md:h-[5rem] object-contain -mb-3"
@@ -82,7 +82,7 @@ const Header = ({ path }) => {
               duration={500}
               className="cursor-pointer"
             >
-              <img
+              <img loading="lazy" 
                 src={logo}
                 alt=""
                 className="h-[4rem] md:h-[5rem] object-contain -mb-3"
@@ -115,12 +115,10 @@ const Header = ({ path }) => {
               </RLink>
               {path === "/" ? (
                 <RLink to={`${path}contact`} className="primary-btn">
-                  {/* <RLink to={`${path}/contact`} className="primary-btn"> */}
                   Join Now
                 </RLink>
               ) : (
                 <RLink to={`${path}/contact`} className="primary-btn">
-                  {/* <RLink to={`${path}/contact`} className="primary-btn"> */}
                   Join Now
                 </RLink>
               )}

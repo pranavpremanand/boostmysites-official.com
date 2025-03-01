@@ -25,9 +25,9 @@ const SalesTeamServices = () => {
     <div className="pt-[4rem] pb-[2rem] relative">
       {/* Hero Section */}
       <section className="relative text-white overflow-hidden min-h-[80vh] flex items-center rounded-lg shadow-lg mb-12">
-        <img
+        <img loading="lazy" 
           src={banner}
-          loading="lazy"
+           
           data-aos="zoom-out"
           className="absolute w-full left-0 top-0 h-full object-cover -z-20"
           alt=""

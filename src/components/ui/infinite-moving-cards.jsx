@@ -68,7 +68,7 @@ export const InfiniteMovingCards = ({
         )}>
         {items.map((item, idx) => (
             <div className="w-full min-h-[30rem] sm:min-h-[26rem] h-full bg-white/90 rounded-lg p-3 md:p-6 flex flex-col gap-2 items-center">
-            <img
+            <img loading="lazy" 
               src={item.img}
               className="h-[4rem] w-[4rem] object-cover rounded-full"
               alt={item.name}

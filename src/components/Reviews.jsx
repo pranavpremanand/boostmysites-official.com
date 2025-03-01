@@ -53,36 +53,8 @@ const Reviews = () => {
       className="mt-14"
     >
       <InfiniteMovingCards items={reviews} direction="right" speed="slow" />
-      {/* {reviews.map((review) => (
-        <ReviewCard key={review.id} review={review} />
-      ))} */}
     </div>
   );
 };
 
 export default Reviews;
-
-const ReviewCard = ({ review }) => {
-  return (
-    <div className="w-full min-h-[22rem] h-full bg-white/90 rounded-lg p-3 md:p-6 flex flex-col gap-2 items-center">
-      <img
-        src={review.img}
-        className="h-[4rem] w-[4rem] object-cover rounded-full"
-        alt={review.name}
-      />
-      <h4 className="text-lg leading-none font-bold text-black">
-        {review.name}
-      </h4>
-      <ReactStars
-        edit={false}
-        value={5}
-        count={5}
-        size={28}
-        activeColor="#FFAB23"
-      />
-      <p className="text-black/70 text-sm whitespace-pre-line leading-normal">
-        {review.desc}
-      </p>
-    </div>
-  );
-};

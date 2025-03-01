@@ -87,7 +87,7 @@ const Header = () => {
         <div className="w-full">
           <div className="wrapper flex justify-between items-center w-full">
             <RLink to="/home" className="cursor-pointer">
-              <img
+              <img loading="lazy" 
                 src={logo}
                 alt=""
                 className="h-[4rem] md:h-[5rem] object-contain -mb-3"

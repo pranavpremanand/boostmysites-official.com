@@ -135,9 +135,9 @@ const PopupForm = ({ setShowPopup, emailIdToSendMail, sourceName }) => {
           >
             <IoClose size={25} />
           </button>
-          <img
+          <img loading="lazy" 
             src={offerImg}
-            loading="lazy"
+             
             className="absolute top-[-1.5rem] left-[-1.5rem] -rotate-[35deg] w-[4rem] object-contain aspect-square"
             alt=""
           />

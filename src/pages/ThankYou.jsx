@@ -33,7 +33,7 @@ const ThankYou = ({ pathToRedirect }) => {
         <div className="w-full">
           <div className="wrapper flex justify-between items-center w-full">
             <Link to={pathToRedirect} className="cursor-pointer">
-              <img
+              <img loading="lazy" 
                 src={logo}
                 alt=""
                 className="h-[4rem] md:h-[5rem] object-contain -mb-3"
@@ -65,7 +65,7 @@ const ThankYou = ({ pathToRedirect }) => {
         </div>
       <div className="flex backdrop-blur-sm flex-col gap-4 md:items-center justify-center py-[1.8rem] text-white mt-14 border-t border-gray-800/70">
         <div className="wrapper w-full flex md:flex-row flex-col items-center justify-between gap-10">
-          <img src={logo} alt="logo" className="h-[5rem] object-contain" />
+          <img loading="lazy"  src={logo} alt="logo" className="h-[5rem] object-contain" />
         </div>
       </div>
       </div>

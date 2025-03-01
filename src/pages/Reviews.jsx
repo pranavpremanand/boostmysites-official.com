@@ -14,9 +14,9 @@ const Reviews = () => {
     <div className="pt-[4rem] pb-[2rem] relative">
       {/* Hero Section */}
       <section className="relative text-white overflow-hidden min-h-[80vh] flex items-center rounded-lg shadow-lg mb-12">
-        <img
+        <img loading="lazy" 
           src={banner}
-          loading="lazy"
+           
           data-aos="zoom-out"
           className="absolute w-full left-0 top-0 h-full object-cover object-top -z-20"
           alt=""
@@ -50,7 +50,7 @@ const Reviews = () => {
                     <div className="flex items-center justify-between gap-4">
                       <div className="flex items-center gap-3">
                         <BsPersonCircle size={40} className="fill-primary" />
-                        {/* <img
+                        {/* <img loading="lazy" 
                           className="min-w-[4rem] aspect-square w-[4rem] rounded-full object-cover"
                           src="https://www.shutterstock.com/image-photo/handsome-happy-african-american-bearded-600nw-2460702995.jpg"
                           alt=""

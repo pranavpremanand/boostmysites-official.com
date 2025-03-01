@@ -29,7 +29,6 @@ const ContactFormStep2 = ({ emailIdToSendMail, pathToRedirect }) => {
   } = useForm({
     mode: "onSubmit",
     defaultValues: {
-      // businessType: "", // Default selected business type
       expectedEarnings: "", // Default selected earnings
       investmentCapital: "", // Default selected capital
       timeline: "", // Default selected timeline
@@ -73,9 +72,9 @@ const ContactFormStep2 = ({ emailIdToSendMail, pathToRedirect }) => {
       toast.error("Please fill the contact form first");
       return;
     } else {
-      if(!isAgreedConditions) {
+      if (!isAgreedConditions) {
         toast.error("Please agree to the terms and conditions");
-        return
+        return;
       }
 
       values.fullName = contactForm.fullName;
@@ -87,7 +86,6 @@ const ContactFormStep2 = ({ emailIdToSendMail, pathToRedirect }) => {
       emailBody += "Email: " + values.email + "\n\n";
       emailBody += "Phone Number: " + values.phone + "\n\n";
       emailBody += "Location: " + values.state + ", " + values.country + "\n\n";
-      // emailBody += "Business Type: " + values.businessType + "\n\n";
       emailBody += "Expected Earnings: " + values.expectedEarnings + "\n\n";
       emailBody += "Primary Goal: " + values.primaryGoal + "\n\n";
       emailBody += "Investment Capital: " + values.investmentCapital + "\n\n";
@@ -127,11 +125,6 @@ const ContactFormStep2 = ({ emailIdToSendMail, pathToRedirect }) => {
               sessionStorage.removeItem("isoCode");
               sessionStorage.removeItem("contactForm");
               navigate("/thank-you");
-              // if (pathToRedirect === "/") {
-              //   navigate(`${pathToRedirect}contact/thank-you`);
-              // } else {
-              //   navigate(`${pathToRedirect}/contact/thank-you`);
-              // }
             }
           })
           .catch((error) => {
@@ -170,48 +163,7 @@ const ContactFormStep2 = ({ emailIdToSendMail, pathToRedirect }) => {
         data-aos="fade-right"
         data-aos-offset="-150"
       >
-        {/* <h2 className="font-medium text-3xl mb-4 sm:mb-6 text-center sm:text-start">
-          Step 2
-        </h2> */}
         <div className="grid grid-cols-1 gap-4 mt-6">
-          {/* Business Type Field */}
-          {/* <div className="grid grid-cols-1 relative">
-            <label className="text-sm">
-              What type of business are you planning to start?
-            </label>
-            <div className="bg-white/70 p-3 rounded-md text-black mt-2">
-              <div className="flex items-center gap-2">
-                <input
-                  type="radio"
-                  name="businessType"
-                  value="E-Commerce"
-                  {...register("businessType", {
-                    required: "Please select a business type",
-                  })}
-                  className="w-[1.2rem] h-[1.2rem] accent-primary cursor-pointer"
-                />
-                <label>E-Commerce</label>
-              </div>
-              <div className="flex items-center gap-2 mt-3">
-                <input
-                  type="radio"
-                  name="businessType"
-                  value="AI Company"
-                  {...register("businessType", {
-                    required: "Please select a business type",
-                  })}
-                  className="w-[1.2rem] h-[1.2rem] accent-primary cursor-pointer"
-                />
-                <label>AI Company</label>
-              </div>
-            </div>
-            {errors.businessType && (
-              <small className="text-red-700">
-                {errors.businessType.message}
-              </small>
-            )}
-          </div> */}
-
           {/* Expected Earnings Field */}
           <div className="grid grid-cols-1 relative">
             <label className="text-sm">
@@ -419,7 +371,13 @@ const ContactFormStep2 = ({ emailIdToSendMail, pathToRedirect }) => {
             <label className="ml-2 text-sm">
               By submitting the form, you consent to our team contacting you via
               phone or email for assistance and updates and{" "}
-              <Link target="_blank" className="text-primary underline font-semibold" to="/terms-and-conditions">terms and conditions</Link>
+              <Link
+                target="_blank"
+                className="text-primary underline font-semibold"
+                to="/terms-and-conditions"
+              >
+                terms and conditions
+              </Link>
             </label>
           </div>
 
@@ -445,11 +403,11 @@ const ContactFormStep2 = ({ emailIdToSendMail, pathToRedirect }) => {
         </div>
       </form>
       {/* <div className="md:block hidden w-full h-full">
-        <img
+        <img loading="lazy" 
           src={img}
           className="h-full w-full object-cover rounded-lg"
           alt=""
-          loading="lazy"
+           
         />
       </div> */}
     </div>

@@ -66,16 +66,6 @@ const StartYourBusiness = ({ styles, slides }) => {
           </h2>
         </div>
       ))}
-      {/* Cloned Slide 1 - To simulate continuous looping */}
-      {/* <div className="keen-slider__slide w-screen overflow-y-hidden overflow-x-scroll flex-nowrap text-nowrap flex items-center gap-5">
-        <IoStar className="text-[2.5rem] sm:text-6xl lg:text-7xl z-10 text-[#D9D9D9]" />
-        <h2
-          className={`${styles}
-          text-[2.5rem] sm:text-7xl md:text-6xl lg:text-6xl 2xl:text-[5.5rem] relative z-10 font-semibold`}
-        >
-          START YOUR BUSINESS WITH IAAS
-        </h2>
-      </div> */}
     </div>
   );
 };
