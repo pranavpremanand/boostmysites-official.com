@@ -3,18 +3,18 @@ import { FiCalendar, FiCheckCircle, FiPhone } from "react-icons/fi";
 
 const FeeRevisionAnnouncement = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-orange-50 to-orange-100 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-r from-orange-50 to-orange-100 flex items-center justify-center px-4 md:pt-5 pt-24 pb-6">
       <div className="max-w-2xl w-full bg-white rounded-lg shadow-lg overflow-hidden">
         <div className="bg-primary1 p-5 text-white">
           <h1 className="text-2xl font-bold flex items-center">
-            <FiCalendar className="mr-2" />
-            Upcoming Price Revision – Secure Your Spot Before March 1st!
+            <FiCalendar className="mr-2 text-6xl w-[4rem]" />
+            Upcoming Price Revision – Secure Your Spot Before March 7th!
           </h1>
         </div>
 
         <div className="p-6">
           <p className="text-gray-700 mb-6">
-            We're updating our subscription price starting March 1st, 2025 to
+            We're updating our subscription price starting March 7th, 2025 to
             enhance the value and services we provide. Here's the revised
             pricing:
           </p>
@@ -47,8 +47,8 @@ const FeeRevisionAnnouncement = () => {
           <div className="bg-orange-50 p-4 rounded-lg border border-orange-200 mb-6">
             <p className="text-gray-800">
               If you're ready to start your journey before the price hike, you
-              can still lock in the current pricing by signing up before
-              February 28th.
+              can still lock in the current pricing by signing up before March
+              6th.
             </p>
           </div>
 
