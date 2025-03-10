@@ -61,6 +61,11 @@ const Footer = () => {
                 title: "Privacy Policy",
                 path: "/privacy-policy",
               },
+              {
+                id: 6,
+                title: "Terms and Conditions",
+                path: "/terms-and-conditions",
+              },
             ].map((item) => (
               <li key={item.id}>
                 <Link
