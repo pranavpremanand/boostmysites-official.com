@@ -182,33 +182,6 @@ function App() {
                 />
               ))}
 
-              {/* Contact route for boostmysites ecommerce contact form */}
-              {/* <Route
-                path='/ai-expert7/contact/*'
-                element={
-                  <>
-                    <LandingPageHeader path="/ai-expert7" />
-                    <Routes>
-                      <Route index element={<Navigate to="step1" replace />} />
-                      <Route
-                        path="step1"
-                        element={<ContactFormStep1Ecommerce pathToRedirect="/ai-expert7" />}
-                      />
-                      <Route
-                        path="step2"
-                        element={
-                          <ContactFormStep2Ecommerce
-                            emailIdToSendMail="ceo@boostmysites.com"
-                            pathToRedirect="/ai-expert7"
-                          />
-                        }
-                      />
-                    </Routes>
-                    <LandingPageFooter />
-                  </>
-                }
-              /> */}
-
               <Route
                 path="/thank-you"
                 element={<ThankYou pathToRedirect="/" />}
