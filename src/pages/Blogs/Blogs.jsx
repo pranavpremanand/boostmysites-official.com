@@ -2,12 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { blogs } from "../../data/blogs";
 
-export const imgs = [
-  "https://rejolut.com/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-20-16.55.07-Create-a-wide-banner-image-for-the-topic-_Top-18-Artificial-Intelligence-AI-Applications-in-2024._-This-image-should-visually-represent-a-diverse-ra-1024x585.webp",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu7-HVWQHxnNuywiR26jyAgbY1vBXIwAAS9w&s",
-  "https://itbrief.com.au/uploads/story/2023/11/27/img-d320oqYWscvU8q8HLX0brOyX.webp",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4GQuewxLfMh2olMxwVIVsJmu1qFf5Q4dwZw&s",
-];
 const Blogs = () => {
   return (
     <div className="bg-secondary relative text-white">
@@ -27,7 +21,7 @@ const Blogs = () => {
           Explore the Future with AI: Insights, Innovations, and Trends.
         </h4>
         <div className="mt-[2rem] grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-7">
-          {blogs.map((blog) => (
+          {blogs.sort((a, b) => b.id - a.id).map((blog) => (
             <BlogItem key={blog.id} blog={blog} />
           ))}
         </div>
@@ -51,7 +45,7 @@ export const BlogItem = ({ blog }) => {
           alt=""
           width="600"
           height="400"
-          className="bg-cover aspect-video w-full rounded-xl group-hover:opacity-85 transition-all duration-200"
+          className="object-cover aspect-video w-full rounded-xl group-hover:opacity-85 transition-all duration-200 object-top"
         />
       </Link>
       <div className="flex flex-col gap-2 mt-[1rem]">
