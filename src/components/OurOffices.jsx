@@ -20,7 +20,7 @@ const offices = [
     id: 3,
     img: bangaloreImg,
     location:
-      "5th A Cross Rd, R.K Colony, Manjunath Colony, 2nd Phase, J. P. Nagar, Bengaluru, Karnataka, India",
+      "Salarpuria Symbiosis, Ground floor Bannerghatta Road Arekere Village, Begur Hobli, Bengaluru, Karnataka 560076",
   },
   {
     id: 4,
@@ -47,7 +47,12 @@ const OurOffices = () => {
             className="flex flex-col items-center justify-center gap-3 sm:gap-6"
           >
             <div className="w-full flex justify-center">
-              <img loading="lazy"  src={office.img} alt="office" className="object-cover rounded-3xl max-h-[20rem]" />
+              <img
+                loading="lazy"
+                src={office.img}
+                alt="office"
+                className="object-cover rounded-3xl max-h-[20rem]"
+              />
             </div>
             <p className="leading-loose">&#x2022; {office.location}</p>
           </div>
