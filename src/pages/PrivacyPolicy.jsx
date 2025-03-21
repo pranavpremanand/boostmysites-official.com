@@ -297,13 +297,15 @@ const PrivacyPolicy = () => {
           <div className="flex flex-col gap-1">
             <strong>BoostMySites</strong>
             <p>
-              5th A Cross Rd, R.K Colony, Manjunath Colony, 2nd Phase, J. P.
-              Nagar, Bengaluru, Karnataka, India
+              Salarpuria Symbiosis, Ground floor Bannerghatta Road Arekere
+              Village, Begur Hobli, Bengaluru, Karnataka 560076
             </p>
             <p>Email: ceo@boostmysites.com</p>
             <p>Phone: +919790035747</p>
           </div>
-          <h5 className="text-xl font-medium mt-2">Additional Considerations:</h5>
+          <h5 className="text-xl font-medium mt-2">
+            Additional Considerations:
+          </h5>
           <ul className="list-disc list-inside ml-4 flex flex-col gap-1">
             <li>
               <span className="font-medium">

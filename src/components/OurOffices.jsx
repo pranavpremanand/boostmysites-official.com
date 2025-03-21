@@ -20,7 +20,7 @@ const offices = [
     id: 3,
     img: bangaloreImg,
     location:
-      "5th A Cross Rd, R.K Colony, Manjunath Colony, 2nd Phase, J. P. Nagar, Bengaluru, Karnataka, India",
+      "Salarpuria Symbiosis, Ground floor Bannerghatta Road Arekere Village, Begur Hobli, Bengaluru, Karnataka 560076",
   },
   {
     id: 4,
