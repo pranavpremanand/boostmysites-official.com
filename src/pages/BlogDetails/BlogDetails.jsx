@@ -8,7 +8,7 @@ const BlogDetails = () => {
   const blog = blogs.find((item) => item.link === link);
   console.log({ blog });
   if (!blog) {
-    // return <Navigate to="/blogs" />;
+    return <Navigate to="/blogs" />;
   }
   const latestBlogs = blogs.filter((item) => item.id !== blog.id) || [];
   return (
