@@ -4,10 +4,11 @@ import { BlogItem } from "../Blogs/Blogs";
 import { blogs } from "../../data/blogs";
 
 const BlogDetails = () => {
-  const { title } = useParams();
-  const blog = blogs.find((item) => item.title === title);
+  const { link } = useParams();
+  const blog = blogs.find((item) => item.link === link);
+  console.log({ blog });
   if (!blog) {
-    return <Navigate to="/blogs" />;
+    // return <Navigate to="/blogs" />;
   }
   const latestBlogs = blogs.filter((item) => item.id !== blog.id) || [];
   return (
@@ -22,7 +23,8 @@ const BlogDetails = () => {
       ></div>
       <div className="wrapper pt-[6rem] md:pt-[10rem] pb-[5rem] relative z-10">
         <div className="flex flex-col gap-2 pb-[3rem] p-3 sm:p-5 bg-black rounded-xl mb-[3rem]">
-          <img loading="lazy" 
+          <img
+            loading="lazy"
             data-aos="fade-up"
             src={blog.image}
             alt=""
@@ -51,9 +53,12 @@ const BlogDetails = () => {
               Latest Blogs
             </h3>
             <div className="mt-[1.5rem] grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-7">
-              {latestBlogs.slice(0, 3).map((item, i) => (
-                <BlogItem key={item.id} blog={item} />
-              ))}
+              {latestBlogs
+                .sort((a, b) => b.id - a.id)
+                .slice(0, 3)
+                .map((item, i) => (
+                  <BlogItem key={item.id} blog={item} />
+                ))}
             </div>
           </div>
         )}

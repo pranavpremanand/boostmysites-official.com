@@ -277,7 +277,7 @@ function App() {
                 }
               />
               <Route
-                path="/blogs/:title/boostmysites-review"
+                path="/blogs/:link/boostmysites-review"
                 element={
                   <>
                     <Header />
