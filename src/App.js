@@ -29,6 +29,10 @@ import Section2 from "./pages/ConnectWithUs/Section2";
 import ConnectWithUsThankYou from "./pages/ConnectWithUsThankYou";
 import NormalizeSlash from "./components/NormalizeSlash";
 import SignUpForm from "./pages/SignUpPage";
+import AIVideoAndVoiceCall from "./components/AIVideoAndVoiceCall";
+import BaaS from "./pages/BaaS/BaaS";
+import SubscriptionFormStep1 from "./pages/BaasSubscriptionForms/SubscriptionFormStep1";
+import SubscriptionFormStep2 from "./pages/BaasSubscriptionForms/SubscriptionFormStep2";
 
 const FeeRevisionAnnouncement = lazy(() =>
   import("./pages/FeeRevisionAnnouncement")
@@ -68,6 +72,7 @@ function App() {
       <GoogleTagManager />
       <BrowserRouter>
         <NormalizeSlash>
+          <AIVideoAndVoiceCall />
           <Toaster
             position="top-center"
             reverseOrder={false}
@@ -344,6 +349,44 @@ function App() {
                   </>
                 }
               />
+
+              {/* Pages of BaaS */}
+              <Route
+                path="/baas"
+                element={
+                  <>
+                    <Header />
+                    <BaaS />
+                    <Footer />
+                  </>
+                }
+              />
+              <Route path="/subscription-form">
+                <Route
+                  index
+                  element={<Navigate to="/subscription-form/step1" replace />}
+                />
+                <Route
+                  path="step1"
+                  element={
+                    <>
+                      <Header />
+                      <SubscriptionFormStep1 />
+                      <LandingPageFooter />
+                    </>
+                  }
+                />
+                <Route
+                  path="step2"
+                  element={
+                    <>
+                      <Header />
+                      <SubscriptionFormStep2 />
+                      <LandingPageFooter />
+                    </>
+                  }
+                />
+              </Route>
             </Routes>
             <ScrollToTopButton />
             <ScrollToTopOnPageChange />

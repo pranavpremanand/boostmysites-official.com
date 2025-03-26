@@ -23,8 +23,8 @@ const options = [
   },
   {
     id: 3,
-    title: "Contact Us",
-    path: "/ai-expert/contact/step1",
+    title: "BaaS",
+    path: "/baas",
   },
 ];
 
@@ -48,6 +48,11 @@ const companyLinks = [
     id: 4,
     title: "Reviews",
     path: "/reviews",
+  },
+  {
+    id: 5,
+    title: "Contact Us",
+    path: "/ai-expert/contact/step1",
   },
 ];
 

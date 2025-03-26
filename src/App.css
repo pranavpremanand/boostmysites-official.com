@@ -1,5 +1,3 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Gabriela&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"); */
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap'); */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @tailwind base;
 @tailwind components;
@@ -36,7 +34,6 @@
 }
 
 .hyphen-auto {
-  /* text-align: justify; */
   hyphens: auto;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
@@ -175,6 +172,10 @@ div,
   /* font-family: "Raleway", sans-serif; */
   /* font-family: "Space Grotesk", sans-serif; */
   font-family: "Roboto", sans-serif;
+}
+
+.react-tel-input .form-control{
+ width: 100% !important;
 }
 
 h1 {
@@ -319,7 +320,7 @@ body {
   font-size: 1rem !important;
 }
 .react-tel-input .form-control::placeholder {
-  color: #00000087 !important;
+  color: #7e7e7e7f !important;
 }
 
 .video-loader {
@@ -385,4 +386,20 @@ body {
   max-height: 100px; /* Adjust based on your content */
   padding: 0 10px 1rem 10px;
   color: #ffffff;
+}
+
+.spin {
+  animation: spin 0.3s infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
