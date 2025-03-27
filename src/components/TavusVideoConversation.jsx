@@ -26,7 +26,7 @@ const TavusVideoConversation = ({ apiKey, replicaId }) => {
           "x-api-key": apiKey,
         },
         body: JSON.stringify({
-          replica_id: "rb17cf590e15",
+          replica_id: replicaId,
           conversation_name: "Alex",
           conversational_context: tavusAIConversationContext,
         }),
