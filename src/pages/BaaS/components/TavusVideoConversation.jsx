@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FiVideo, FiX, FiLoader } from "react-icons/fi";
+import { tavusAIConversationContext } from "../../../data/TavusAIConversationContext";
 
 const TavusVideoConversation = ({ apiKey, replicaId }) => {
   const [conversationData, setConversationData] = useState(null);
@@ -19,7 +20,9 @@ const TavusVideoConversation = ({ apiKey, replicaId }) => {
           "x-api-key": apiKey,
         },
         body: JSON.stringify({
-          replica_id: replicaId,
+          replica_id: "rb17cf590e15",
+          conversation_name: "Alex",
+          conversational_context: tavusAIConversationContext,
         }),
       });
 
