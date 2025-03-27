@@ -209,7 +209,11 @@ const TavusVideoConversation = ({ apiKey, replicaId }) => {
                       Live AI Video Conversation
                     </h3>
                     <button
-                      onClick={() => setIsModalOpen(false)}
+                      onClick={() => {
+                        setIsModalOpen(false);
+                        setIsOpen(false);
+                        setConversationData(null);
+                      }}
                       className="text-gray-400 hover:text-white transition-colors p-1"
                     >
                       <FiX className="h-5 w-5" />
@@ -238,7 +242,11 @@ const TavusVideoConversation = ({ apiKey, replicaId }) => {
                   <div className="bg-gray-800/50 rounded-b-lg px-4 py-3 sm:px-6 flex justify-end z-[60] relative">
                     <button
                       type="button"
-                      onClick={() => setIsModalOpen(false)}
+                      onClick={() => {
+                        setIsModalOpen(false);
+                        setIsOpen(false);
+                        setConversationData(null);
+                      }}
                       className="inline-flex items-center gap-2 px-4 py-2 bg-primary hover:bg-primary-dark rounded-lg text-black text-sm"
                     >
                       <FiX size={20} />

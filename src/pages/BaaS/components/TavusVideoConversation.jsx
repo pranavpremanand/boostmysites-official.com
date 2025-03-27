@@ -100,7 +100,10 @@ const TavusVideoConversation = ({ apiKey, replicaId }) => {
             <div
               className="fixed inset-0 transition-opacity"
               aria-hidden="true"
-              onClick={() => setIsModalOpen(false)}
+              onClick={() => {
+                setIsModalOpen(false);
+                setConversationData(null);
+              }}
             >
               <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
             </div>
@@ -114,7 +117,10 @@ const TavusVideoConversation = ({ apiKey, replicaId }) => {
                     Live AI Video Conversation
                   </h3>
                   <button
-                    onClick={() => setIsModalOpen(false)}
+                    onClick={() => {
+                      setIsModalOpen(false);
+                      setConversationData(null);
+                    }}
                     className="text-gray-400 hover:text-white transition-colors p-1"
                   >
                     <FiX className="h-5 w-5" />
