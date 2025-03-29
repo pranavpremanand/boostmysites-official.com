@@ -85,7 +85,8 @@ const SubscriptionFormStep2 = () => {
     `;
 
     const payload = {
-      to: "ceo@boostmysites.com",
+      to: "mpranavprem@gmail.com",
+      // to: "ceo@boostmysites.com",
       subject: "Subscription form submission",
       body: emailBody,
       name: "BoostMySites",
