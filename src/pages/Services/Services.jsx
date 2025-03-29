@@ -1,7 +1,7 @@
+import Subscription from "../../components/subscription/Subscription";
 import Banner from "./components/Banner";
 import FAQ from "./components/FAQ";
 import Serviceslist from "./components/Serviceslist";
-import Subscription from "./components/Subscription";
 
 const Services = () => {
   return (

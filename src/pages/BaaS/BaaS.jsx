@@ -1,8 +1,8 @@
+import Subscription from "../../components/subscription/Subscription";
 import Banner from "./components/Banner";
 import BolnaVoiceCall from "./components/BolnaVoicecall";
 import FAQ from "./components/FAQ";
 import Serviceslist from "./components/Serviceslist";
-import Subscription from "./components/Subscription";
 import TavusVideoConversation from "./components/TavusVideoConversation";
 
 const BaaS = () => {

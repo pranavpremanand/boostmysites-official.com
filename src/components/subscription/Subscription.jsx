@@ -1,9 +1,5 @@
 import React, { useState } from "react";
-import {
-  oneYearPlanDetails,
-  sixMonthPlanDetails,
-  twoYearPlanDetails,
-} from "../../../data/constant";
+import { oneYearPlanDetails, twoYearPlanDetails } from "../../data/constant";
 import { Link } from "react-router-dom";
 import Accordion from "./Accordion";
 
@@ -32,41 +28,6 @@ const Subscription = () => {
             Subscription Plans
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-12">
-            {/* <div className="flex flex-col p-6 bg-black border border-primary rounded-lg">
-              <div className="flex items-center justify-center mb-6">
-                <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
-                  <span className="text-primary">📅</span>
-                </div>
-              </div>
-
-              <h3 className="text-2xl font-bold text-center text-white mb-2">
-                {sixMonthPlanDetails.title}
-              </h3>
-
-              <div className="space-y-3 flex-grow">
-                {sixMonthPlanDetails.accordionDetails.map((detail, index) => (
-                  <Accordion
-                    key={index}
-                    plan={detail}
-                    isOpen={openIndexOne === index}
-                    toggleAccordion={() => toggleAccordionOne(index)}
-                  />
-                ))}
-              </div>
-
-              <div data-aos="fade-up" className="mt-6 text-center">
-                <div className="text-3xl font-bold text-primary mb-6">
-                  {sixMonthPlanDetails.price}{" "}
-                </div>
-
-                <Link
-                  className="w-full mt-4 primary-btn"
-                  to="/ai-expert/contact/step1"
-                >
-                  Subscribe
-                </Link>
-              </div>
-            </div> */}
             <div className="flex flex-col p-6 bg-black border border-primary rounded-lg">
               <div className="flex items-center justify-center mb-6">
                 <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
@@ -91,11 +52,12 @@ const Subscription = () => {
 
               <div data-aos="fade-up" className="mt-6 text-center">
                 <div className="text-3xl font-bold text-primary mb-6">
-                  {oneYearPlanDetails.price}{" "}
+                  ₹{oneYearPlanDetails.price.toLocaleString()}
+                  {" + GST"}
                 </div>
                 <Link
                   className="w-full mt-4 primary-btn"
-                  to="/ai-expert/contact/step1"
+                  to="/subscription-form/step1"
                 >
                   Subscribe
                 </Link>
@@ -125,11 +87,12 @@ const Subscription = () => {
 
               <div data-aos="fade-up" className="mt-6 text-center">
                 <div className="text-3xl font-bold text-primary mb-6">
-                  {twoYearPlanDetails.price}{" "}
+                  ₹{twoYearPlanDetails.price.toLocaleString()}
+                  {" + GST"}
                 </div>
                 <Link
                   className="w-full mt-4 primary-btn"
-                  to="/ai-expert/contact/step1"
+                  to="/subscription-form/step1"
                 >
                   Subscribe
                 </Link>

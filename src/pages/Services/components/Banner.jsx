@@ -51,7 +51,7 @@ const Banner = () => {
           </div>
           <div data-aos="fade-up" className="mt-10">
             <Link
-              to="/ai-expert/contact/step1"
+              to="/subscription-form/step1"
               className="primary-btn inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-primary to-[#D5AA12] hover:bg-primary/90 transition-colors"
             >
               Subscribe

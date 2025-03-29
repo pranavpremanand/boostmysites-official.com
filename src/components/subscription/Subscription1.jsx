@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { subscriptionPlansInDollars } from "../../../data/constant";
+import { subscriptionPlansInDollars } from "../../data/constant";
 import { Link } from "react-router-dom";
 import Accordion from "./Accordion";
 

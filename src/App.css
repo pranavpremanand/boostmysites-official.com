@@ -59,13 +59,6 @@
   border-radius: 0.5rem;
 }
 
-/* @media (max-width: 768px) {
-  .video-cover video {
-    width: 80%;
-    object-fit: contain;
-  }
-} */
-
 :root {
   background-color: #000000;
   /* background-color: #0f0f0f; */
@@ -168,18 +161,11 @@ ul,
 li,
 div,
 .react-tel-input .form-control {
-  /* font-family: "Poppins", sans-serif; */
-  /* font-family: "Raleway", sans-serif; */
-  /* font-family: "Space Grotesk", sans-serif; */
   font-family: "Roboto", sans-serif;
 }
 
 .react-tel-input .form-control{
  width: 100% !important;
-}
-
-h1 {
-  /* font-family: "Raleway", sans-serif; */
 }
 
 body {

@@ -30,9 +30,6 @@ import ConnectWithUsThankYou from "./pages/ConnectWithUsThankYou";
 import NormalizeSlash from "./components/NormalizeSlash";
 import SignUpForm from "./pages/SignUpPage";
 import AIVideoAndVoiceCall from "./components/AIVideoAndVoiceCall";
-import BaaS from "./pages/BaaS/BaaS";
-import SubscriptionFormStep1 from "./pages/BaasSubscriptionForms/SubscriptionFormStep1";
-import SubscriptionFormStep2 from "./pages/BaasSubscriptionForms/SubscriptionFormStep2";
 
 const FeeRevisionAnnouncement = lazy(() =>
   import("./pages/FeeRevisionAnnouncement")
@@ -51,6 +48,16 @@ const ProjectRequirementForm = lazy(() =>
   import("./pages/ProjectRequirementForm")
 );
 const Reviews = lazy(() => import("./pages/Reviews"));
+const BaaS = lazy(() => import("./pages/BaaS/BaaS"));
+const SubscriptionFormStep1 = lazy(() =>
+  import("./pages/BaasSubscriptionForms/SubscriptionFormStep1")
+);
+const SubscriptionFormStep2 = lazy(() =>
+  import("./pages/BaasSubscriptionForms/SubscriptionFormStep2")
+);
+const SubscriptionPage = lazy(() =>
+  import("./pages/SubscriptionPage/SubscriptionPage")
+);
 
 AOS.init({
   once: true,
@@ -387,6 +394,16 @@ function App() {
                   }
                 />
               </Route>
+              <Route
+                path="/subscription"
+                element={
+                  <>
+                    <Header />
+                    <SubscriptionPage />
+                    <LandingPageFooter />
+                  </>
+                }
+              />
             </Routes>
             <ScrollToTopButton />
             <ScrollToTopOnPageChange />

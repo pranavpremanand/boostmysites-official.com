@@ -17,14 +17,18 @@ export const PaymentSuccess = ({ amount, phone, email, paymentId }) => {
       </div>
       <h5 className="text-xl font-medium text-[#1FC16B]">Successful Payment</h5>
       <ul className="space-y-1 w-full pt-2 text-sm text-gray-600">
-        <li className="grid grid-cols-[1fr_2px_1fr] gap-2">
-          <span className="text-start">Phone number</span> :
-          <span className="text-start">{phone}</span>
-        </li>
-        <li className="grid grid-cols-[1fr_2px_1fr] gap-2">
-          <span className="text-start">Email</span> :
-          <span className="text-start">{email}</span>
-        </li>
+        {phone && (
+          <li className="grid grid-cols-[1fr_2px_1fr] gap-2">
+            <span className="text-start">Phone number</span> :
+            <span className="text-start">{phone}</span>
+          </li>
+        )}
+        {email && (
+          <li className="grid grid-cols-[1fr_2px_1fr] gap-2">
+            <span className="text-start">Email</span> :
+            <span className="text-start">{email}</span>
+          </li>
+        )}
         <li className="grid grid-cols-[1fr_2px_1fr] gap-2">
           <span className="text-start">Payment ID</span> :
           <span className="text-start">{paymentId}</span>

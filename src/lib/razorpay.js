@@ -18,7 +18,12 @@ const loadScript = (src) => {
 };
 
 // Initialize Razorpay payment with error handling
-export const doPayment = async ({ type, price, navigate }) => {
+export const doPayment = async ({
+  type,
+  price,
+  navigate,
+  checkUserDetails,
+}) => {
   try {
     // Load Razorpay script
     const res = await loadScript(
@@ -30,12 +35,15 @@ export const doPayment = async ({ type, price, navigate }) => {
       return;
     }
 
-    const userDetails =
-      JSON.parse(sessionStorage.getItem("subscriptionForm")) || null;
+    let userDetails;
+    if (checkUserDetails) {
+      userDetails =
+        JSON.parse(sessionStorage.getItem("subscriptionForm")) || null;
 
-    if (!userDetails) {
-      toast.error("Please fill the contact form first");
-      return;
+      if (!userDetails) {
+        toast.error("Please fill the contact form first");
+        return;
+      }
     }
 
     // Create order options with modal event handlers
@@ -51,9 +59,9 @@ export const doPayment = async ({ type, price, navigate }) => {
           toast(
             <PaymentSuccess
               amount={price}
-              email={userDetails.email}
+              email={userDetails?.email || ""}
               paymentId={response.razorpay_payment_id}
-              phone={userDetails.phone}
+              phone={userDetails?.phone || ""}
             />,
             {
               duration: 5000,
@@ -61,13 +69,13 @@ export const doPayment = async ({ type, price, navigate }) => {
             }
           );
           sessionStorage.removeItem("subscriptionForm");
-          navigate('/');
+          navigate("/");
         }
       },
       prefill: {
-        name: userDetails.fullName,
-        email: userDetails.email,
-        contact: userDetails.phone,
+        name: userDetails?.fullName || "",
+        email: userDetails?.email || "",
+        contact: userDetails?.phone || "",
       },
       notes: {
         address: "Razorpay Corporate Office",

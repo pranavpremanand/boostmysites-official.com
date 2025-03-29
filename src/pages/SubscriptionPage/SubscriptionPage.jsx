@@ -1,58 +1,22 @@
-import gsap from "gsap";
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import toast from "react-hot-toast";
 import { IoClose } from "react-icons/io5";
-import logo from "../../../assets/logo/logo.png";
+import logo from "../../assets/logo/logo.png";
 import { LiaCheckSolid } from "react-icons/lia";
 import { Link, useNavigate } from "react-router-dom";
 import { BsLightningCharge } from "react-icons/bs";
-import { doPayment } from "../../../lib/razorpay";
-import { membershipPlans } from "../../../data/constant";
+import { doPayment } from "../../lib/razorpay";
+import { membershipPlans } from "../../data/constant";
 
-const SubscriptionPlansPopup = ({ setShowPopupForm }) => {
-  const overlay = useRef(null);
-  const wrapper = useRef(null);
+const SubscriptionPage = () => {
   const [selectedPlan, setSelectedPlan] = useState({ type: "", price: "" });
   const navigate = useNavigate();
-
-  const closePopup = useCallback(() => {
-    setShowPopupForm(false);
-  }, [setShowPopupForm]);
-
-  const onClick = useCallback(
-    (e) => {
-      if (e.target === overlay.current || e.target === wrapper.current) {
-        closePopup();
-      }
-    },
-    [closePopup]
-  );
-
-  const onKeyDown = useCallback(
-    (e) => {
-      if (e.key === "Escape") closePopup();
-    },
-    [closePopup]
-  );
-
-  useEffect(() => {
-    document.addEventListener("keydown", onKeyDown);
-    return () => document.removeEventListener("keydown", onKeyDown);
-  }, [onKeyDown]);
-
-  useEffect(() => {
-    gsap.fromTo(
-      "#popup",
-      { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: 0.5 }
-    );
-  }, []);
 
   const handleSubscribeClick = () => {
     if (!selectedPlan.type) {
       return toast.error("Please select a plan");
     }
-    doPayment({ ...selectedPlan, navigate, checkUserDetails: true });
+    doPayment({ ...selectedPlan, navigate, checkUserDetails: false });
   };
 
   const handlePlanClick = (item) => {
@@ -60,27 +24,9 @@ const SubscriptionPlansPopup = ({ setShowPopupForm }) => {
   };
 
   return (
-    <div
-      ref={overlay}
-      className="fixed z-50 left-0 right-0 top-0 bottom-0 mx-auto bg-black/60 p-10"
-      onClick={onClick}
-    >
-      <div
-        ref={wrapper}
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100%] md:w-10/12 h-[80vh] max-h-[90vh] p-5 flex items-center justify-center"
-      >
-        <div
-          id="popup"
-          className="translate-y-[10rem] rounded-lg px-5 pb-5 pt-10 bg-[#2B2C2C] text-white relative"
-        >
-          <button
-            aria-label="Close popup"
-            className="absolute top-[0.5rem] right-[0.5rem]"
-            onClick={closePopup}
-          >
-            <IoClose size={25} />
-          </button>
-
+    <div className="min-h-screen pt-[8rem] md:pt-[9rem]">
+      <div className="wrapper flex items-center justify-center">
+        <div className="rounded-lg p-5 bg-[#2B2C2C] text-white relative">
           <div className="flex flex-col items-start gap-5">
             <img
               src={logo}
@@ -139,4 +85,4 @@ const SubscriptionPlansPopup = ({ setShowPopupForm }) => {
   );
 };
 
-export default SubscriptionPlansPopup;
+export default SubscriptionPage;

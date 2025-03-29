@@ -111,7 +111,7 @@ const Header = () => {
               <div className="relative group">
                 <button className="text-sm cursor-pointer peer">Company</button>
                 <div
-                  className="invisible overflow-hidden absolute w-[17rem] bg-[#111111c9] backdrop-blur-sm flex flex-col top-[160%] -left-full rounded-lg 
+                  className="invisible overflow-hidden absolute w-[17rem] bg-[#111111e5] backdrop-blur-sm flex flex-col top-[160%] -left-full rounded-lg 
                       peer-hover:visible hover:visible transition-all duration-300"
                 >
                   {companyLinks.map((link) => (

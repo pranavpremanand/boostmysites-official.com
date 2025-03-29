@@ -14,24 +14,10 @@ const Reviews = lazy(() => import("../components/Reviews"));
 const Videos = lazy(() => import("../components/Videos"));
 const OurOffices = lazy(() => import("../components/OurOffices"));
 
-const LandingPage = ({ path, emailIdToSendMail }) => {
+const LandingPage = ({ path }) => {
   const [introVidIsPlaying, setIntroVidIsPlaying] = useState(false);
-  // const [showPopup, setShowPopup] = useState(false);
-
-  // useEffect(() => {
-  //   const popupShown = localStorage.getItem("popupFormShown");
-  //   if (!popupShown) {
-  //     setShowPopup(true);
-  //   }
-  // }, []);
   return (
     <div className="landing-page relative" id="home">
-      {/* {showPopup && (
-        <PopupForm
-          setShowPopup={setShowPopup}
-          emailIdToSendMail={emailIdToSendMail}
-        />
-      )} */}
       <div className="min-h-screen flex items-center relative">
         <div className="landing-page-bg h-full w-full absolute left-0 top-0">
           <div className="absolute inset-0 h-full w-full bg-black/60 z-[1]"></div>
