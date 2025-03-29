@@ -48,7 +48,7 @@ export const doPayment = async ({
 
     // Create order options with modal event handlers
     const options = {
-      key: process.env.REACT_APP_RAZORPAY_KEY,
+      key: 'rzp_live_oZkC4JLPZ6FCoc',
       amount: price * 100,
       currency: "INR",
       name: "BoostMySites",
