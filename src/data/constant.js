@@ -343,7 +343,7 @@ export const oneYearPlanDetails = {
       ],
     },
   ],
-  price: 471999,
+  price: 399000,
 };
 
 export const twoYearPlanDetails = {
@@ -414,7 +414,7 @@ export const twoYearPlanDetails = {
       ],
     },
   ],
-  price: 589999,
+  price: 499000,
 };
 
 // subscription plans in dollars
