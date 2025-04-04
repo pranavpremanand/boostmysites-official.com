@@ -58,6 +58,7 @@ const SubscriptionFormStep2 = lazy(() =>
 const SubscriptionPage = lazy(() =>
   import("./pages/SubscriptionPage/SubscriptionPage")
 );
+const ClientStories = lazy(() => import("./pages/ClientStories/ClientStories"));
 
 AOS.init({
   once: true,
@@ -401,6 +402,16 @@ function App() {
                     <Header />
                     <SubscriptionPage />
                     <LandingPageFooter />
+                  </>
+                }
+              />
+              <Route
+                path="/boostmysites-client-reviews"
+                element={
+                  <>
+                    <Header />
+                    <ClientStories />
+                    <Footer />
                   </>
                 }
               />

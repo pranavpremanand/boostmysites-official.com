@@ -26,13 +26,7 @@ const AIVideoAndVoiceCall = () => {
   }, [prevScrollPos]);
 
   return (
-    <div
-      // className={`fixed z-50 bottom-0 left-0 transition-all duration-300 ${
-      //   isVisible
-      //     ? "opacity-100 translate-y-0"
-      //     : "opacity-0 translate-y-[10rem] pointer-events-none"
-      // }`}
-    >
+    <>
       <TavusVideoConversation
         apiKey={process.env.REACT_APP_TAVUS_API_KEY}
         replicaId={process.env.REACT_APP_TAVUS_REPLICA_ID}
@@ -41,7 +35,7 @@ const AIVideoAndVoiceCall = () => {
         agentId={process.env.REACT_APP_BOLNA_AGENT_ID}
         apiKey={process.env.REACT_APP_BOLNA_API_KEY}
       />
-    </div>
+    </>
   );
 };
 

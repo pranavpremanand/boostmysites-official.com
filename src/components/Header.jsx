@@ -46,11 +46,16 @@ const companyLinks = [
   },
   {
     id: 4,
+    title: "Client Stories",
+    path: "/boostmysites-client-reviews",
+  },
+  {
+    id: 5,
     title: "Reviews",
     path: "/reviews",
   },
   {
-    id: 5,
+    id: 6,
     title: "Contact Us",
     path: "/ai-expert/contact/step1",
   },
@@ -92,7 +97,8 @@ const Header = () => {
         <div className="w-full">
           <div className="wrapper flex justify-between items-center w-full">
             <RLink to="/home" className="cursor-pointer">
-              <img loading="lazy" 
+              <img
+                loading="lazy"
                 src={logo}
                 alt=""
                 className="h-[4rem] md:h-[5rem] object-contain -mb-3"
@@ -150,7 +156,7 @@ const Header = () => {
         open={isOpen}
         onClose={toggleDrawer}
         direction="right"
-        className="py-4 px-10 z-10 bg-black text-white"
+        className="py-4 z-10 bg-black text-white"
       >
         <div className="mb-6 flex items-center justify-end pr-[.7rem] py-[.4rem]">
           <button
@@ -160,12 +166,12 @@ const Header = () => {
             <IoMdClose />
           </button>
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col">
           {options.concat(companyLinks).map(({ title, path }) => (
             <RLink
               onClick={() => setIsOpen(false)}
               key={path}
-              className="text-2xl font-medium cursor-pointer transition-colors duration-300 link"
+              className="text-xl py-2 pl-4 pr-2 hover:bg-[#262626] w-full font-medium cursor-pointer transition-colors duration-300"
               to={path}
             >
               {title}
@@ -173,7 +179,7 @@ const Header = () => {
           ))}
           <RLink
             onClick={() => setIsOpen(false)}
-            className="text-2xl font-medium cursor-pointer transition-colors duration-300 link"
+            className="text-xl py-2 pl-4 pr-2 hover:bg-[#262626] w-full font-medium cursor-pointer transition-colors duration-300"
             to="/connect-with-us"
           >
             Let's Connect

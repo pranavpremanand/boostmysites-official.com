@@ -201,74 +201,6 @@ export const services = [
   },
 ];
 
-// subscription plans
-
-// export const sixMonthPlanDetails = {
-//   title: "6 Month",
-//   accordionDetails: [
-//     {
-//       heading: "Branding and Marketing Team",
-//       description: "Custom branding and marketing services.",
-//       services: [
-//         "Custom branding strategy, logo, business card design",
-//         "Social media management (Facebook, LinkedIn, Instagram)",
-//         "Paid ads, content marketing, SEO, and outreach",
-//         "Brand positioning to stand out in the market",
-//       ],
-//     },
-//     {
-//       heading: "Full-Stack Website Design",
-//       description: "Professional website design and development.",
-//       services: [
-//         "Custom-designed, mobile-responsive website",
-//         "SEO optimization for better visibility",
-//         "User-friendly interface and functionality (contact forms, e-commerce, etc.)",
-//       ],
-//     },
-//     {
-//       heading: "Full Support System",
-//       description: "Comprehensive support for business operations.",
-//       services: [
-//         "24/7 support for troubleshooting and guidance",
-//         "Network access to entrepreneurs, mentors, and experts",
-//         "Weekly check-ins with your mentor",
-//       ],
-//     },
-//     {
-//       heading: "Expert Mentoring",
-//       description: "Guidance from experienced mentors.",
-//       services: [
-//         "One-on-one business strategy sessions",
-//         "Insights into AI industry trends and opportunities",
-//         "Problem-solving and decision-making support",
-//         "Daily Scrutinizing & Task Management",
-//         "Daily actionable tasks and milestones",
-//         "Progress monitoring and weekly reviews",
-//         "Monthly goal setting and performance tracking",
-//       ],
-//     },
-//     {
-//       heading: "AI Training & Skill Development",
-//       description: "Hands-on training in AI technologies.",
-//       services: [
-//         "Fundamentals of AI, machine learning, and deep learning",
-//         "Hands-on workshops and coding training",
-//         "Tools and software for building AI products",
-//       ],
-//     },
-//     {
-//       heading: "Why Choose This Program?",
-//       description: "Reasons to select this program for business growth.",
-//       services: [
-//         "Affordable investment of ₹2.44 Lakhs for all-inclusive services",
-//         "Comprehensive support from company registration to daily business tasks",
-//         "Proven experience in helping entrepreneurs start and scale AI companies",
-//       ],
-//     },
-//   ],
-//   price: "₹2,64,000 + GST",
-// };
-
 export const oneYearPlanDetails = {
   title: "1 Year",
   accordionDetails: [
@@ -662,5 +594,89 @@ export const testimonials = [
   {
     name: "Anna W.",
     desc: "I trusted Boostmysites to launch my startup, and they didn’t disappoint. Their tailored solutions helped my brand stand out in a crowded market. A phenomenal experience!",
+  },
+];
+
+// client story videos
+export const clientStoryVideos = [
+  {
+    id: 1,
+    title: "From Zero to AI Entrepreneur",
+    description:
+      "He had no technical background and zero experience with AI. But with BoostMySites' mentorship and tools, he started building from day one. Today, he runs a thriving AI business he once thought was impossible.",
+    video: require("../assets/videos/client stories/videos/1.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/1.webp"),
+  },
+  {
+    id: 2,
+    title: "From Idea to AI Startup",
+    description:
+      "It began as a simple idea — no code, no team, just ambition. BoostMySites turned that idea into a structured business with a real product. Now, it's an AI startup with paying clients and global reach.",
+    video: require("../assets/videos/client stories/videos/2.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/2.webp"),
+  },
+  {
+    id: 3,
+    title: "AI Success Without Tech Expertise",
+    description:
+      "She didn't know how to code, but she knew she had potential. BoostMySites gave her the structure, guidance, and AI support she needed. Today, her business is scaling with confidence in a tech-driven world.",
+    video: require("../assets/videos/client stories/videos/3.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/3.webp"),
+  },
+  {
+    id: 4,
+    title: "AI for Everyone: A Non-Tech Founder's Journey",
+    description:
+      "Coming from a non-tech background, he assumed AI wasn't for him. But BoostMySites proved that mindset wrong by simplifying the process. Now, he's running a successful AI company without ever writing a line of code.",
+    video: require("../assets/videos/client stories/videos/4.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/4.webp"),
+  },
+  {
+    id: 5,
+    title: "Building an AI Business as a Beginner",
+    description:
+      "She was just starting out, confused and overwhelmed by AI. BoostMySites broke it down into actionable steps with ongoing mentorship. That beginner is now a founder with a real business and a clear vision.",
+    video: require("../assets/videos/client stories/videos/5.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/5.webp"),
+  },
+  {
+    id: 6,
+    title: "Turning Skills Into an AI-Powered Business",
+    description:
+      "He always had the skills — just not the system. BoostMySites helped him build an AI-powered brand around what he already knew. Now, he's turning those skills into steady revenue and recognition.",
+    video: require("../assets/videos/client stories/videos/6.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/6.webp"),
+  },
+  {
+    id: 7,
+    title: "Launching an AI Startup with No Experience",
+    description:
+      "No product, no tech, no prior business knowledge — but she had the drive. BoostMySites provided the tools and team to launch her idea confidently. Now, she's landing clients and scaling with purpose.",
+    video: require("../assets/videos/client stories/videos/7.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/7.webp"),
+  },
+  {
+    id: 8,
+    title: "Breaking Into AI Without a Tech Degree",
+    description:
+      "No degree? No problem. BoostMySites helped him build an AI business from scratch using real-world guidance and no jargon — now he's living proof that tech isn't just for techies.",
+    video: require("../assets/videos/client stories/videos/8.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/8.webp"),
+  },
+  {
+    id: 9,
+    title: "Building an AI Business From Scratch",
+    description:
+      "He didn't know where to begin, but he knew he wanted to be in AI. BoostMySites gave him the roadmap, platform, and push. Today, he's building something real — one client at a time.",
+    video: require("../assets/videos/client stories/videos/9.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/9.webp"),
+  },
+  {
+    id: 10,
+    title: "Making AI Simple for First-Time Entrepreneurs",
+    description:
+      "She thought AI was only for experts until BoostMySites stepped in. With simplified tools and constant guidance, she started from zero and launched fast. Now, she's running her own AI brand with clarity and confidence.",
+    video: require("../assets/videos/client stories/videos/10.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/10.webp"),
   },
 ];
