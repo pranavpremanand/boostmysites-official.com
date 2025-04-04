@@ -3,7 +3,7 @@ import ReactPlayer from "react-player";
 import { FaPlay, FaPause } from "react-icons/fa";
 
 const ClientStoryVideo = ({ video, setPlayingVideoId, playingVideoId }) => {
-  const [imageLoaded, setImageLoaded] = useState(false);
+  const [isVideoLoading, setIsVideoLoading] = useState(true);
   const [isPlaying, setIsPlaying] = useState(false);
   const playerRef = useRef(null);
 
@@ -17,7 +17,6 @@ const ClientStoryVideo = ({ video, setPlayingVideoId, playingVideoId }) => {
   };
 
   return (
-    // grid grid-cols-1 md:even:grid-cols-[1fr,70%] md:odd:grid-cols-[70%,1fr]
     <div
       data-aos="fade-up"
       className="w-full shadow-xl border-b border-b-white/20 flex flex-col md:odd:flex-row md:even:flex-row-reverse justify-between items-center gap-8 md:odd:text-end md:even:text-start backdrop-blur-sm p-6"
@@ -31,6 +30,15 @@ const ClientStoryVideo = ({ video, setPlayingVideoId, playingVideoId }) => {
       <div className="client-story-video-player w-full md:w-[30%] aspect-[3/4.75] rounded-lg overflow-hidden relative group">
         {playingVideoId === video.id ? (
           <div className="relative w-full h-full">
+            {isVideoLoading && (
+              <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black/20">
+                <img
+                  src={video.thumbnail}
+                  alt={video.title}
+                  className="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            )}
             <ReactPlayer
               ref={playerRef}
               url={video.video}
@@ -41,6 +49,7 @@ const ClientStoryVideo = ({ video, setPlayingVideoId, playingVideoId }) => {
                 setPlayingVideoId(null);
                 setIsPlaying(false);
               }}
+              onReady={() => setIsVideoLoading(false)}
               style={{ position: "absolute", top: 0, left: 0 }}
               playsinline
               pip={false}
@@ -72,17 +81,14 @@ const ClientStoryVideo = ({ video, setPlayingVideoId, playingVideoId }) => {
               src={video.thumbnail}
               alt={video.title}
               className="w-full h-full object-cover rounded-lg"
-              onLoad={() => setImageLoaded(true)}
             />
-            {imageLoaded && (
-              <button
-                onClick={handlePlayPause}
-                className="absolute inset-0 m-auto w-16 h-16 bg-white/20 rounded-full backdrop-blur-sm flex items-center justify-center hover:bg-white/30 transition-all duration-300"
-                aria-label="Play video"
-              >
-                <FaPlay className="w-6 h-6 text-white ml-1" />
-              </button>
-            )}
+            <button
+              onClick={handlePlayPause}
+              className="absolute inset-0 m-auto w-16 h-16 bg-white/20 rounded-full backdrop-blur-sm flex items-center justify-center hover:bg-white/30 transition-all duration-300"
+              aria-label="Play video"
+            >
+              <FaPlay className="w-6 h-6 text-white ml-1" />
+            </button>
           </div>
         )}
       </div>
