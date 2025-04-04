@@ -19,7 +19,7 @@ const ClientStoryVideo = ({ video, setPlayingVideoId, playingVideoId }) => {
   return (
     <div
       data-aos="fade-up"
-      className="w-full shadow-xl border-b border-b-white/20 flex flex-col md:odd:flex-row md:even:flex-row-reverse justify-between items-center gap-8 md:odd:text-end md:even:text-start backdrop-blur-sm p-6"
+      className="w-full shadow-xl border-b border-b-white/20 flex flex-col md:odd:flex-row md:even:flex-row-reverse justify-between items-center gap-8 md:odd:text-end md:even:text-start backdrop-blur-sm py-6"
     >
       <div className="flex flex-col gap-4 md:w-[70%]">
         <h2 className="text-[2rem] text-balance !leading-[1.15] md:text-4xl lg:text-5xl font-medium text-white">
