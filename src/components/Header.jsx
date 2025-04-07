@@ -44,11 +44,11 @@ const companyLinks = [
     title: "Blogs",
     path: "/blogs",
   },
-  // {
-  //   id: 4,
-  //   title: "Client Stories",
-  //   path: "/boostmysites-client-reviews",
-  // },
+  {
+    id: 4,
+    title: "Client Stories",
+    path: "/boostmysites-client-reviews",
+  },
   {
     id: 5,
     title: "Reviews",

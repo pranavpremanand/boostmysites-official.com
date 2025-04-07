@@ -601,81 +601,81 @@ export const testimonials = [
 export const clientStoryVideos = [
   {
     id: 1,
-    title: "From Zero to AI Entrepreneur",
+    title: "From chasing meetings to closing deals",
     description:
-      "He had no technical background and zero experience with AI. But with BoostMySites' mentorship and tools, he started building from day one. Today, he runs a thriving AI business he once thought was impossible.",
+      "After launching my AI company, client meetings became the top priority. Every interaction now directly impacts growth — it's no longer just about showing up, it's about closing deals, building strong client relationships, and driving profitability. Success is measured not just in conversations, but in the results we deliver",
     video: require("../assets/videos/client stories/videos/1.mp4"),
     thumbnail: require("../assets/videos/client stories/thumbnails/1.webp"),
   },
   {
     id: 2,
-    title: "From Idea to AI Startup",
+    title: "One year of hustle just to land the first client",
     description:
-      "It began as a simple idea — no code, no team, just ambition. BoostMySites turned that idea into a structured business with a real product. Now, it's an AI startup with paying clients and global reach.",
+      "After a year of relentless hard work, late nights, and countless rejections, finally reaching that first client was a breakthrough moment. But tasting the rush of a successful deal changed everything — now, closing 2 to 3 projects back-to-back feels natural. The momentum is real, and this is just the beginning of a bigger journey",
     video: require("../assets/videos/client stories/videos/2.mp4"),
     thumbnail: require("../assets/videos/client stories/thumbnails/2.webp"),
   },
   {
     id: 3,
-    title: "AI Success Without Tech Expertise",
+    title: "From zero AI background to building brands and making moves",
     description:
-      "She didn't know how to code, but she knew she had potential. BoostMySites gave her the structure, guidance, and AI support she needed. Today, her business is scaling with confidence in a tech-driven world.",
+      "Started with absolutely no background in AI, but with the right branding and marketing support from Boostmysites, the journey started taking shape. Learning every day, understanding the industry deeper, and turning ideas into real results — making things happen, one step at a time",
     video: require("../assets/videos/client stories/videos/3.mp4"),
     thumbnail: require("../assets/videos/client stories/thumbnails/3.webp"),
   },
   {
     id: 4,
-    title: "AI for Everyone: A Non-Tech Founder's Journey",
+    title: "No tech background? No problem",
     description:
-      "Coming from a non-tech background, he assumed AI wasn't for him. But BoostMySites proved that mindset wrong by simplifying the process. Now, he's running a successful AI company without ever writing a line of code.",
+      "Coming from a non-technical background, I once believed AI was out of reach for me. But with BoostMySites making the complex simple, I realized you don't need to code to innovate. Today, I'm proudly running a growing AI company, focusing on vision, leadership, and execution — proof that with the right support, anything is possible.",
     video: require("../assets/videos/client stories/videos/4.mp4"),
     thumbnail: require("../assets/videos/client stories/thumbnails/4.webp"),
   },
   {
     id: 5,
-    title: "Building an AI Business as a Beginner",
+    title: "From middle-class dreams to AI success",
     description:
-      "She was just starting out, confused and overwhelmed by AI. BoostMySites broke it down into actionable steps with ongoing mentorship. That beginner is now a founder with a real business and a clear vision.",
+      "As a middle-class boy with big dreams and a goal to achieve financial independence, I knew I had to carve my own path. Coming from a non-technical background, I once believed AI was out of reach for me. But with BoostMySites simplifying the complexities, I realized innovation isn't limited by coding skills. Today, I'm proudly building and leading a growing AI company — proof that with vision, resilience, and the right support, anything is possible",
     video: require("../assets/videos/client stories/videos/5.mp4"),
     thumbnail: require("../assets/videos/client stories/thumbnails/5.webp"),
   },
   {
     id: 6,
-    title: "Turning Skills Into an AI-Powered Business",
+    title: "Youngest entrepreneur in the game",
     description:
-      "He always had the skills — just not the system. BoostMySites helped him build an AI-powered brand around what he already knew. Now, he's turning those skills into steady revenue and recognition.",
+      "At an age when many are still figuring out their path, I'm proud to be building mine — closing ₹50 lakhs in projects and already gearing up to cross the ₹1 crore milestone. This journey as one of the youngest entrepreneurs in the industry proves that with relentless hustle, clarity of vision, and the right mindset, success isn't about age — it's about action",
     video: require("../assets/videos/client stories/videos/6.mp4"),
     thumbnail: require("../assets/videos/client stories/thumbnails/6.webp"),
   },
   {
     id: 7,
-    title: "Launching an AI Startup with No Experience",
+    title: "Leading projects that aren't just projects — they're innovations",
     description:
-      "No product, no tech, no prior business knowledge — but she had the drive. BoostMySites provided the tools and team to launch her idea confidently. Now, she's landing clients and scaling with purpose.",
+      "Starting an AI company wasn't just about entering the tech world — it was about building solutions that drive real change. Taking on groundbreaking projects like a Volunteer Management System shows that with the right vision and execution, AI can solve real-world problems and redefine how organizations operate. This is just the beginning of building innovations that truly matter!",
     video: require("../assets/videos/client stories/videos/7.mp4"),
     thumbnail: require("../assets/videos/client stories/thumbnails/7.webp"),
   },
   {
     id: 8,
-    title: "Breaking Into AI Without a Tech Degree",
+    title: "Bridging continents with innovation",
     description:
-      "No degree? No problem. BoostMySites helped him build an AI business from scratch using real-world guidance and no jargon — now he's living proof that tech isn't just for techies.",
+      "Building an AI company taught me one thing — excellence has no borders. Handling both Indian and overseas clients has been a journey of understanding diverse needs, delivering top-notch solutions, and constantly raising the bar. Every project, every collaboration is a step toward building the best, no matter where our clients are from",
     video: require("../assets/videos/client stories/videos/8.mp4"),
     thumbnail: require("../assets/videos/client stories/thumbnails/8.webp"),
   },
   {
     id: 9,
-    title: "Building an AI Business From Scratch",
+    title: "Two young dreamers, one AI vision",
     description:
-      "He didn't know where to begin, but he knew he wanted to be in AI. BoostMySites gave him the roadmap, platform, and push. Today, he's building something real — one client at a time.",
+      "For two young entrepreneurs, the journey of building an AI company has been nothing short of a rollercoaster — filled with challenges, risks, breakthroughs, and big wins. From learning on the go to closing major deals, every twist and turn has shaped a story of resilience, ambition, and relentless innovation. This is just the beginning of something extraordinary",
     video: require("../assets/videos/client stories/videos/9.mp4"),
     thumbnail: require("../assets/videos/client stories/thumbnails/9.webp"),
   },
   {
     id: 10,
-    title: "Making AI Simple for First-Time Entrepreneurs",
+    title: "Client satisfaction isn't optional — it's the foundation",
     description:
-      "She thought AI was only for experts until BoostMySites stepped in. With simplified tools and constant guidance, she started from zero and launched fast. Now, she's running her own AI brand with clarity and confidence.",
+      "In today's competitive world, making clients satisfied isn't just an option — it's essential. Every project, every meeting, and every delivery is focused on creating real value and building lasting trust. We're not just aiming to meet expectations; we're committed to exceeding them, because client success is our success.",
     video: require("../assets/videos/client stories/videos/10.mp4"),
     thumbnail: require("../assets/videos/client stories/thumbnails/10.webp"),
   },
