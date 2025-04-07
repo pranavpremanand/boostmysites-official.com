@@ -1,10 +1,12 @@
 import React, { useState, useRef } from "react";
 import ReactPlayer from "react-player";
 import { FaPlay, FaPause } from "react-icons/fa";
+import { ImSpinner8 } from "react-icons/im";
 
 const ClientStoryVideo = ({ video, setPlayingVideoId, playingVideoId }) => {
   const [isVideoLoading, setIsVideoLoading] = useState(true);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [isBuffering, setIsBuffering] = useState(false);
   const playerRef = useRef(null);
 
   const handlePlayPause = () => {
@@ -13,6 +15,7 @@ const ClientStoryVideo = ({ video, setPlayingVideoId, playingVideoId }) => {
     } else {
       setPlayingVideoId(video.id);
       setIsPlaying(true);
+      setIsBuffering(true); // Show spinner when first loading
     }
   };
 
@@ -27,7 +30,7 @@ const ClientStoryVideo = ({ video, setPlayingVideoId, playingVideoId }) => {
         </h2>
         <p className="font-light text-white/80">{video.description}</p>
       </div>
-      <div className="client-story-video-player w-full md:w-[30%] aspect-[3/4.75] rounded-lg overflow-hidden relative group">
+      <div className="client-story-video-player w-full md:w-[30%] max-h-[78vh] h-full aspect-[3/4.75] rounded-lg overflow-hidden relative group">
         {playingVideoId === video.id ? (
           <div className="relative w-full h-full">
             {isVideoLoading && (
@@ -49,7 +52,13 @@ const ClientStoryVideo = ({ video, setPlayingVideoId, playingVideoId }) => {
                 setPlayingVideoId(null);
                 setIsPlaying(false);
               }}
-              onReady={() => setIsVideoLoading(false)}
+              onReady={() => {
+                setIsVideoLoading(false);
+                setIsBuffering(false);
+              }}
+              onBuffer={() => setIsBuffering(true)}
+              onBufferEnd={() => setIsBuffering(false)}
+              onPlay={() => setIsBuffering(false)}
               style={{ position: "absolute", top: 0, left: 0 }}
               playsinline
               pip={false}
@@ -63,10 +72,19 @@ const ClientStoryVideo = ({ video, setPlayingVideoId, playingVideoId }) => {
                 },
               }}
             />
+            
+            {/* Loading Spinner */}
+            {isBuffering && (
+              <div className="absolute inset-0 flex items-center justify-center bg-black/30">
+                <ImSpinner8 className="w-12 h-12 text-white animate-spin" />
+              </div>
+            )}
+
             <button
               onClick={handlePlayPause}
               className="absolute inset-0 m-auto w-16 h-16 bg-white/20 rounded-full backdrop-blur-sm flex items-center justify-center hover:bg-white/30 transition-all duration-300 opacity-0 group-hover:opacity-100"
               aria-label={isPlaying ? "Pause video" : "Play video"}
+              disabled={isBuffering}
             >
               {isPlaying ? (
                 <FaPause className="w-6 h-6 text-white" />
