@@ -28,7 +28,7 @@ const BlogDetails = () => {
             data-aos="fade-up"
             src={blog.image}
             alt=""
-            className="w-full rounded-xl object-cover object-top aspect-[4/3] max-h-[70vh]"
+            className="mx-auto rounded-xl object-contain object-top max-h-[70vh]"
           />
           <div className="flex flex-col gap-2">
             <h4

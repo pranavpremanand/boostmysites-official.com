@@ -603,7 +603,7 @@ export const clientStoryVideos = [
     id: 1,
     title: "From chasing meetings to closing deals",
     description:
-      "After launching my AI company, client meetings became the top priority. Every interaction now directly impacts growth — it's no longer just about showing up, it's about closing deals, building strong client relationships, and driving profitability. Success is measured not just in conversations, but in the results we deliver",
+      "After launching my AI company, client meetings became the top priority. Every interaction now directly impacts growth — it's no longer just about showing up, it's about closing deals, building strong client relationships, and driving profitability. Success is measured not just in conversations, but in the results we deliver.",
     video: require("../assets/videos/client stories/videos/1.mp4"),
     thumbnail: require("../assets/videos/client stories/thumbnails/1.webp"),
   },
@@ -611,7 +611,7 @@ export const clientStoryVideos = [
     id: 2,
     title: "One year of hustle just to land the first client",
     description:
-      "After a year of relentless hard work, late nights, and countless rejections, finally reaching that first client was a breakthrough moment. But tasting the rush of a successful deal changed everything — now, closing 2 to 3 projects back-to-back feels natural. The momentum is real, and this is just the beginning of a bigger journey",
+      "After a year of relentless hard work, late nights, and countless rejections, finally reaching that first client was a breakthrough moment. But tasting the rush of a successful deal changed everything — now, closing 2 to 3 projects back-to-back feels natural. The momentum is real, and this is just the beginning of a bigger journey.",
     video: require("../assets/videos/client stories/videos/2.mp4"),
     thumbnail: require("../assets/videos/client stories/thumbnails/2.webp"),
   },
@@ -619,7 +619,7 @@ export const clientStoryVideos = [
     id: 3,
     title: "From zero AI background to building brands and making moves",
     description:
-      "Started with absolutely no background in AI, but with the right branding and marketing support from Boostmysites, the journey started taking shape. Learning every day, understanding the industry deeper, and turning ideas into real results — making things happen, one step at a time",
+      "Started with absolutely no background in AI, but with the right branding and marketing support from Boostmysites, the journey started taking shape. Learning every day, understanding the industry deeper, and turning ideas into real results — making things happen, one step at a time.",
     video: require("../assets/videos/client stories/videos/3.mp4"),
     thumbnail: require("../assets/videos/client stories/thumbnails/3.webp"),
   },
@@ -635,7 +635,7 @@ export const clientStoryVideos = [
     id: 5,
     title: "From middle-class dreams to AI success",
     description:
-      "As a middle-class boy with big dreams and a goal to achieve financial independence, I knew I had to carve my own path. Coming from a non-technical background, I once believed AI was out of reach for me. But with BoostMySites simplifying the complexities, I realized innovation isn't limited by coding skills. Today, I'm proudly building and leading a growing AI company — proof that with vision, resilience, and the right support, anything is possible",
+      "As a middle-class boy with big dreams and a goal to achieve financial independence, I knew I had to carve my own path. Coming from a non-technical background, I once believed AI was out of reach for me. But with BoostMySites simplifying the complexities, I realized innovation isn't limited by coding skills. Today, I'm proudly building and leading a growing AI company — proof that with vision, resilience, and the right support, anything is possible.",
     video: require("../assets/videos/client stories/videos/5.mp4"),
     thumbnail: require("../assets/videos/client stories/thumbnails/5.webp"),
   },
@@ -643,7 +643,7 @@ export const clientStoryVideos = [
     id: 6,
     title: "Youngest entrepreneur in the game",
     description:
-      "At an age when many are still figuring out their path, I'm proud to be building mine — closing ₹50 lakhs in projects and already gearing up to cross the ₹1 crore milestone. This journey as one of the youngest entrepreneurs in the industry proves that with relentless hustle, clarity of vision, and the right mindset, success isn't about age — it's about action",
+      "At an age when many are still figuring out their path, I'm proud to be building mine — closing ₹50 lakhs in projects and already gearing up to cross the ₹1 crore milestone. This journey as one of the youngest entrepreneurs in the industry proves that with relentless hustle, clarity of vision, and the right mindset, success isn't about age — it's about action.",
     video: require("../assets/videos/client stories/videos/6.mp4"),
     thumbnail: require("../assets/videos/client stories/thumbnails/6.webp"),
   },
@@ -651,7 +651,7 @@ export const clientStoryVideos = [
     id: 7,
     title: "Leading projects that aren't just projects — they're innovations",
     description:
-      "Starting an AI company wasn't just about entering the tech world — it was about building solutions that drive real change. Taking on groundbreaking projects like a Volunteer Management System shows that with the right vision and execution, AI can solve real-world problems and redefine how organizations operate. This is just the beginning of building innovations that truly matter!",
+      "Starting an AI company wasn't just about entering the tech world — it was about building solutions that drive real change. Taking on groundbreaking projects like a Volunteer Management System shows that with the right vision and execution, AI can solve real-world problems and redefine how organizations operate. This is just the beginning of building innovations that truly matter!.",
     video: require("../assets/videos/client stories/videos/7.mp4"),
     thumbnail: require("../assets/videos/client stories/thumbnails/7.webp"),
   },
@@ -659,7 +659,7 @@ export const clientStoryVideos = [
     id: 8,
     title: "Bridging continents with innovation",
     description:
-      "Building an AI company taught me one thing — excellence has no borders. Handling both Indian and overseas clients has been a journey of understanding diverse needs, delivering top-notch solutions, and constantly raising the bar. Every project, every collaboration is a step toward building the best, no matter where our clients are from",
+      "Building an AI company taught me one thing — excellence has no borders. Handling both Indian and overseas clients has been a journey of understanding diverse needs, delivering top-notch solutions, and constantly raising the bar. Every project, every collaboration is a step toward building the best, no matter where our clients are from.",
     video: require("../assets/videos/client stories/videos/8.mp4"),
     thumbnail: require("../assets/videos/client stories/thumbnails/8.webp"),
   },
@@ -667,7 +667,7 @@ export const clientStoryVideos = [
     id: 9,
     title: "Two young dreamers, one AI vision",
     description:
-      "For two young entrepreneurs, the journey of building an AI company has been nothing short of a rollercoaster — filled with challenges, risks, breakthroughs, and big wins. From learning on the go to closing major deals, every twist and turn has shaped a story of resilience, ambition, and relentless innovation. This is just the beginning of something extraordinary",
+      "For two young entrepreneurs, the journey of building an AI company has been nothing short of a rollercoaster — filled with challenges, risks, breakthroughs, and big wins. From learning on the go to closing major deals, every twist and turn has shaped a story of resilience, ambition, and relentless innovation. This is just the beginning of something extraordinary.",
     video: require("../assets/videos/client stories/videos/9.mp4"),
     thumbnail: require("../assets/videos/client stories/thumbnails/9.webp"),
   },
@@ -678,5 +678,139 @@ export const clientStoryVideos = [
       "In today's competitive world, making clients satisfied isn't just an option — it's essential. Every project, every meeting, and every delivery is focused on creating real value and building lasting trust. We're not just aiming to meet expectations; we're committed to exceeding them, because client success is our success.",
     video: require("../assets/videos/client stories/videos/10.mp4"),
     thumbnail: require("../assets/videos/client stories/thumbnails/10.webp"),
+  },
+  {
+    id: 11,
+    title:
+      "From Real Estate Roots to AI Frontiers: Managing Two Worlds with One Vision",
+    description:
+      "Real estate and artificial intelligence. With extensive experience in real estate business management, he has expanded into the AI sector, overseeing the growth of both ventures simultaneously. This dual leadership reflects a strong ability to balance traditional business excellence with technological innovation, driving progress and delivering results in both domains.",
+    video: require("../assets/videos/client stories/videos/11.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/11.webp"),
+  },
+  {
+    id: 12,
+    title:
+      "Real Talk: How Our Client is Powering Smarter Healthcare with AI and RPM!",
+    description:
+      "In this client spotlight, we dive into how AI is driving change in healthcare. \n Through our AI-powered solutions, our client is now offering advanced Remote Patient Monitoring (RPM) services — delivering smarter care, real-time insights, and better health outcomes. \n This is how technology and healthcare come together to make a real difference!.",
+    video: require("../assets/videos/client stories/videos/12.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/12.webp"),
+  },
+  {
+    id: 13,
+    title: "Building a Million-Dollar Vision",
+    description:
+      "Our client is working toward a million-dollar milestone over the next five years, driven by a clear vision and unstoppable ambition. Here's a glimpse into their journey, their mindset, and the steps they're taking to make it happen.",
+    video: require("../assets/videos/client stories/videos/13.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/13.webp"),
+  },
+  {
+    id: 14,
+    title: "Breaking the 9-5: How Our Client is Redefining Work with AI",
+    description:
+      "Stepping away from the traditional 9-5 grind, our client has launched an AI-driven company with a bigger purpose — to create more freedom, flexibility, and smarter ways of working. \n Through innovative AI solutions, they're challenging old work models and opening new opportunities for individuals and businesses alike.",
+    video: require("../assets/videos/client stories/videos/14.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/14.webp"),
+  },
+  {
+    id: 15,
+    title: "Halfway to the Dream: Building, Growing, and Thriving",
+    description:
+      "Our client always dreamed of becoming an entrepreneur — and today, that dream is already 50% accomplished.\n With a strong foundation in place, they are now focused on scaling even further — managing active client pipelines, nurturing new opportunities, and pushing toward full success. \n This interaction captures their mindset, their journey so far, and the determined hustle behind turning ambition into reality.",
+    video: require("../assets/videos/client stories/videos/15.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/15.webp"),
+  },
+  {
+    id: 16,
+    title:
+      "From Supply Chain Officer to AI Founder: A Journey of Bold Transformation",
+    description:
+      "Transitioning from a supply chain officer to launching an AI company isn’t just a career shift — it’s a leap into the future. \nIn this interaction, we highlight our client’s inspiring journey of stepping out of a traditional corporate role to embrace innovation and entrepreneurship. \nFueled by a vision to leverage AI for smarter solutions, they’re redefining their path, creating impact, and building a company designed for the future.",
+    video: require("../assets/videos/client stories/videos/16.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/16.webp"),
+  },
+  {
+    id: 17,
+    title:
+      "From Start-Up to Standout: Taking on Established Businesses with AI",
+    description:
+      "In a world dominated by established businesses, our young client is fearlessly carving out a space of their own. With fresh ideas, cutting-edge AI solutions, and an unstoppable drive, they are competing with industry leaders — and making a mark. In this interaction, we dive into their mindset, the challenges they’re embracing, and how they’re proving that innovation and ambition can outshine size and legacy.",
+    video: require("../assets/videos/client stories/videos/17.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/17.webp"),
+  },
+  {
+    id: 18,
+    title: "Catching the AI Wave Early — No Regrets, Only Growth",
+    description:
+      "Jumping into the AI world in their early 20s, our client made a bold decision — and they haven’t looked back since. \n While many are still figuring out their path, they chose to embrace emerging technology, build a business, and shape their future early. \n In this interaction, we explore their mindset, the risks they took, the lessons they’re learning, and why starting early in AI is one of the best moves they ever made.",
+    video: require("../assets/videos/client stories/videos/18.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/18.webp"),
+  },
+  {
+    id: 19,
+    title: "Proof You Don’t Need to Be a Techie to Lead in AI",
+    description:
+      "Who says you need a technical background to succeed in AI? \n In this inspiring client interaction, we highlight the journey of a founder who proved that passion, vision, and smart execution matter more than a degree in coding. \n Despite not coming from a technical field, they built a thriving AI company by focusing on leadership, innovation, and assembling the right team.",
+    video: require("../assets/videos/client stories/videos/19.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/19.webp"),
+  },
+  {
+    id: 20,
+    title: "From Local to Global: Winning Big Clients in the UAE",
+    description:
+      "Our client is taking big strides beyond borders — securing high-value deals and building a strong presence in the UAE market. \n In this interaction, we dive into how their determination, global mindset, and strategic approach helped them break into an international market and win the trust of major clients. \n From understanding cultural nuances to offering tailored solutions, they’re setting a new standard for growth and success.",
+    video: require("../assets/videos/client stories/videos/20.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/20.webp"),
+  },
+  {
+    id: 21,
+    title: "Starting Strong: Boostmyiste’s Role in a Founder’s AI Journey",
+    description:
+      "Starting an AI company can feel overwhelming — but with the right support system, it's a whole different story. \n In this client interaction, we highlight how Boostmyiste’s strong infrastructure and strategic support helped an aspiring entrepreneur move beyond just dreaming and actually build a thriving AI company. \n From branding to website development, technical support to sales strategies, Boostmyiste provided the backbone that turned a vision into a real, growing business.",
+    video: require("../assets/videos/client stories/videos/21.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/21.webp"),
+  },
+  {
+    id: 22,
+    title: "Against All Odds: How She Carved Her Own Entrepreneurial Path",
+    description:
+      "In a world where challenges for women entrepreneurs are still very real, she stood tall and proved what determination and passion can achieve. \n This inspiring client story shines a light on her journey — overcoming obstacles, shattering stereotypes, and building a successful venture on her own terms. \n Her story is a testament to courage, resilience, and the unstoppable spirit of women in business today.",
+    video: require("../assets/videos/client stories/videos/22.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/22.webp"),
+  },
+  {
+    id: 23,
+    title:
+      "When Passion Beats Background: Building an AI Company Against the Odds",
+    description:
+      "Switching from a mechanical background to launching an AI company isn’t an easy leap — but our client proved it's absolutely possible with the right mindset and determination. \n In this inspiring interaction, we explore how their passion for innovation pushed them beyond traditional boundaries, mastering new skills, adapting quickly, and building a powerful AI-driven venture. \n Their story shows that it’s not the background that defines your success.",
+    video: require("../assets/videos/client stories/videos/23.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/23.webp"),
+  },
+  {
+    id: 24,
+    title: "Strong Marketing = Strong AI Company: A Success Story",
+    description:
+      "In today’s competitive AI landscape, having a great product isn't enough — smart marketing is the real game-changer.\n In this client interaction, we dive into how a clear marketing strategy helped lay the foundation for building a powerful AI company. \n From creating a strong brand identity to targeted outreach and client acquisition, every move was designed to amplify growth and visibility.",
+    video: require("../assets/videos/client stories/videos/24.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/24.webp"),
+  },
+  {
+    id: 25,
+    title:
+      "Jobs Pay Bills, Businesses Build Dreams: A Subscriber’s Perspective",
+    description:
+      "During a powerful conversation, one of our AI subscribers shared a truth that hit home: A job may pay your monthly bills, but a business pays you for a lifestyle. \n This mindset shift captures the true spirit of entrepreneurship — choosing long-term freedom, growth, and purpose over short-term security. \n Their journey with AI innovation is not just about building a company; it’s about creating a life on their own terms.",
+    video: require("../assets/videos/client stories/videos/25.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/25.webp"),
+  },
+  {
+    id: 26,
+    title: "From Childhood Ambition to AI Reality: A Founder’s Journey",
+    description:
+      "Some dreams are too big to ignore — and this client’s story is proof. \n What started as a childhood dream of building something groundbreaking has now transformed into the launch of a full-fledged AI company. \n Fueled by passion, resilience, and a vision for the future, they turned early ambitions into real-world innovation. \n This journey is a powerful reminder that dreams don’t just belong to the past — with the right mindset and execution, they shape our future.",
+    video: require("../assets/videos/client stories/videos/26.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/26.webp"),
   },
 ];
