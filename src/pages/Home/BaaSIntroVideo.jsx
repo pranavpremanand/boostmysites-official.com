@@ -9,6 +9,7 @@ import { FaPause, FaPlay } from "react-icons/fa";
 
 const BaaSIntroVideo = () => {
   const [hasBeenInView, setHasBeenInView] = useState(false);
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
 
   // Use the intersection observer hook
   const [ref, isIntersecting] = useIntersectionObserver({
@@ -20,6 +21,7 @@ const BaaSIntroVideo = () => {
   useEffect(() => {
     if (isIntersecting && !hasBeenInView) {
       setHasBeenInView(true);
+      setIsVideoLoaded(true);
     }
   }, [isIntersecting, hasBeenInView]);
 
@@ -29,7 +31,7 @@ const BaaSIntroVideo = () => {
       className="mb-[4rem] wrapper flex flex-col-reverse lg:grid grid-cols-2 lg:items-center gap-5 lg:gap-10 mx-auto z-10"
     >
       <div className="lg:block hidden w-full">
-        <Video />
+        {isVideoLoaded ? <Video /> : <VideoPlaceholder />}
       </div>
       <div
         data-aos="fade-up"
@@ -40,7 +42,7 @@ const BaaSIntroVideo = () => {
             Launch Your Own Company with Our Business As A Service (BAAS) Model
           </h4>
           <div className="block lg:hidden w-full">
-            <Video />
+            {isVideoLoaded ? <Video /> : <VideoPlaceholder />}
           </div>
           <p className="text-sm font-light">
             BAAS is not a one-time solution but a model for continuous evolution
@@ -54,7 +56,7 @@ const BaaSIntroVideo = () => {
             With BAAS, you can launch your own company and start providing
             services to clients worldwide — without the traditional barriers of
             starting a business. It's a smart, streamlined way to become a
-            service provider and grow in today's fast-moving market.
+            service provider and grow in today's fast-moving market.
           </p>
           <Link
             to="/baas"
@@ -70,7 +72,15 @@ const BaaSIntroVideo = () => {
   );
 };
 
-export default BaaSIntroVideo;
+const VideoPlaceholder = () => {
+  return (
+    <div className="w-full max-h-[78vh] h-full aspect-video rounded-lg overflow-hidden relative bg-gray-200 flex items-center justify-center">
+      <div className="w-16 h-16 bg-white/20 rounded-full backdrop-blur-sm flex items-center justify-center">
+        <FaPlay className="w-6 h-6 text-gray-700 ml-1" />
+      </div>
+    </div>
+  );
+};
 
 const Video = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -78,13 +88,12 @@ const Video = () => {
   const playerRef = useRef(null);
 
   const handlePlayPause = () => {
-    if (isPlaying) {
-      setIsPlaying(false);
-    } else {
-      setIsPlaying(true);
+    setIsPlaying(!isPlaying);
+    if (!isPlaying) {
       setIsBuffering(true);
     }
   };
+
   return (
     <div className="w-full max-h-[78vh] h-full aspect-video rounded-lg overflow-hidden relative group">
       <div className="video-component relative w-full h-full">
@@ -123,19 +132,30 @@ const Video = () => {
           </div>
         )}
 
-        <button
-          onClick={handlePlayPause}
-          className="absolute inset-0 m-auto w-16 h-16 bg-white/20 rounded-full backdrop-blur-sm flex items-center justify-center hover:bg-white/30 transition-all duration-300 opacity-0 group-hover:opacity-100"
-          aria-label={isPlaying ? "Pause video" : "Play video"}
-          disabled={isBuffering}
-        >
-          {isPlaying ? (
-            <FaPause className="w-6 h-6 text-white" />
-          ) : (
+        {(!isPlaying || isBuffering) && (
+          <button
+            onClick={handlePlayPause}
+            className="absolute inset-0 m-auto w-16 h-16 bg-white/20 rounded-full backdrop-blur-sm flex items-center justify-center hover:bg-white/30 transition-all duration-300"
+            aria-label={isPlaying ? "Pause video" : "Play video"}
+            disabled={isBuffering}
+          >
             <FaPlay className="w-6 h-6 text-white ml-1" />
-          )}
-        </button>
+          </button>
+        )}
+
+        {isPlaying && !isBuffering && (
+          <button
+            onClick={handlePlayPause}
+            className="absolute inset-0 m-auto w-16 h-16 bg-white/20 rounded-full backdrop-blur-sm flex items-center justify-center hover:bg-white/30 transition-all duration-300 opacity-0 group-hover:opacity-100"
+            aria-label="Pause video"
+          >
+            <FaPause className="w-6 h-6 text-white" />
+          </button>
+        )}
       </div>
     </div>
   );
 };
+
+
+export default BaaSIntroVideo;
