@@ -49,7 +49,7 @@ const ClientStoryVideo = ({ video, setPlayingVideoId, playingVideoId }) => {
       </div>
 
       {hasBeenInView ? (
-        <div className="client-story-video-player w-full md:w-[30%] max-h-[78vh] h-full aspect-[3/4.75] rounded-lg overflow-hidden relative group">
+        <div className="video-component w-full md:w-[30%] max-h-[78vh] h-full aspect-[3/4.75] rounded-lg overflow-hidden relative group">
           {playingVideoId === video.id ? (
             <div className="relative w-full h-full">
               {isVideoLoading && (

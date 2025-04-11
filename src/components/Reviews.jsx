@@ -4,7 +4,6 @@ import avt3 from "../assets/images/Ellipse 41.png";
 import avt4 from "../assets/images/Ellipse 42.png";
 import avt5 from "../assets/images/Ellipse 43.png";
 import avt6 from "../assets/images/Ellipse 44.png";
-import ReactStars from "react-rating-stars-component";
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 
 const reviews = [

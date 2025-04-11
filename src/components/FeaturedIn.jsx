@@ -37,7 +37,7 @@ const FeaturedIn = () => {
   });
   return (
     <div className="text-white flex flex-col gap-5 py-5">
-      <h3 className="text-3xl font-medium text-center uppercase">Featured In</h3>
+      <h3 className="text-4xl font-bold text-white text-center">Featured In</h3>
       <div className="bg-white">
         <div ref={sliderRef} className="keen-slider">
           {[img1, img2, img3, img4, img5, img6].map((img, index) => (

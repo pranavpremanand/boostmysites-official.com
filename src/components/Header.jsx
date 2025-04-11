@@ -23,7 +23,7 @@ const options = [
   },
   {
     id: 3,
-    title: "BaaS",
+    title: "BAAS",
     path: "/baas",
   },
 ];

@@ -6,9 +6,14 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="flex backdrop-blur-sm flex-col gap-4 md:items-center justify-center py-[4rem] text-white mt-14 border-t border-gray-800/70">
+    <div className="flex backdrop-blur-sm flex-col gap-4 md:items-center justify-center py-[4rem] text-white border-t border-gray-800/70">
       <div className="wrapper w-full flex md:flex-row flex-col items-start justify-between gap-7">
-        <img loading="lazy"  src={logo} alt="logo" className="h-[5rem] object-contain" />
+        <img
+          loading="lazy"
+          src={logo}
+          alt="logo"
+          className="h-[5rem] object-contain"
+        />
         <div className="flex flex-col gap-3">
           <h5 className="font-light tracking-wide uppercase">Contact</h5>
           <ul className="flex flex-col gap-1 text-sm text-white/80 font-light">

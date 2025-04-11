@@ -39,7 +39,7 @@ const offices = [
 const OurOffices = () => {
   return (
     <div className="text-white text-center">
-      <h5 className="text-4xl font-bold text-white capitalize">Our Offices</h5>
+      <h5 className="text-4xl font-bold text-white">Our Offices</h5>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 items-start gap-12 sm:gap-10 mt-10">
         {offices.map((office) => (
           <div

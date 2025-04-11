@@ -26,6 +26,7 @@ import teamImg7 from "../../assets/home/team7.webp";
 import LeadForm from "../../components/LeadForm";
 import FeaturedIn from "../../components/FeaturedIn";
 import OurOffices from "../../components/OurOffices";
+import BaaSIntroVideo from "./BaaSIntroVideo";
 
 const Home = () => {
   // const [isVideoLoading, setIsVideoLoading] = useState(true);
@@ -54,7 +55,8 @@ const Home = () => {
             >
               BOOSTMYSITES.
             </h2>
-            <img loading="lazy" 
+            <img
+              loading="lazy"
               data-aos="fade-down"
               src={arrowIcon}
               alt="arrow"
@@ -98,7 +100,8 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <img loading="lazy" 
+            <img
+              loading="lazy"
               data-aos="fade-down"
               src={arrowIcon}
               alt="arrow"
@@ -120,12 +123,14 @@ const Home = () => {
         <div className="blurred-red-circle animate-pulse left-[-10rem] top-[-5rem] hidden md:block"></div>
         <div className="blurred-red-circle animate-pulse right-[-10rem] top-[35%] block"></div>
         <div className="flex flex-col">
+          <BaaSIntroVideo />
           <div className="my-[5rem] wrapper grid grid-cols lg:grid-cols-3 gap-5 lg:gap-10 mx-auto">
             <div
               data-aos="fade-right"
               className="lg:min-h-[20rem] flex flex-col gap-10 justify-between"
             >
-              <img loading="lazy" 
+              <img
+                loading="lazy"
                 src={imgArrow}
                 className="w-[20rem] lg:w-full aspect-square object-contain"
                 alt=""
@@ -137,7 +142,8 @@ const Home = () => {
                     Clients satisfaction
                   </p>
                 </div>
-                <img loading="lazy" 
+                <img
+                  loading="lazy"
                   src={arrowToBR}
                   className="h-[2rem] object-contain"
                   alt="arrow"
@@ -175,7 +181,8 @@ const Home = () => {
                     Clients satisfaction
                   </p>
                 </div>
-                <img loading="lazy" 
+                <img
+                  loading="lazy"
                   src={arrowToBR}
                   className="h-[2rem] object-contain"
                   alt="arrow"
@@ -188,14 +195,16 @@ const Home = () => {
                     Projects Completed
                   </p>
                 </div>
-                <img loading="lazy" 
+                <img
+                  loading="lazy"
                   src={arrowToBR}
                   className="h-[2rem] object-contain"
                   alt="arrow"
                 />
               </div>
             </div>
-            <img loading="lazy" 
+            <img
+              loading="lazy"
               data-aos="fade-left"
               src={grid1Img}
               alt="grid"
@@ -214,7 +223,8 @@ const Home = () => {
               data-aos="fade-right"
               className="lg:min-h-[20rem] h-full flex flex-col gap-10 justify-between z-10"
             >
-              <img loading="lazy" 
+              <img
+                loading="lazy"
                 src={grid2Img}
                 className="hidden lg:block h-full object-center object-cover"
                 alt=""
@@ -240,7 +250,6 @@ const Home = () => {
                   business
                 </p>
                 <Link
-                  // to="https://aiexpert.boostmysites.com/aiexpert/"
                   to="/ai-expert"
                   target="_blank"
                   rel="noreferrer"
@@ -250,7 +259,8 @@ const Home = () => {
                 </Link>
               </div>
             </div>
-            <img loading="lazy" 
+            <img
+              loading="lazy"
               data-aos="fade-left"
               src={imgArrow2}
               alt="arrow"
@@ -261,7 +271,8 @@ const Home = () => {
         <div className="bg-[#121212] py-[2rem] lg:py-[7rem]">
           <div className="wrapper">
             <div className="grid grid-cols lg:grid-cols-3 items-center gap-5 lg:gap-10 mx-auto">
-              <img loading="lazy" 
+              <img
+                loading="lazy"
                 data-aos="fade-right"
                 src={imgArrow3}
                 alt="arrow"
@@ -302,7 +313,8 @@ const Home = () => {
                 data-aos="fade-left"
                 className="lg:min-h-[20rem] h-full flex flex-col gap-10 justify-between"
               >
-                <img loading="lazy" 
+                <img
+                  loading="lazy"
                   src={grid3Img}
                   className="h-full hidden lg:block object-center object-cover"
                   alt=""
@@ -317,25 +329,18 @@ const Home = () => {
         <div className="wrapper">
           <div className="flex sm:flex-row flex-col justify-between gap-5 items-center">
             <div data-aos="fade-right" className="flex flex-col gap-1">
-              {/* <p className="text-sm text-primary1 uppercase">our team</p> */}
-              <h4 className="text-[2.10rem] sm:text-4xl uppercase">
-                <span className="font-semibold">
-                our team
-                </span>
+              <h4 className="capitalize">
+                <span className="text-4xl font-bold text-white">our team</span>
               </h4>
             </div>
-            {/* <div data-aos="fade-left" className="flex items-center gap-2">
-              <Link className="font-medium uppercase text-[.8rem] cursor-pointer bg-black hover:shadow-white/20 hover:shadow-large hover:bg-white hover:text-black text-white border border-white py-2 px-3 rounded-full transition-all duration-300 flex items-center gap-1">
-                join us <MdArrowOutward className="text-lg -mt-1" />
-              </Link>
-            </div> */}
           </div>
           <div
             data-aos="fade-up"
             className="py-[2rem] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"
           >
             <div className="h-[30rem] w-full relative">
-              <img loading="lazy" 
+              <img
+                loading="lazy"
                 src={teamImg1}
                 className="h-[30rem] w-full object-cover mx-auto rounded-lg"
                 alt="team"
@@ -348,7 +353,8 @@ const Home = () => {
               </div>
             </div>
             <div className="h-[30rem] w-full relative">
-              <img loading="lazy" 
+              <img
+                loading="lazy"
                 src={teamImg2}
                 className="h-[30rem] w-full object-cover mx-auto rounded-lg"
                 alt="team"
@@ -359,7 +365,8 @@ const Home = () => {
               </div>
             </div>
             <div className="h-[30rem] w-full relative">
-              <img loading="lazy" 
+              <img
+                loading="lazy"
                 src={teamImg5}
                 className="h-[30rem] w-full object-cover mx-auto rounded-lg"
                 alt="team"
@@ -370,7 +377,8 @@ const Home = () => {
               </div>
             </div>
             <div className="h-[30rem] w-full relative">
-              <img loading="lazy" 
+              <img
+                loading="lazy"
                 src={teamImg6}
                 className="h-[30rem] w-full object-cover mx-auto rounded-lg"
                 alt="team"
@@ -383,7 +391,8 @@ const Home = () => {
               </div>
             </div>
             <div className="h-[30rem] w-full relative">
-              <img loading="lazy" 
+              <img
+                loading="lazy"
                 src={teamImg4}
                 className="h-[30rem] w-full object-cover mx-auto rounded-lg"
                 alt="team"
@@ -394,7 +403,8 @@ const Home = () => {
               </div>
             </div>
             <div className="h-[30rem] w-full relative">
-              <img loading="lazy" 
+              <img
+                loading="lazy"
                 src={teamImg3}
                 className="h-[30rem] object-top w-full object-cover mx-auto rounded-lg"
                 alt="team"
@@ -405,7 +415,8 @@ const Home = () => {
               </div>
             </div>
             <div className="h-[30rem] w-full relative">
-              <img loading="lazy" 
+              <img
+                loading="lazy"
                 src={teamImg7}
                 className="h-[30rem] w-full object-cover mx-auto rounded-lg"
                 alt="team"
