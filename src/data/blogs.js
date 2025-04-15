@@ -897,4 +897,68 @@ export const blogs = [
       </p>
     `,
   },
+  {
+    id: 10,
+    title: "Where Your BoostMySide Subscription Fee Goes",
+    image: require("../assets/images/blogs/10.webp"),
+    link: "where-boostmyside-subscription-fee-goes",
+    content: `
+    <p class="text-white/70 leading-relaxed mb-4">
+      When you subscribe to BoostMySide for a year, you’re investing four lakhs plus GST directly into a comprehensive support ecosystem for your business. Here’s how that investment is allocated:
+    </p>
+
+    <h2 class="text-lg font-bold text-white mt-8 mb-4">1. Financial & Accounting Support</h2>
+    <ul class="list-disc pl-6 text-white/70 mb-6">
+      <li><strong>Chartered Accountant (CA):</strong> Your subscription includes the hiring of a dedicated CA who manages your accounts, ensures compliance, and provides financial insights to keep your business on track.</li>
+    </ul>
+
+    <h2 class="text-lg font-bold text-white mt-8 mb-4">2. Digital Presence & Website Management</h2>
+    <ul class="list-disc pl-6 text-white/70 mb-6">
+      <li><strong>Website Developers & Managers:</strong> Our team of expert website developers designs and builds your website. Additionally, we provide ongoing management and updates to ensure your digital presence is modern and effective.</li>
+    </ul>
+
+    <h2 class="text-lg font-bold text-white mt-8 mb-4">3. Customer & Lead Management</h2>
+    <ul class="list-disc pl-6 text-white/70 mb-6">
+      <li><strong>Client Manager:</strong> A client manager is assigned to streamline communications, manage queries, and ensure that every lead is handled promptly and professionally.</li>
+      <li><strong>On-Demand Team for Leads:</strong> When a lead is generated, you get the support of at least five specialized professionals to maximize conversion chances, ensuring no lead is left unattended.</li>
+    </ul>
+
+    <h2 class="text-lg font-bold text-white mt-8 mb-4">4. Marketing & Branding</h2>
+    <ul class="list-disc pl-6 text-white/70 mb-6">
+      <li><strong>Marketing Team:</strong> Our dedicated marketing team plans and executes targeted strategies to generate quality leads and build your brand’s online presence.</li>
+      <li><strong>Branding Team:</strong> Experts focus on developing your brand identity, from logo design to brand messaging, ensuring consistency across all channels.</li>
+    </ul>
+
+    <h2 class="text-lg font-bold text-white mt-8 mb-4">5. Data Analytics & Insights</h2>
+    <ul class="list-disc pl-6 text-white/70 mb-6">
+      <li><strong>Data Team:</strong> We employ a professional data team that tracks customer behavior, campaign performance, and market trends to provide actionable insights for continuous improvement.</li>
+    </ul>
+
+    <h2 class="text-lg font-bold text-white mt-8 mb-4">6. Technical & Mentorship Support</h2>
+    <ul class="list-disc pl-6 text-white/70 mb-6">
+      <li><strong>Developers:</strong> Specialized developers are available to support and maintain the technical backend of your digital services, ensuring smooth operations.</li>
+      <li><strong>Mentorship:</strong> You also receive ongoing mentorship. A seasoned business mentor is on hand to offer guidance, strategic advice, and best practices to help you grow your business.</li>
+    </ul>
+
+    <h2 class="text-lg font-bold text-white mt-8 mb-4">In Summary</h2>
+    <p class="text-white/70 leading-relaxed mb-4">
+      Your BoostMySide subscription fee isn’t just a payment—it’s a reinvestment into a full-scale business support model. Each component is carefully allocated to provide you with:
+    </p>
+    <ul class="list-disc pl-6 text-white/70 mb-6">
+      <li>Financial integrity and accountability</li>
+      <li>A robust, professionally managed digital presence</li>
+      <li>Streamlined client and lead management</li>
+      <li>Integrated marketing, branding, and data analysis</li>
+      <li>Technical support, expert development, and ongoing mentorship</li>
+    </ul>
+
+    <p class="text-white/70 leading-relaxed mb-4">
+      This holistic approach ensures that from the moment you receive a lead, you’re backed by a team of professionals, all working together to drive your success.
+    </p>
+
+    <p class="text-white/70 leading-relaxed mb-4 font-medium">
+      In India, even hiring a single entry-level employee like a receptionist typically costs ₹30,000–₹50,000 per month. But with BoostMySide, you’re not just hiring one person—you’re getting an entire company setup with a full team: developers, designers, marketers, client managers, data experts, and more. All of this, for less than ₹4 lakhs a year, is not just affordable—it’s unmatched. You’re starting a complete business at the cost of hiring one average employee.
+    </p>
+  `,
+  },
 ];
