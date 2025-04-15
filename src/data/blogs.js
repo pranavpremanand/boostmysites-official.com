@@ -899,12 +899,12 @@ export const blogs = [
   },
   {
     id: 10,
-    title: "Where Your BoostMySide Subscription Fee Goes",
+    title: "Where Your BoostMySite Subscription Fee Goes",
     image: require("../assets/images/blogs/10.webp"),
-    link: "where-boostmyside-subscription-fee-goes",
+    link: "where-boostmysite-subscription-fee-goes",
     content: `
     <p class="text-white/70 leading-relaxed mb-4">
-      When you subscribe to BoostMySide for a year, you’re investing four lakhs plus GST directly into a comprehensive support ecosystem for your business. Here’s how that investment is allocated:
+      When you subscribe to BoostMySite for a year, you’re investing four lakhs plus GST directly into a comprehensive support ecosystem for your business. Here’s how that investment is allocated:
     </p>
 
     <h2 class="text-lg font-bold text-white mt-8 mb-4">1. Financial & Accounting Support</h2>
@@ -942,7 +942,7 @@ export const blogs = [
 
     <h2 class="text-lg font-bold text-white mt-8 mb-4">In Summary</h2>
     <p class="text-white/70 leading-relaxed mb-4">
-      Your BoostMySide subscription fee isn’t just a payment—it’s a reinvestment into a full-scale business support model. Each component is carefully allocated to provide you with:
+      Your BoostMySite subscription fee isn’t just a payment—it’s a reinvestment into a full-scale business support model. Each component is carefully allocated to provide you with:
     </p>
     <ul class="list-disc pl-6 text-white/70 mb-6">
       <li>Financial integrity and accountability</li>
@@ -957,8 +957,9 @@ export const blogs = [
     </p>
 
     <p class="text-white/70 leading-relaxed mb-4 font-medium">
-      In India, even hiring a single entry-level employee like a receptionist typically costs ₹30,000–₹50,000 per month. But with BoostMySide, you’re not just hiring one person—you’re getting an entire company setup with a full team: developers, designers, marketers, client managers, data experts, and more. All of this, for less than ₹4 lakhs a year, is not just affordable—it’s unmatched. You’re starting a complete business at the cost of hiring one average employee.
+      In India, even hiring a single entry-level employee like a receptionist typically costs ₹30,000–₹50,000 per month. But with BoostMySite, you’re not just hiring one person—you’re getting an entire company setup with a full team: developers, designers, marketers, client managers, data experts, and more. All of this, for less than ₹4 lakhs a year, is not just affordable—it’s unmatched. You’re starting a complete business at the cost of hiring one average employee.
     </p>
   `,
   },
 ];
+
