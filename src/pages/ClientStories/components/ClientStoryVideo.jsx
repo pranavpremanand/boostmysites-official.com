@@ -37,7 +37,7 @@ const ClientStoryVideo = ({ video, setPlayingVideoId, playingVideoId }) => {
 
   return (
     <div
-      ref={ref} // Attach the ref for intersection observer
+      ref={ref}
       data-aos="fade-up"
       className="w-full shadow-xl border-b border-b-white/20 flex flex-col md:odd:flex-row md:even:flex-row-reverse justify-between items-center gap-8 md:odd:text-end md:even:text-start backdrop-blur-sm py-6"
     >

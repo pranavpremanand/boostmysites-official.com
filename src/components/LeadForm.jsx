@@ -73,7 +73,7 @@ const LeadForm = () => {
   return (
     <div
       id="contact-form"
-      className="wrapper grid sm:grid-cols-2 gap-5 items-center"
+      className="wrapper grid sm:grid-cols-2 gap-5 items-center py-16"
     >
       <div data-aos="fade-right" className="flex flex-col gap-2 sm:gap-5">
         <h3 className="text-4xl md:text-5xl font-semibold leading-tight">
