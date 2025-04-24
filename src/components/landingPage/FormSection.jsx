@@ -39,10 +39,11 @@ const FormSection = ({ emailIdToSendMail, sourceName }) => {
         to: emailIdToSendMail,
         subject: "Form Submission - Boostmysites AI Expert",
         body: emailBody,
+        name: "BoostMySites",
       };
 
       // setIsLoading(true);
-      await fetch("https://smtp-api-tawny.vercel.app/send-email", {
+      await fetch("https://send-mail-redirect-boostmysites.vercel.app/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

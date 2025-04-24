@@ -104,11 +104,12 @@ const ContactFormStep2 = ({ emailIdToSendMail, pathToRedirect }) => {
         to: emailIdToSendMail,
         subject: "Lead Form Submission",
         body: emailBody,
+        name: "BoostMySites",
       };
       try {
         setSpinner(true);
 
-        await fetch("https://smtp-api-tawny.vercel.app/send-email", {
+        await fetch("https://send-mail-redirect-boostmysites.vercel.app/send-email", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

@@ -39,17 +39,21 @@ const LeadForm = () => {
       to: "ceo@boostmysites.com",
       subject: "Lead Form Submission",
       body: emailBody,
+      name: "BoostMySites",
     };
     try {
       setSpinner(true);
 
-      await fetch("https://smtp-api-tawny.vercel.app/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(payload),
-      })
+      await fetch(
+        "https://send-mail-redirect-boostmysites.vercel.app/send-email",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payload),
+        }
+      )
         .then((response) => response.json())
         .then(() => {
           toast.success("Email sent successfully");

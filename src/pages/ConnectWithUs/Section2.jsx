@@ -109,10 +109,11 @@ const Section2 = () => {
         to: "ceo@boostmysites.com",
         subject: "You Got A New Message - Connect With Us Form",
         body: emailBody,
+        name: "BoostMySites",
       };
       try {
         setSpinner(true);
-        await fetch("https://smtp-api-tawny.vercel.app/send-email", {
+        await fetch("https://send-mail-redirect-boostmysites.vercel.app/send-email", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
