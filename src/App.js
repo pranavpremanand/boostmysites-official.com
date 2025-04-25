@@ -59,6 +59,7 @@ const SubscriptionPage = lazy(() =>
   import("./pages/SubscriptionPage/SubscriptionPage")
 );
 const ClientStories = lazy(() => import("./pages/ClientStories/ClientStories"));
+const SubscriptionOffer = lazy(() => import("./pages/SubscriptionOffer"));
 
 AOS.init({
   once: true,
@@ -411,6 +412,16 @@ function App() {
                   <>
                     <Header />
                     <ClientStories />
+                    <Footer />
+                  </>
+                }
+              />
+              <Route
+                path="/subscription-offer"
+                element={
+                  <>
+                    <Header />
+                    <SubscriptionOffer />
                     <Footer />
                   </>
                 }

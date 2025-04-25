@@ -27,14 +27,13 @@ const SignUpForm = () => {
       setLoading(false);
       return;
     }
-    console.log(file, "thisiddatafsa");
+    
     const formData = new FormData();
 
     const emailBody = `Name: ${data.name}\n\nEmail: ${data.email}\n\nPhone: ${data.whatsapp}\n\npaymentId: ${data.paymentId}\n\npaymentDate:\n${data.paymentDate}`;
 
     const signatureFile = dataURItoFile(data.signature, "signature.png");
 
-    console.log(signatureFile, "asdfasdfasdfasdf");
     if (file) {
       formData.append("file", file);
     }
@@ -43,10 +42,6 @@ const SignUpForm = () => {
     }
     formData.append("body", emailBody);
     try {
-      // "http://localhost:8080/api/send-email",
-      // "https://send-mail-redirect-boostmysites.vercel.app/send-email",
-      // "https://boostmysite-attachment-email-zeta.vercel.app/api/send-signup",
-
       const response = await axios.post(
         "https://boostmysite-attachment-email-zeta.vercel.app/api/send-signup",
         formData,
@@ -57,7 +52,6 @@ const SignUpForm = () => {
         }
       );
 
-      console.log("asdfasdfsdfs", response.data);
       if (response.data.success) {
         alert("Form submitted successfully!");
         reset();
@@ -111,7 +105,6 @@ const SignUpForm = () => {
   };
   return (
     <div className="min-h-screen bg-gray-100 pt-[10rem]">
-      {/* <Header /> */}
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-2xl mx-auto">
           <div className="mb-8 text-center">
