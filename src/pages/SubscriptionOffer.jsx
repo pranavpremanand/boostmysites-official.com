@@ -162,17 +162,17 @@ const SubscriptionOffer = () => {
             data-aos="fade-up"
             className="mt-12 md:mt-16 text-center text-gray-400 max-w-4xl mx-auto"
           >
-            <p className="text-base md:text-lg">
-              Confirm your booking now and take the first step toward launching
-              your AI company with a trusted, full-service infrastructure behind
-              you.
+            <p className="text-base font-semibold md:text-lg">
+              This change reflects the growing demand for top-tier AI, branding,
+              and digital execution talent and our ongoing investment in hiring
+              elite professionals to ensure every client gets premium results,
+              fast, and without compromise.
             </p>
             <div className="mt-6 md:mt-8 border-t border-gray-800 pt-6 md:pt-8">
               <p className="text-sm md:text-base">
-                This change reflects the growing demand for top-tier AI,
-                branding, and digital execution talent and our ongoing
-                investment in hiring elite professionals to ensure every client
-                gets premium results, fast, and without compromise.
+                Confirm your booking now and take the first step toward
+                launching your AI company with a trusted, full-service
+                infrastructure behind you.
               </p>
             </div>
           </div>
