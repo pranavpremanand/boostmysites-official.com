@@ -128,11 +128,11 @@ const SubscriptionOffer = () => {
 
           {/* CTA Section */}
           <div className="mt-12 md:mt-16 max-w-4xl mx-auto">
-            <div className="bg-gradient-to-r from-primary/80 to-red-500/80 p-0.5 rounded-xl">
-              <div
-                data-aos="fade-up"
-                className="bg-black rounded-xl p-6 md:p-8"
-              >
+            <div
+              data-aos="fade-up"
+              className="bg-gradient-to-r from-primary/80 to-red-500/80 p-0.5 rounded-xl"
+            >
+              <div className="bg-black rounded-xl p-6 md:p-8">
                 <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4 text-center">
                   Why This Matters For You
                 </h2>
@@ -144,10 +144,7 @@ const SubscriptionOffer = () => {
                 </p>
 
                 <div className="text-center">
-                  <a
-                    href="https://rzp.io/rzp/JlbbMTo"
-                    className="inline-block px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-primary to-orange-600 hover:from-primary/90 hover:to-orange-600/90 text-black font-bold rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-primary/30"
-                  >
+                  <a href="https://rzp.io/rzp/JlbbMTo" className="primary-btn">
                     RESERVE YOUR SPOT NOW
                   </a>
                 </div>
