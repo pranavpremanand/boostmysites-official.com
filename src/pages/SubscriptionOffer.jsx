@@ -5,7 +5,10 @@ const SubscriptionOffer = () => {
     <div className="min-h-screen bg-black text-white pt-28 md:pt-44 pb-12">
       {/* Glowing Header */}
       <div className="wrapper">
-        <div className="relative max-w-7xl mx-auto text-center mb-12 md:mb-16">
+        <div
+          data-aos="fade-up"
+          className="relative max-w-7xl mx-auto text-center mb-12 md:mb-16"
+        >
           <div className="absolute inset-0 bg-gradient-to-r from-primary/30 to-transparent opacity-20 blur-3xl -z-10"></div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-yellow-300 leading-tight">
             SECURE YOUR SPOT BEFORE APRIL 30TH
@@ -19,7 +22,10 @@ const SubscriptionOffer = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
             {/* Current Pricing Card */}
-            <div className="bg-gradient-to-br from-secondary to-gray-900 rounded-xl p-6 md:p-8 border border-gray-800 shadow-lg hover:shadow-primary/20 transition-all duration-300">
+            <div
+              data-aos="fade-up"
+              className="bg-gradient-to-br from-secondary to-gray-900 rounded-xl p-6 md:p-8 border border-gray-800 shadow-lg hover:shadow-primary/20 transition-all duration-300"
+            >
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6 gap-4">
                 <h2 className="text-xl md:text-2xl font-bold text-primary">
                   Current Pricing
@@ -69,7 +75,10 @@ const SubscriptionOffer = () => {
             </div>
 
             {/* New Pricing Card */}
-            <div className="bg-gradient-to-br from-secondary to-gray-900 rounded-xl p-6 md:p-8 border border-gray-800 shadow-lg hover:shadow-red-500/20 transition-all duration-300">
+            <div
+              data-aos="fade-up"
+              className="bg-gradient-to-br from-secondary to-gray-900 rounded-xl p-6 md:p-8 border border-gray-800 shadow-lg hover:shadow-red-500/20 transition-all duration-300"
+            >
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6 gap-4">
                 <h2 className="text-xl md:text-2xl font-bold text-red-400">
                   From May 1st
@@ -120,7 +129,10 @@ const SubscriptionOffer = () => {
           {/* CTA Section */}
           <div className="mt-12 md:mt-16 max-w-4xl mx-auto">
             <div className="bg-gradient-to-r from-primary/80 to-red-500/80 p-0.5 rounded-xl">
-              <div className="bg-black rounded-xl p-6 md:p-8">
+              <div
+                data-aos="fade-up"
+                className="bg-black rounded-xl p-6 md:p-8"
+              >
                 <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4 text-center">
                   Why This Matters For You
                 </h2>
@@ -149,7 +161,10 @@ const SubscriptionOffer = () => {
           </div>
 
           {/* Footer Note */}
-          <div className="mt-12 md:mt-16 text-center text-gray-400 max-w-4xl mx-auto">
+          <div
+            data-aos="fade-up"
+            className="mt-12 md:mt-16 text-center text-gray-400 max-w-4xl mx-auto"
+          >
             <p className="text-base md:text-lg">
               Confirm your booking now and take the first step toward launching
               your AI company with a trusted, full-service infrastructure behind
