@@ -71,7 +71,7 @@ const Banner = ({ introVidIsPlaying, setIntroVidIsPlaying, path }) => {
               height="100%"
               pip={false}
               onReady={() => setIsVideoLoading(false)}
-              playsinline={true}
+              playsinline
               config={{
                 file: {
                   attributes: {
