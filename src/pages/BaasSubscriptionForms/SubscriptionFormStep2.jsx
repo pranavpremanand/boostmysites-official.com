@@ -80,7 +80,6 @@ const SubscriptionFormStep2 = () => {
       Location: ${values.state}, ${values.country}\n
       Expected Earnings: ${values.expectedEarnings}\n
       Primary Goal: ${values.primaryGoal}\n
-      Investment Capital: ${values.investmentCapital}\n
       Timeline: ${values.timeline}\n
     `;
 

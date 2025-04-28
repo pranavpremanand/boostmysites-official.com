@@ -68,6 +68,7 @@ AOS.init({
 });
 
 function App() {
+
   const aiExpertPaths = [
     { path: "/ai-expert", emailIdToSendMail: "ceo@boostmysites.com" },
     { path: "/ai-expert2", emailIdToSendMail: "merlinjoy1808@gmail.com" },

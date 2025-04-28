@@ -1,107 +1,177 @@
 import React, { useState } from "react";
-import { oneYearPlanDetails, twoYearPlanDetails } from "../../data/constant";
 import { Link } from "react-router-dom";
-import Accordion from "./Accordion";
 
 const Subscription = () => {
-  const [openIndexOne, setOpenIndexOne] = useState(null);
-  const [openIndexTwo, setOpenIndexTwo] = useState(null);
-  const [openIndexThree, setOpenIndexThree] = useState(null);
+  const [activePlan, setActivePlan] = useState(1);
 
-  const toggleAccordionOne = (index) => {
-    setOpenIndexOne(openIndexOne === index ? null : index);
-  };
-  const toggleAccordionTwo = (index) => {
-    setOpenIndexTwo(openIndexTwo === index ? null : index);
-  };
-  const toggleAccordionThree = (index) => {
-    setOpenIndexThree(openIndexThree === index ? null : index);
-  };
+  const plans = [
+    {
+      id: 1,
+      name: "Starter Package",
+      subtitle: "Employment Contract",
+      price: "₹4,00,000",
+      duration: "/ year + GST",
+      twoYearPrice: "₹5,00,000 + GST for 2 Years",
+      description:
+        "Starting your AI company with us requires an investment of just ₹4 lakhs + GST for one year with our shared team model.",
+      features: [
+        "Shared team model (3-4 companies per team)",
+        "Expert CA support",
+        "Client manager",
+        "Development team access",
+        "SEO services",
+        "Basic branding & marketing",
+      ],
+      cta: "Start Basic",
+      popular: false,
+      borderColor: "border-primary/30",
+      bgColor: "bg-secondary",
+    },
+    {
+      id: 2,
+      name: "Enterprise Basic",
+      subtitle: "Priority Support",
+      price: "₹15,00,000",
+      duration: "/ year + GST",
+      twoYearPrice: "₹20,00,000 + GST for 2 Years",
+      description:
+        "Dedicated support with a more focused approach. You'll have a smaller shared team for personalized attention.",
+      features: [
+        "Semi-dedicated team (1-2 companies per team)",
+        "Priority CA support",
+        "Dedicated client manager",
+        "Development team with faster turnaround",
+        "Advanced branding",
+        "Targeted marketing campaigns",
+        "Priority support",
+      ],
+      cta: "Get Premium",
+      popular: true,
+      borderColor: "border-primary",
+      bgColor: "bg-quaternary",
+    },
+    {
+      id: 3,
+      name: "Enterprise Premium",
+      subtitle: "Dedicated Team",
+      price: "₹25,00,000",
+      duration: "/ year + GST",
+      twoYearPrice: "₹35,00,000 + GST for 2 Years",
+      description:
+        "Fully dedicated team just for your company with exclusive access to all experts for rapid growth.",
+      features: [
+        "Fully dedicated team (exclusive to your company)",
+        "Premium CA support",
+        "Personal client manager",
+        "Dedicated development team",
+        "Premium branding services",
+        "Comprehensive marketing strategy",
+        "Lead generation services",
+        "Business development support",
+        "24/7 priority support",
+      ],
+      cta: "Go Exclusive",
+      popular: false,
+      borderColor: "border-primary/20",
+      bgColor: "bg-secondary",
+    },
+  ];
+
   return (
-    <>
-      <div className=" bg-transparent py-16 px-4">
-        <div className="wrapper ">
-          <h2
-            data-aos="fade-up"
-            className="text-4xl font-bold text-center text-primary mb-4"
-          >
-            Subscription Plans
+    <section className="section-pt relative overflow-hidden">
+      {/* Background elements */}
+      <div className="blurred-red-circle -top-[10rem] -left-[10rem] opacity-20" />
+      <div className="sm-blurred-red-circle bottom-[5rem] right-[5rem] opacity-15" />
+
+      <div className="wrapper">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <span className="text-stroke">Subscription</span>{" "}
+            <span className="text-primary">Plans</span>
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-12">
-            <div className="flex flex-col p-6 bg-black border border-primary rounded-lg">
-              <div className="flex items-center justify-center mb-6">
-                <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
-                  <span className="text-primary">📅</span>
+          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+            Choose the perfect plan for your AI startup journey with our
+            flexible options
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {plans.map((plan) => (
+            <div
+              key={plan.id}
+              className={`relative rounded-xl border ${plan.borderColor} ${
+                plan.bgColor
+              } transition-all duration-300 ${
+                activePlan === plan.id
+                  ? "ring-2 ring-primary/50"
+                  : "hover:ring-1 hover:ring-primary/30"
+              }`}
+            >
+              {/* {plan.popular && (
+                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary text-black font-bold px-4 py-1 rounded-full text-xs">
+                  MOST POPULAR
                 </div>
-              </div>
+              )} */}
 
-              <h3 className="text-2xl font-bold text-center text-white mb-2">
-                {oneYearPlanDetails.title}
-              </h3>
-
-              <div className="space-y-3 flex-grow">
-                {oneYearPlanDetails.accordionDetails.map((detail, index) => (
-                  <Accordion
-                    key={index}
-                    plan={detail}
-                    isOpen={openIndexTwo === index}
-                    toggleAccordion={() => toggleAccordionTwo(index)}
-                  />
-                ))}
-              </div>
-
-              <div data-aos="fade-up" className="mt-6 text-center">
-                <div className="text-3xl font-bold text-primary mb-6">
-                  ₹{oneYearPlanDetails.price.toLocaleString()}
-                  {" + GST"}
+              <div className="p-8 h-full flex flex-col">
+                <div className="mb-6">
+                  <div className="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center text-primary text-2xl mb-4">
+                    {plan.id === 1 ? "🚀" : plan.id === 2 ? "💎" : "✨"}
+                  </div>
+                  <h3 className="text-2xl font-bold text-white">{plan.name}</h3>
+                  <p className="text-primary text-sm">{plan.subtitle}</p>
                 </div>
+
+                <div className="mb-6">
+                  <div className="text-3xl font-bold text-primary">
+                    {plan.price}
+                  </div>
+                  <div className="text-gray-400">{plan.duration}</div>
+                  <div className="text-sm text-gray-500 mt-1">
+                    {plan.twoYearPrice}
+                  </div>
+                </div>
+
+                <div className="mb-6 flex-grow">
+                  <p className="text-gray-300 text-sm mb-4">
+                    {plan.description}
+                  </p>
+                  <ul className="space-y-2">
+                    {plan.features.map((feature, index) => (
+                      <li key={index} className="flex items-start">
+                        <svg
+                          className="w-4 h-4 text-primary mr-2 mt-0.5 flex-shrink-0"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span className="text-gray-300 text-sm">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
                 <Link
-                  className="w-full mt-4 primary-btn"
                   to="/subscription-form/step1"
+                  className={`mt-auto text-center ${
+                    plan.popular ? "primary-btn" : "primary-btn1"
+                  }`}
                 >
-                  Subscribe
+                  {plan.cta}
                 </Link>
               </div>
             </div>
-            <div className="flex flex-col p-6 bg-black border border-primary rounded-lg">
-              <div className="flex items-center justify-center mb-6">
-                <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
-                  <span className="text-primary">📅</span>
-                </div>
-              </div>
-
-              <h3 className="text-2xl font-bold text-center text-white mb-2">
-                {twoYearPlanDetails.title}
-              </h3>
-
-              <div className="space-y-3 flex-grow">
-                {twoYearPlanDetails.accordionDetails.map((detail, index) => (
-                  <Accordion
-                    key={index}
-                    plan={detail}
-                    isOpen={openIndexThree === index}
-                    toggleAccordion={() => toggleAccordionThree(index)}
-                  />
-                ))}
-              </div>
-
-              <div data-aos="fade-up" className="mt-6 text-center">
-                <div className="text-3xl font-bold text-primary mb-6">
-                  ₹{twoYearPlanDetails.price.toLocaleString()}
-                  {" + GST"}
-                </div>
-                <Link
-                  className="w-full mt-4 primary-btn"
-                  to="/subscription-form/step1"
-                >
-                  Subscribe
-                </Link>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
-    </>
+    </section>
   );
 };
 
