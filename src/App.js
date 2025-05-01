@@ -69,7 +69,7 @@ AOS.init({
 
 function App() {
   const aiExpertPaths = [
-    { path: "/ai-expert", emailIdToSendMail: "ceo@boostmysites.com" },
+    { path: "/ai-expert", emailIdToSendMail: "athul_rajeev@iCloud.com" },
     { path: "/ai-expert2", emailIdToSendMail: "merlinjoy1808@gmail.com" },
     { path: "/ai-expert3", emailIdToSendMail: "kavyakallega@gmail.com" },
     { path: "/ai-expert4", emailIdToSendMail: "darshan@boostmysites.com" },
@@ -150,7 +150,7 @@ function App() {
                           path="step2"
                           element={
                             <ContactFormStep2
-                              emailIdToSendMail="athul_rajeev@iCloud.com"
+                              emailIdToSendMail="ceo@boostmysites.com"
                               pathToRedirect={path}
                             />
                           }
