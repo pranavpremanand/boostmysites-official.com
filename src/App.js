@@ -22,14 +22,8 @@ import { LoadingSpinner } from "./components/LoadingSpinner";
 import Header from "./components/Header";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import Footer from "./components/Footer";
-import ThankYou from "./pages/ThankYou";
 import GoogleTagManager from "./components/GoogleTagManager";
-import Section1 from "./pages/ConnectWithUs/Section1";
-import Section2 from "./pages/ConnectWithUs/Section2";
-import ConnectWithUsThankYou from "./pages/ConnectWithUsThankYou";
 import NormalizeSlash from "./components/NormalizeSlash";
-import SignUpForm from "./pages/SignUpPage";
-import AIVideoAndVoiceCall from "./components/AIVideoAndVoiceCall";
 
 const FeeRevisionAnnouncement = lazy(() =>
   import("./pages/FeeRevisionAnnouncement")
@@ -60,6 +54,16 @@ const SubscriptionPage = lazy(() =>
 );
 const ClientStories = lazy(() => import("./pages/ClientStories/ClientStories"));
 const SubscriptionOffer = lazy(() => import("./pages/SubscriptionOffer"));
+const ConnectWithUsThankYou = lazy(() =>
+  import("./pages/ConnectWithUsThankYou")
+);
+const ThankYou = lazy(() => import("./pages/ThankYou"));
+const SignUpForm = lazy(() => import("./pages/SignUpPage"));
+const AIVideoAndVoiceCall = lazy(() =>
+  import("./components/AIVideoAndVoiceCall")
+);
+const Section1 = lazy(() => import("./pages/ConnectWithUs/Section1"));
+const Section2 = lazy(() => import("./pages/ConnectWithUs/Section2"));
 
 AOS.init({
   once: true,
@@ -94,7 +98,7 @@ function App() {
           />
           <Suspense fallback={<LoadingSpinner />}>
             <Routes>
-              {aiExpertPaths.map(({ path, emailIdToSendMail }) => (
+              {aiExpertPaths.map(({ path }) => (
                 <Route
                   key={path}
                   path={path}
@@ -102,10 +106,7 @@ function App() {
                     <>
                       {/* <LandingPageHeader path={path} /> */}
                       <Header />
-                      <LandingPage
-                        path={path}
-                        emailIdToSendMail={emailIdToSendMail}
-                      />
+                      <LandingPage path={path} />
                       <LandingPageFooter />
                     </>
                   }
@@ -119,10 +120,7 @@ function App() {
                     <>
                       {/* <LandingPageHeader path={path} /> */}
                       <Header />
-                      <LandingPage1
-                        path={path}
-                        emailIdToSendMail="ceo@boostmysites.com"
-                      />
+                      <LandingPage1 path={path} />
                       <LandingPageFooter />
                     </>
                   }

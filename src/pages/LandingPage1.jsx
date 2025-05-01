@@ -1,13 +1,11 @@
-import { lazy, useEffect } from "react";
+import { lazy } from "react";
 import { BsHeartFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import Roadmap from "../components/landingPage/Roadmap";
 import bannerBgVid from "../assets/videos/banner-landing.mp4";
 import ReactPlayer from "react-player";
-import FormSection from "../components/landingPage/FormSection";
 import { aiExpertAccesses, subscriptionBenefits } from "../data/constant";
-import PopupForm from "../components/landingPage/PopupForm";
 const Banner = lazy(() => import("../components/landingPage/Banner"));
 const FeaturedIn = lazy(() => import("../components/FeaturedIn"));
 const FAQ = lazy(() => import("../components/FAQ"));
@@ -16,34 +14,11 @@ const Reviews = lazy(() => import("../components/Reviews"));
 const Videos = lazy(() => import("../components/Videos"));
 const OurOffices = lazy(() => import("../components/OurOffices"));
 
-const LandingPage1 = ({ path, emailIdToSendMail }) => {
+const LandingPage1 = ({ path }) => {
   const [introVidIsPlaying, setIntroVidIsPlaying] = useState(false);
-  // const [showPopup, setShowPopup] = useState(false);
 
-  // useEffect(() => {
-  //   const popupShown = localStorage.getItem("popupFormShown");
-  //   if (!popupShown) {
-  //     setShowPopup(true);
-  //   }
-  // }, []);
-
-  let sourceName;
-  if (path === "/ai-expert1") {
-    sourceName = "LinkedIn";
-  } else if (path === "/ai-expert12") {
-    sourceName = "Twitter";
-  } else if (path === "/ai-expert13") {
-    sourceName = "Meta";
-  }
   return (
     <div className="landing-page relative" id="home">
-      {/* {showPopup && (
-        <PopupForm
-          setShowPopup={setShowPopup}
-          emailIdToSendMail={emailIdToSendMail}
-          sourceName={sourceName}
-        />
-      )} */}
       <div className="min-h-screen flex items-center relative">
         <div className="landing-page-bg h-full w-full absolute left-0 top-0">
           <div className="absolute inset-0 h-full w-full bg-black/60 z-[1]"></div>
