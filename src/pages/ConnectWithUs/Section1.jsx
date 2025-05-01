@@ -338,7 +338,7 @@ const Section1 = () => {
                 type="text"
                 className="placeholder:text-[1rem] placeholder:text-black/50 border border-[#2d2e32] outline-none rounded-[0.2rem] py-3 px-2 text-black bg-white/70"
                 {...register("linkedInUrl")}
-                placeholder="LinkedIn Profile URL"
+                placeholder="LinkedIn Profile URL (Optional)"
               />
               <small className="error">{errors.linkedInUrl?.message}</small>
             </div>

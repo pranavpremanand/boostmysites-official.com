@@ -106,7 +106,7 @@ const Section2 = () => {
 
       // Construct the request payload
       var payload = {
-        to: "ceo@boostmysites.com",
+        to: "athul_rajeev@iCloud.com",
         subject: "You Got A New Message - Connect With Us Form",
         body: emailBody,
         name: "BoostMySites",
