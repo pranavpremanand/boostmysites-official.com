@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import FileUpload from "../components/FileUpload";
 import SignaturePad from "../components/SignaturePad";
+import { Link } from "react-router-dom";
 
 const SignUpForm = () => {
   const sigCanvas = useRef();
@@ -27,7 +28,7 @@ const SignUpForm = () => {
       setLoading(false);
       return;
     }
-    
+
     const formData = new FormData();
 
     const emailBody = `Name: ${data.name}\n\nEmail: ${data.email}\n\nPhone: ${data.whatsapp}\n\npaymentId: ${data.paymentId}\n\npaymentDate:\n${data.paymentDate}`;
@@ -230,8 +231,14 @@ const SignUpForm = () => {
                   {...register("declaration", { required: true })}
                 />
                 <label className="text-white text-sm">
-                  I confirm that I have read and agree to the Terms and
-                  Conditions of the website.
+                  I confirm that I have read and agree to the{" "}
+                  <Link
+                    to={"/terms-and-conditions"}
+                    className="text-orange-100 underline underline-offset-2"
+                  >
+                    Terms and Conditions
+                  </Link>{" "}
+                  Terms and Conditions of the website.
                 </label>
               </div>
               {errors.declaration && (
