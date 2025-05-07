@@ -293,10 +293,7 @@ const Home = () => {
                     concentrate on running and growing your e-commerce business
                   </p>
                   <Link
-                    // to="https://boostmysites.store"
-                    to="https://ecommerce.boostmysites.com"
-                    target="_blank"
-                    rel="noreferrer"
+                    to="/ecommerce-business"
                     className="text-md flex items-center gap-2 text-primary1 underline w-fit"
                   >
                     Know More <MdArrowOutward className="text-lg -mt-1" />

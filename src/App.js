@@ -43,6 +43,9 @@ const ProjectRequirementForm = lazy(() =>
 );
 const Reviews = lazy(() => import("./pages/Reviews"));
 const BaaS = lazy(() => import("./pages/BaaS/BaaS"));
+const EcommerceBusiness = lazy(() => 
+  import("./pages/EcommerceBusiness/EcommerceBusiness")
+);
 const SubscriptionFormStep1 = lazy(() =>
   import("./pages/BaasSubscriptionForms/SubscriptionFormStep1")
 );
@@ -420,6 +423,16 @@ function App() {
                   <>
                     <Header />
                     <SubscriptionOffer />
+                    <Footer />
+                  </>
+                }
+              />
+              <Route
+                path="/ecommerce-business"
+                element={
+                  <>
+                    <Header />
+                    <EcommerceBusiness />
                     <Footer />
                   </>
                 }

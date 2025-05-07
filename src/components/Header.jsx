@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Drawer from "react-modern-drawer";
 import { Divide as Hamburger } from "hamburger-react";
 import { IoMdClose } from "react-icons/io";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { Link, Link as RLink } from "react-router-dom";
 
 const options = [
@@ -19,7 +20,7 @@ const options = [
   {
     id: 2,
     title: "Start Your Ecommerce Company",
-    path: "https://ecommerce.boostmysites.com",
+    path: "https://ecommerce.boostmysites.com/",
   },
   {
     id: 3,
@@ -38,6 +39,11 @@ const companyLinks = [
     id: 2,
     title: "Sales Team",
     path: "/sales-team-services",
+  },
+  {
+    id: 3,
+    title: "Ecommerce Business",
+    path: "/ecommerce-business",
   },
   {
     id: 3,
@@ -64,9 +70,14 @@ const companyLinks = [
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isCompanyDropdownOpen, setIsCompanyDropdownOpen] = useState(false);
 
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
+  };
+
+  const toggleCompanyDropdown = () => {
+    setIsCompanyDropdownOpen(!isCompanyDropdownOpen);
   };
 
   useEffect(() => {
@@ -87,6 +98,13 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  // Close company dropdown when drawer is closed
+  useEffect(() => {
+    if (!isOpen) {
+      setIsCompanyDropdownOpen(false);
+    }
+  }, [isOpen]);
   return (
     <>
       <div
@@ -167,7 +185,8 @@ const Header = () => {
           </button>
         </div>
         <div className="flex flex-col">
-          {options.concat(companyLinks).map(({ title, path }) => (
+          {/* Main navigation options */}
+          {options.map(({ title, path }) => (
             <RLink
               onClick={() => setIsOpen(false)}
               key={path}
@@ -177,6 +196,39 @@ const Header = () => {
               {title}
             </RLink>
           ))}
+
+          {/* Company dropdown */}
+          <div className="flex flex-col">
+            <div
+              className="flex items-center justify-between text-xl py-2 pl-4 pr-4 hover:bg-[#262626] w-full font-medium cursor-pointer transition-colors duration-300"
+              onClick={toggleCompanyDropdown}
+            >
+              <span>Company</span>
+              {isCompanyDropdownOpen ? (
+                <IoIosArrowUp className="text-primary1" />
+              ) : (
+                <IoIosArrowDown className="text-primary1" />
+              )}
+            </div>
+
+            {/* Company dropdown links */}
+            {isCompanyDropdownOpen && (
+              <div className="bg-[#181818] transition-all duration-300">
+                {companyLinks.map(({ title, path }) => (
+                  <RLink
+                    onClick={() => setIsOpen(false)}
+                    key={path}
+                    className="block text-lg py-3 pl-8 pr-2 hover:bg-[#111111] w-full font-medium cursor-pointer transition-colors duration-300 border-l border-primary1/30"
+                    to={path}
+                  >
+                    {title}
+                  </RLink>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Let's Connect button */}
           <RLink
             onClick={() => setIsOpen(false)}
             className="text-xl py-2 pl-4 pr-2 hover:bg-[#262626] w-full font-medium cursor-pointer transition-colors duration-300"

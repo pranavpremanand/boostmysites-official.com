@@ -814,3 +814,220 @@ export const clientStoryVideos = [
     thumbnail: require("../assets/videos/client stories/thumbnails/26.webp"),
   },
 ];
+
+// Ecommerce services data array
+export const ecommerceServices = [
+  {
+    id: "01",
+    title: "Website Development",
+    delay: "100",
+    content: (
+      <p className="text-gray-300">
+        We create a fully functional, responsive, and modern e-commerce website
+        tailored to your business. It includes product pages, shopping cart,
+        secure checkout, order tracking, and customer account systems.
+        Everything is optimized for speed, mobile, and SEO.
+      </p>
+    ),
+  },
+  {
+    id: "02",
+    title: "Frontend & Backend Setup",
+    delay: "200",
+    content: (
+      <p className="text-gray-300">
+        We set up both the frontend (user interface) and backend (server-side
+        systems) of your e-commerce platform using cutting-edge technologies
+        like Next.js, Node.js, and API Gateway. This ensures your platform is
+        fast, secure, scalable, and easy to manage.
+      </p>
+    ),
+  },
+  {
+    id: "03",
+    title: "E-Commerce Core Modules",
+    delay: "300",
+    content: (
+      <>
+        <p className="text-gray-300 mb-3">
+          All the essential features required to run a successful online store
+          are included:
+        </p>
+        <ul className="list-disc list-inside text-gray-300 space-y-1">
+          <li>Product Management</li>
+          <li>Inventory Management</li>
+          <li>Order Processing</li>
+          <li>Subscription Management</li>
+          <li>Payment Gateway Integration</li>
+          <li>Offers, Coupons & Referral Systems</li>
+          <li>Shipping and Tracking Integration</li>
+          <li>Dropshipping Support</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: "04",
+    title: "User Management System",
+    delay: "100",
+    content: (
+      <>
+        <p className="text-gray-300 mb-3">
+          We provide a secure login and role-based access control for all users
+          including:
+        </p>
+        <ul className="list-disc list-inside text-gray-300 space-y-1">
+          <li>Store Owner Dashboard</li>
+          <li>Admin Panel</li>
+          <li>Customer Login</li>
+          <li>Support Team Access</li>
+        </ul>
+        <p className="text-gray-300 mt-3">
+          Authentication via Email OTP and Google OAuth ensures secure access
+          for every role.
+        </p>
+      </>
+    ),
+  },
+  {
+    id: "05",
+    title: "Hosting & Data Management",
+    delay: "200",
+    content: (
+      <p className="text-gray-300">
+        Your store is hosted on AWS S3 with enterprise-grade security and
+        uptime. All your data (products, orders, user data) is securely stored
+        and managed using MongoDB Atlas, ensuring speed, scalability, and
+        reliability.
+      </p>
+    ),
+  },
+  {
+    id: "06",
+    title: "Integration Support",
+    delay: "300",
+    content: (
+      <>
+        <p className="text-gray-300 mb-3">
+          We integrate your store with the world's top tools and platforms:
+        </p>
+        <ul className="list-disc list-inside text-gray-300 space-y-1">
+          <li>Shopify and Logibex API for product sync</li>
+          <li>Stripe for secure payments</li>
+          <li>Google Ads and Meta Ads for campaigns</li>
+          <li>CRM tools for customer management</li>
+          <li>Calendar & Support Chat</li>
+          <li>Real-time analytics dashboard</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: "07",
+    title: "Marketing Support",
+    delay: "100",
+    content: (
+      <>
+        <p className="text-gray-300 mb-3">
+          We don't just build the platform—we help you grow it. Our marketing
+          experts run:
+        </p>
+        <ul className="list-disc list-inside text-gray-300 space-y-1">
+          <li>Google Ads & Meta Ads campaigns</li>
+          <li>Email & SMS marketing</li>
+          <li>SEO setup and keyword strategy</li>
+          <li>Campaign performance monitoring</li>
+          <li>Retargeting and lead funnel automation</li>
+        </ul>
+        <p className="text-gray-300 mt-3">
+          You'll always know what's working and where to scale.
+        </p>
+      </>
+    ),
+  },
+  {
+    id: "08",
+    title: "Branding Support",
+    delay: "200",
+    content: (
+      <>
+        <p className="text-gray-300 mb-3">
+          Your store will have a strong identity right from the start. We help
+          you with:
+        </p>
+        <ul className="list-disc list-inside text-gray-300 space-y-1">
+          <li>Logo design</li>
+          <li>Color palette and brand guidelines</li>
+          <li>Website UI/UX customization</li>
+          <li>Social media branding</li>
+          <li>Founder's personal branding & storytelling</li>
+        </ul>
+        <p className="text-gray-300 mt-3">
+          We ensure your brand stands out and connects with your audience.
+        </p>
+      </>
+    ),
+  },
+  {
+    id: "09",
+    title: "Warehouse & Fulfillment",
+    delay: "300",
+    content: (
+      <>
+        <p className="text-gray-300 mb-3">
+          We assist you in setting up efficient warehouse and fulfillment
+          operations:
+        </p>
+        <ul className="list-disc list-inside text-gray-300 space-y-1">
+          <li>Real-time stock management</li>
+          <li>Order sync between warehouse and store</li>
+          <li>Returns and dispatch workflows</li>
+          <li>Partnered warehouse support (if needed)</li>
+        </ul>
+        <p className="text-gray-300 mt-3">
+          Your logistics run smoothly, even as you scale.
+        </p>
+      </>
+    ),
+  },
+  {
+    id: "10",
+    title: "Custom Clearance & Logistics",
+    delay: "100",
+    content: (
+      <>
+        <p className="text-gray-300 mb-3">
+          For businesses importing/exporting products, we provide:
+        </p>
+        <ul className="list-disc list-inside text-gray-300 space-y-1">
+          <li>Assistance in setting up documentation</li>
+          <li>Partnering with custom clearance agents</li>
+          <li>Cross-border logistics and freight integration</li>
+          <li>Automated shipping updates on your site</li>
+        </ul>
+        <p className="text-gray-300 mt-3">
+          All legal and logistical hurdles are handled.
+        </p>
+      </>
+    ),
+  },
+  {
+    id: "11",
+    title: "Learning Portal & Support",
+    delay: "200",
+    content: (
+      <>
+        <p className="text-gray-300 mb-3">
+          You'll never be left alone. You get:
+        </p>
+        <ul className="list-disc list-inside text-gray-300 space-y-1">
+          <li>A detailed learning portal to guide you</li>
+          <li>Dedicated support team for queries</li>
+          <li>Ticket-based support system</li>
+          <li>WhatsApp/Chat updates and alerts</li>
+          <li>Daily content updates, bug fixes, and improvements</li>
+        </ul>
+      </>
+    ),
+  },
+];

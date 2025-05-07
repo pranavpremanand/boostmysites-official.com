@@ -179,6 +179,7 @@ body {
   background: #000000 !important;
   width: 100vw !important;
   z-index: 20;
+  overflow-x: scroll !important;
 }
 
 /* loading spinner styles */
