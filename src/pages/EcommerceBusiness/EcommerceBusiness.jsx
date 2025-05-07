@@ -96,6 +96,7 @@ const EcommerceBusiness = () => {
                   src={service.img} 
                   alt={service.title}
                   className="w-full h-full object-cover object-center rounded-xl opacity-50 group-hover:opacity-60 transition-opacity duration-500 brightness-125 contrast-125 grayscale"
+                  loading="lazy"
                 />
               </div>
               
