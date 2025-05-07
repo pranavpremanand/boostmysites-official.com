@@ -821,6 +821,7 @@ export const ecommerceServices = [
     id: "01",
     title: "Website Development",
     delay: "100",
+    img: require("../assets/ecommerce/services/01.webp"),
     content: (
       <p className="text-gray-300">
         We create a fully functional, responsive, and modern e-commerce website
@@ -834,6 +835,7 @@ export const ecommerceServices = [
     id: "02",
     title: "Frontend & Backend Setup",
     delay: "200",
+    img: require("../assets/ecommerce/services/02.webp"),
     content: (
       <p className="text-gray-300">
         We set up both the frontend (user interface) and backend (server-side
@@ -847,6 +849,7 @@ export const ecommerceServices = [
     id: "03",
     title: "E-Commerce Core Modules",
     delay: "300",
+    img: require("../assets/ecommerce/services/03.webp"),
     content: (
       <>
         <p className="text-gray-300 mb-3">
@@ -870,6 +873,7 @@ export const ecommerceServices = [
     id: "04",
     title: "User Management System",
     delay: "100",
+    img: require("../assets/ecommerce/services/04.webp"),
     content: (
       <>
         <p className="text-gray-300 mb-3">
@@ -893,6 +897,7 @@ export const ecommerceServices = [
     id: "05",
     title: "Hosting & Data Management",
     delay: "200",
+    img: require("../assets/ecommerce/services/05.webp"),
     content: (
       <p className="text-gray-300">
         Your store is hosted on AWS S3 with enterprise-grade security and
@@ -906,6 +911,7 @@ export const ecommerceServices = [
     id: "06",
     title: "Integration Support",
     delay: "300",
+    img: require("../assets/ecommerce/services/06.webp"),
     content: (
       <>
         <p className="text-gray-300 mb-3">
@@ -926,6 +932,7 @@ export const ecommerceServices = [
     id: "07",
     title: "Marketing Support",
     delay: "100",
+    img: require("../assets/ecommerce/services/07.webp"),
     content: (
       <>
         <p className="text-gray-300 mb-3">
@@ -949,6 +956,7 @@ export const ecommerceServices = [
     id: "08",
     title: "Branding Support",
     delay: "200",
+    img: require("../assets/ecommerce/services/08.webp"),
     content: (
       <>
         <p className="text-gray-300 mb-3">
@@ -972,6 +980,7 @@ export const ecommerceServices = [
     id: "09",
     title: "Warehouse & Fulfillment",
     delay: "300",
+    img: require("../assets/ecommerce/services/09.webp"),
     content: (
       <>
         <p className="text-gray-300 mb-3">
@@ -994,6 +1003,7 @@ export const ecommerceServices = [
     id: "10",
     title: "Custom Clearance & Logistics",
     delay: "100",
+    img: require("../assets/ecommerce/services/10.webp"),
     content: (
       <>
         <p className="text-gray-300 mb-3">
@@ -1015,6 +1025,7 @@ export const ecommerceServices = [
     id: "11",
     title: "Learning Portal & Support",
     delay: "200",
+    img: require("../assets/ecommerce/services/11.webp"),
     content: (
       <>
         <p className="text-gray-300 mb-3">

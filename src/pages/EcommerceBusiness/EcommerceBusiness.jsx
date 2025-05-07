@@ -88,21 +88,34 @@ const EcommerceBusiness = () => {
               key={service.id}
               data-aos="fade-up"
               data-aos-delay={service.delay}
-              className="group bg-gradient-to-b from-quaternary to-quaternary/80 backdrop-blur-sm rounded-xl p-6 border border-gray-800 hover:border-primary/50 transition-all duration-500 hover:shadow-lg hover:shadow-primary/10 relative overflow-hidden"
+              className="group bg-gradient-to-b from-quaternary/90 to-quaternary/70 backdrop-blur-sm rounded-xl p-6 border border-gray-800 hover:border-primary/50 transition-all duration-500 hover:shadow-lg hover:shadow-primary/10 relative overflow-hidden"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
-              <div className="absolute top-0 right-0 w-20 h-20 bg-primary/10 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
+              {/* Background Image with Overlay */}
+              <div className="absolute inset-0 -z-20">
+                <img 
+                  src={service.img} 
+                  alt={service.title}
+                  className="w-full h-full object-cover object-center rounded-xl opacity-50 group-hover:opacity-60 transition-opacity duration-500 brightness-125 contrast-125 grayscale"
+                />
+              </div>
+              
+              {/* Gradient Overlays */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
+              <div className="absolute top-0 right-0 w-20 h-20 bg-primary/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
+              <div className="absolute inset-0 bg-quaternary/60 -z-15"></div>
 
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mr-3 group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-primary font-bold">{service.id}</span>
+              <div className="flex items-center mb-4 relative z-10">
+                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary/30 to-primary/10 flex items-center justify-center mr-3 group-hover:scale-110 transition-transform duration-300">
+                  <span className="text-primary font-bold text-shadow-sm">{service.id}</span>
                 </div>
-                <h3 className="text-xl font-bold group-hover:text-primary transition-colors duration-300">
+                <h3 className="text-xl font-bold group-hover:text-primary transition-colors duration-300 text-shadow-sm">
                   {service.title}
                 </h3>
               </div>
-              <div className="pl-3 border-l-2 border-primary/30">
-                {service.content}
+              <div className="pl-3 border-l-2 border-primary/50 relative z-10">
+                <div className="text-shadow-sm font-medium">
+                  {service.content}
+                </div>
               </div>
             </div>
           ))}
