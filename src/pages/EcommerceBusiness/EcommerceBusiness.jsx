@@ -147,6 +147,7 @@ const EcommerceBusiness = () => {
                 src={ecommerceArchitectureImg}
                 alt="E-Commerce Platform Architecture"
                 className="w-full h-auto rounded-lg shadow-xl"
+                loading="lazy"
               />
             </div>
           </div>
