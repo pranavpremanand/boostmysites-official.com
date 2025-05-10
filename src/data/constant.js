@@ -813,6 +813,48 @@ export const clientStoryVideos = [
     video: require("../assets/videos/client stories/videos/26.mp4"),
     thumbnail: require("../assets/videos/client stories/thumbnails/26.webp"),
   },
+  {
+    id: 27,
+    title:
+      "Building Bold: A Lady Techpreneur’s Vision, Powered by Boostmysites",
+    description:
+      "Turning a tech dream into a business reality takes more than passion — it takes clarity, commitment, and the right partners. \nIn this client story, we spotlight a driven woman entrepreneur who came in with a strong vision and the determination to make it happen.\n With Boostmysites by her side, she didn’t just plan — she built. From sharpening her brand identity to developing a solid digital presence and deploying sales-ready strategies, our team supported every step.\nWhat began as an idea is now on the path to becoming a thriving tech business — and she’s just getting started.",
+    video: require("../assets/videos/client stories/videos/27.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/27.webp"),
+  },
+  {
+    id: 28,
+    title:
+      "Step by Step: Chasing the Dream Client with Clarity and Consistency",
+    description:
+      "With a clear roadmap and the right mindset, this founder isn’t just working hard — he’s working smart.\nHis positive attitude and steady progress, powered by Boostmysites’ support, are bringing him closer each day to landing his dream client.\nSuccess isn’t a leap — it’s a journey. And he's walking it with purpose.",
+    video: require("../assets/videos/client stories/videos/28.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/28.webp"),
+  },
+  {
+    id: 29,
+    title: "From Zero to Takeoff: Building an AI Dream, One Win at a Time",
+    description:
+      "He landed his very first client with zero investment — purely through organic outreach.\nToday, he’s leading his own team and scaling the AI company he once only dreamed of.\n With clarity, consistency, and the right support, he’s turning vision into momentum — and momentum into growth.",
+    video: require("../assets/videos/client stories/videos/29.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/29.webp"),
+  },
+  {
+    id: 30,
+    title: "The First Step Was Tough — But He Didn’t Stop",
+    description:
+      "The beginning wasn’t easy, but his tenacious character kept him going.\nWith the right mentorship from Boostmysites, he now handles multiple projects and is confidently building the future he once only imagined.\nResilience, guidance, and action — that’s how dreams start taking shape.",
+    video: require("../assets/videos/client stories/videos/30.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/30.webp"),
+  },
+  {
+    id: 31,
+    title: "Niche Experts. Future Leaders.",
+    description:
+      "These two entrepreneurs are not just building — they’re building smart.\nWith hands-on experience in their specific niche, they’ve chosen a path they know deeply and are moving fast with purpose.\nBacked by Boostmysites, their vision is sharp, their execution is strong, and their growth is just getting started.",
+    video: require("../assets/videos/client stories/videos/31.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/31.webp"),
+  },
 ];
 
 // Ecommerce services data array
