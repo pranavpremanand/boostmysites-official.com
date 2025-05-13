@@ -855,6 +855,14 @@ export const clientStoryVideos = [
     video: require("../assets/videos/client stories/videos/31.mp4"),
     thumbnail: require("../assets/videos/client stories/thumbnails/31.webp"),
   },
+  {
+    id: 32,
+    title: "Long-Term Vision, Daily Execution: The Journey of Scaling an AI Company",
+    description:
+      "Having a 10-year vision isn't just about setting goals — it's about aligning every action today with the future you see.\nWith this AI company, the vision is crystal clear: to build solutions that create real impact over the next decade.\nRight now, it's about handling clients smoothly, closing deals confidently, and building a strong foundation with the support of tools like BoostMySites.\nEvery win today is a step closer to that long-term vision.",
+    video: require("../assets/videos/client stories/videos/32.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/32.webp"),
+  },
 ];
 
 // Ecommerce services data array
