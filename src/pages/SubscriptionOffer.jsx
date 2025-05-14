@@ -81,7 +81,7 @@ const SubscriptionOffer = () => {
             >
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6 gap-4">
                 <h2 className="text-xl md:text-2xl font-bold text-red-400">
-                  From May 1st
+                  From May 16th
                 </h2>
                 <span className="self-start sm:self-auto px-3 py-1 bg-red-900/50 text-red-300 rounded-full text-sm font-medium border border-red-800">
                   New Pricing
