@@ -11,7 +11,7 @@ const SubscriptionOffer = () => {
         >
           <div className="absolute inset-0 bg-gradient-to-r from-primary/30 to-transparent opacity-20 blur-3xl -z-10"></div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-yellow-300 leading-tight">
-            SECURE YOUR SPOT BEFORE APRIL 30TH
+            SECURE YOUR SPOT BEFORE MAY 15TH
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto">
             Big Changes Coming to Our Subscription Plans!
@@ -31,7 +31,7 @@ const SubscriptionOffer = () => {
                   Current Pricing
                 </h2>
                 <span className="self-start sm:self-auto px-3 py-1 bg-green-900/50 text-green-300 rounded-full text-sm font-medium border border-green-800">
-                  Until April 30th
+                  Until May 15th
                 </span>
               </div>
 
@@ -119,7 +119,7 @@ const SubscriptionOffer = () => {
                   </h3>
                   <p className="text-base md:text-lg text-gray-300">
                     Lock in current rates with just ₹5,000 booking amount before
-                    April 30th
+                    May 15th
                   </p>
                 </div>
               </div>
@@ -139,7 +139,7 @@ const SubscriptionOffer = () => {
                 <p className="text-gray-300 mb-6 md:mb-8 text-center max-w-3xl mx-auto">
                   We're offering a final opportunity to lock in your AI company
                   setup at the current pricing and revenue share. All it takes
-                  is a ₹5,000 booking amount before April 30th to secure your
+                  is a ₹5,000 booking amount before May 15th to secure your
                   spot - your onboarding can happen anytime after.
                 </p>
 
