@@ -17,11 +17,11 @@ const options = [
     title: "Start Your AI Company",
     path: "/ai-expert",
   },
-  {
-    id: 2,
-    title: "Start Your Ecommerce Company",
-    path: "https://ecommerce.boostmysites.com/",
-  },
+  // {
+  //   id: 2,
+  //   title: "Start Your Ecommerce Company",
+  //   path: "https://ecommerce.boostmysites.com/",
+  // },
   {
     id: 3,
     title: "BAAS",
@@ -40,11 +40,11 @@ const companyLinks = [
     title: "Sales Team",
     path: "/sales-team-services",
   },
-  {
-    id: 3,
-    title: "Ecommerce Business",
-    path: "/ecommerce-business",
-  },
+  // {
+  //   id: 3,
+  //   title: "Ecommerce Business",
+  //   path: "/ecommerce-business",
+  // },
   {
     id: 3,
     title: "Blogs",

@@ -80,7 +80,7 @@ const Home = () => {
           <div className="lg:col-span-2 flex justify-between lg:justify-end lg:-translate-x-[15%] lg:-translate-y-5">
             <div data-aos="fade-left" className="flex flex-col gap-6">
               <div className="flex flex-col gap-3 w-fit">
-                <h4 className="text-3xl font-bold">2k+</h4>
+                <h4 className="text-3xl font-bold">2K+</h4>
                 <p className="text-sm">
                   Projects completed <br />
                   <span className="text-primary1">successfully</span>
@@ -262,7 +262,7 @@ const Home = () => {
             />
           </div>
         </div>
-        <div className="bg-[#121212] py-[2rem] lg:py-[7rem]">
+        {/* <div className="bg-[#121212] py-[2rem] lg:py-[7rem]">
           <div className="wrapper">
             <div className="grid grid-cols lg:grid-cols-3 items-center gap-5 lg:gap-10 mx-auto">
               <img
@@ -313,7 +313,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
 
       <section className="py-[5rem]">

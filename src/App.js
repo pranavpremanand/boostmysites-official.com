@@ -11,7 +11,7 @@ import "keen-slider/keen-slider.min.css";
 import { Toaster } from "react-hot-toast";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import LandingPageFooter from "./components/landingPage/Footer";
+// import LandingFooter from "./components/landingPage/Footer";
 import { lazy, Suspense, useContext, useEffect } from "react";
 import ContactFormStep1 from "./pages/ContactUs/ContactFormStep1";
 import ContactFormStep2 from "./pages/ContactUs/ContactFormStep2";
@@ -110,7 +110,7 @@ function App() {
                       {/* <LandingPageHeader path={path} /> */}
                       <Header />
                       <LandingPage path={path} />
-                      <LandingPageFooter />
+                      <Footer />
                     </>
                   }
                 />
@@ -124,7 +124,7 @@ function App() {
                       {/* <LandingPageHeader path={path} /> */}
                       <Header />
                       <LandingPage1 path={path} />
-                      <LandingPageFooter />
+                      <Footer />
                     </>
                   }
                 />
@@ -157,7 +157,7 @@ function App() {
                           }
                         />
                       </Routes>
-                      <LandingPageFooter />
+                      <Footer />
                     </>
                   }
                 />
@@ -191,7 +191,7 @@ function App() {
                           }
                         />
                       </Routes>
-                      <LandingPageFooter />
+                      <Footer />
                     </>
                   }
                 />
@@ -382,7 +382,7 @@ function App() {
                     <>
                       <Header />
                       <SubscriptionFormStep1 />
-                      <LandingPageFooter />
+                      <Footer />
                     </>
                   }
                 />
@@ -392,7 +392,7 @@ function App() {
                     <>
                       <Header />
                       <SubscriptionFormStep2 />
-                      <LandingPageFooter />
+                      <Footer />
                     </>
                   }
                 />
@@ -403,7 +403,7 @@ function App() {
                   <>
                     <Header />
                     <SubscriptionPage />
-                    <LandingPageFooter />
+                    <Footer />
                   </>
                 }
               />
@@ -427,7 +427,7 @@ function App() {
                   </>
                 }
               />
-              <Route
+              {/* <Route
                 path="/ecommerce-business"
                 element={
                   <>
@@ -436,7 +436,7 @@ function App() {
                     <Footer />
                   </>
                 }
-              />
+              /> */}
             </Routes>
             <ScrollToTopButton />
             <ScrollToTopOnPageChange />

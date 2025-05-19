@@ -6,7 +6,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="flex backdrop-blur-sm flex-col gap-4 md:items-center justify-center py-[4rem] text-white border-t border-gray-800/70">
+    <div className="mt-7 flex backdrop-blur-sm flex-col gap-4 md:items-center justify-center py-[4rem] text-white border-t border-gray-800/70">
       <div className="wrapper w-full flex md:flex-row flex-col items-start justify-between gap-7">
         <img
           loading="lazy"
@@ -46,11 +46,11 @@ const Footer = () => {
                 title: "Start Your AI Company",
                 path: "/ai-expert",
               },
-              {
-                id: 2,
-                title: "Start Your Ecommerce Company",
-                path: "https://boostmysites.store",
-              },
+              // {
+              //   id: 2,
+              //   title: "Start Your Ecommerce Company",
+              //   path: "https://boostmysites.store",
+              // },
               {
                 id: 3,
                 title: "Services and Pricing",

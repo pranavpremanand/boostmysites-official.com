@@ -104,7 +104,7 @@ const LeadForm = () => {
             >
               <FaInstagram />
             </Link>
-            <Link className="w-[2.5rem] h-[2.5rem] text-xl hover:-translate-y-1 transition-all duration-300 p-3 p-3 rounded-full border border-white/40 flex justify-center items-center">
+            <Link className="w-[2.5rem] h-[2.5rem] text-xl hover:-translate-y-1 transition-all duration-300 p-3 rounded-full border border-white/40 flex justify-center items-center">
               <FaFacebookF />
             </Link>
           </div>
@@ -171,7 +171,7 @@ const LeadForm = () => {
           </button>
           {isDropdownOpen && (
             <div
-              className="absolute rounded-xl left-0 top-[1.8rem] w-full border bg-[#eef0ff] mt-2 outline-none focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+              className="absolute left-0 top-[1.8rem] w-full border bg-[#cbccd4] mt-2 outline-none focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
               name="service"
               id=""
             >
@@ -179,24 +179,24 @@ const LeadForm = () => {
                 onClick={() =>
                   handleServiceChange("AI & IT development solution")
                 }
-                className="text-md hover:bg-primary1 p-2 cursor-pointer rounded-xl"
+                className="text-md hover:bg-primary1 p-2 cursor-pointer"
               >
                 AI & IT development solution
               </p>
               <p
                 onClick={() => handleServiceChange("Start your own AI company")}
-                className="text-md hover:bg-primary1 p-2 cursor-pointer rounded-xl"
+                className="text-md hover:bg-primary1 p-2 cursor-pointer"
               >
                 Start your own AI company
               </p>
-              <p
+              {/* <p
                 onClick={() =>
                   handleServiceChange("Start your own Ecommerce company")
                 }
-                className="text-md hover:bg-primary1 p-2 cursor-pointer rounded-xl"
+                className="text-md hover:bg-primary1 p-2 cursor-pointer"
               >
                 Start your own Ecommerce company
-              </p>
+              </p> */}
             </div>
           )}
         </div>
