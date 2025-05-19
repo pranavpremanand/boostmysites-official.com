@@ -857,11 +857,21 @@ export const clientStoryVideos = [
   },
   {
     id: 32,
-    title: "Long-Term Vision, Daily Execution: The Journey of Scaling an AI Company",
+    title:
+      "Long-Term Vision, Daily Execution: The Journey of Scaling an AI Company",
     description:
       "Having a 10-year vision isn't just about setting goals — it's about aligning every action today with the future you see.\nWith this AI company, the vision is crystal clear: to build solutions that create real impact over the next decade.\nRight now, it's about handling clients smoothly, closing deals confidently, and building a strong foundation with the support of tools like BoostMySites.\nEvery win today is a step closer to that long-term vision.",
     video: require("../assets/videos/client stories/videos/32.mp4"),
     thumbnail: require("../assets/videos/client stories/thumbnails/32.webp"),
+  },
+  {
+    id: 33,
+    title:
+      "Building Impact That Matters—One Founder, One Conversation at a Time",
+    description:
+      "Every founder’s journey starts with a spark—often full of ups and downs, twists and turns. At Boostmysites, we understand that rollercoaster ride all too well. From early challenges and setbacks to breakthrough moments, our subscribers have transformed their struggles into stepping stones. With consistent support, strategic insights, and meaningful conversations, they’ve moved from uncertain beginnings to becoming leaders who innovate fearlessly and build ventures that truly matter.",
+    video: require("../assets/videos/client stories/videos/33.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/33.webp"),
   },
 ];
 

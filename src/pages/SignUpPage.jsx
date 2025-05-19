@@ -262,11 +262,11 @@ const SignUpForm = () => {
           </div>
         </div>
 
-        <div className="fixed bottom-4 right-4">
+        {/* <div className="fixed bottom-4 right-4">
           <button className="bg-orange-500 text-white p-4 rounded-full shadow-lg hover:bg-orange-600 transition-colors">
             Contact us
           </button>
-        </div>
+        </div> */}
       </div>
       {/* <Footer /> */}
     </div>
