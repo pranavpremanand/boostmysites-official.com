@@ -127,7 +127,7 @@ export const services = [
     title: "Mobile App Development",
     desc: "Designing and developing applications for mobile devices, enabling businesses to reach and engage with their customers on the go.",
     img: require("../assets/images/serviceimg/mob.webp"),
-    link: "",
+    link: "/services/app-development",
   },
   {
     id: 2,

@@ -17,6 +17,7 @@
     "hamburger-react": "^2.5.1",
     "keen-slider": "^6.8.6",
     "lenis": "^1.1.14-dev.5",
+    "lucide-react": "^0.511.0",
     "react": "^18.3.1",
     "react-country-phone-input": "^1.0.2",
     "react-dom": "^18.3.1",

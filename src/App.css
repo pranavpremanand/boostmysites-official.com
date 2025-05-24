@@ -34,6 +34,29 @@
   .text-shadow-sm {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
   }
+
+  /* service web pages classes */
+  .section-heading {
+    @apply text-center text-4xl font-semibold mb-16 md:text-5xl;
+  }
+  .banner-heading {
+    @apply text-4xl font-bold tracking-tight sm:text-6xl md:text-7xl;
+  }
+  .heading {
+    @apply text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl;
+  }
+  .casestudy-heading {
+    @apply text-base  text-[#7d7d82] font-medium;
+  }
+  .casestudy-desc {
+    @apply text-base  text-white/80 font-medium;
+  }
+  .animate-spin-slow {
+    animation: spin 20s linear infinite;
+  }
+  .padding-between {
+    @apply py-16 md:py-16;
+  }
 }
 
 .hyphen-auto {
@@ -167,8 +190,8 @@ div,
   font-family: "Roboto", sans-serif;
 }
 
-.react-tel-input .form-control{
- width: 100% !important;
+.react-tel-input .form-control {
+  width: 100% !important;
 }
 
 body {

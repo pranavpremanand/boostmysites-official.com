@@ -24,6 +24,7 @@ import ScrollToTopButton from "./components/ScrollToTopButton";
 import Footer from "./components/Footer";
 import GoogleTagManager from "./components/GoogleTagManager";
 import NormalizeSlash from "./components/NormalizeSlash";
+import { ServiceWebPages } from "./routes/ServiceWebPages";
 
 const FeeRevisionAnnouncement = lazy(() =>
   import("./pages/FeeRevisionAnnouncement")
@@ -43,9 +44,6 @@ const ProjectRequirementForm = lazy(() =>
 );
 const Reviews = lazy(() => import("./pages/Reviews"));
 const BaaS = lazy(() => import("./pages/BaaS/BaaS"));
-const EcommerceBusiness = lazy(() => 
-  import("./pages/EcommerceBusiness/EcommerceBusiness")
-);
 const SubscriptionFormStep1 = lazy(() =>
   import("./pages/BaasSubscriptionForms/SubscriptionFormStep1")
 );
@@ -437,6 +435,9 @@ function App() {
                   </>
                 }
               /> */}
+
+              {/* Service web pages */}
+              {ServiceWebPages()}
             </Routes>
             <ScrollToTopButton />
             <ScrollToTopOnPageChange />
