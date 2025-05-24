@@ -873,6 +873,15 @@ export const clientStoryVideos = [
     video: require("../assets/videos/client stories/videos/33.mp4"),
     thumbnail: require("../assets/videos/client stories/thumbnails/33.webp"),
   },
+  {
+    id: 34,
+    title:
+      "Niche Visionaries. Unstoppable Growth.",
+    description:
+      "Coming from a non-IT background, these entrepreneurs are breaking barriers—leading a project on par with giants like TikTok. With bold ideas and relentless drive, they’re proving that you don’t need a tech degree to build something massive. Fueled by AI and backed by Boostmysites, their journey isn’t just ambitious—it’s inevitable. The future? It’s already in motion.",
+    video: require("../assets/videos/client stories/videos/34.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/34.webp"),
+  },
 ];
 
 // Ecommerce services data array
