@@ -882,6 +882,15 @@ export const clientStoryVideos = [
     video: require("../assets/videos/client stories/videos/34.mp4"),
     thumbnail: require("../assets/videos/client stories/thumbnails/34.webp"),
   },
+  {
+    id: 35,
+    title:
+      "Client Magnets. Boundless Momentum.",
+    description:
+      "Once just learning the ropes, now they’re mastering the game. From handling leads to closing deals, these entrepreneurs have leveled up—building systems, owning client relationships, and delivering results like pros. Backed by Boostmysites and powered by AI, they’re not just landing clients—they’re building legacies. What started as hustle is now a full-blown movement. And this? This is just the beginning.",
+    video: require("../assets/videos/client stories/videos/35.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/35.webp"),
+  },
 ];
 
 // Ecommerce services data array
