@@ -45,7 +45,7 @@ const BolnaVoiceCall = ({ agentId, apiKey }) => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          from_phone_number: "+912231043807",
+          from_phone_number: "+912269976246",
           recipient_phone_number: fullPhoneNumber,
           agent_id: agentId,
         }),
