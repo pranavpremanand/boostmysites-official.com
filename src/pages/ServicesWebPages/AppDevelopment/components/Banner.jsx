@@ -5,6 +5,7 @@ import servicesbackgroundimage from "../../../../assets/images/servicewebpages/a
 import servicecenterimage from "../../../../assets/images/servicewebpages/app development/service-center-image.png";
 import customersupporticon from "../../../../assets/images/servicewebpages/app development/customer-support-icon.png";
 import { FaWhatsapp } from "react-icons/fa";
+import { Link as Scroll } from "react-scroll";
 
 const Banner = () => {
   const services = [
@@ -62,9 +63,17 @@ const Banner = () => {
                 <br /> poor design sabotage your app's success.
                 <br /> Let's Fix That.
               </p>
-              <Link data-aos="fade-right" className="primary-btn w-fit">
+              <Scroll
+                to="contact"
+                smooth={true}
+                duration={500}
+                offset={-70}
+                spy={true}
+                data-aos="fade-right"
+                className="primary-btn w-fit"
+              >
                 Craft Your App With Us!
-              </Link>
+              </Scroll>
             </div>
             <div data-aos="fade-left">
               <img
@@ -106,7 +115,7 @@ const Banner = () => {
                 </p>
               </div>
               <a
-                href="https://wa.me/919632953355"
+                href="https://wa.me/919632953355?text=Hi!%20I%20want%20to%20build%20an%20app%20for%20my%20business.%20Please%20guide%20me%20with%20the%20next%20steps"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 mt-6 px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg font-semibold w-fit transition-all duration-300 hover:-translate-y-1 mx-auto"
