@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import toast from "react-hot-toast";
-import { IoClose } from "react-icons/io5";
 import logo from "../../assets/logo/logo.png";
 import { LiaCheckSolid } from "react-icons/lia";
 import { Link, useNavigate } from "react-router-dom";

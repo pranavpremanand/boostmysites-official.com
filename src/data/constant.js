@@ -875,8 +875,7 @@ export const clientStoryVideos = [
   },
   {
     id: 34,
-    title:
-      "Niche Visionaries. Unstoppable Growth.",
+    title: "Niche Visionaries. Unstoppable Growth.",
     description:
       "Coming from a non-IT background, these entrepreneurs are breaking barriers—leading a project on par with giants like TikTok. With bold ideas and relentless drive, they’re proving that you don’t need a tech degree to build something massive. Fueled by AI and backed by Boostmysites, their journey isn’t just ambitious—it’s inevitable. The future? It’s already in motion.",
     video: require("../assets/videos/client stories/videos/34.mp4"),
@@ -884,12 +883,19 @@ export const clientStoryVideos = [
   },
   {
     id: 35,
-    title:
-      "Client Magnets. Boundless Momentum.",
+    title: "Client Magnets. Boundless Momentum.",
     description:
       "Once just learning the ropes, now they’re mastering the game. From handling leads to closing deals, these entrepreneurs have leveled up—building systems, owning client relationships, and delivering results like pros. Backed by Boostmysites and powered by AI, they’re not just landing clients—they’re building legacies. What started as hustle is now a full-blown movement. And this? This is just the beginning.",
     video: require("../assets/videos/client stories/videos/35.mp4"),
     thumbnail: require("../assets/videos/client stories/thumbnails/35.webp"),
+  },
+  {
+    id: 36,
+    title: "From Cold DMs to Ecom Deals. The Rise Has Begun.",
+    description:
+      "Once a curious mind learning the game, now a founder shaping it. \n He started by building connections—one message, one meeting at a time. No shortcuts. Just strategy, persistence, and purpose. \n Now? He’s running his AI company with clarity and confidence. From exploring possibilities to executing with precision, he’s landed his first e-commerce project—and it’s just the start. \n Backed by Boostmysites, powered by AI, and driven by vision—he's not just building a business.",
+    video: require("../assets/videos/client stories/videos/36.mp4"),
+    thumbnail: require("../assets/videos/client stories/thumbnails/36.webp"),
   },
 ];
 

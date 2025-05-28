@@ -45,7 +45,7 @@ const ClientStoryVideo = ({ video, setPlayingVideoId, playingVideoId }) => {
         <h2 className="text-[2rem] text-balance !leading-[1.15] md:text-4xl lg:text-5xl font-medium text-white">
           {video.title}
         </h2>
-        <p className="font-light text-white/80">{video.description}</p>
+        <p className="font-light text-white/80 whitespace-pre-line">{video.description}</p>
       </div>
 
       {hasBeenInView ? (
