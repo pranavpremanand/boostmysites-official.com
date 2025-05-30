@@ -93,6 +93,32 @@ import focusTreeCaseStudyImage3 from "../../assets/images/servicewebpages/app de
 import focusTreeCaseStudyImage4 from "../../assets/images/servicewebpages/app development/casestudies/focus/design-4.png";
 import focusTreeCaseStudyImage5 from "../../assets/images/servicewebpages/app development/casestudies/focus/design-5.png";
 
+// THE EVA People Labs
+import evaPeopleCaseStudyBannerImage from "../../assets/images/servicewebpages/app development/casestudies/eva/evaPeopleCaseStudyBannerImage.png";
+import evaPeopleDisplayImage from "../../assets/images/servicewebpages/app development/casestudies/eva/dp.png";
+import evaPeopleCaseStudyImage1 from "../../assets/images/servicewebpages/app development/casestudies/eva/design-1.png";
+import evaPeopleCaseStudyImage2 from "../../assets/images/servicewebpages/app development/casestudies/eva/design-2.png";
+import evaPeopleCaseStudyImage3 from "../../assets/images/servicewebpages/app development/casestudies/eva/design-3.png";
+import evaPeopleCaseStudyImage4 from "../../assets/images/servicewebpages/app development/casestudies/eva/design-4.png";
+import evaPeopleCaseStudyImage5 from "../../assets/images/servicewebpages/app development/casestudies/eva/design-5.png";
+// Rentop Case Study
+import rentopCaseStudyBannerImage from "../../assets/images/servicewebpages/app development/casestudies/rentop/rentopCaseStudyBannerImage.png";
+import rentopDisplayImage from "../../assets/images/servicewebpages/app development/casestudies/rentop/dp.png";
+import rentopCaseStudyImage1 from "../../assets/images/servicewebpages/app development/casestudies/rentop/design-1.png";
+import rentopCaseStudyImage2 from "../../assets/images/servicewebpages/app development/casestudies/rentop/design-2.png";
+import rentopCaseStudyImage3 from "../../assets/images/servicewebpages/app development/casestudies/rentop/design-3.png";
+import rentopCaseStudyImage4 from "../../assets/images/servicewebpages/app development/casestudies/rentop/design-4.png";
+import rentopCaseStudyImage5 from "../../assets/images/servicewebpages/app development/casestudies/rentop/design-5.png";
+
+//
+import klikomicsCaseStudyBannerImage from "../../assets/images/servicewebpages/app development/casestudies/vetlap/vetlapCaseStudyBannerImage.png";
+import klikomicsDisplayImage from "../../assets/images/servicewebpages/app development/casestudies/vetlap/dp.png";
+import klikomicsCaseStudyImage1 from "../../assets/images/servicewebpages/app development/casestudies/vetlap/design-1.png";
+import klikomicsCaseStudyImage2 from "../../assets/images/servicewebpages/app development/casestudies/vetlap/design-2.png";
+import klikomicsCaseStudyImage3 from "../../assets/images/servicewebpages/app development/casestudies/vetlap/design-3.png";
+import klikomicsCaseStudyImage4 from "../../assets/images/servicewebpages/app development/casestudies/vetlap/design-4.png";
+import klikomicsCaseStudyImage5 from "../../assets/images/servicewebpages/app development/casestudies/vetlap/design-5.png";
+
 export const appDevelopmentCaseStudies = [
   {
     id: 1,
@@ -1130,5 +1156,230 @@ export const appDevelopmentCaseStudies = [
     testimonial:
       "Partnering with BoostMySites was a game changer for Focus Tree. We already had a solid user base, but needed to refine our user experience and expand features while keeping the app’s simplicity intact. The BoostMySites team brought in creative solutions, improved our UI/UX, and ran targeted campaigns that really connected with our audience. They also enhanced our App Store presence, driving more visibility and downloads. Their speed, strategic thinking, and understanding of productivity apps made all the difference.",
     testimonialBy: "Product Manager, Focus Tree",
+  },
+  {
+    id: 11,
+    dpImage: evaPeopleDisplayImage,
+    bannerImage: evaPeopleCaseStudyBannerImage,
+    firstImageSet: [
+      evaPeopleCaseStudyImage1,
+      evaPeopleCaseStudyImage2,
+      evaPeopleCaseStudyImage3,
+    ],
+    secondImageSet: [evaPeopleCaseStudyImage4, evaPeopleCaseStudyImage5],
+    client: "Eva Pharma",
+    businessType: "Employee Engagement & HR Management",
+    industry: "Pharmaceuticals, Healthcare",
+    url: "https://your-live-app-link.com", // Replace with actual link
+    applicationUrl: "https://your-live-app-link.com", // Replace with actual link
+    servicesProvided: [
+      "UI/UX Design Overhaul",
+      "Feature Enhancement & Integration",
+      "Internal Communication Strategy",
+      "Performance Optimization",
+    ],
+    companyOverview:
+      "Eva Pharma is a leading pharmaceutical company committed to enhancing healthcare. To streamline internal operations and boost employee engagement, they developed the EVA People App, offering features like company newsfeeds, benefit browsing, health insurance access, job applications, training courses, and activity submissions.",
+    objective:
+      "The goal was to create a centralized platform for employees to access essential resources, communicate effectively, and manage daily tasks, thereby fostering a more connected and efficient workplace.",
+    approach: {
+      researchStrategy:
+        "Conducted employee surveys to identify key needs and pain points.",
+      designDevelopment: [
+        {
+          type: "User Interface",
+          description:
+            "Implemented a user-friendly interface with seamless navigation.",
+        },
+        {
+          type: "Feature Integration",
+          description:
+            "Added modules for health insurance details, job vacancies, and training courses.",
+        },
+        {
+          type: "Performance Optimization",
+          description:
+            "Ensured app stability and quick load times through backend enhancements.",
+        },
+      ],
+      organicGrowthMarketing: [
+        {
+          type: "Internal Communication Strategy",
+          description:
+            "Devised strategies to streamline internal announcements and company updates.",
+        },
+      ],
+      continuousImprovement:
+        "Collected ongoing employee feedback to iterate features and improve overall experience.\n\nIntroduced new workflows and automated processes based on evolving organizational needs.",
+    },
+    results: [
+      {
+        type: "Increased Employee Engagement",
+        description:
+          "Higher participation in company programs and initiatives.",
+      },
+      {
+        type: "Improved Communication",
+        description: "Streamlined internal announcements and updates.",
+      },
+      {
+        type: "Enhanced Productivity",
+        description:
+          "Simplified processes for daily reports and activity tracking.",
+      },
+    ],
+    testimonial:
+      "We wanted Eva to be more than just an HR app — it had to feel like a digital workplace companion. BoostMySites took our internal goals and transformed them into a seamless, interactive experience. From intuitive UI to features like automated workflows and real-time updates, they delivered beyond expectations. Their team truly understood how to balance functionality with user experience. The response from employees has been overwhelmingly positive, and adoption rates speak for themselves. A solid partner who gets things done.",
+    testimonialBy: "Digital Transformation Head, Eva Pharma",
+  },
+  {
+    id: 12,
+    dpImage: rentopDisplayImage,
+    bannerImage: rentopCaseStudyBannerImage,
+    firstImageSet: [
+      rentopCaseStudyImage1,
+      rentopCaseStudyImage2,
+      rentopCaseStudyImage3,
+    ],
+    secondImageSet: [rentopCaseStudyImage4, rentopCaseStudyImage5],
+    client: "Rentop",
+    businessType: "Vehicle Sharing Platform",
+    industry: "Transportation, Mobility",
+    url: "https://your-live-app-link.com", // Replace with actual live app link
+    applicationUrl: "https://your-live-app-link.com", // Replace with actual live app link
+    servicesProvided: [
+      "Platform Development",
+      "User Experience Design",
+      "Marketplace Integration",
+      "Marketing Strategy",
+    ],
+    companyOverview:
+      "Rentop is a vehicle sharing platform enabling travelers to rent vehicles from local owners. With a focus on sustainability and community-driven services, Rentop offers an easy-to-use app for renting scooters, bikes, and cars without annual fees.",
+    objective:
+      "To provide a seamless and trustworthy platform for vehicle rentals, promoting sustainable travel and offering income opportunities for vehicle owners.",
+    approach: {
+      researchStrategy:
+        "Analyzed traveler behavior and peer-to-peer rental trends to refine platform requirements.",
+      designDevelopment: [
+        {
+          type: "Platform Development",
+          description:
+            "Built a robust system for listing, booking, and managing rentals.",
+        },
+        {
+          type: "User Experience Design",
+          description:
+            "Crafted an intuitive interface for both renters and owners to simplify the rental process.",
+        },
+        {
+          type: "Marketplace Integration",
+          description:
+            "Integrated secure payment processing and real-time availability updates to ensure reliability.",
+        },
+      ],
+      organicGrowthMarketing: [
+        {
+          type: "Marketing Strategy",
+          description:
+            "Launched campaigns highlighting zero commission bookings and verified partners to build trust and boost adoption.",
+        },
+      ],
+      continuousImprovement:
+        "Implemented feedback loops to refine UI/UX and added features like push notifications and streamlined booking flows.\n\nOptimized SEO to increase visibility and attract organic traffic.",
+    },
+    results: [
+      {
+        type: "User Growth",
+        description: "Significant increase in app downloads and active users.",
+      },
+      {
+        type: "Community Trust",
+        description: "Established a network of verified vehicle owners.",
+      },
+      {
+        type: "Revenue Generation",
+        description:
+          "Enabled vehicle owners to monetize idle assets effectively.",
+      },
+    ],
+    testimonial:
+      "Rentop was growing, but we needed a tech upgrade to scale faster and reach more users. BoostMySites helped us revamp the app into a smooth, intuitive platform — from better property discovery to streamlined chat and booking flow. They understood how renters and landlords think, and optimized both ends. Their push notification and SEO strategy helped us boost our active users significantly. Great team, fast responses, and results-driven approach. We’re seeing the difference already.",
+    testimonialBy: "Founder, Rentop",
+  },
+  {
+    id: 13,
+    dpImage: klikomicsDisplayImage,
+    bannerImage: klikomicsCaseStudyBannerImage,
+    firstImageSet: [
+      klikomicsCaseStudyImage1,
+      klikomicsCaseStudyImage2,
+      klikomicsCaseStudyImage3,
+    ],
+    secondImageSet: [klikomicsCaseStudyImage4, klikomicsCaseStudyImage5],
+    client: "Studio THGroup",
+    businessType: "Digital Comics Platform",
+    industry: "Entertainment, Publishing",
+    url: "https://your-live-app-link.com", // Replace with actual live app link
+    applicationUrl: "https://your-live-app-link.com", // Replace with actual live app link
+    servicesProvided: [
+      "App Development",
+      "Content Management System",
+      "User Engagement Features",
+      "Monetization Strategy",
+    ],
+    companyOverview:
+      "Klikomics is a digital comics platform offering a vast collection of genres, including romance, adventure, horror, and more. The app provides high-quality original comics, with new chapters updated regularly, catering to a wide range of comic enthusiasts.",
+    objective:
+      "To create an accessible and engaging platform for comic readers, while supporting creators through monetization opportunities.",
+    approach: {
+      researchStrategy:
+        "Studied reader preferences and creator requirements to shape platform features and UX priorities.",
+      designDevelopment: [
+        {
+          type: "App Development",
+          description:
+            "Developed a lightweight, responsive app compatible with various devices.",
+        },
+        {
+          type: "Content Management",
+          description:
+            "Implemented systems for regular content updates and genre-based categorization.",
+        },
+        {
+          type: "User Engagement",
+          description:
+            "Added features like personalized notifications for new chapters and free previews.",
+        },
+      ],
+      organicGrowthMarketing: [
+        {
+          type: "Monetization Strategy",
+          description:
+            "Enabled in-app purchases and creator support features to build a sustainable ecosystem.",
+        },
+      ],
+      continuousImprovement:
+        "Introduced interactive features such as swipe-to-unlock episodes and dynamic alerts.\n\nOptimized App Store presence and user personalization to boost downloads and reading time.",
+    },
+    results: [
+      {
+        type: "User Engagement",
+        description:
+          "Increased reader retention through smart engagement features and personalized content alerts.",
+      },
+      {
+        type: "Content Expansion",
+        description:
+          "Grew the comic library across multiple genres with consistent updates.",
+      },
+      {
+        type: "Creator Support",
+        description:
+          "Provided a monetization-friendly platform for comic artists and writers.",
+      },
+    ],
+    testimonial:
+      "Klikomics is all about visual storytelling — and BoostMySites brought our vision to life. They enhanced user interaction with smart features like swipe-to-unlock episodes, dynamic push alerts, and creator engagement tools. Their work on personalization and ASO directly increased our installs and reading time per session. What we loved most? They treated our platform like their own. Everything felt tailored and creative. Couldn’t have asked for a better growth partner.",
+    testimonialBy: "Product Manager, Klikomics",
   },
 ];
