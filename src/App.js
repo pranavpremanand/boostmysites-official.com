@@ -65,6 +65,9 @@ const AIVideoAndVoiceCall = lazy(() =>
 );
 const Section1 = lazy(() => import("./pages/ConnectWithUs/Section1"));
 const Section2 = lazy(() => import("./pages/ConnectWithUs/Section2"));
+const SubscriptionOfferFinal = lazy(() =>
+  import("./pages/SubscriptionOfferFinal")
+);
 
 AOS.init({
   once: true,
@@ -421,6 +424,16 @@ function App() {
                   <>
                     <Header />
                     <SubscriptionOffer />
+                    <Footer />
+                  </>
+                }
+              />
+              <Route
+                path="/final-subscription-call"
+                element={
+                  <>
+                    <Header />
+                    <SubscriptionOfferFinal />
                     <Footer />
                   </>
                 }
