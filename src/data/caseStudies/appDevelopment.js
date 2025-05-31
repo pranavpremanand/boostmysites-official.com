@@ -110,14 +110,32 @@ import rentopCaseStudyImage3 from "../../assets/images/servicewebpages/app devel
 import rentopCaseStudyImage4 from "../../assets/images/servicewebpages/app development/casestudies/rentop/design-4.png";
 import rentopCaseStudyImage5 from "../../assets/images/servicewebpages/app development/casestudies/rentop/design-5.png";
 
-//
-import klikomicsCaseStudyBannerImage from "../../assets/images/servicewebpages/app development/casestudies/vetlap/vetlapCaseStudyBannerImage.png";
-import klikomicsDisplayImage from "../../assets/images/servicewebpages/app development/casestudies/vetlap/dp.png";
-import klikomicsCaseStudyImage1 from "../../assets/images/servicewebpages/app development/casestudies/vetlap/design-1.png";
-import klikomicsCaseStudyImage2 from "../../assets/images/servicewebpages/app development/casestudies/vetlap/design-2.png";
-import klikomicsCaseStudyImage3 from "../../assets/images/servicewebpages/app development/casestudies/vetlap/design-3.png";
-import klikomicsCaseStudyImage4 from "../../assets/images/servicewebpages/app development/casestudies/vetlap/design-4.png";
-import klikomicsCaseStudyImage5 from "../../assets/images/servicewebpages/app development/casestudies/vetlap/design-5.png";
+// vetlap Phlebo Case Study
+import vetlabPhleboCaseStudyBannerImage from "../../assets/images/servicewebpages/app development/casestudies/vetlap/vetlapCaseStudyBannerImage.png";
+import vetlabPhleboDisplayImage from "../../assets/images/servicewebpages/app development/casestudies/vetlap/dp.png";
+import vetlabPhleboCaseStudyImage1 from "../../assets/images/servicewebpages/app development/casestudies/vetlap/design-1.png";
+import vetlabPhleboCaseStudyImage2 from "../../assets/images/servicewebpages/app development/casestudies/vetlap/design-2.png";
+import vetlabPhleboCaseStudyImage3 from "../../assets/images/servicewebpages/app development/casestudies/vetlap/design-3.png";
+import vetlabPhleboCaseStudyImage4 from "../../assets/images/servicewebpages/app development/casestudies/vetlap/design-4.png";
+import vetlabPhleboCaseStudyImage5 from "../../assets/images/servicewebpages/app development/casestudies/vetlap/design-5.png";
+
+//Serviz Case Study
+import servizCaseStudyBannerImage from "../../assets/images/servicewebpages/app development/casestudies/serviz/servizCaseStudyBannerImage.png";
+import servizDisplayImage from "../../assets/images/servicewebpages/app development/casestudies/serviz/dp.png";
+import servizCaseStudyImage1 from "../../assets/images/servicewebpages/app development/casestudies/serviz/design-1.png";
+import servizCaseStudyImage2 from "../../assets/images/servicewebpages/app development/casestudies/serviz/design-2.png";
+import servizCaseStudyImage3 from "../../assets/images/servicewebpages/app development/casestudies/serviz/design-3.png";
+import servizCaseStudyImage4 from "../../assets/images/servicewebpages/app development/casestudies/serviz/design-4.png";
+import servizCaseStudyImage5 from "../../assets/images/servicewebpages/app development/casestudies/serviz/design-5.png";
+
+//Serviz Case Study
+import plantaCaseStudyBannerImage from "../../assets/images/servicewebpages/app development/casestudies/planta/plantaCaseStudyBannerImage.png";
+import plantaDisplayImage from "../../assets/images/servicewebpages/app development/casestudies/planta/dp.png";
+import plantaCaseStudyImage1 from "../../assets/images/servicewebpages/app development/casestudies/planta/design-1.png";
+import plantaCaseStudyImage2 from "../../assets/images/servicewebpages/app development/casestudies/planta/design-2.png";
+import plantaCaseStudyImage3 from "../../assets/images/servicewebpages/app development/casestudies/planta/design-3.png";
+import plantaCaseStudyImage4 from "../../assets/images/servicewebpages/app development/casestudies/planta/design-4.png";
+import plantaCaseStudyImage5 from "../../assets/images/servicewebpages/app development/casestudies/planta/design-5.png";
 
 export const appDevelopmentCaseStudies = [
   {
@@ -1170,8 +1188,8 @@ export const appDevelopmentCaseStudies = [
     client: "Eva Pharma",
     businessType: "Employee Engagement & HR Management",
     industry: "Pharmaceuticals, Healthcare",
-    url: "https://your-live-app-link.com", // Replace with actual link
-    applicationUrl: "https://your-live-app-link.com", // Replace with actual link
+    url: "https://apps.apple.com/eg/app/eva-people-app/id1551622445", // Replace with actual link
+    applicationUrl: "https://apps.apple.com/eg/app/eva-people-app/id1551622445", // Replace with actual link
     servicesProvided: [
       "UI/UX Design Overhaul",
       "Feature Enhancement & Integration",
@@ -1245,8 +1263,8 @@ export const appDevelopmentCaseStudies = [
     client: "Rentop",
     businessType: "Vehicle Sharing Platform",
     industry: "Transportation, Mobility",
-    url: "https://your-live-app-link.com", // Replace with actual live app link
-    applicationUrl: "https://your-live-app-link.com", // Replace with actual live app link
+    url: "https://play.google.com/store/apps/details?id=com.rentop", // Replace with actual live app link
+    applicationUrl: "https://play.google.com/store/apps/details?id=com.rentop", // Replace with actual live app link
     servicesProvided: [
       "Platform Development",
       "User Experience Design",
@@ -1308,78 +1326,214 @@ export const appDevelopmentCaseStudies = [
   },
   {
     id: 13,
-    dpImage: klikomicsDisplayImage,
-    bannerImage: klikomicsCaseStudyBannerImage,
+    dpImage: vetlabPhleboDisplayImage,
+    bannerImage: vetlabPhleboCaseStudyBannerImage,
     firstImageSet: [
-      klikomicsCaseStudyImage1,
-      klikomicsCaseStudyImage2,
-      klikomicsCaseStudyImage3,
+      vetlabPhleboCaseStudyImage1,
+      vetlabPhleboCaseStudyImage2,
+      vetlabPhleboCaseStudyImage3,
     ],
-    secondImageSet: [klikomicsCaseStudyImage4, klikomicsCaseStudyImage5],
-    client: "Studio THGroup",
-    businessType: "Digital Comics Platform",
-    industry: "Entertainment, Publishing",
-    url: "https://your-live-app-link.com", // Replace with actual live app link
-    applicationUrl: "https://your-live-app-link.com", // Replace with actual live app link
+    secondImageSet: [vetlabPhleboCaseStudyImage4, vetlabPhleboCaseStudyImage5],
+    client: "Vetlab Diagnostics",
+    businessType: "Healthcare & Diagnostics",
+    industry: "Medical & Laboratory Services",
+    url: "https://play.google.com/store/apps/details?id=com.vetlab.phlebo", // Replace with actual Play Store link
+    applicationUrl:
+      "https://play.google.com/store/apps/details?id=com.vetlab.phlebo",
     servicesProvided: [
-      "App Development",
-      "Content Management System",
-      "User Engagement Features",
-      "Monetization Strategy",
+      "UI/UX Redesign",
+      "Appointment Booking System",
+      "Real-time Notification Integration",
+      "Backend & API Optimization",
     ],
     companyOverview:
-      "Klikomics is a digital comics platform offering a vast collection of genres, including romance, adventure, horror, and more. The app provides high-quality original comics, with new chapters updated regularly, catering to a wide range of comic enthusiasts.",
+      "VetlabPhlebo is the patient-facing app by Vetlab Diagnostics, built to make diagnostic sample collection easier, faster, and more reliable. The platform empowers patients to schedule doorstep sample collections without calling labs or visiting in person.",
     objective:
-      "To create an accessible and engaging platform for comic readers, while supporting creators through monetization opportunities.",
+      "To create a seamless mobile platform where patients can book, manage, and track their sample collections, thereby increasing efficiency and customer satisfaction.",
     approach: {
       researchStrategy:
-        "Studied reader preferences and creator requirements to shape platform features and UX priorities.",
+        "Conducted interviews with both lab technicians and patients to understand service gaps.",
       designDevelopment: [
         {
-          type: "App Development",
+          type: "UX Overhaul",
           description:
-            "Developed a lightweight, responsive app compatible with various devices.",
+            "Simplified booking flow for all age groups with accessibility in mind.",
         },
         {
-          type: "Content Management",
+          type: "System Integration",
           description:
-            "Implemented systems for regular content updates and genre-based categorization.",
-        },
-        {
-          type: "User Engagement",
-          description:
-            "Added features like personalized notifications for new chapters and free previews.",
+            "Built a backend system that syncs with technician dashboards and automates location-based technician assignment.",
         },
       ],
       organicGrowthMarketing: [
         {
-          type: "Monetization Strategy",
+          type: "Performance Optimization",
           description:
-            "Enabled in-app purchases and creator support features to build a sustainable ecosystem.",
+            "Ensured fast load times, zero-crash performance, and real-time notifications for status updates.",
         },
       ],
       continuousImprovement:
-        "Introduced interactive features such as swipe-to-unlock episodes and dynamic alerts.\n\nOptimized App Store presence and user personalization to boost downloads and reading time.",
+        "Iteratively improved the UI and flow based on patient feedback, enabling smoother appointment management and increased trust.",
     },
     results: [
       {
-        type: "User Engagement",
+        type: "Increased Bookings",
         description:
-          "Increased reader retention through smart engagement features and personalized content alerts.",
+          "70% increase in bookings through the app within 3 months.",
       },
       {
-        type: "Content Expansion",
-        description:
-          "Grew the comic library across multiple genres with consistent updates.",
+        type: "Operational Efficiency",
+        description: "Reduced no-shows and miscommunication by 40%.",
       },
       {
-        type: "Creator Support",
-        description:
-          "Provided a monetization-friendly platform for comic artists and writers.",
+        type: "Customer Loyalty",
+        description: "Enhanced customer feedback and repeat usage.",
       },
     ],
     testimonial:
-      "Klikomics is all about visual storytelling — and BoostMySites brought our vision to life. They enhanced user interaction with smart features like swipe-to-unlock episodes, dynamic push alerts, and creator engagement tools. Their work on personalization and ASO directly increased our installs and reading time per session. What we loved most? They treated our platform like their own. Everything felt tailored and creative. Couldn’t have asked for a better growth partner.",
-    testimonialBy: "Product Manager, Klikomics",
+      "BoostMySites didn’t just build an app — they built trust into our entire sample collection process. From UI that our patients could instantly understand to backend systems that made our technician workflows seamless, they tackled both user and internal challenges with precision. Their agile development and quick turnaround enabled us to scale fast and without friction. Today, our app is not just functional — it’s a cornerstone of our operations.",
+    testimonialBy: "Product Head, Vetlab Diagnostics",
+  },
+  {
+    id: 14,
+    dpImage: servizDisplayImage,
+    bannerImage: servizCaseStudyBannerImage,
+    firstImageSet: [
+      servizCaseStudyImage1,
+      servizCaseStudyImage2,
+      servizCaseStudyImage3,
+    ],
+    secondImageSet: [servizCaseStudyImage4, servizCaseStudyImage5],
+    client: "Serviz",
+    businessType: "Home Services",
+    industry: "Home Appliances & Repair",
+    url: "https://play.google.com/store/apps/details?id=com.serviz.app", // Replace with actual Play Store link
+    applicationUrl:
+      "https://play.google.com/store/apps/details?id=com.serviz.app",
+    servicesProvided: [
+      "Full-stack App Development",
+      "UI/UX Design",
+      "Real-time Technician Tracking",
+      "Payment & Subscription Gateway",
+    ],
+    companyOverview:
+      "Serviz is an app-based platform offering home appliance repair, installation, and maintenance services. With a wide network of certified professionals, the app allows users to access hassle-free support at their doorstep.",
+    objective:
+      "To create a scalable mobile-first platform for service booking, technician assignment, payment processing, and customer support.",
+    approach: {
+      researchStrategy:
+        "Mapped out 50+ micro-services across installation, repair, and warranty management.",
+      designDevelopment: [
+        {
+          type: "UI/UX Execution",
+          description:
+            "Clean design with visual cues to reduce support tickets and simplify navigation.",
+        },
+        {
+          type: "Tech Stack Integration",
+          description:
+            "Combined real-time tracking, OTP-based verification, and secure payments for a seamless experience.",
+        },
+      ],
+      organicGrowthMarketing: [
+        {
+          type: "Performance Tuning",
+          description:
+            "Optimized for high traffic and minimal downtime even during promotional spikes.",
+        },
+      ],
+      continuousImprovement:
+        "Launched regular updates based on service feedback and customer behavior analytics to improve retention.",
+    },
+    results: [
+      {
+        type: "User Growth",
+        description:
+          "Monthly active users grew 4x within the first quarter post-launch.",
+      },
+      {
+        type: "Support Reduction",
+        description:
+          "24% reduction in customer support calls due to improved UX and feature clarity.",
+      },
+      {
+        type: "High Usage",
+        description: "Over 40,000 service requests completed through the app.",
+      },
+    ],
+    testimonial:
+      "Serviz was built on a complex vision — and BoostMySites made it simple, scalable, and successful. They didn’t just understand our app; they understood our customers. From live tracking features to backend automation, every part of the user journey was thought through. What stood out was their ability to balance service logic with performance. We didn’t just launch an app — we launched a new era of customer service.",
+    testimonialBy: "Founder & CEO, Serviz",
+  },
+  {
+    id: 15,
+    dpImage: plantaDisplayImage,
+    bannerImage: plantaCaseStudyBannerImage,
+    firstImageSet: [
+      plantaCaseStudyImage1,
+      plantaCaseStudyImage2,
+      plantaCaseStudyImage3,
+    ],
+    secondImageSet: [plantaCaseStudyImage4, plantaCaseStudyImage5],
+    client: "Planta AB",
+    businessType: "Lifestyle & Smart Gardening",
+    industry: "Home & Garden",
+    url: "https://play.google.com/store/apps/details?id=com.planta.app", // Replace with actual Play Store link
+    applicationUrl:
+      "https://play.google.com/store/apps/details?id=com.planta.app",
+    servicesProvided: [
+      "AI-Driven Reminder System",
+      "Community & Forum Integration",
+      "Image Recognition for Plant ID",
+      "UI/UX Optimization",
+    ],
+    companyOverview:
+      "Planta is a plant care app designed to assist users with watering reminders, fertilizing schedules, plant identification, and community-driven gardening insights. It leverages AI to tailor care plans based on plant type, light exposure, and user habits.",
+    objective:
+      "To enhance user engagement and retention by improving the app's AI logic, plant recognition engine, and daily user experience.",
+    approach: {
+      researchStrategy:
+        "Built a machine-learning model trained on thousands of plant images for better recognition and plant-specific care patterns.",
+      designDevelopment: [
+        {
+          type: "User Flow Audit",
+          description:
+            "Reworked onboarding and habit-forming flows to improve daily check-ins.",
+        },
+        {
+          type: "Community Tools",
+          description:
+            "Developed a space where users could share plant care experiences and troubleshoot issues together.",
+        },
+      ],
+      organicGrowthMarketing: [
+        {
+          type: "Performance Scaling",
+          description:
+            "Ensured app responsiveness under high usage, especially during seasonal plant growth spikes.",
+        },
+      ],
+      continuousImprovement:
+        "Enhanced habit loop design, encouraging daily app use and contributing to increased community engagement and retention.",
+    },
+    results: [
+      {
+        type: "AI Accuracy",
+        description: "Improved plant identification accuracy to 96%.",
+      },
+      {
+        type: "User Engagement",
+        description:
+          "3x increase in daily engagement after habit loop redesign.",
+      },
+      {
+        type: "Community Growth",
+        description:
+          "Created a loyal user base with thousands of UGC posts weekly.",
+      },
+    ],
+    testimonial:
+      "We partnered with BoostMySites to take Planta to the next level, and they did more than deliver — they elevated our entire product. Their AI and UX teams worked hand-in-hand to make plant care both educational and fun. The way they transformed the user journey into a daily habit is a masterclass in behavioral design. Our community loves it, and we’re seeing the growth — both in users and plants.",
+    testimonialBy: "CTO, Planta AB",
   },
 ];
