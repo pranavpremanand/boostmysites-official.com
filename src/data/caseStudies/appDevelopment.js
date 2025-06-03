@@ -137,6 +137,15 @@ import plantaCaseStudyImage3 from "../../assets/images/servicewebpages/app devel
 import plantaCaseStudyImage4 from "../../assets/images/servicewebpages/app development/casestudies/planta/design-4.png";
 import plantaCaseStudyImage5 from "../../assets/images/servicewebpages/app development/casestudies/planta/design-5.png";
 
+//fresh fresh Case Study
+import freshAndFreshCaseStudyBannerImage from "../../assets/images/servicewebpages/app development/casestudies/fresh/freshAndFreshCaseStudyBannerImage.png";
+import freshDisplayImage from "../../assets/images/servicewebpages/app development/casestudies/fresh/dp.png";
+import freshCaseStudyImage1 from "../../assets/images/servicewebpages/app development/casestudies/fresh/design-1.png";
+import freshCaseStudyImage2 from "../../assets/images/servicewebpages/app development/casestudies/fresh/design-2.png";
+import freshCaseStudyImage3 from "../../assets/images/servicewebpages/app development/casestudies/fresh/design-3.png";
+import freshCaseStudyImage4 from "../../assets/images/servicewebpages/app development/casestudies/fresh/design-4.png";
+import freshCaseStudyImage5 from "../../assets/images/servicewebpages/app development/casestudies/fresh/design-5.png";
+
 export const appDevelopmentCaseStudies = [
   {
     id: 1,
@@ -1535,5 +1544,76 @@ export const appDevelopmentCaseStudies = [
     testimonial:
       "We partnered with BoostMySites to take Planta to the next level, and they did more than deliver — they elevated our entire product. Their AI and UX teams worked hand-in-hand to make plant care both educational and fun. The way they transformed the user journey into a daily habit is a masterclass in behavioral design. Our community loves it, and we’re seeing the growth — both in users and plants.",
     testimonialBy: "CTO, Planta AB",
+  },
+  {
+    id: 16,
+    dpImage: freshDisplayImage,
+    bannerImage: freshAndFreshCaseStudyBannerImage,
+    firstImageSet: [
+      freshCaseStudyImage1,
+      freshCaseStudyImage2,
+      freshCaseStudyImage3,
+    ],
+    secondImageSet: [freshCaseStudyImage4, freshCaseStudyImage5],
+    client: "Fresh and Fresh",
+    businessType: "E-commerce & Grocery Delivery",
+    industry: "Retail & Consumer Goods",
+    url: "https://play.google.com/store/apps/details?id=com.freshandfresh.app", // Replace with actual Play Store link
+    applicationUrl:
+      "https://play.google.com/store/apps/details?id=com.freshandfresh.app",
+    servicesProvided: [
+      "UI/UX Redesign",
+      "Seamless Ordering System",
+      "Real-time Order Tracking",
+      "Backend & API Optimization",
+    ],
+    companyOverview:
+      "Fresh and Fresh is a modern grocery delivery platform committed to bringing farm-fresh produce and daily essentials directly to consumers' doorsteps. The app aims to simplify grocery shopping by offering a user-friendly interface, ensuring timely deliveries, and maintaining product quality.",
+    objective:
+      "To design a seamless mobile platform that allows users to effortlessly browse, order, and receive fresh groceries, enhancing user satisfaction and operational efficiency.",
+    approach: {
+      researchStrategy:
+        "Conducted user interviews and market analysis to understand shopping behaviors and preferences.",
+      designDevelopment: [
+        {
+          type: "UX Overhaul",
+          description:
+            "Redesigned the app interface to ensure intuitive navigation, quick product searches, and a streamlined checkout process.",
+        },
+        {
+          type: "System Integration",
+          description:
+            "Developed a robust backend system to manage inventory, process orders efficiently, and integrate with delivery partners for real-time tracking.",
+        },
+      ],
+      organicGrowthMarketing: [
+        {
+          type: "Performance Optimization",
+          description:
+            "Enhanced app performance to ensure fast load times, reduced crashes, and smooth user interactions.",
+        },
+      ],
+      continuousImprovement:
+        "Implemented feedback loops and iterative improvements to maintain user satisfaction and support evolving customer needs.",
+    },
+    results: [
+      {
+        type: "User Engagement",
+        description:
+          "65% increase in user engagement within the first quarter post-launch.",
+      },
+      {
+        type: "Cart Abandonment",
+        description: "40% reduction in cart abandonment rates.",
+      },
+      {
+        type: "Customer Retention",
+        description:
+          "Improved customer retention, with a notable rise in repeat orders.",
+      },
+    ],
+    testimonial:
+      "Partnering with BoostMySites transformed our digital presence. The revamped app not only looks great but functions flawlessly, making grocery shopping a breeze for our customers. Their team's dedication and expertise were evident throughout the project.",
+    testimonialBy: "Operations Manager, Fresh and Fresh",
   },
 ];
