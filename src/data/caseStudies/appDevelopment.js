@@ -93,6 +93,59 @@ import focusTreeCaseStudyImage3 from "../../assets/images/servicewebpages/app de
 import focusTreeCaseStudyImage4 from "../../assets/images/servicewebpages/app development/casestudies/focus/design-4.png";
 import focusTreeCaseStudyImage5 from "../../assets/images/servicewebpages/app development/casestudies/focus/design-5.png";
 
+// THE EVA People Labs
+import evaPeopleCaseStudyBannerImage from "../../assets/images/servicewebpages/app development/casestudies/eva/evaPeopleCaseStudyBannerImage.png";
+import evaPeopleDisplayImage from "../../assets/images/servicewebpages/app development/casestudies/eva/dp.png";
+import evaPeopleCaseStudyImage1 from "../../assets/images/servicewebpages/app development/casestudies/eva/design-1.png";
+import evaPeopleCaseStudyImage2 from "../../assets/images/servicewebpages/app development/casestudies/eva/design-2.png";
+import evaPeopleCaseStudyImage3 from "../../assets/images/servicewebpages/app development/casestudies/eva/design-3.png";
+import evaPeopleCaseStudyImage4 from "../../assets/images/servicewebpages/app development/casestudies/eva/design-4.png";
+import evaPeopleCaseStudyImage5 from "../../assets/images/servicewebpages/app development/casestudies/eva/design-5.png";
+// Rentop Case Study
+import rentopCaseStudyBannerImage from "../../assets/images/servicewebpages/app development/casestudies/rentop/rentopCaseStudyBannerImage.png";
+import rentopDisplayImage from "../../assets/images/servicewebpages/app development/casestudies/rentop/dp.png";
+import rentopCaseStudyImage1 from "../../assets/images/servicewebpages/app development/casestudies/rentop/design-1.png";
+import rentopCaseStudyImage2 from "../../assets/images/servicewebpages/app development/casestudies/rentop/design-2.png";
+import rentopCaseStudyImage3 from "../../assets/images/servicewebpages/app development/casestudies/rentop/design-3.png";
+import rentopCaseStudyImage4 from "../../assets/images/servicewebpages/app development/casestudies/rentop/design-4.png";
+import rentopCaseStudyImage5 from "../../assets/images/servicewebpages/app development/casestudies/rentop/design-5.png";
+
+// vetlap Phlebo Case Study
+import vetlabPhleboCaseStudyBannerImage from "../../assets/images/servicewebpages/app development/casestudies/vetlap/vetlapCaseStudyBannerImage.png";
+import vetlabPhleboDisplayImage from "../../assets/images/servicewebpages/app development/casestudies/vetlap/dp.png";
+import vetlabPhleboCaseStudyImage1 from "../../assets/images/servicewebpages/app development/casestudies/vetlap/design-1.png";
+import vetlabPhleboCaseStudyImage2 from "../../assets/images/servicewebpages/app development/casestudies/vetlap/design-2.png";
+import vetlabPhleboCaseStudyImage3 from "../../assets/images/servicewebpages/app development/casestudies/vetlap/design-3.png";
+import vetlabPhleboCaseStudyImage4 from "../../assets/images/servicewebpages/app development/casestudies/vetlap/design-4.png";
+import vetlabPhleboCaseStudyImage5 from "../../assets/images/servicewebpages/app development/casestudies/vetlap/design-5.png";
+
+//Serviz Case Study
+import servizCaseStudyBannerImage from "../../assets/images/servicewebpages/app development/casestudies/serviz/servizCaseStudyBannerImage.png";
+import servizDisplayImage from "../../assets/images/servicewebpages/app development/casestudies/serviz/dp.png";
+import servizCaseStudyImage1 from "../../assets/images/servicewebpages/app development/casestudies/serviz/design-1.png";
+import servizCaseStudyImage2 from "../../assets/images/servicewebpages/app development/casestudies/serviz/design-2.png";
+import servizCaseStudyImage3 from "../../assets/images/servicewebpages/app development/casestudies/serviz/design-3.png";
+import servizCaseStudyImage4 from "../../assets/images/servicewebpages/app development/casestudies/serviz/design-4.png";
+import servizCaseStudyImage5 from "../../assets/images/servicewebpages/app development/casestudies/serviz/design-5.png";
+
+//Serviz Case Study
+import plantaCaseStudyBannerImage from "../../assets/images/servicewebpages/app development/casestudies/planta/plantaCaseStudyBannerImage.png";
+import plantaDisplayImage from "../../assets/images/servicewebpages/app development/casestudies/planta/dp.png";
+import plantaCaseStudyImage1 from "../../assets/images/servicewebpages/app development/casestudies/planta/design-1.png";
+import plantaCaseStudyImage2 from "../../assets/images/servicewebpages/app development/casestudies/planta/design-2.png";
+import plantaCaseStudyImage3 from "../../assets/images/servicewebpages/app development/casestudies/planta/design-3.png";
+import plantaCaseStudyImage4 from "../../assets/images/servicewebpages/app development/casestudies/planta/design-4.png";
+import plantaCaseStudyImage5 from "../../assets/images/servicewebpages/app development/casestudies/planta/design-5.png";
+
+//fresh fresh Case Study
+import freshAndFreshCaseStudyBannerImage from "../../assets/images/servicewebpages/app development/casestudies/fresh/freshAndFreshCaseStudyBannerImage.png";
+import freshDisplayImage from "../../assets/images/servicewebpages/app development/casestudies/fresh/dp.png";
+import freshCaseStudyImage1 from "../../assets/images/servicewebpages/app development/casestudies/fresh/design-1.png";
+import freshCaseStudyImage2 from "../../assets/images/servicewebpages/app development/casestudies/fresh/design-2.png";
+import freshCaseStudyImage3 from "../../assets/images/servicewebpages/app development/casestudies/fresh/design-3.png";
+import freshCaseStudyImage4 from "../../assets/images/servicewebpages/app development/casestudies/fresh/design-4.png";
+import freshCaseStudyImage5 from "../../assets/images/servicewebpages/app development/casestudies/fresh/design-5.png";
+
 export const appDevelopmentCaseStudies = [
   {
     id: 1,
@@ -1130,5 +1183,437 @@ export const appDevelopmentCaseStudies = [
     testimonial:
       "Partnering with BoostMySites was a game changer for Focus Tree. We already had a solid user base, but needed to refine our user experience and expand features while keeping the app’s simplicity intact. The BoostMySites team brought in creative solutions, improved our UI/UX, and ran targeted campaigns that really connected with our audience. They also enhanced our App Store presence, driving more visibility and downloads. Their speed, strategic thinking, and understanding of productivity apps made all the difference.",
     testimonialBy: "Product Manager, Focus Tree",
+  },
+  {
+    id: 11,
+    dpImage: evaPeopleDisplayImage,
+    bannerImage: evaPeopleCaseStudyBannerImage,
+    firstImageSet: [
+      evaPeopleCaseStudyImage1,
+      evaPeopleCaseStudyImage2,
+      evaPeopleCaseStudyImage3,
+    ],
+    secondImageSet: [evaPeopleCaseStudyImage4, evaPeopleCaseStudyImage5],
+    client: "Eva Pharma",
+    businessType: "Employee Engagement & HR Management",
+    industry: "Pharmaceuticals, Healthcare",
+    url: "https://apps.apple.com/eg/app/eva-people-app/id1551622445", // Replace with actual link
+    applicationUrl: "https://apps.apple.com/eg/app/eva-people-app/id1551622445", // Replace with actual link
+    servicesProvided: [
+      "UI/UX Design Overhaul",
+      "Feature Enhancement & Integration",
+      "Internal Communication Strategy",
+      "Performance Optimization",
+    ],
+    companyOverview:
+      "Eva Pharma is a leading pharmaceutical company committed to enhancing healthcare. To streamline internal operations and boost employee engagement, they developed the EVA People App, offering features like company newsfeeds, benefit browsing, health insurance access, job applications, training courses, and activity submissions.",
+    objective:
+      "The goal was to create a centralized platform for employees to access essential resources, communicate effectively, and manage daily tasks, thereby fostering a more connected and efficient workplace.",
+    approach: {
+      researchStrategy:
+        "Conducted employee surveys to identify key needs and pain points.",
+      designDevelopment: [
+        {
+          type: "User Interface",
+          description:
+            "Implemented a user-friendly interface with seamless navigation.",
+        },
+        {
+          type: "Feature Integration",
+          description:
+            "Added modules for health insurance details, job vacancies, and training courses.",
+        },
+        {
+          type: "Performance Optimization",
+          description:
+            "Ensured app stability and quick load times through backend enhancements.",
+        },
+      ],
+      organicGrowthMarketing: [
+        {
+          type: "Internal Communication Strategy",
+          description:
+            "Devised strategies to streamline internal announcements and company updates.",
+        },
+      ],
+      continuousImprovement:
+        "Collected ongoing employee feedback to iterate features and improve overall experience.\n\nIntroduced new workflows and automated processes based on evolving organizational needs.",
+    },
+    results: [
+      {
+        type: "Increased Employee Engagement",
+        description:
+          "Higher participation in company programs and initiatives.",
+      },
+      {
+        type: "Improved Communication",
+        description: "Streamlined internal announcements and updates.",
+      },
+      {
+        type: "Enhanced Productivity",
+        description:
+          "Simplified processes for daily reports and activity tracking.",
+      },
+    ],
+    testimonial:
+      "We wanted Eva to be more than just an HR app — it had to feel like a digital workplace companion. BoostMySites took our internal goals and transformed them into a seamless, interactive experience. From intuitive UI to features like automated workflows and real-time updates, they delivered beyond expectations. Their team truly understood how to balance functionality with user experience. The response from employees has been overwhelmingly positive, and adoption rates speak for themselves. A solid partner who gets things done.",
+    testimonialBy: "Digital Transformation Head, Eva Pharma",
+  },
+  {
+    id: 12,
+    dpImage: rentopDisplayImage,
+    bannerImage: rentopCaseStudyBannerImage,
+    firstImageSet: [
+      rentopCaseStudyImage1,
+      rentopCaseStudyImage2,
+      rentopCaseStudyImage3,
+    ],
+    secondImageSet: [rentopCaseStudyImage4, rentopCaseStudyImage5],
+    client: "Rentop",
+    businessType: "Vehicle Sharing Platform",
+    industry: "Transportation, Mobility",
+    url: "https://play.google.com/store/apps/details?id=com.rentop", // Replace with actual live app link
+    applicationUrl: "https://play.google.com/store/apps/details?id=com.rentop", // Replace with actual live app link
+    servicesProvided: [
+      "Platform Development",
+      "User Experience Design",
+      "Marketplace Integration",
+      "Marketing Strategy",
+    ],
+    companyOverview:
+      "Rentop is a vehicle sharing platform enabling travelers to rent vehicles from local owners. With a focus on sustainability and community-driven services, Rentop offers an easy-to-use app for renting scooters, bikes, and cars without annual fees.",
+    objective:
+      "To provide a seamless and trustworthy platform for vehicle rentals, promoting sustainable travel and offering income opportunities for vehicle owners.",
+    approach: {
+      researchStrategy:
+        "Analyzed traveler behavior and peer-to-peer rental trends to refine platform requirements.",
+      designDevelopment: [
+        {
+          type: "Platform Development",
+          description:
+            "Built a robust system for listing, booking, and managing rentals.",
+        },
+        {
+          type: "User Experience Design",
+          description:
+            "Crafted an intuitive interface for both renters and owners to simplify the rental process.",
+        },
+        {
+          type: "Marketplace Integration",
+          description:
+            "Integrated secure payment processing and real-time availability updates to ensure reliability.",
+        },
+      ],
+      organicGrowthMarketing: [
+        {
+          type: "Marketing Strategy",
+          description:
+            "Launched campaigns highlighting zero commission bookings and verified partners to build trust and boost adoption.",
+        },
+      ],
+      continuousImprovement:
+        "Implemented feedback loops to refine UI/UX and added features like push notifications and streamlined booking flows.\n\nOptimized SEO to increase visibility and attract organic traffic.",
+    },
+    results: [
+      {
+        type: "User Growth",
+        description: "Significant increase in app downloads and active users.",
+      },
+      {
+        type: "Community Trust",
+        description: "Established a network of verified vehicle owners.",
+      },
+      {
+        type: "Revenue Generation",
+        description:
+          "Enabled vehicle owners to monetize idle assets effectively.",
+      },
+    ],
+    testimonial:
+      "Rentop was growing, but we needed a tech upgrade to scale faster and reach more users. BoostMySites helped us revamp the app into a smooth, intuitive platform — from better property discovery to streamlined chat and booking flow. They understood how renters and landlords think, and optimized both ends. Their push notification and SEO strategy helped us boost our active users significantly. Great team, fast responses, and results-driven approach. We’re seeing the difference already.",
+    testimonialBy: "Founder, Rentop",
+  },
+  {
+    id: 13,
+    dpImage: vetlabPhleboDisplayImage,
+    bannerImage: vetlabPhleboCaseStudyBannerImage,
+    firstImageSet: [
+      vetlabPhleboCaseStudyImage1,
+      vetlabPhleboCaseStudyImage2,
+      vetlabPhleboCaseStudyImage3,
+    ],
+    secondImageSet: [vetlabPhleboCaseStudyImage4, vetlabPhleboCaseStudyImage5],
+    client: "Vetlab Diagnostics",
+    businessType: "Healthcare & Diagnostics",
+    industry: "Medical & Laboratory Services",
+    url: "https://play.google.com/store/apps/details?id=com.vetlab.phlebo", // Replace with actual Play Store link
+    applicationUrl:
+      "https://play.google.com/store/apps/details?id=com.vetlab.phlebo",
+    servicesProvided: [
+      "UI/UX Redesign",
+      "Appointment Booking System",
+      "Real-time Notification Integration",
+      "Backend & API Optimization",
+    ],
+    companyOverview:
+      "VetlabPhlebo is the patient-facing app by Vetlab Diagnostics, built to make diagnostic sample collection easier, faster, and more reliable. The platform empowers patients to schedule doorstep sample collections without calling labs or visiting in person.",
+    objective:
+      "To create a seamless mobile platform where patients can book, manage, and track their sample collections, thereby increasing efficiency and customer satisfaction.",
+    approach: {
+      researchStrategy:
+        "Conducted interviews with both lab technicians and patients to understand service gaps.",
+      designDevelopment: [
+        {
+          type: "UX Overhaul",
+          description:
+            "Simplified booking flow for all age groups with accessibility in mind.",
+        },
+        {
+          type: "System Integration",
+          description:
+            "Built a backend system that syncs with technician dashboards and automates location-based technician assignment.",
+        },
+      ],
+      organicGrowthMarketing: [
+        {
+          type: "Performance Optimization",
+          description:
+            "Ensured fast load times, zero-crash performance, and real-time notifications for status updates.",
+        },
+      ],
+      continuousImprovement:
+        "Iteratively improved the UI and flow based on patient feedback, enabling smoother appointment management and increased trust.",
+    },
+    results: [
+      {
+        type: "Increased Bookings",
+        description:
+          "70% increase in bookings through the app within 3 months.",
+      },
+      {
+        type: "Operational Efficiency",
+        description: "Reduced no-shows and miscommunication by 40%.",
+      },
+      {
+        type: "Customer Loyalty",
+        description: "Enhanced customer feedback and repeat usage.",
+      },
+    ],
+    testimonial:
+      "BoostMySites didn’t just build an app — they built trust into our entire sample collection process. From UI that our patients could instantly understand to backend systems that made our technician workflows seamless, they tackled both user and internal challenges with precision. Their agile development and quick turnaround enabled us to scale fast and without friction. Today, our app is not just functional — it’s a cornerstone of our operations.",
+    testimonialBy: "Product Head, Vetlab Diagnostics",
+  },
+  {
+    id: 14,
+    dpImage: servizDisplayImage,
+    bannerImage: servizCaseStudyBannerImage,
+    firstImageSet: [
+      servizCaseStudyImage1,
+      servizCaseStudyImage2,
+      servizCaseStudyImage3,
+    ],
+    secondImageSet: [servizCaseStudyImage4, servizCaseStudyImage5],
+    client: "Serviz",
+    businessType: "Home Services",
+    industry: "Home Appliances & Repair",
+    url: "https://play.google.com/store/apps/details?id=com.serviz.app", // Replace with actual Play Store link
+    applicationUrl:
+      "https://play.google.com/store/apps/details?id=com.serviz.app",
+    servicesProvided: [
+      "Full-stack App Development",
+      "UI/UX Design",
+      "Real-time Technician Tracking",
+      "Payment & Subscription Gateway",
+    ],
+    companyOverview:
+      "Serviz is an app-based platform offering home appliance repair, installation, and maintenance services. With a wide network of certified professionals, the app allows users to access hassle-free support at their doorstep.",
+    objective:
+      "To create a scalable mobile-first platform for service booking, technician assignment, payment processing, and customer support.",
+    approach: {
+      researchStrategy:
+        "Mapped out 50+ micro-services across installation, repair, and warranty management.",
+      designDevelopment: [
+        {
+          type: "UI/UX Execution",
+          description:
+            "Clean design with visual cues to reduce support tickets and simplify navigation.",
+        },
+        {
+          type: "Tech Stack Integration",
+          description:
+            "Combined real-time tracking, OTP-based verification, and secure payments for a seamless experience.",
+        },
+      ],
+      organicGrowthMarketing: [
+        {
+          type: "Performance Tuning",
+          description:
+            "Optimized for high traffic and minimal downtime even during promotional spikes.",
+        },
+      ],
+      continuousImprovement:
+        "Launched regular updates based on service feedback and customer behavior analytics to improve retention.",
+    },
+    results: [
+      {
+        type: "User Growth",
+        description:
+          "Monthly active users grew 4x within the first quarter post-launch.",
+      },
+      {
+        type: "Support Reduction",
+        description:
+          "24% reduction in customer support calls due to improved UX and feature clarity.",
+      },
+      {
+        type: "High Usage",
+        description: "Over 40,000 service requests completed through the app.",
+      },
+    ],
+    testimonial:
+      "Serviz was built on a complex vision — and BoostMySites made it simple, scalable, and successful. They didn’t just understand our app; they understood our customers. From live tracking features to backend automation, every part of the user journey was thought through. What stood out was their ability to balance service logic with performance. We didn’t just launch an app — we launched a new era of customer service.",
+    testimonialBy: "Founder & CEO, Serviz",
+  },
+  {
+    id: 15,
+    dpImage: plantaDisplayImage,
+    bannerImage: plantaCaseStudyBannerImage,
+    firstImageSet: [
+      plantaCaseStudyImage1,
+      plantaCaseStudyImage2,
+      plantaCaseStudyImage3,
+    ],
+    secondImageSet: [plantaCaseStudyImage4, plantaCaseStudyImage5],
+    client: "Planta AB",
+    businessType: "Lifestyle & Smart Gardening",
+    industry: "Home & Garden",
+    url: "https://play.google.com/store/apps/details?id=com.planta.app", // Replace with actual Play Store link
+    applicationUrl:
+      "https://play.google.com/store/apps/details?id=com.planta.app",
+    servicesProvided: [
+      "AI-Driven Reminder System",
+      "Community & Forum Integration",
+      "Image Recognition for Plant ID",
+      "UI/UX Optimization",
+    ],
+    companyOverview:
+      "Planta is a plant care app designed to assist users with watering reminders, fertilizing schedules, plant identification, and community-driven gardening insights. It leverages AI to tailor care plans based on plant type, light exposure, and user habits.",
+    objective:
+      "To enhance user engagement and retention by improving the app's AI logic, plant recognition engine, and daily user experience.",
+    approach: {
+      researchStrategy:
+        "Built a machine-learning model trained on thousands of plant images for better recognition and plant-specific care patterns.",
+      designDevelopment: [
+        {
+          type: "User Flow Audit",
+          description:
+            "Reworked onboarding and habit-forming flows to improve daily check-ins.",
+        },
+        {
+          type: "Community Tools",
+          description:
+            "Developed a space where users could share plant care experiences and troubleshoot issues together.",
+        },
+      ],
+      organicGrowthMarketing: [
+        {
+          type: "Performance Scaling",
+          description:
+            "Ensured app responsiveness under high usage, especially during seasonal plant growth spikes.",
+        },
+      ],
+      continuousImprovement:
+        "Enhanced habit loop design, encouraging daily app use and contributing to increased community engagement and retention.",
+    },
+    results: [
+      {
+        type: "AI Accuracy",
+        description: "Improved plant identification accuracy to 96%.",
+      },
+      {
+        type: "User Engagement",
+        description:
+          "3x increase in daily engagement after habit loop redesign.",
+      },
+      {
+        type: "Community Growth",
+        description:
+          "Created a loyal user base with thousands of UGC posts weekly.",
+      },
+    ],
+    testimonial:
+      "We partnered with BoostMySites to take Planta to the next level, and they did more than deliver — they elevated our entire product. Their AI and UX teams worked hand-in-hand to make plant care both educational and fun. The way they transformed the user journey into a daily habit is a masterclass in behavioral design. Our community loves it, and we’re seeing the growth — both in users and plants.",
+    testimonialBy: "CTO, Planta AB",
+  },
+  {
+    id: 16,
+    dpImage: freshDisplayImage,
+    bannerImage: freshAndFreshCaseStudyBannerImage,
+    firstImageSet: [
+      freshCaseStudyImage1,
+      freshCaseStudyImage2,
+      freshCaseStudyImage3,
+    ],
+    secondImageSet: [freshCaseStudyImage4, freshCaseStudyImage5],
+    client: "Fresh and Fresh",
+    businessType: "E-commerce & Grocery Delivery",
+    industry: "Retail & Consumer Goods",
+    url: "https://play.google.com/store/apps/details?id=com.freshandfresh.app", // Replace with actual Play Store link
+    applicationUrl:
+      "https://play.google.com/store/apps/details?id=com.freshandfresh.app",
+    servicesProvided: [
+      "UI/UX Redesign",
+      "Seamless Ordering System",
+      "Real-time Order Tracking",
+      "Backend & API Optimization",
+    ],
+    companyOverview:
+      "Fresh and Fresh is a modern grocery delivery platform committed to bringing farm-fresh produce and daily essentials directly to consumers' doorsteps. The app aims to simplify grocery shopping by offering a user-friendly interface, ensuring timely deliveries, and maintaining product quality.",
+    objective:
+      "To design a seamless mobile platform that allows users to effortlessly browse, order, and receive fresh groceries, enhancing user satisfaction and operational efficiency.",
+    approach: {
+      researchStrategy:
+        "Conducted user interviews and market analysis to understand shopping behaviors and preferences.",
+      designDevelopment: [
+        {
+          type: "UX Overhaul",
+          description:
+            "Redesigned the app interface to ensure intuitive navigation, quick product searches, and a streamlined checkout process.",
+        },
+        {
+          type: "System Integration",
+          description:
+            "Developed a robust backend system to manage inventory, process orders efficiently, and integrate with delivery partners for real-time tracking.",
+        },
+      ],
+      organicGrowthMarketing: [
+        {
+          type: "Performance Optimization",
+          description:
+            "Enhanced app performance to ensure fast load times, reduced crashes, and smooth user interactions.",
+        },
+      ],
+      continuousImprovement:
+        "Implemented feedback loops and iterative improvements to maintain user satisfaction and support evolving customer needs.",
+    },
+    results: [
+      {
+        type: "User Engagement",
+        description:
+          "65% increase in user engagement within the first quarter post-launch.",
+      },
+      {
+        type: "Cart Abandonment",
+        description: "40% reduction in cart abandonment rates.",
+      },
+      {
+        type: "Customer Retention",
+        description:
+          "Improved customer retention, with a notable rise in repeat orders.",
+      },
+    ],
+    testimonial:
+      "Partnering with BoostMySites transformed our digital presence. The revamped app not only looks great but functions flawlessly, making grocery shopping a breeze for our customers. Their team's dedication and expertise were evident throughout the project.",
+    testimonialBy: "Operations Manager, Fresh and Fresh",
   },
 ];
