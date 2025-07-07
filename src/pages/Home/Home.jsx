@@ -405,18 +405,6 @@ const Home = () => {
                 <p className="text-sm text-primary1 w-fit">Associate Partner</p>
               </div>
             </div>
-            <div className="h-[30rem] w-full relative">
-              <img
-                loading="lazy"
-                src={teamImg7}
-                className="h-[30rem] w-full object-cover mx-auto rounded-lg"
-                alt="team"
-              />
-              <div className="absolute bottom-0 left-0 w-full h-fit bg-black/60 p-4">
-                <h6 className="text-xl font-semibold w-fit">Vidhya Naidu</h6>
-                <p className="text-sm text-primary1 w-fit">Associate Partner</p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
