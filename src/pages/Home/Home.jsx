@@ -17,7 +17,6 @@ import teamImg3 from "../../assets/home/team3.jpg.webp";
 import teamImg4 from "../../assets/home/team4.jpg.webp";
 import teamImg5 from "../../assets/home/team5.jpg.webp";
 import teamImg6 from "../../assets/home/team6.jpg.webp";
-import teamImg7 from "../../assets/home/team7.webp";
 import LeadForm from "../../components/LeadForm";
 import FeaturedIn from "../../components/FeaturedIn";
 import OurOffices from "../../components/OurOffices";
