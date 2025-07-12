@@ -312,7 +312,7 @@ function App() {
                   </>
                 }
               />
-              <Route
+              {/* <Route
                 path="/sales-requirement-form"
                 element={
                   <>
@@ -321,7 +321,7 @@ function App() {
                     <Footer />
                   </>
                 }
-              />
+              /> */}
               <Route
                 path="/signup"
                 element={
